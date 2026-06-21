@@ -1,0 +1,61 @@
+{
+  "project": "strategic-dependency-graph",
+  "name": "Founder Map",
+  "version": "0.1",
+  "description": "Strategic dependency graph for technology, sovereignty, and opportunity discovery.",
+  "core_line": "The opportunity is derived from the structure of the real economy.",
+  "data_packages": [
+    {
+      "name": "eu-ai-stack",
+      "version": "0.1",
+      "path": "data/eu-ai-stack/v0.1/",
+      "graph": "data/eu-ai-stack/v0.1/eu_ai_stack_graph_v0.json",
+      "nodes": 87,
+      "edges": 141,
+      "opportunities": 12,
+      "sources": 46
+    },
+    {
+      "name": "global-ai-stack",
+      "version": "0.1",
+      "path": "data/global-ai-stack/v0.1/",
+      "graph": "data/global-ai-stack/v0.1/global_ai_stack_graph_v0.json",
+      "nodes": 72,
+      "edges": 229,
+      "opportunities": 12,
+      "sources": 44
+    },
+    {
+      "name": "european-defence-stack",
+      "version": "0.1",
+      "path": "data/european-defence-stack/v0.1/",
+      "graph": "data/european-defence-stack/v0.1/european_defence_stack_graph_v0.json",
+      "nodes": 82,
+      "edges": 234,
+      "opportunities": 12,
+      "sources": 45,
+      "safety_scope": "Public-source strategic dependency mapping only. No classified data, no operational tactics, no weapon construction instructions."
+    },
+    {
+      "name": "global-aerospace-stack",
+      "version": "0.1",
+      "path": "data/global-aerospace-stack/v0.1/",
+      "graph": "data/global-aerospace-stack/v0.1/global_aerospace_stack_graph_v0.json",
+      "nodes": 74,
+      "edges": 255,
+      "opportunities": 12,
+      "sources": 50
+    },
+    {
+      "name": "industrial-software-ot-stack",
+      "version": "0.1",
+      "path": "data/industrial-software-ot-stack/v0.1/",
+      "graph": "data/industrial-software-ot-stack/v0.1/industrial_software_ot_stack_graph_v0.json",
+      "nodes": 81,
+      "edges": 262,
+      "opportunities": 12,
+      "sources": 48
+    }
+  ],
+  "codex_next_step": "Build a static React/Vite/TypeScript graph console that loads the graph JSON files and visualizes nodes, edges, sources and opportunities."
+}
