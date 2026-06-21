@@ -1,0 +1,13 @@
+[build]
+base = "web"
+command = "pnpm run sync-data && pnpm run build"
+publish = "dist"
+
+[build.environment]
+NODE_VERSION = "22"
+PNPM_VERSION = "11.5.3"
+
+[[redirects]]
+from = "/*"
+to = "/index.html"
+status = 200
