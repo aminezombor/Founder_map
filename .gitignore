@@ -6,3 +6,6 @@ Thumbs.db
 *.log
 web/public/data/
 Prompt 101.txt
+
+# Local Netlify folder
+.netlify
