@@ -1,0 +1,2161 @@
+[
+  {
+    "id": "industrial_software_ot_stack",
+    "name": "Industrial Software / OT Stack",
+    "type": "sector_view",
+    "country": "Global",
+    "region": "Global",
+    "sector": [
+      "industrial software",
+      "OT"
+    ],
+    "strategic_role": "Top-level strategic view",
+    "description": "Cross-cutting industrial software, OT, automation, simulation and data stack extracted from AI, defence, aerospace and manufacturing realities.",
+    "sovereignty_score": 3,
+    "criticality": 5,
+    "market_importance": 5,
+    "france_or_eu_fit": 5,
+    "color": "blue",
+    "confidence": [
+      "view"
+    ],
+    "tags": [],
+    "sources": [],
+    "fact_status": "known"
+  },
+  {
+    "id": "cad_cam_layer",
+    "name": "CAD / CAM Layer",
+    "type": "capability_layer",
+    "country": "Global",
+    "region": "Global",
+    "sector": [
+      "CAD",
+      "CAM"
+    ],
+    "strategic_role": "Design-to-manufacturing layer",
+    "description": "Mechanical design, manufacturing programming, NC/CNC, tooling, product geometry and engineering authoring.",
+    "sovereignty_score": 2,
+    "criticality": 5,
+    "market_importance": 5,
+    "france_or_eu_fit": 5,
+    "color": "orange",
+    "confidence": [
+      "CAD",
+      "CAM"
+    ],
+    "tags": [],
+    "sources": [],
+    "fact_status": "known"
+  },
+  {
+    "id": "cae_simulation_layer",
+    "name": "CAE / Simulation Layer",
+    "type": "capability_layer",
+    "country": "Global",
+    "region": "Global",
+    "sector": [
+      "CAE",
+      "simulation"
+    ],
+    "strategic_role": "Virtual testing layer",
+    "description": "Physics simulation, systems simulation, finite element analysis, CFD, electromagnetic simulation and virtual validation.",
+    "sovereignty_score": 2,
+    "criticality": 5,
+    "market_importance": 5,
+    "france_or_eu_fit": 5,
+    "color": "orange",
+    "confidence": [
+      "simulation"
+    ],
+    "tags": [],
+    "sources": [],
+    "fact_status": "known"
+  },
+  {
+    "id": "plm_alm_mbse_layer",
+    "name": "PLM / ALM / MBSE Layer",
+    "type": "capability_layer",
+    "country": "Global",
+    "region": "Global",
+    "sector": [
+      "PLM",
+      "ALM",
+      "MBSE"
+    ],
+    "strategic_role": "Digital thread and requirements layer",
+    "description": "Requirements, product lifecycle, bill of materials, configuration, change management, ALM and model-based systems engineering.",
+    "sovereignty_score": 2,
+    "criticality": 5,
+    "market_importance": 5,
+    "france_or_eu_fit": 5,
+    "color": "orange",
+    "confidence": [
+      "PLM",
+      "ALM",
+      "MBSE"
+    ],
+    "tags": [],
+    "sources": [],
+    "fact_status": "known"
+  },
+  {
+    "id": "mes_mom_layer",
+    "name": "MES / MOM Layer",
+    "type": "capability_layer",
+    "country": "Global",
+    "region": "Global",
+    "sector": [
+      "MES",
+      "MOM"
+    ],
+    "strategic_role": "Manufacturing execution layer",
+    "description": "Work orders, production execution, quality, traceability, genealogy, shop-floor performance and manufacturing operations management.",
+    "sovereignty_score": 2,
+    "criticality": 5,
+    "market_importance": 5,
+    "france_or_eu_fit": 5,
+    "color": "red",
+    "confidence": [
+      "MES",
+      "MOM"
+    ],
+    "tags": [],
+    "sources": [],
+    "fact_status": "known"
+  },
+  {
+    "id": "scada_hmi_layer",
+    "name": "SCADA / HMI Layer",
+    "type": "capability_layer",
+    "country": "Global",
+    "region": "Global",
+    "sector": [
+      "SCADA",
+      "HMI"
+    ],
+    "strategic_role": "Plant visualization and control layer",
+    "description": "Supervisory control, operator interfaces, alarms, historian connections and plant applications.",
+    "sovereignty_score": 2,
+    "criticality": 5,
+    "market_importance": 5,
+    "france_or_eu_fit": 5,
+    "color": "red",
+    "confidence": [
+      "SCADA",
+      "HMI"
+    ],
+    "tags": [],
+    "sources": [],
+    "fact_status": "known"
+  },
+  {
+    "id": "plc_control_layer",
+    "name": "PLC / Control Runtime Layer",
+    "type": "capability_layer",
+    "country": "Global",
+    "region": "Global",
+    "sector": [
+      "PLC",
+      "control"
+    ],
+    "strategic_role": "Machine-control layer",
+    "description": "PLCs, industrial controllers, runtime systems, motion control, safety systems and control programming.",
+    "sovereignty_score": 2,
+    "criticality": 5,
+    "market_importance": 5,
+    "france_or_eu_fit": 5,
+    "color": "red",
+    "confidence": [
+      "PLC",
+      "control"
+    ],
+    "tags": [],
+    "sources": [],
+    "fact_status": "known"
+  },
+  {
+    "id": "industrial_connectivity_layer",
+    "name": "Industrial Connectivity Layer",
+    "type": "capability_layer",
+    "country": "Global",
+    "region": "Global",
+    "sector": [
+      "OPC UA",
+      "MQTT",
+      "connectivity"
+    ],
+    "strategic_role": "OT interoperability layer",
+    "description": "Protocol gateways, OPC UA, MQTT/Sparkplug, fieldbus bridges and IT/OT connectivity.",
+    "sovereignty_score": 2,
+    "criticality": 5,
+    "market_importance": 5,
+    "france_or_eu_fit": 5,
+    "color": "red",
+    "confidence": [
+      "connectivity",
+      "OPC_UA",
+      "MQTT"
+    ],
+    "tags": [],
+    "sources": [],
+    "fact_status": "known"
+  },
+  {
+    "id": "industrial_dataops_layer",
+    "name": "Industrial DataOps / Contextualization Layer",
+    "type": "capability_layer",
+    "country": "Global",
+    "region": "Global",
+    "sector": [
+      "DataOps",
+      "contextualization"
+    ],
+    "strategic_role": "Industrial data context layer",
+    "description": "Time-series data, asset models, semantic context, namespace, event streams and operational data products.",
+    "sovereignty_score": 2,
+    "criticality": 5,
+    "market_importance": 5,
+    "france_or_eu_fit": 5,
+    "color": "orange",
+    "confidence": [
+      "DataOps",
+      "UNS"
+    ],
+    "tags": [],
+    "sources": [],
+    "fact_status": "known"
+  },
+  {
+    "id": "digital_twin_layer",
+    "name": "Digital Twin / Virtual Twin Layer",
+    "type": "capability_layer",
+    "country": "Global",
+    "region": "Global",
+    "sector": [
+      "digital twin"
+    ],
+    "strategic_role": "Virtual-physical synchronization layer",
+    "description": "Virtual twins of products, plants, lines, assets, buildings and operational systems.",
+    "sovereignty_score": 3,
+    "criticality": 5,
+    "market_importance": 5,
+    "france_or_eu_fit": 5,
+    "color": "orange",
+    "confidence": [
+      "digital_twin"
+    ],
+    "tags": [],
+    "sources": [],
+    "fact_status": "known"
+  },
+  {
+    "id": "industrial_ai_layer",
+    "name": "Industrial AI / Agent Layer",
+    "type": "capability_layer",
+    "country": "Global",
+    "region": "Global",
+    "sector": [
+      "AI",
+      "agents"
+    ],
+    "strategic_role": "AI decision-support and automation layer",
+    "description": "Industrial copilots, optimization agents, anomaly detection, predictive maintenance, planning and engineering automation.",
+    "sovereignty_score": 2,
+    "criticality": 5,
+    "market_importance": 5,
+    "france_or_eu_fit": 5,
+    "color": "orange",
+    "confidence": [
+      "AI",
+      "agents"
+    ],
+    "tags": [],
+    "sources": [],
+    "fact_status": "known"
+  },
+  {
+    "id": "ot_cybersecurity_layer",
+    "name": "OT Cybersecurity Layer",
+    "type": "capability_layer",
+    "country": "Global",
+    "region": "Global",
+    "sector": [
+      "OT cybersecurity"
+    ],
+    "strategic_role": "Cyber-physical security layer",
+    "description": "Asset discovery, network monitoring, vulnerability management, segmentation, incident response and IEC 62443 evidence.",
+    "sovereignty_score": 2,
+    "criticality": 5,
+    "market_importance": 5,
+    "france_or_eu_fit": 5,
+    "color": "red",
+    "confidence": [
+      "OT_security"
+    ],
+    "tags": [],
+    "sources": [],
+    "fact_status": "known"
+  },
+  {
+    "id": "industrial_cloud_edge_layer",
+    "name": "Industrial Cloud / Edge Layer",
+    "type": "capability_layer",
+    "country": "Global",
+    "region": "Global",
+    "sector": [
+      "edge",
+      "cloud"
+    ],
+    "strategic_role": "Edge-to-cloud infrastructure layer",
+    "description": "Industrial edge compute, cloud IoT, device management, edge workloads and data pipelines.",
+    "sovereignty_score": 2,
+    "criticality": 5,
+    "market_importance": 5,
+    "france_or_eu_fit": 5,
+    "color": "orange",
+    "confidence": [
+      "edge",
+      "cloud"
+    ],
+    "tags": [],
+    "sources": [],
+    "fact_status": "known"
+  },
+  {
+    "id": "erp_supply_chain_layer",
+    "name": "ERP / Supply Chain Integration Layer",
+    "type": "capability_layer",
+    "country": "Global",
+    "region": "Global",
+    "sector": [
+      "ERP",
+      "supply chain"
+    ],
+    "strategic_role": "Business integration layer",
+    "description": "ERP, supply chain planning, procurement, production planning and enterprise-to-shop-floor integration.",
+    "sovereignty_score": 2,
+    "criticality": 5,
+    "market_importance": 5,
+    "france_or_eu_fit": 5,
+    "color": "orange",
+    "confidence": [
+      "ERP",
+      "SCM"
+    ],
+    "tags": [],
+    "sources": [],
+    "fact_status": "known"
+  },
+  {
+    "id": "maintenance_reliability_layer",
+    "name": "Maintenance / Reliability Layer",
+    "type": "capability_layer",
+    "country": "Global",
+    "region": "Global",
+    "sector": [
+      "maintenance",
+      "reliability"
+    ],
+    "strategic_role": "Asset performance layer",
+    "description": "CMMS, EAM, predictive maintenance, asset performance, work orders and reliability analytics.",
+    "sovereignty_score": 2,
+    "criticality": 5,
+    "market_importance": 5,
+    "france_or_eu_fit": 5,
+    "color": "orange",
+    "confidence": [
+      "maintenance",
+      "reliability"
+    ],
+    "tags": [],
+    "sources": [],
+    "fact_status": "known"
+  },
+  {
+    "id": "industrial_standards_layer",
+    "name": "Industrial Standards / Governance Layer",
+    "type": "standard_layer",
+    "country": "Global",
+    "region": "Global",
+    "sector": [
+      "standards"
+    ],
+    "strategic_role": "Interoperability and security standards layer",
+    "description": "ISA/IEC 62443, ISA-95, OPC UA, MQTT Sparkplug and governance patterns that make industrial data portable and secure.",
+    "sovereignty_score": 4,
+    "criticality": 5,
+    "market_importance": 5,
+    "france_or_eu_fit": 5,
+    "color": "blue",
+    "confidence": [
+      "standards"
+    ],
+    "tags": [],
+    "sources": [],
+    "fact_status": "known"
+  },
+  {
+    "id": "industrial_frontline_layer",
+    "name": "Frontline Operations / Worker Layer",
+    "type": "capability_layer",
+    "country": "Global",
+    "region": "Global",
+    "sector": [
+      "frontline operations"
+    ],
+    "strategic_role": "Human operations layer",
+    "description": "Work instructions, operator guidance, inspections, remote assistance, training, EHS and frontline apps.",
+    "sovereignty_score": 2,
+    "criticality": 4,
+    "market_importance": 5,
+    "france_or_eu_fit": 5,
+    "color": "orange",
+    "confidence": [
+      "frontline"
+    ],
+    "tags": [],
+    "sources": [],
+    "fact_status": "known"
+  },
+  {
+    "id": "industrial_lowcode_apps_layer",
+    "name": "Industrial Low-Code / App Layer",
+    "type": "capability_layer",
+    "country": "Global",
+    "region": "Global",
+    "sector": [
+      "low-code",
+      "apps"
+    ],
+    "strategic_role": "Rapid industrial apps layer",
+    "description": "Low-code apps, dashboards, workflows, forms and data-driven plant applications.",
+    "sovereignty_score": 2,
+    "criticality": 4,
+    "market_importance": 5,
+    "france_or_eu_fit": 5,
+    "color": "orange",
+    "confidence": [
+      "low_code"
+    ],
+    "tags": [],
+    "sources": [],
+    "fact_status": "known"
+  },
+  {
+    "id": "quality_traceability_layer",
+    "name": "Quality / Traceability Layer",
+    "type": "capability_layer",
+    "country": "Global",
+    "region": "Global",
+    "sector": [
+      "quality",
+      "traceability"
+    ],
+    "strategic_role": "Compliance and genealogy layer",
+    "description": "Batch records, genealogy, nonconformance, serialization, audit trails and traceability across regulated manufacturing.",
+    "sovereignty_score": 2,
+    "criticality": 5,
+    "market_importance": 5,
+    "france_or_eu_fit": 5,
+    "color": "red",
+    "confidence": [
+      "quality",
+      "traceability"
+    ],
+    "tags": [],
+    "sources": [],
+    "fact_status": "known"
+  },
+  {
+    "id": "opc_ua",
+    "name": "OPC UA",
+    "type": "standard",
+    "country": "Global",
+    "region": "Global",
+    "sector": [
+      "OPC UA",
+      "interoperability"
+    ],
+    "strategic_role": "Machine-to-enterprise interoperability standard",
+    "description": "Platform-independent architecture for secure industrial interoperability and information modeling.",
+    "sovereignty_score": 5,
+    "criticality": 5,
+    "market_importance": 5,
+    "france_or_eu_fit": 5,
+    "color": "blue",
+    "confidence": "high",
+    "tags": [
+      "OPC_UA",
+      "interoperability"
+    ],
+    "sources": [
+      "opcfoundation_opcua"
+    ],
+    "fact_status": "known"
+  },
+  {
+    "id": "mqtt_sparkplug",
+    "name": "MQTT Sparkplug",
+    "type": "standard",
+    "country": "Global",
+    "region": "Global",
+    "sector": [
+      "MQTT",
+      "Sparkplug"
+    ],
+    "strategic_role": "Industrial MQTT namespace/payload standard",
+    "description": "Standard for MQTT topic namespace and payloads for industrial data producers and consumers.",
+    "sovereignty_score": 4,
+    "criticality": 4,
+    "market_importance": 4,
+    "france_or_eu_fit": 5,
+    "color": "blue",
+    "confidence": "medium",
+    "tags": [
+      "MQTT",
+      "Sparkplug"
+    ],
+    "sources": [
+      "sparkplug"
+    ],
+    "fact_status": "known"
+  },
+  {
+    "id": "isa_95",
+    "name": "ISA-95",
+    "type": "standard",
+    "country": "Global",
+    "region": "Global",
+    "sector": [
+      "ISA-95",
+      "ERP-MES"
+    ],
+    "strategic_role": "Enterprise-control integration standard",
+    "description": "Enterprise-control system integration standard structuring ERP, MES and control layers.",
+    "sovereignty_score": 4,
+    "criticality": 5,
+    "market_importance": 5,
+    "france_or_eu_fit": 5,
+    "color": "blue",
+    "confidence": "medium",
+    "tags": [
+      "ISA95"
+    ],
+    "sources": [
+      "isa95"
+    ],
+    "fact_status": "known"
+  },
+  {
+    "id": "isa_iec_62443",
+    "name": "ISA/IEC 62443",
+    "type": "standard",
+    "country": "Global",
+    "region": "Global",
+    "sector": [
+      "OT cybersecurity"
+    ],
+    "strategic_role": "Industrial cybersecurity standard",
+    "description": "Consensus-based standards for secure industrial automation and control systems.",
+    "sovereignty_score": 5,
+    "criticality": 5,
+    "market_importance": 5,
+    "france_or_eu_fit": 5,
+    "color": "blue",
+    "confidence": "high",
+    "tags": [
+      "IEC62443",
+      "OT_security"
+    ],
+    "sources": [
+      "isa_iec_62443"
+    ],
+    "fact_status": "known"
+  },
+  {
+    "id": "unified_namespace",
+    "name": "Unified Namespace",
+    "type": "architecture_pattern",
+    "country": "Global",
+    "region": "Global",
+    "sector": [
+      "UNS",
+      "industrial data"
+    ],
+    "strategic_role": "Industrial event/data architecture pattern",
+    "description": "Shared namespace architecture for contextual industrial data streams and OT/IT integration.",
+    "sovereignty_score": 3,
+    "criticality": 5,
+    "market_importance": 5,
+    "france_or_eu_fit": 5,
+    "color": "blue",
+    "confidence": "medium",
+    "tags": [
+      "UNS",
+      "data_architecture"
+    ],
+    "sources": [
+      "unified_namespace",
+      "sparkplug"
+    ],
+    "fact_status": "known"
+  },
+  {
+    "id": "digital_thread",
+    "name": "Digital Thread",
+    "type": "architecture_pattern",
+    "country": "Global",
+    "region": "Global",
+    "sector": [
+      "digital thread"
+    ],
+    "strategic_role": "Product-to-production traceability pattern",
+    "description": "Connected requirements, design, simulation, manufacturing, quality and service evidence across lifecycle.",
+    "sovereignty_score": 3,
+    "criticality": 5,
+    "market_importance": 5,
+    "france_or_eu_fit": 5,
+    "color": "blue",
+    "confidence": "medium",
+    "tags": [
+      "digital_thread"
+    ],
+    "sources": [
+      "dassault_3dexperience",
+      "siemens_xcelerator",
+      "ptc_products"
+    ],
+    "fact_status": "known"
+  },
+  {
+    "id": "industrial_ontology",
+    "name": "Industrial Ontology / Asset Model",
+    "type": "architecture_pattern",
+    "country": "Global",
+    "region": "Global",
+    "sector": [
+      "ontology",
+      "asset model"
+    ],
+    "strategic_role": "Context and semantics layer",
+    "description": "Common operational data model connecting assets, tags, events, processes, products and systems.",
+    "sovereignty_score": 2,
+    "criticality": 5,
+    "market_importance": 5,
+    "france_or_eu_fit": 5,
+    "color": "orange",
+    "confidence": "medium",
+    "tags": [
+      "ontology",
+      "asset_model"
+    ],
+    "sources": [
+      "cognite",
+      "highbyte",
+      "palantir_aip"
+    ],
+    "fact_status": "known"
+  },
+  {
+    "id": "siemens_xcelerator_node",
+    "name": "Siemens Xcelerator / Digital Industries Software",
+    "type": "industrial_software_vendor",
+    "country": "Germany",
+    "region": "Europe",
+    "sector": [
+      "PLM",
+      "CAD",
+      "MES",
+      "automation",
+      "digital twin"
+    ],
+    "strategic_role": "Industrial software and automation ecosystem",
+    "description": "Siemens industrial software ecosystem across AI, digital twin, automation, Teamcenter, NX, Femap, Opcenter, TIA Portal and Xcelerator.",
+    "sovereignty_score": 5,
+    "criticality": 5,
+    "market_importance": 5,
+    "france_or_eu_fit": 5,
+    "color": "green",
+    "confidence": "high",
+    "tags": [
+      "Europe",
+      "Germany",
+      "Siemens"
+    ],
+    "sources": [
+      "siemens_xcelerator",
+      "siemens_sw"
+    ],
+    "fact_status": "known"
+  },
+  {
+    "id": "dassault_3dexperience_node",
+    "name": "Dassault Systèmes 3DEXPERIENCE",
+    "type": "industrial_software_vendor",
+    "country": "France",
+    "region": "Europe",
+    "sector": [
+      "PLM",
+      "CAD",
+      "simulation",
+      "virtual twin"
+    ],
+    "strategic_role": "French virtual twin and PLM platform",
+    "description": "3DEXPERIENCE platform with CATIA, ENOVIA, DELMIA, SIMULIA, SOLIDWORKS and virtual twin ecosystem.",
+    "sovereignty_score": 5,
+    "criticality": 5,
+    "market_importance": 5,
+    "france_or_eu_fit": 5,
+    "color": "green",
+    "confidence": "high",
+    "tags": [
+      "France",
+      "Europe",
+      "3DEXPERIENCE"
+    ],
+    "sources": [
+      "dassault_3dexperience"
+    ],
+    "fact_status": "known"
+  },
+  {
+    "id": "ptc_node",
+    "name": "PTC",
+    "type": "industrial_software_vendor",
+    "country": "United States",
+    "region": "Global",
+    "sector": [
+      "PLM",
+      "ALM",
+      "IoT",
+      "AR",
+      "connectivity"
+    ],
+    "strategic_role": "Product lifecycle and industrial IoT vendor",
+    "description": "PTC portfolio spans Codebeamer, Modeler, RV&S, Windchill, ThingWorx, Kepware, Vuforia and product lifecycle traceability.",
+    "sovereignty_score": 2,
+    "criticality": 5,
+    "market_importance": 5,
+    "france_or_eu_fit": 3,
+    "color": "orange",
+    "confidence": "high",
+    "tags": [
+      "US",
+      "PTC"
+    ],
+    "sources": [
+      "ptc_products",
+      "kepware"
+    ],
+    "fact_status": "known"
+  },
+  {
+    "id": "rockwell_factorytalk_node",
+    "name": "Rockwell FactoryTalk",
+    "type": "industrial_automation_vendor",
+    "country": "United States",
+    "region": "Global",
+    "sector": [
+      "automation software",
+      "MES",
+      "SCADA",
+      "IIoT"
+    ],
+    "strategic_role": "Automation and industrial software ecosystem",
+    "description": "FactoryTalk covers design, operations, maintenance, analytics, IIoT, AR and ML for industrial environments.",
+    "sovereignty_score": 2,
+    "criticality": 5,
+    "market_importance": 5,
+    "france_or_eu_fit": 3,
+    "color": "orange",
+    "confidence": "high",
+    "tags": [
+      "US",
+      "Rockwell"
+    ],
+    "sources": [
+      "rockwell_factorytalk"
+    ],
+    "fact_status": "known"
+  },
+  {
+    "id": "schneider_ecostruxure_node",
+    "name": "Schneider Electric EcoStruxure / AVEVA",
+    "type": "industrial_automation_vendor",
+    "country": "France/UK",
+    "region": "Europe",
+    "sector": [
+      "automation",
+      "energy",
+      "industrial software"
+    ],
+    "strategic_role": "Energy automation and industrial software ecosystem",
+    "description": "Schneider EcoStruxure and AVEVA industrial software for energy management, automation, operations and data.",
+    "sovereignty_score": 5,
+    "criticality": 5,
+    "market_importance": 5,
+    "france_or_eu_fit": 5,
+    "color": "green",
+    "confidence": "medium",
+    "tags": [
+      "France",
+      "Europe",
+      "AVEVA"
+    ],
+    "sources": [
+      "schneider_ecostruxure",
+      "aveva"
+    ],
+    "fact_status": "known"
+  },
+  {
+    "id": "abb_ability_node",
+    "name": "ABB Ability",
+    "type": "industrial_automation_vendor",
+    "country": "Switzerland/Sweden",
+    "region": "Europe",
+    "sector": [
+      "automation",
+      "robotics",
+      "industrial software"
+    ],
+    "strategic_role": "Automation and digital platform ecosystem",
+    "description": "ABB Ability and ABB automation/robotics platform for industrial operations.",
+    "sovereignty_score": 5,
+    "criticality": 5,
+    "market_importance": 5,
+    "france_or_eu_fit": 4,
+    "color": "green",
+    "confidence": "medium",
+    "tags": [
+      "Europe",
+      "ABB"
+    ],
+    "sources": [
+      "abb_ability"
+    ],
+    "fact_status": "known"
+  },
+  {
+    "id": "honeywell_forge_node",
+    "name": "Honeywell Forge",
+    "type": "industrial_software_vendor",
+    "country": "United States",
+    "region": "Global",
+    "sector": [
+      "operations",
+      "industrial software"
+    ],
+    "strategic_role": "Industrial operations software platform",
+    "description": "Honeywell industrial software and operational intelligence platform.",
+    "sovereignty_score": 2,
+    "criticality": 4,
+    "market_importance": 4,
+    "france_or_eu_fit": 2,
+    "color": "orange",
+    "confidence": "medium",
+    "tags": [
+      "US"
+    ],
+    "sources": [
+      "honeywell_forge"
+    ],
+    "fact_status": "known"
+  },
+  {
+    "id": "emerson_node",
+    "name": "Emerson Automation Software",
+    "type": "industrial_automation_vendor",
+    "country": "United States",
+    "region": "Global",
+    "sector": [
+      "automation",
+      "control",
+      "asset management"
+    ],
+    "strategic_role": "Automation/control software ecosystem",
+    "description": "Emerson automation software for control, operations and asset management.",
+    "sovereignty_score": 2,
+    "criticality": 4,
+    "market_importance": 4,
+    "france_or_eu_fit": 2,
+    "color": "orange",
+    "confidence": "medium",
+    "tags": [
+      "US"
+    ],
+    "sources": [
+      "emerson_software"
+    ],
+    "fact_status": "known"
+  },
+  {
+    "id": "yokogawa_node",
+    "name": "Yokogawa",
+    "type": "industrial_automation_vendor",
+    "country": "Japan",
+    "region": "Global",
+    "sector": [
+      "DCS",
+      "control",
+      "process automation"
+    ],
+    "strategic_role": "Process automation vendor",
+    "description": "Yokogawa control, industrial automation and information systems.",
+    "sovereignty_score": 3,
+    "criticality": 4,
+    "market_importance": 4,
+    "france_or_eu_fit": 2,
+    "color": "orange",
+    "confidence": "medium",
+    "tags": [
+      "Japan"
+    ],
+    "sources": [
+      "yokogawa"
+    ],
+    "fact_status": "known"
+  },
+  {
+    "id": "beckhoff_node",
+    "name": "Beckhoff Automation",
+    "type": "industrial_automation_vendor",
+    "country": "Germany",
+    "region": "Europe",
+    "sector": [
+      "PLC",
+      "control",
+      "EtherCAT"
+    ],
+    "strategic_role": "PC-based automation vendor",
+    "description": "PC-based automation, industrial PCs, PLC, motion and EtherCAT control ecosystem.",
+    "sovereignty_score": 5,
+    "criticality": 4,
+    "market_importance": 4,
+    "france_or_eu_fit": 4,
+    "color": "green",
+    "confidence": "medium",
+    "tags": [
+      "Germany",
+      "PLC"
+    ],
+    "sources": [
+      "beckhoff"
+    ],
+    "fact_status": "known"
+  },
+  {
+    "id": "bosch_rexroth_ctrlx_node",
+    "name": "Bosch Rexroth ctrlX",
+    "type": "industrial_automation_vendor",
+    "country": "Germany",
+    "region": "Europe",
+    "sector": [
+      "automation",
+      "control",
+      "open platform"
+    ],
+    "strategic_role": "Open automation platform",
+    "description": "ctrlX automation ecosystem for industrial control and automation.",
+    "sovereignty_score": 5,
+    "criticality": 4,
+    "market_importance": 4,
+    "france_or_eu_fit": 4,
+    "color": "green",
+    "confidence": "medium",
+    "tags": [
+      "Germany",
+      "open_automation"
+    ],
+    "sources": [
+      "bosch_rexroth_ctrlx"
+    ],
+    "fact_status": "known"
+  },
+  {
+    "id": "codesys_node",
+    "name": "CODESYS",
+    "type": "industrial_software_vendor",
+    "country": "Germany",
+    "region": "Europe",
+    "sector": [
+      "PLC",
+      "control runtime"
+    ],
+    "strategic_role": "PLC development/runtime system",
+    "description": "IEC 61131-3 automation development and runtime ecosystem.",
+    "sovereignty_score": 5,
+    "criticality": 4,
+    "market_importance": 4,
+    "france_or_eu_fit": 4,
+    "color": "green",
+    "confidence": "medium",
+    "tags": [
+      "Germany",
+      "PLC"
+    ],
+    "sources": [
+      "codesys"
+    ],
+    "fact_status": "known"
+  },
+  {
+    "id": "inductive_ignition_node",
+    "name": "Ignition / Inductive Automation",
+    "type": "industrial_software_vendor",
+    "country": "United States",
+    "region": "Global",
+    "sector": [
+      "SCADA",
+      "IIoT",
+      "MES"
+    ],
+    "strategic_role": "SCADA/MES/IIoT platform",
+    "description": "Industrial application platform for SCADA, MES, IIoT, reporting and visualization.",
+    "sovereignty_score": 2,
+    "criticality": 4,
+    "market_importance": 4,
+    "france_or_eu_fit": 3,
+    "color": "orange",
+    "confidence": "medium",
+    "tags": [
+      "US",
+      "SCADA"
+    ],
+    "sources": [
+      "ignition",
+      "inductive_automation"
+    ],
+    "fact_status": "known"
+  },
+  {
+    "id": "kepware_node",
+    "name": "Kepware",
+    "type": "industrial_connectivity_vendor",
+    "country": "United States",
+    "region": "Global",
+    "sector": [
+      "connectivity",
+      "OPC"
+    ],
+    "strategic_role": "Industrial connectivity platform",
+    "description": "PTC industrial connectivity platform for connecting devices and systems.",
+    "sovereignty_score": 2,
+    "criticality": 5,
+    "market_importance": 4,
+    "france_or_eu_fit": 3,
+    "color": "orange",
+    "confidence": "medium",
+    "tags": [
+      "US",
+      "connectivity"
+    ],
+    "sources": [
+      "kepware"
+    ],
+    "fact_status": "known"
+  },
+  {
+    "id": "autodesk_fusion_node",
+    "name": "Autodesk Fusion",
+    "type": "industrial_software_vendor",
+    "country": "United States",
+    "region": "Global",
+    "sector": [
+      "CAD",
+      "CAM",
+      "CAE"
+    ],
+    "strategic_role": "Cloud CAD/CAM/CAE platform",
+    "description": "Cloud-connected product design and manufacturing platform.",
+    "sovereignty_score": 2,
+    "criticality": 4,
+    "market_importance": 4,
+    "france_or_eu_fit": 2,
+    "color": "orange",
+    "confidence": "medium",
+    "tags": [
+      "US",
+      "CAD"
+    ],
+    "sources": [
+      "autodesk_fusion"
+    ],
+    "fact_status": "known"
+  },
+  {
+    "id": "hexagon_node",
+    "name": "Hexagon Manufacturing Intelligence",
+    "type": "industrial_software_vendor",
+    "country": "Sweden",
+    "region": "Europe",
+    "sector": [
+      "metrology",
+      "manufacturing",
+      "simulation"
+    ],
+    "strategic_role": "Manufacturing intelligence vendor",
+    "description": "Metrology, manufacturing intelligence, engineering and operations software.",
+    "sovereignty_score": 5,
+    "criticality": 4,
+    "market_importance": 4,
+    "france_or_eu_fit": 4,
+    "color": "green",
+    "confidence": "medium",
+    "tags": [
+      "Europe",
+      "metrology"
+    ],
+    "sources": [
+      "hexagon_msc"
+    ],
+    "fact_status": "known"
+  },
+  {
+    "id": "ansys_node",
+    "name": "Ansys",
+    "type": "simulation_vendor",
+    "country": "United States",
+    "region": "Global",
+    "sector": [
+      "simulation",
+      "CAE"
+    ],
+    "strategic_role": "Engineering simulation software",
+    "description": "Engineering simulation software for physics, electronics, fluids, structures and systems.",
+    "sovereignty_score": 2,
+    "criticality": 5,
+    "market_importance": 5,
+    "france_or_eu_fit": 2,
+    "color": "orange",
+    "confidence": "medium",
+    "tags": [
+      "US",
+      "simulation"
+    ],
+    "sources": [
+      "ansys",
+      "synopsys_ansys"
+    ],
+    "fact_status": "known"
+  },
+  {
+    "id": "mathworks_node",
+    "name": "MathWorks MATLAB/Simulink",
+    "type": "simulation_vendor",
+    "country": "United States",
+    "region": "Global",
+    "sector": [
+      "model-based design",
+      "simulation"
+    ],
+    "strategic_role": "Model-based design and simulation vendor",
+    "description": "MATLAB and Simulink for engineering computation, simulation and model-based design.",
+    "sovereignty_score": 2,
+    "criticality": 5,
+    "market_importance": 5,
+    "france_or_eu_fit": 2,
+    "color": "orange",
+    "confidence": "medium",
+    "tags": [
+      "US",
+      "simulation"
+    ],
+    "sources": [
+      "mathworks"
+    ],
+    "fact_status": "known"
+  },
+  {
+    "id": "nvidia_omniverse_node",
+    "name": "NVIDIA Omniverse",
+    "type": "simulation_vendor",
+    "country": "United States",
+    "region": "Global",
+    "sector": [
+      "digital twin",
+      "simulation",
+      "3D"
+    ],
+    "strategic_role": "Industrial 3D simulation/digital twin platform",
+    "description": "3D, digital twin and industrial simulation platform.",
+    "sovereignty_score": 1,
+    "criticality": 5,
+    "market_importance": 5,
+    "france_or_eu_fit": 2,
+    "color": "red",
+    "confidence": "medium",
+    "tags": [
+      "US",
+      "GPU",
+      "digital_twin"
+    ],
+    "sources": [
+      "nvidia_omniverse"
+    ],
+    "fact_status": "known"
+  },
+  {
+    "id": "sap_digital_manufacturing_node",
+    "name": "SAP Digital Manufacturing",
+    "type": "enterprise_software_vendor",
+    "country": "Germany",
+    "region": "Europe",
+    "sector": [
+      "MES",
+      "ERP",
+      "manufacturing"
+    ],
+    "strategic_role": "ERP/MES manufacturing software",
+    "description": "Manufacturing execution and enterprise manufacturing integration in SAP ecosystem.",
+    "sovereignty_score": 5,
+    "criticality": 5,
+    "market_importance": 5,
+    "france_or_eu_fit": 5,
+    "color": "green",
+    "confidence": "medium",
+    "tags": [
+      "Germany",
+      "ERP",
+      "MES"
+    ],
+    "sources": [
+      "sap_digital_manufacturing"
+    ],
+    "fact_status": "known"
+  },
+  {
+    "id": "oracle_manufacturing_node",
+    "name": "Oracle Manufacturing",
+    "type": "enterprise_software_vendor",
+    "country": "United States",
+    "region": "Global",
+    "sector": [
+      "ERP",
+      "manufacturing"
+    ],
+    "strategic_role": "Manufacturing and supply chain software",
+    "description": "Oracle manufacturing and supply chain applications.",
+    "sovereignty_score": 2,
+    "criticality": 4,
+    "market_importance": 5,
+    "france_or_eu_fit": 2,
+    "color": "orange",
+    "confidence": "medium",
+    "tags": [
+      "US",
+      "ERP"
+    ],
+    "sources": [
+      "oracle_scm_manufacturing"
+    ],
+    "fact_status": "known"
+  },
+  {
+    "id": "microsoft_azure_iot_node",
+    "name": "Microsoft Azure IoT",
+    "type": "cloud_provider",
+    "country": "United States",
+    "region": "Global",
+    "sector": [
+      "IoT",
+      "cloud",
+      "edge"
+    ],
+    "strategic_role": "Cloud IoT platform",
+    "description": "Cloud IoT and edge services for connected devices and industrial workloads.",
+    "sovereignty_score": 1,
+    "criticality": 5,
+    "market_importance": 5,
+    "france_or_eu_fit": 2,
+    "color": "red",
+    "confidence": "medium",
+    "tags": [
+      "US",
+      "cloud"
+    ],
+    "sources": [
+      "microsoft_azure_iot"
+    ],
+    "fact_status": "known"
+  },
+  {
+    "id": "aws_iot_node",
+    "name": "AWS IoT",
+    "type": "cloud_provider",
+    "country": "United States",
+    "region": "Global",
+    "sector": [
+      "IoT",
+      "cloud",
+      "edge"
+    ],
+    "strategic_role": "Cloud IoT platform",
+    "description": "Cloud IoT services for connected device and industrial workloads.",
+    "sovereignty_score": 1,
+    "criticality": 5,
+    "market_importance": 5,
+    "france_or_eu_fit": 2,
+    "color": "red",
+    "confidence": "medium",
+    "tags": [
+      "US",
+      "cloud"
+    ],
+    "sources": [
+      "aws_iot"
+    ],
+    "fact_status": "known"
+  },
+  {
+    "id": "google_cloud_manufacturing_node",
+    "name": "Google Cloud Manufacturing",
+    "type": "cloud_provider",
+    "country": "United States",
+    "region": "Global",
+    "sector": [
+      "cloud",
+      "data",
+      "AI"
+    ],
+    "strategic_role": "Cloud manufacturing platform",
+    "description": "Google Cloud services for manufacturing data, AI and operations.",
+    "sovereignty_score": 1,
+    "criticality": 4,
+    "market_importance": 5,
+    "france_or_eu_fit": 2,
+    "color": "orange",
+    "confidence": "medium",
+    "tags": [
+      "US",
+      "cloud"
+    ],
+    "sources": [
+      "google_cloud_manufacturing"
+    ],
+    "fact_status": "known"
+  },
+  {
+    "id": "snowflake_manufacturing_node",
+    "name": "Snowflake Manufacturing Data Cloud",
+    "type": "data_platform",
+    "country": "United States",
+    "region": "Global",
+    "sector": [
+      "data cloud",
+      "manufacturing analytics"
+    ],
+    "strategic_role": "Manufacturing data cloud",
+    "description": "Manufacturing data cloud and analytics layer.",
+    "sovereignty_score": 1,
+    "criticality": 4,
+    "market_importance": 4,
+    "france_or_eu_fit": 2,
+    "color": "orange",
+    "confidence": "medium",
+    "tags": [
+      "US",
+      "data"
+    ],
+    "sources": [
+      "snowflake_manufacturing"
+    ],
+    "fact_status": "known"
+  },
+  {
+    "id": "databricks_manufacturing_node",
+    "name": "Databricks Manufacturing Lakehouse",
+    "type": "data_platform",
+    "country": "United States",
+    "region": "Global",
+    "sector": [
+      "data lakehouse",
+      "AI"
+    ],
+    "strategic_role": "Manufacturing data/AI lakehouse",
+    "description": "Manufacturing data and AI platform.",
+    "sovereignty_score": 1,
+    "criticality": 4,
+    "market_importance": 4,
+    "france_or_eu_fit": 2,
+    "color": "orange",
+    "confidence": "medium",
+    "tags": [
+      "US",
+      "data"
+    ],
+    "sources": [
+      "databricks_manufacturing"
+    ],
+    "fact_status": "known"
+  },
+  {
+    "id": "palantir_aip_node",
+    "name": "Palantir AIP / Ontology",
+    "type": "data_platform",
+    "country": "United States",
+    "region": "Global",
+    "sector": [
+      "ontology",
+      "AI",
+      "operations"
+    ],
+    "strategic_role": "Ontology-driven operations AI platform",
+    "description": "AI/ontology platform for enterprise and operational decision-making.",
+    "sovereignty_score": 1,
+    "criticality": 4,
+    "market_importance": 4,
+    "france_or_eu_fit": 3,
+    "color": "orange",
+    "confidence": "medium",
+    "tags": [
+      "US",
+      "ontology"
+    ],
+    "sources": [
+      "palantir_aip"
+    ],
+    "fact_status": "known"
+  },
+  {
+    "id": "c3_ai_node",
+    "name": "C3 AI",
+    "type": "industrial_ai_vendor",
+    "country": "United States",
+    "region": "Global",
+    "sector": [
+      "industrial AI",
+      "reliability"
+    ],
+    "strategic_role": "Enterprise AI applications vendor",
+    "description": "Enterprise AI applications for reliability, supply chain and industrial operations.",
+    "sovereignty_score": 1,
+    "criticality": 4,
+    "market_importance": 4,
+    "france_or_eu_fit": 2,
+    "color": "orange",
+    "confidence": "medium",
+    "tags": [
+      "US",
+      "AI"
+    ],
+    "sources": [
+      "c3_ai"
+    ],
+    "fact_status": "known"
+  },
+  {
+    "id": "tulip_node",
+    "name": "Tulip Interfaces",
+    "type": "frontline_platform",
+    "country": "United States",
+    "region": "Global",
+    "sector": [
+      "frontline operations",
+      "low-code"
+    ],
+    "strategic_role": "Frontline operations platform",
+    "description": "Frontline operations and low-code manufacturing apps.",
+    "sovereignty_score": 2,
+    "criticality": 4,
+    "market_importance": 4,
+    "france_or_eu_fit": 4,
+    "color": "orange",
+    "confidence": "medium",
+    "tags": [
+      "frontline",
+      "low_code"
+    ],
+    "sources": [
+      "tulip"
+    ],
+    "fact_status": "known"
+  },
+  {
+    "id": "maintainx_node",
+    "name": "MaintainX",
+    "type": "maintenance_platform",
+    "country": "United States",
+    "region": "Global",
+    "sector": [
+      "maintenance",
+      "frontline"
+    ],
+    "strategic_role": "Maintenance/frontline operations platform",
+    "description": "CMMS/frontline operations and maintenance software.",
+    "sovereignty_score": 1,
+    "criticality": 4,
+    "market_importance": 4,
+    "france_or_eu_fit": 3,
+    "color": "orange",
+    "confidence": "medium",
+    "tags": [
+      "maintenance"
+    ],
+    "sources": [
+      "maintainx"
+    ],
+    "fact_status": "known"
+  },
+  {
+    "id": "uptake_node",
+    "name": "Uptake",
+    "type": "industrial_ai_vendor",
+    "country": "United States",
+    "region": "Global",
+    "sector": [
+      "predictive maintenance"
+    ],
+    "strategic_role": "Industrial intelligence vendor",
+    "description": "Predictive maintenance and industrial intelligence.",
+    "sovereignty_score": 1,
+    "criticality": 4,
+    "market_importance": 4,
+    "france_or_eu_fit": 2,
+    "color": "orange",
+    "confidence": "medium",
+    "tags": [
+      "predictive"
+    ],
+    "sources": [
+      "uptake"
+    ],
+    "fact_status": "known"
+  },
+  {
+    "id": "cognite_node",
+    "name": "Cognite Data Fusion",
+    "type": "industrial_dataops_vendor",
+    "country": "Norway",
+    "region": "Europe",
+    "sector": [
+      "industrial DataOps"
+    ],
+    "strategic_role": "Industrial data operations platform",
+    "description": "Industrial data contextualization and operations platform.",
+    "sovereignty_score": 5,
+    "criticality": 4,
+    "market_importance": 4,
+    "france_or_eu_fit": 5,
+    "color": "green",
+    "confidence": "medium",
+    "tags": [
+      "Norway",
+      "DataOps"
+    ],
+    "sources": [
+      "cognite"
+    ],
+    "fact_status": "known"
+  },
+  {
+    "id": "litmus_node",
+    "name": "Litmus",
+    "type": "industrial_edge_vendor",
+    "country": "United States",
+    "region": "Global",
+    "sector": [
+      "edge data",
+      "industrial data"
+    ],
+    "strategic_role": "Industrial edge data platform",
+    "description": "Industrial edge data collection and analytics platform.",
+    "sovereignty_score": 2,
+    "criticality": 4,
+    "market_importance": 4,
+    "france_or_eu_fit": 3,
+    "color": "orange",
+    "confidence": "medium",
+    "tags": [
+      "edge"
+    ],
+    "sources": [
+      "litmus"
+    ],
+    "fact_status": "known"
+  },
+  {
+    "id": "highbyte_node",
+    "name": "HighByte",
+    "type": "industrial_dataops_vendor",
+    "country": "United States",
+    "region": "Global",
+    "sector": [
+      "Industrial DataOps",
+      "contextualization"
+    ],
+    "strategic_role": "Industrial DataOps platform",
+    "description": "Industrial data contextualization and data operations platform.",
+    "sovereignty_score": 2,
+    "criticality": 4,
+    "market_importance": 4,
+    "france_or_eu_fit": 4,
+    "color": "orange",
+    "confidence": "medium",
+    "tags": [
+      "DataOps"
+    ],
+    "sources": [
+      "highbyte"
+    ],
+    "fact_status": "known"
+  },
+  {
+    "id": "claroty_node",
+    "name": "Claroty",
+    "type": "ot_security_vendor",
+    "country": "United States/Israel",
+    "region": "Global",
+    "sector": [
+      "OT cybersecurity"
+    ],
+    "strategic_role": "Cyber-physical systems security vendor",
+    "description": "OT asset visibility, cyber-physical systems security and exposure management.",
+    "sovereignty_score": 2,
+    "criticality": 5,
+    "market_importance": 5,
+    "france_or_eu_fit": 3,
+    "color": "red",
+    "confidence": "medium",
+    "tags": [
+      "OT_security"
+    ],
+    "sources": [
+      "claroty"
+    ],
+    "fact_status": "known"
+  },
+  {
+    "id": "dragos_node",
+    "name": "Dragos",
+    "type": "ot_security_vendor",
+    "country": "United States",
+    "region": "Global",
+    "sector": [
+      "OT cybersecurity"
+    ],
+    "strategic_role": "Industrial cybersecurity vendor",
+    "description": "Industrial cybersecurity, OT threat intelligence and incident response.",
+    "sovereignty_score": 2,
+    "criticality": 5,
+    "market_importance": 5,
+    "france_or_eu_fit": 3,
+    "color": "red",
+    "confidence": "medium",
+    "tags": [
+      "OT_security"
+    ],
+    "sources": [
+      "dragos"
+    ],
+    "fact_status": "known"
+  },
+  {
+    "id": "nozomi_node",
+    "name": "Nozomi Networks",
+    "type": "ot_security_vendor",
+    "country": "United States/Switzerland",
+    "region": "Global",
+    "sector": [
+      "OT cybersecurity"
+    ],
+    "strategic_role": "OT/IoT security monitoring vendor",
+    "description": "OT and IoT security monitoring.",
+    "sovereignty_score": 2,
+    "criticality": 5,
+    "market_importance": 5,
+    "france_or_eu_fit": 3,
+    "color": "red",
+    "confidence": "medium",
+    "tags": [
+      "OT_security"
+    ],
+    "sources": [
+      "nozomi"
+    ],
+    "fact_status": "known"
+  },
+  {
+    "id": "armis_node",
+    "name": "Armis",
+    "type": "ot_security_vendor",
+    "country": "United States/Israel",
+    "region": "Global",
+    "sector": [
+      "OT cybersecurity",
+      "asset intelligence"
+    ],
+    "strategic_role": "Cyber exposure and asset intelligence vendor",
+    "description": "Cyber exposure management and asset intelligence for OT/IoT/IT.",
+    "sovereignty_score": 2,
+    "criticality": 5,
+    "market_importance": 5,
+    "france_or_eu_fit": 3,
+    "color": "red",
+    "confidence": "medium",
+    "tags": [
+      "OT_security"
+    ],
+    "sources": [
+      "armis"
+    ],
+    "fact_status": "known"
+  },
+  {
+    "id": "tenable_ot_node",
+    "name": "Tenable OT",
+    "type": "ot_security_vendor",
+    "country": "United States",
+    "region": "Global",
+    "sector": [
+      "OT cybersecurity"
+    ],
+    "strategic_role": "OT exposure management vendor",
+    "description": "OT security and exposure management.",
+    "sovereignty_score": 2,
+    "criticality": 5,
+    "market_importance": 5,
+    "france_or_eu_fit": 3,
+    "color": "red",
+    "confidence": "medium",
+    "tags": [
+      "OT_security"
+    ],
+    "sources": [
+      "tenable_ot"
+    ],
+    "fact_status": "known"
+  },
+  {
+    "id": "brownfield_integration_gap",
+    "name": "Brownfield Integration Gap",
+    "type": "dependency_layer",
+    "country": "Global",
+    "region": "Global",
+    "sector": [
+      "brownfield",
+      "integration"
+    ],
+    "strategic_role": "Legacy OT integration bottleneck",
+    "description": "Factories contain old machines, proprietary protocols, heterogeneous PLCs and manual workflows; integration is expensive and brittle.",
+    "sovereignty_score": 1,
+    "criticality": 5,
+    "market_importance": 5,
+    "france_or_eu_fit": 5,
+    "color": "red",
+    "confidence": "medium",
+    "tags": [
+      "brownfield",
+      "legacy"
+    ],
+    "sources": [
+      "opcfoundation_opcua",
+      "kepware",
+      "rockwell_factorytalk"
+    ],
+    "fact_status": "known"
+  },
+  {
+    "id": "it_ot_semantic_gap",
+    "name": "IT / OT Semantic Gap",
+    "type": "dependency_layer",
+    "country": "Global",
+    "region": "Global",
+    "sector": [
+      "IT/OT",
+      "semantics"
+    ],
+    "strategic_role": "Data-context bottleneck",
+    "description": "Enterprise data teams often lack meaningful asset, process, unit, product and operational context for OT data.",
+    "sovereignty_score": 1,
+    "criticality": 5,
+    "market_importance": 5,
+    "france_or_eu_fit": 5,
+    "color": "red",
+    "confidence": "medium",
+    "tags": [
+      "IT_OT",
+      "semantics"
+    ],
+    "sources": [
+      "cognite",
+      "highbyte",
+      "unified_namespace"
+    ],
+    "fact_status": "known"
+  },
+  {
+    "id": "vendor_lockin_gap",
+    "name": "Industrial Vendor Lock-in",
+    "type": "dependency_layer",
+    "country": "Global",
+    "region": "Global",
+    "sector": [
+      "lock-in"
+    ],
+    "strategic_role": "Portability bottleneck",
+    "description": "Plants often depend on vendor-specific tools, proprietary formats, licenses, protocols and integrator knowledge.",
+    "sovereignty_score": 1,
+    "criticality": 5,
+    "market_importance": 5,
+    "france_or_eu_fit": 5,
+    "color": "red",
+    "confidence": "medium",
+    "tags": [
+      "lock_in"
+    ],
+    "sources": [
+      "opcfoundation_opcua",
+      "ptc_products",
+      "siemens_xcelerator"
+    ],
+    "fact_status": "known"
+  },
+  {
+    "id": "ot_cyber_visibility_gap",
+    "name": "OT Cyber Asset Visibility Gap",
+    "type": "dependency_layer",
+    "country": "Global",
+    "region": "Global",
+    "sector": [
+      "OT cybersecurity"
+    ],
+    "strategic_role": "Asset/inventory bottleneck",
+    "description": "Industrial operators often lack complete OT asset inventory, vulnerability context and secure remote access visibility.",
+    "sovereignty_score": 1,
+    "criticality": 5,
+    "market_importance": 5,
+    "france_or_eu_fit": 5,
+    "color": "red",
+    "confidence": "medium",
+    "tags": [
+      "OT_security",
+      "asset_visibility"
+    ],
+    "sources": [
+      "isa_iec_62443",
+      "claroty",
+      "dragos",
+      "nozomi"
+    ],
+    "fact_status": "known"
+  },
+  {
+    "id": "industrial_data_quality_gap",
+    "name": "Industrial Data Quality Gap",
+    "type": "dependency_layer",
+    "country": "Global",
+    "region": "Global",
+    "sector": [
+      "data quality"
+    ],
+    "strategic_role": "Operational data reliability bottleneck",
+    "description": "Noisy tags, missing metadata, bad timestamps, inconsistent units and poor lineage make industrial analytics unreliable.",
+    "sovereignty_score": 1,
+    "criticality": 5,
+    "market_importance": 5,
+    "france_or_eu_fit": 5,
+    "color": "red",
+    "confidence": "medium",
+    "tags": [
+      "data_quality"
+    ],
+    "sources": [
+      "cognite",
+      "highbyte",
+      "snowflake_manufacturing"
+    ],
+    "fact_status": "known"
+  },
+  {
+    "id": "digital_thread_breakage",
+    "name": "Digital Thread Breakage",
+    "type": "dependency_layer",
+    "country": "Global",
+    "region": "Global",
+    "sector": [
+      "digital thread"
+    ],
+    "strategic_role": "Lifecycle traceability bottleneck",
+    "description": "Requirements, CAD, simulation, manufacturing, quality and service evidence break across tools and organizations.",
+    "sovereignty_score": 1,
+    "criticality": 5,
+    "market_importance": 5,
+    "france_or_eu_fit": 5,
+    "color": "red",
+    "confidence": "medium",
+    "tags": [
+      "digital_thread"
+    ],
+    "sources": [
+      "dassault_3dexperience",
+      "ptc_products",
+      "siemens_xcelerator"
+    ],
+    "fact_status": "known"
+  },
+  {
+    "id": "simulation_to_shopfloor_gap",
+    "name": "Simulation-to-Shopfloor Gap",
+    "type": "dependency_layer",
+    "country": "Global",
+    "region": "Global",
+    "sector": [
+      "simulation",
+      "manufacturing"
+    ],
+    "strategic_role": "Virtual-to-real execution bottleneck",
+    "description": "Simulation and digital twin outputs are often disconnected from MES, PLC, quality and operator workflows.",
+    "sovereignty_score": 2,
+    "criticality": 5,
+    "market_importance": 5,
+    "france_or_eu_fit": 5,
+    "color": "red",
+    "confidence": "medium",
+    "tags": [
+      "simulation",
+      "shopfloor"
+    ],
+    "sources": [
+      "dassault_3dexperience",
+      "siemens_xcelerator",
+      "nvidia_omniverse"
+    ],
+    "fact_status": "known"
+  },
+  {
+    "id": "industrial_ai_trust_gap",
+    "name": "Industrial AI Trust Gap",
+    "type": "dependency_layer",
+    "country": "Global",
+    "region": "Global",
+    "sector": [
+      "AI",
+      "trust"
+    ],
+    "strategic_role": "AI deployment and validation bottleneck",
+    "description": "Industrial AI requires evidence, guardrails, root-cause explanations, safe deployment and operator trust.",
+    "sovereignty_score": 1,
+    "criticality": 5,
+    "market_importance": 5,
+    "france_or_eu_fit": 5,
+    "color": "red",
+    "confidence": "medium",
+    "tags": [
+      "AI",
+      "trust"
+    ],
+    "sources": [
+      "siemens_xcelerator",
+      "palantir_aip",
+      "c3_ai"
+    ],
+    "fact_status": "known"
+  },
+  {
+    "id": "frontline_adoption_gap",
+    "name": "Frontline Adoption Gap",
+    "type": "dependency_layer",
+    "country": "Global",
+    "region": "Global",
+    "sector": [
+      "frontline"
+    ],
+    "strategic_role": "Human workflow bottleneck",
+    "description": "Operator adoption fails when software ignores real shop-floor workflows, offline realities, shift patterns and maintenance habits.",
+    "sovereignty_score": 2,
+    "criticality": 4,
+    "market_importance": 5,
+    "france_or_eu_fit": 5,
+    "color": "orange",
+    "confidence": "medium",
+    "tags": [
+      "frontline"
+    ],
+    "sources": [
+      "tulip",
+      "maintainx",
+      "rockwell_factorytalk"
+    ],
+    "fact_status": "known"
+  },
+  {
+    "id": "industrial_security_compliance_gap",
+    "name": "IEC 62443 Evidence Gap",
+    "type": "dependency_layer",
+    "country": "Global",
+    "region": "Global",
+    "sector": [
+      "security compliance"
+    ],
+    "strategic_role": "Security evidence bottleneck",
+    "description": "IEC 62443 requirements create need for continuous evidence, patch status, segmentation, policies and vendor accountability.",
+    "sovereignty_score": 1,
+    "criticality": 5,
+    "market_importance": 5,
+    "france_or_eu_fit": 5,
+    "color": "red",
+    "confidence": "medium",
+    "tags": [
+      "IEC62443",
+      "compliance"
+    ],
+    "sources": [
+      "isa_iec_62443"
+    ],
+    "fact_status": "known"
+  },
+  {
+    "id": "factory_energy_visibility_gap",
+    "name": "Factory Energy Visibility Gap",
+    "type": "dependency_layer",
+    "country": "Global",
+    "region": "Global",
+    "sector": [
+      "energy",
+      "sustainability"
+    ],
+    "strategic_role": "Energy and emissions visibility bottleneck",
+    "description": "Plants need machine/line/process-level energy and emissions visibility, not only utility bills or corporate reports.",
+    "sovereignty_score": 2,
+    "criticality": 5,
+    "market_importance": 5,
+    "france_or_eu_fit": 5,
+    "color": "orange",
+    "confidence": "medium",
+    "tags": [
+      "energy",
+      "sustainability"
+    ],
+    "sources": [
+      "schneider_ecostruxure",
+      "abb_ability",
+      "siemens_xcelerator"
+    ],
+    "fact_status": "known"
+  },
+  {
+    "id": "industrial_change_management_gap",
+    "name": "Industrial Change Management Gap",
+    "type": "dependency_layer",
+    "country": "Global",
+    "region": "Global",
+    "sector": [
+      "change management"
+    ],
+    "strategic_role": "Operational change-control bottleneck",
+    "description": "Code, recipes, BOMs, PLC programs, machine parameters and process changes often lack unified audit/control.",
+    "sovereignty_score": 1,
+    "criticality": 5,
+    "market_importance": 5,
+    "france_or_eu_fit": 5,
+    "color": "red",
+    "confidence": "medium",
+    "tags": [
+      "change_control"
+    ],
+    "sources": [
+      "ptc_products",
+      "rockwell_factorytalk",
+      "isa_iec_62443"
+    ],
+    "fact_status": "known"
+  },
+  {
+    "id": "eu_ai_stack_ref",
+    "name": "EU AI Stack Reference",
+    "type": "cross_database_reference",
+    "country": "EU",
+    "region": "Europe",
+    "sector": [
+      "AI"
+    ],
+    "strategic_role": "Cross-link to EU AI Stack",
+    "description": "Industrial software layer supports EU AI opportunities through data, deployment, edge, governance and AI factories.",
+    "sovereignty_score": 4,
+    "criticality": 5,
+    "market_importance": 5,
+    "france_or_eu_fit": 5,
+    "color": "blue",
+    "confidence": "medium",
+    "tags": [
+      "cross_db",
+      "AI"
+    ],
+    "sources": [],
+    "fact_status": "known"
+  },
+  {
+    "id": "global_ai_stack_ref",
+    "name": "Global AI Stack Reference",
+    "type": "cross_database_reference",
+    "country": "Global",
+    "region": "Global",
+    "sector": [
+      "AI"
+    ],
+    "strategic_role": "Cross-link to Global AI Stack",
+    "description": "Industrial software layer depends on and feeds global AI stack through industrial data, edge, inference and model routing.",
+    "sovereignty_score": 2,
+    "criticality": 5,
+    "market_importance": 5,
+    "france_or_eu_fit": 5,
+    "color": "blue",
+    "confidence": "medium",
+    "tags": [
+      "cross_db",
+      "AI"
+    ],
+    "sources": [],
+    "fact_status": "known"
+  },
+  {
+    "id": "european_defence_stack_ref",
+    "name": "European Defence Stack Reference",
+    "type": "cross_database_reference",
+    "country": "Europe",
+    "region": "Europe",
+    "sector": [
+      "defence"
+    ],
+    "strategic_role": "Cross-link to European Defence Stack",
+    "description": "Industrial software layer supports defence readiness, supplier visibility, simulation, compliance and secure integration.",
+    "sovereignty_score": 4,
+    "criticality": 5,
+    "market_importance": 5,
+    "france_or_eu_fit": 5,
+    "color": "blue",
+    "confidence": "medium",
+    "tags": [
+      "cross_db",
+      "defence"
+    ],
+    "sources": [],
+    "fact_status": "known"
+  },
+  {
+    "id": "global_aerospace_stack_ref",
+    "name": "Global Aerospace Stack Reference",
+    "type": "cross_database_reference",
+    "country": "Global",
+    "region": "Global",
+    "sector": [
+      "aerospace"
+    ],
+    "strategic_role": "Cross-link to Global Aerospace Stack",
+    "description": "Industrial software layer supports aerospace certification, digital thread, MRO, quality and supplier visibility.",
+    "sovereignty_score": 4,
+    "criticality": 5,
+    "market_importance": 5,
+    "france_or_eu_fit": 5,
+    "color": "blue",
+    "confidence": "medium",
+    "tags": [
+      "cross_db",
+      "aerospace"
+    ],
+    "sources": [],
+    "fact_status": "known"
+  }
+]

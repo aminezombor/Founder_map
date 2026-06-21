@@ -1,0 +1,51 @@
+source_id,title,url,type,notes
+airbus_commercial,Airbus — Commercial Aircraft,https://www.airbus.com/en/products-services/commercial-aircraft,company_official,"Airbus designs, builds and supports commercial aircraft; portfolio includes passenger aircraft, freighters and services."
+airbus_space,Airbus — Space,https://www.airbus.com/en/products-services/space,company_official,"Airbus space portfolio: Earth observation, telecom/navigation satellites, exploration, ground systems, space equipment and support."
+airbus_defence,Airbus — Defence,https://www.airbus.com/en/products-services/defence,company_official,"Airbus defence portfolio: military aircraft, UAS, FCAS, military space, connectivity, intelligence/data."
+boeing_commercial,Boeing — Commercial,https://www.boeing.com/commercial,company_official,"Boeing commercial aircraft portfolio includes 737 MAX, 777, 777X, 787 and freighters."
+boeing_space,Boeing — Space,https://www.boeing.com/space,company_official,"Boeing space systems: satellites, launch/space systems and government space products."
+boeing_services,Boeing — Services,https://www.boeing.com/services,company_official,"Boeing Global Services supports commercial and government aircraft, sustainment and training."
+safran_aerospace,Safran — Aerospace,https://www.safran-group.com/markets/aerospace,company_official,"Safran aerospace portfolio: aircraft engines, equipment, interiors, landing systems, electrical and avionics."
+safran_engines,Safran Aircraft Engines,https://www.safran-group.com/companies/safran-aircraft-engines,company_official,"Safran Aircraft Engines develops, produces and supports aircraft engines."
+cfm,CFM International,https://www.cfmaeroengines.com/,joint_venture_official,CFM International is the 50/50 joint company of GE Aerospace and Safran Aircraft Engines.
+ge_aerospace_commercial,GE Aerospace — Commercial Aircraft Engines & Services,https://www.geaerospace.com/commercial,company_official,GE Aerospace commercial aircraft engines and services.
+rolls_royce_civil,Rolls-Royce — Civil Aerospace,https://www.rolls-royce.com/products-and-services/civil-aerospace.aspx,company_official,Rolls-Royce civil aerospace products and services.
+pratt_whitney,Pratt & Whitney,https://www.prattwhitney.com/,company_official,Aircraft engines and propulsion systems.
+rtx_collins,Collins Aerospace,https://www.collinsaerospace.com/,company_official,"Avionics, aircraft systems, interiors, mission systems and aerospace technology."
+rtx_raytheon,Raytheon,https://www.rtx.com/raytheon,company_official,"RTX business with air, land, sea, space, integrated air defense and advanced technology capabilities."
+honeywell_aerospace,Honeywell Aerospace Technologies,https://www.honeywellaerospace.com/,company_official,"Aerospace products, services, software, avionics, navigation, connectivity, engines/APU support and customer portal."
+thales_avionics,Thales — Aerospace,https://www.thalesgroup.com/en/markets/aerospace,company_official,"Aerospace avionics, connectivity, air traffic management, flight deck and systems."
+leonardo_aeronautics,Leonardo — Aeronautics,https://www.leonardo.com/en/business/aeronautics,company_official,"Leonardo aeronautics portfolio: aircraft, UAVs, aerostructures and support."
+dassault_group,Dassault Aviation — Group,https://www.dassault-aviation.com/en/group/,company_official,Dassault Aviation corporate and aircraft portfolio context.
+embraer,Embraer,https://embraer.com/,company_official,"Brazilian aerospace company producing commercial, executive and defense aircraft."
+comac,COMAC,https://english.comac.cc/,company_official,Chinese commercial aircraft manufacturer.
+bombardier,Bombardier,https://bombardier.com/en,company_official,Business jet manufacturer and services provider.
+gulfstream,Gulfstream Aerospace,https://www.gulfstream.com/,company_official,Business aviation aircraft manufacturer.
+textron_aviation,Textron Aviation,https://txtav.com/,company_official,"Cessna, Beechcraft and Hawker aircraft ecosystem."
+spacex,SpaceX,https://www.spacex.com/,company_official,"Launch, spacecraft and Starlink satellite constellation company."
+blue_origin,Blue Origin,https://www.blueorigin.com/,company_official,"Launch vehicles, engines and space systems."
+rocket_lab,Rocket Lab,https://www.rocketlabusa.com/,company_official,Launch and space systems company.
+arianespace,Arianespace,https://www.arianespace.com/,company_official,European launch services provider.
+arianegroup,ArianeGroup,https://www.ariane.group/en/,company_official,European space launch and propulsion company.
+esa,European Space Agency,https://www.esa.int/,official_space_agency,European intergovernmental space agency.
+easa,EASA — European Union Aviation Safety Agency,https://www.easa.europa.eu/en,regulator_official,European aviation safety regulator.
+faa,FAA,https://www.faa.gov/,regulator_official,US aviation regulator.
+icao,ICAO,https://www.icao.int/,international_body,International Civil Aviation Organization.
+eurocontrol,EUROCONTROL,https://www.eurocontrol.int/,official_atm,European air traffic management organization.
+iata,IATA,https://www.iata.org/,industry_body,International Air Transport Association.
+nasa,NASA,https://www.nasa.gov/,space_agency,US space agency.
+eutelsat,Eutelsat Group,https://www.eutelsat.com/,company_official,"European satellite operator, including GEO/LEO connectivity after OneWeb combination."
+ses,SES,https://www.ses.com/,company_official,Satellite communications provider.
+intelsat,Intelsat,https://www.intelsat.com/,company_official,Satellite communications provider.
+thales_alenia_space,Thales Alenia Space,https://www.thalesaleniaspace.com/,company_official,Satellite systems and space infrastructure joint venture.
+ohb,OHB,https://www.ohb.de/en/,company_official,German space and technology group.
+mtu,MTU Aero Engines,https://www.mtu.de/,company_official,German engine manufacturer and MRO provider.
+spirit_aerosystems,Spirit AeroSystems,https://www.spiritaero.com/,company_official,Aerostructures supplier.
+gkn_aerospace,GKN Aerospace,https://www.gknaerospace.com/,company_official,Aerospace systems and structures supplier.
+liebherr_aerospace,Liebherr Aerospace,https://www.liebherr.com/en/int/products/aerospace-and-transportation-systems/aerospace/aerospace.html,company_official,"Aircraft systems supplier including landing gear, flight control, air management and actuation systems."
+parker_aerospace,Parker Aerospace,https://www.parker.com/us/en/divisions/aerospace-group.html,company_official,Motion and control systems for aerospace.
+moog_aircraft,Moog Aircraft,https://www.moog.com/markets/aircraft.html,company_official,Flight control and actuation systems.
+satcom_direct,Satcom Direct,https://www.satcomdirect.com/,company_official,Aviation connectivity and data services.
+flightradar24,Flightradar24,https://www.flightradar24.com/,company_official,Flight tracking data service.
+sita,SITA,https://www.sita.aero/,company_official,Air transport IT and communications provider.
+aerospike_placeholder,Placeholder — Aero supply chain sources to enrich,,internal_placeholder,Several supplier relations should be enriched with annual reports and official partner pages in v0.2.

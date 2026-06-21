@@ -5,7 +5,7 @@ Extend the Strategic Dependency Graph UI to support the European Defence Stack d
 Use:
 
 ```text
-strategic-dependency-graph/data/european-defence-stack/v0.1/european_defence_stack_graph_v0.json
+data/european-defence-stack/v0.1/european_defence_stack_graph_v0.json
 ```
 
 ## Required dataset selector

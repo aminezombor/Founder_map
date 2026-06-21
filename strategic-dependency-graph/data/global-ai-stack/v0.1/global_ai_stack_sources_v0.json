@@ -1,0 +1,310 @@
+[
+  {
+    "source_id": "openai_business",
+    "title": "OpenAI — Business",
+    "url": "https://openai.com/business/",
+    "type": "company_official",
+    "notes": "OpenAI business/API platform, enterprise controls, multimodal models and GPT-5 family references."
+  },
+  {
+    "source_id": "anthropic_claude",
+    "title": "Claude by Anthropic",
+    "url": "https://www.anthropic.com/claude",
+    "type": "company_official",
+    "notes": "Claude product, models, platform, enterprise/government/industry use cases."
+  },
+  {
+    "source_id": "google_vertex_gemini",
+    "title": "Google Cloud — Gemini Enterprise Agent Platform / Vertex AI",
+    "url": "https://cloud.google.com/products/gemini-enterprise-agent-platform",
+    "type": "company_official",
+    "notes": "Google Cloud AI platform and Gemini enterprise/agent platform."
+  },
+  {
+    "source_id": "meta_llama",
+    "title": "Meta AI — Llama",
+    "url": "https://www.llama.com/",
+    "type": "company_official",
+    "notes": "Meta Llama model family official site. Some crawlers may require auth; keep as source URL."
+  },
+  {
+    "source_id": "aws_bedrock",
+    "title": "AWS — Amazon Bedrock",
+    "url": "https://aws.amazon.com/bedrock/",
+    "type": "company_official",
+    "notes": "AWS generative AI application/agent platform with model choice, guardrails, customization and enterprise security."
+  },
+  {
+    "source_id": "azure_openai",
+    "title": "Microsoft Azure — Azure OpenAI in Foundry Models",
+    "url": "https://azure.microsoft.com/en-us/products/ai-foundry/models/openai/",
+    "type": "company_official",
+    "notes": "Azure OpenAI / Foundry model offering."
+  },
+  {
+    "source_id": "nvidia_datacenter",
+    "title": "NVIDIA — Data Center",
+    "url": "https://www.nvidia.com/en-us/data-center/",
+    "type": "company_official",
+    "notes": "NVIDIA data center accelerated computing platform."
+  },
+  {
+    "source_id": "nvidia_hgx",
+    "title": "NVIDIA — HGX",
+    "url": "https://www.nvidia.com/en-us/data-center/hgx/",
+    "type": "company_official",
+    "notes": "NVIDIA HGX platform for AI/HPC systems."
+  },
+  {
+    "source_id": "amd_mi300",
+    "title": "AMD — Instinct MI300 Series",
+    "url": "https://www.amd.com/en/products/accelerators/instinct/mi300.html",
+    "type": "company_official",
+    "notes": "AMD Instinct data center AI/HPC accelerators."
+  },
+  {
+    "source_id": "intel_gaudi",
+    "title": "Intel — Gaudi AI Accelerators",
+    "url": "https://www.intel.com/content/www/us/en/products/details/processors/ai-accelerators/gaudi.html",
+    "type": "company_official",
+    "notes": "Intel Gaudi AI accelerator product family."
+  },
+  {
+    "source_id": "tsmc",
+    "title": "TSMC — Official site",
+    "url": "https://www.tsmc.com/english",
+    "type": "company_official",
+    "notes": "Dedicated semiconductor foundry."
+  },
+  {
+    "source_id": "asml_euv",
+    "title": "ASML — EUV Lithography Systems",
+    "url": "https://www.asml.com/en/products/euv-lithography-systems",
+    "type": "company_official",
+    "notes": "EUV lithography systems for advanced chip manufacturing."
+  },
+  {
+    "source_id": "deepseek",
+    "title": "DeepSeek — Official site",
+    "url": "https://www.deepseek.com/",
+    "type": "company_official",
+    "notes": "DeepSeek models, chat, API platform and open research links."
+  },
+  {
+    "source_id": "qwen",
+    "title": "Alibaba Cloud — Qwen",
+    "url": "https://www.alibabacloud.com/en/solutions/generative-ai/qwen",
+    "type": "company_official",
+    "notes": "Qwen model family, multilingual/multimodal capabilities, Alibaba Cloud deployment and open-source community links."
+  },
+  {
+    "source_id": "baidu_ai",
+    "title": "Baidu AI Open Platform",
+    "url": "https://ai.baidu.com/",
+    "type": "company_official",
+    "notes": "Baidu AI products and open platform."
+  },
+  {
+    "source_id": "xai",
+    "title": "xAI — Official site",
+    "url": "https://x.ai/",
+    "type": "company_official",
+    "notes": "Grok, API, business/government offers, multimodal frontier models and Colossus positioning."
+  },
+  {
+    "source_id": "cohere",
+    "title": "Cohere — Official site",
+    "url": "https://cohere.com/",
+    "type": "company_official",
+    "notes": "Enterprise AI models, retrieval/rerank/embed, private deployments and industry solutions."
+  },
+  {
+    "source_id": "mistral",
+    "title": "Mistral AI — Official site",
+    "url": "https://mistral.ai/",
+    "type": "company_official",
+    "notes": "European frontier AI models, assistants, agents and enterprise services."
+  },
+  {
+    "source_id": "coreweave",
+    "title": "CoreWeave — Official site",
+    "url": "https://www.coreweave.com/",
+    "type": "company_official",
+    "notes": "AI-native cloud platform, GPU compute, managed Kubernetes, AI data centers and AI workload infrastructure."
+  },
+  {
+    "source_id": "lambda",
+    "title": "Lambda — Official site",
+    "url": "https://lambda.ai/",
+    "type": "company_official",
+    "notes": "AI cloud / GPU infrastructure provider."
+  },
+  {
+    "source_id": "nebius",
+    "title": "Nebius — Official site",
+    "url": "https://nebius.com/",
+    "type": "company_official",
+    "notes": "AI cloud and infrastructure provider."
+  },
+  {
+    "source_id": "crusoe",
+    "title": "Crusoe — Official site",
+    "url": "https://www.crusoe.ai/",
+    "type": "company_official",
+    "notes": "AI factory company and renewable/energy-aware AI infrastructure."
+  },
+  {
+    "source_id": "perplexity_enterprise",
+    "title": "Perplexity Enterprise",
+    "url": "https://www.perplexity.ai/enterprise",
+    "type": "company_official",
+    "notes": "Enterprise AI research/search platform, internal knowledge, citations, security claims."
+  },
+  {
+    "source_id": "humain_reuters",
+    "title": "Reuters — Saudi Arabia launches AI company Humain under PIF",
+    "url": "https://www.reuters.com/world/middle-east/saudi-arabia-launches-company-develop-artificial-intelligence-under-pif-2025-05-12/",
+    "type": "news_reputable",
+    "notes": "Humain launch, AI infrastructure, cloud, data centers, Arabic multimodal LLM."
+  },
+  {
+    "source_id": "g42",
+    "title": "G42 — Official site",
+    "url": "https://www.g42.ai/",
+    "type": "company_official",
+    "notes": "UAE AI holding company / AI infrastructure and vertical AI ecosystem."
+  },
+  {
+    "source_id": "eu_ai_factories",
+    "title": "European Commission — AI Factories",
+    "url": "https://digital-strategy.ec.europa.eu/en/policies/ai-factories",
+    "type": "official_policy",
+    "notes": "EU AI Factories network and AI Gigafactories context."
+  },
+  {
+    "source_id": "eu_chips_act",
+    "title": "European Commission — European Chips Act",
+    "url": "https://digital-strategy.ec.europa.eu/en/policies/european-chips-act",
+    "type": "official_policy",
+    "notes": "EU semiconductor supply-chain resilience and strategic autonomy context."
+  },
+  {
+    "source_id": "eu_ai_act",
+    "title": "European Commission — AI Act",
+    "url": "https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai",
+    "type": "official_regulation",
+    "notes": "EU AI regulatory framework."
+  },
+  {
+    "source_id": "huggingface",
+    "title": "Hugging Face",
+    "url": "https://huggingface.co/",
+    "type": "company_official",
+    "notes": "AI model/dataset/application community platform."
+  },
+  {
+    "source_id": "pytorch",
+    "title": "PyTorch",
+    "url": "https://pytorch.org/",
+    "type": "open_source_project",
+    "notes": "Open source deep learning framework."
+  },
+  {
+    "source_id": "tensorflow",
+    "title": "TensorFlow",
+    "url": "https://www.tensorflow.org/",
+    "type": "open_source_project",
+    "notes": "Open source machine learning platform."
+  },
+  {
+    "source_id": "kubernetes",
+    "title": "Kubernetes",
+    "url": "https://kubernetes.io/",
+    "type": "open_source_project",
+    "notes": "Open source container orchestration."
+  },
+  {
+    "source_id": "vllm",
+    "title": "vLLM",
+    "url": "https://vllm.ai/",
+    "type": "open_source_project",
+    "notes": "Open-source high-throughput LLM serving engine."
+  },
+  {
+    "source_id": "triton_inference",
+    "title": "NVIDIA Triton Inference Server",
+    "url": "https://developer.nvidia.com/triton-inference-server",
+    "type": "software_platform",
+    "notes": "Inference serving software."
+  },
+  {
+    "source_id": "ray",
+    "title": "Ray",
+    "url": "https://www.ray.io/",
+    "type": "open_source_project",
+    "notes": "Distributed AI/ML workload framework."
+  },
+  {
+    "source_id": "mlflow",
+    "title": "MLflow",
+    "url": "https://mlflow.org/",
+    "type": "open_source_project",
+    "notes": "ML lifecycle platform."
+  },
+  {
+    "source_id": "wandb",
+    "title": "Weights & Biases",
+    "url": "https://wandb.ai/",
+    "type": "company_official",
+    "notes": "ML experiment tracking and model development tooling."
+  },
+  {
+    "source_id": "databricks_mosaic",
+    "title": "Databricks Mosaic AI",
+    "url": "https://www.databricks.com/product/machine-learning",
+    "type": "company_official",
+    "notes": "Enterprise AI/ML platform and Mosaic AI tooling."
+  },
+  {
+    "source_id": "snowflake_cortex",
+    "title": "Snowflake Cortex AI",
+    "url": "https://www.snowflake.com/en/data-cloud/cortex/",
+    "type": "company_official",
+    "notes": "Enterprise data cloud AI layer."
+  },
+  {
+    "source_id": "oracle_ai",
+    "title": "Oracle Cloud Infrastructure AI",
+    "url": "https://www.oracle.com/artificial-intelligence/",
+    "type": "company_official",
+    "notes": "Oracle AI and cloud infrastructure services."
+  },
+  {
+    "source_id": "ibm_watsonx",
+    "title": "IBM watsonx",
+    "url": "https://www.ibm.com/watsonx",
+    "type": "company_official",
+    "notes": "IBM enterprise AI and data platform."
+  },
+  {
+    "source_id": "salesforce_einstein",
+    "title": "Salesforce Einstein",
+    "url": "https://www.salesforce.com/artificial-intelligence/",
+    "type": "company_official",
+    "notes": "Salesforce AI platform."
+  },
+  {
+    "source_id": "sap_ai",
+    "title": "SAP Business AI",
+    "url": "https://www.sap.com/products/artificial-intelligence.html",
+    "type": "company_official",
+    "notes": "SAP business AI for enterprise processes."
+  },
+  {
+    "source_id": "servicenow_ai",
+    "title": "ServiceNow AI",
+    "url": "https://www.servicenow.com/products/ai.html",
+    "type": "company_official",
+    "notes": "Enterprise workflow AI and agents."
+  }
+]

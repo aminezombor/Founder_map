@@ -1,0 +1,317 @@
+[
+  {
+    "source_id": "edis",
+    "title": "European Commission — EDIS | Our common defence industrial strategy",
+    "url": "https://defence-industry-space.ec.europa.eu/eu-defence-industry/edis-our-common-defence-industrial-strategy_en",
+    "type": "official_strategy",
+    "notes": "EDIS sets a vision for European defence industrial policy until 2035 and emphasizes strengthening EDTIB, readiness, collaborative investment and strategic partnerships."
+  },
+  {
+    "source_id": "edf",
+    "title": "European Commission — European Defence Fund",
+    "url": "https://defence-industry-space.ec.europa.eu/eu-defence-industry/european-defence-fund-edf-official-webpage-european-commission_en",
+    "type": "official_funding",
+    "notes": "EDF supports collaborative defence research and development across EU member states; nearly €7.3B budget for 2021-2027."
+  },
+  {
+    "source_id": "edip",
+    "title": "European Commission — EDIP | Forging Europe's Defence",
+    "url": "https://defence-industry-space.ec.europa.eu/eu-defence-industry/edip-future-defence-investment_en",
+    "type": "official_policy",
+    "notes": "European Defence Industry Programme policy context; may need enrichment when final regulation/source page is stable."
+  },
+  {
+    "source_id": "eda",
+    "title": "European Defence Agency",
+    "url": "https://eda.europa.eu/",
+    "type": "official_agency",
+    "notes": "European Defence Agency coordinates capability development, defence research, training and collaborative defence initiatives."
+  },
+  {
+    "source_id": "card",
+    "title": "European Defence Agency — Coordinated Annual Review on Defence",
+    "url": "https://eda.europa.eu/what-we-do/all-activities/activities-search/coordinated-annual-review-on-defence-(card)",
+    "type": "official_assessment",
+    "notes": "CARD monitors European defence capability landscape and collaboration opportunities."
+  },
+  {
+    "source_id": "eudis",
+    "title": "EUDIS — EU Defence Innovation Scheme",
+    "url": "https://eudis.europa.eu/",
+    "type": "official_innovation",
+    "notes": "EU defence innovation scheme supporting startups, SMEs and disruptive defence technologies."
+  },
+  {
+    "source_id": "pesco",
+    "title": "PESCO — Permanent Structured Cooperation",
+    "url": "https://www.pesco.europa.eu/",
+    "type": "official_program",
+    "notes": "EU framework for defence cooperation projects among member states."
+  },
+  {
+    "source_id": "occar",
+    "title": "OCCAR — Organisation for Joint Armament Cooperation",
+    "url": "https://www.occar.int/",
+    "type": "official_program_management",
+    "notes": "European joint armament programme management organization."
+  },
+  {
+    "source_id": "nato_diana",
+    "title": "NATO DIANA",
+    "url": "https://www.diana.nato.int/",
+    "type": "official_innovation",
+    "notes": "NATO Defence Innovation Accelerator for the North Atlantic."
+  },
+  {
+    "source_id": "france_dga",
+    "title": "Direction générale de l'armement — DGA",
+    "url": "https://www.defense.gouv.fr/dga",
+    "type": "official_procurement",
+    "notes": "French armament procurement and technology agency."
+  },
+  {
+    "source_id": "aid_france",
+    "title": "Agence de l'innovation de défense",
+    "url": "https://www.defense.gouv.fr/aid",
+    "type": "official_innovation",
+    "notes": "French Defence Innovation Agency."
+  },
+  {
+    "source_id": "france2030",
+    "title": "France 2030",
+    "url": "https://www.info.gouv.fr/grand-dossier/france-2030-en/understanding-france-2030",
+    "type": "official_public_program",
+    "notes": "French strategic investment plan, useful for dual-use industrial/technology lens."
+  },
+  {
+    "source_id": "airbus_defence",
+    "title": "Airbus — Defence",
+    "url": "https://www.airbus.com/en/products-services/defence",
+    "type": "company_official",
+    "notes": "Airbus defence portfolio includes military aircraft, UAS, FCAS, military space, connectivity, intelligence/data and Multi-Domain Combat Cloud."
+  },
+  {
+    "source_id": "airbus_space",
+    "title": "Airbus — Space",
+    "url": "https://www.airbus.com/en/products-services/space",
+    "type": "company_official",
+    "notes": "Airbus space portfolio."
+  },
+  {
+    "source_id": "thales_defence",
+    "title": "Thales — Defence and Security",
+    "url": "https://www.thalesgroup.com/en/markets/defence-and-security",
+    "type": "company_official",
+    "notes": "Thales defence/security portfolio; sensors, cybersecurity, communications, C4ISR, avionics, space and naval systems."
+  },
+  {
+    "source_id": "leonardo_defence",
+    "title": "Leonardo — Defence & Security",
+    "url": "https://www.leonardo.com/en/markets/defence-security",
+    "type": "company_official",
+    "notes": "Leonardo defence/security portfolio: aircraft, helicopters, electronics, sensors, space and cyber/security."
+  },
+  {
+    "source_id": "rheinmetall_defence",
+    "title": "Rheinmetall — Defence",
+    "url": "https://www.rheinmetall.com/en/products/defence",
+    "type": "company_official",
+    "notes": "Rheinmetall defence portfolio: vehicles, weapons/ammunition, air defence, electronics and soldier systems."
+  },
+  {
+    "source_id": "mbda",
+    "title": "MBDA",
+    "url": "https://www.mbda-systems.com/",
+    "type": "company_official",
+    "notes": "European missile systems company; complex weapon systems, air defence, deep strike, force protection and air dominance products."
+  },
+  {
+    "source_id": "dassault_defense",
+    "title": "Dassault Aviation — Defense",
+    "url": "https://www.dassault-aviation.com/en/defense/",
+    "type": "company_official",
+    "notes": "Dassault defense aircraft and Rafale ecosystem."
+  },
+  {
+    "source_id": "safran_defense",
+    "title": "Safran — Defense",
+    "url": "https://www.safran-group.com/markets/defense",
+    "type": "company_official",
+    "notes": "Safran defence markets: optronics, navigation, electronics, propulsion and aircraft equipment."
+  },
+  {
+    "source_id": "naval_group",
+    "title": "Naval Group",
+    "url": "https://www.naval-group.com/en",
+    "type": "company_official",
+    "notes": "French naval defence group: submarines, surface ships, combat systems, services."
+  },
+  {
+    "source_id": "knds",
+    "title": "KNDS",
+    "url": "https://www.knds.com/",
+    "type": "company_official",
+    "notes": "European land systems company formed by Krauss-Maffei Wegmann and Nexter; tanks, artillery and land systems."
+  },
+  {
+    "source_id": "bae_systems",
+    "title": "BAE Systems",
+    "url": "https://www.baesystems.com/en/our-company/our-businesses",
+    "type": "company_official",
+    "notes": "UK-based defence, aerospace and security company."
+  },
+  {
+    "source_id": "saab",
+    "title": "Saab",
+    "url": "https://www.saab.com/products",
+    "type": "company_official",
+    "notes": "Swedish defence and security company: aeronautics, surveillance, naval, land and advanced systems."
+  },
+  {
+    "source_id": "indra",
+    "title": "Indra",
+    "url": "https://www.indracompany.com/en/defence-security",
+    "type": "company_official",
+    "notes": "Spanish defence/security and technology company."
+  },
+  {
+    "source_id": "hensoldt",
+    "title": "Hensoldt",
+    "url": "https://www.hensoldt.net/",
+    "type": "company_official",
+    "notes": "German sensor solutions company for defence and security."
+  },
+  {
+    "source_id": "kongsberg",
+    "title": "Kongsberg Defence & Aerospace",
+    "url": "https://www.kongsberg.com/kda/",
+    "type": "company_official",
+    "notes": "Norwegian defence/aerospace company: missiles, air defence, space, naval and command systems."
+  },
+  {
+    "source_id": "diehl_defence",
+    "title": "Diehl Defence",
+    "url": "https://www.diehl.com/defence/en/",
+    "type": "company_official",
+    "notes": "German defence company with air defence, guided missiles, ammunition and protection systems."
+  },
+  {
+    "source_id": "fincantieri",
+    "title": "Fincantieri — Naval Vessels",
+    "url": "https://www.fincantieri.com/en/products-and-services/naval-vessels/",
+    "type": "company_official",
+    "notes": "Italian naval shipbuilding and systems."
+  },
+  {
+    "source_id": "patria",
+    "title": "Patria",
+    "url": "https://www.patriagroup.com/",
+    "type": "company_official",
+    "notes": "Finnish defence and technology company: vehicles, maintenance, lifecycle support and systems."
+  },
+  {
+    "source_id": "bittium",
+    "title": "Bittium Defence & Security",
+    "url": "https://www.bittium.com/defense-security/",
+    "type": "company_official",
+    "notes": "Finnish secure communications and defence/security systems."
+  },
+  {
+    "source_id": "rohde_schwarz_defence",
+    "title": "Rohde & Schwarz — Defence",
+    "url": "https://www.rohde-schwarz.com/solutions/aerospace-defense-security/defense/defense_229218.html",
+    "type": "company_official",
+    "notes": "Secure communications, test and measurement, electronic warfare and monitoring."
+  },
+  {
+    "source_id": "helsing",
+    "title": "Helsing",
+    "url": "https://helsing.ai/",
+    "type": "company_official",
+    "notes": "European software and AI defence company."
+  },
+  {
+    "source_id": "quantum_systems",
+    "title": "Quantum Systems",
+    "url": "https://quantum-systems.com/",
+    "type": "company_official",
+    "notes": "German aerial intelligence / unmanned systems company."
+  },
+  {
+    "source_id": "tekever",
+    "title": "TEKEVER",
+    "url": "https://www.tekever.com/",
+    "type": "company_official",
+    "notes": "Portuguese unmanned systems and surveillance company."
+  },
+  {
+    "source_id": "arx_robotics",
+    "title": "ARX Robotics",
+    "url": "https://www.arx-robotics.com/",
+    "type": "company_official",
+    "notes": "German defence robotics and autonomous ground systems startup."
+  },
+  {
+    "source_id": "unseenlabs",
+    "title": "Unseenlabs",
+    "url": "https://unseenlabs.space/",
+    "type": "company_official",
+    "notes": "French maritime surveillance by space-based RF detection."
+  },
+  {
+    "source_id": "preligens",
+    "title": "Preligens / Safran AI",
+    "url": "https://www.safran.ai/",
+    "type": "company_official",
+    "notes": "AI for intelligence and geospatial analysis; now associated with Safran AI."
+  },
+  {
+    "source_id": "delair",
+    "title": "Delair",
+    "url": "https://delair.aero/",
+    "type": "company_official",
+    "notes": "French drone and aerial intelligence company."
+  },
+  {
+    "source_id": "exotrail",
+    "title": "Exotrail",
+    "url": "https://www.exotrail.com/",
+    "type": "company_official",
+    "notes": "French space mobility company."
+  },
+  {
+    "source_id": "harfanglab",
+    "title": "HarfangLab",
+    "url": "https://harfanglab.io/",
+    "type": "company_official",
+    "notes": "French endpoint detection and cybersecurity company."
+  },
+  {
+    "source_id": "sentrycs",
+    "title": "Sentrycs",
+    "url": "https://sentrycs.com/",
+    "type": "company_official",
+    "notes": "Counter-drone cyber/RF detection and mitigation company."
+  },
+  {
+    "source_id": "iris2",
+    "title": "European Commission — IRIS²",
+    "url": "https://defence-industry-space.ec.europa.eu/eu-space/iris2-secure-connectivity_en",
+    "type": "official_space_program",
+    "notes": "EU secure connectivity satellite programme."
+  },
+  {
+    "source_id": "galileo_prs",
+    "title": "EU Agency for the Space Programme — Galileo PRS",
+    "url": "https://www.euspa.europa.eu/eu-space-programme/galileo/services/prs",
+    "type": "official_space_program",
+    "notes": "Galileo Public Regulated Service for government-authorised users."
+  },
+  {
+    "source_id": "govsatcom",
+    "title": "European Commission — GOVSATCOM",
+    "url": "https://defence-industry-space.ec.europa.eu/eu-space/govsatcom_en",
+    "type": "official_space_program",
+    "notes": "EU Governmental Satellite Communications."
+  }
+]

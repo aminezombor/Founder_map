@@ -1,0 +1,1890 @@
+[
+  {
+    "id": "global_ai_stack",
+    "name": "Global AI Stack",
+    "type": "sector_view",
+    "country": "Global",
+    "region": "Global",
+    "sector": [
+      "AI"
+    ],
+    "strategic_role": "Top-level strategic view",
+    "description": "The worldwide AI stack: models, cloud, compute, chips, data, distribution, tooling, regulation and opportunity signals.",
+    "sovereignty_score": 2,
+    "criticality": 5,
+    "market_importance": 5,
+    "france_or_eu_fit": 4,
+    "color": "blue",
+    "confidence": [
+      "view",
+      "global"
+    ],
+    "tags": [],
+    "sources": [],
+    "fact_status": "known"
+  },
+  {
+    "id": "frontier_model_layer",
+    "name": "Frontier Model Layer",
+    "type": "capability_layer",
+    "country": "",
+    "region": "Global",
+    "sector": [
+      "AI models"
+    ],
+    "strategic_role": "Foundation/frontier model layer",
+    "description": "Closed and open-weight frontier model providers.",
+    "sovereignty_score": 1,
+    "criticality": 5,
+    "market_importance": 5,
+    "france_or_eu_fit": 4,
+    "color": "red",
+    "confidence": [
+      "models",
+      "frontier"
+    ],
+    "tags": [],
+    "sources": [],
+    "fact_status": "known"
+  },
+  {
+    "id": "ai_cloud_platform_layer",
+    "name": "AI Cloud / Model Platform Layer",
+    "type": "capability_layer",
+    "country": "",
+    "region": "Global",
+    "sector": [
+      "cloud",
+      "AI platform"
+    ],
+    "strategic_role": "Cloud AI application layer",
+    "description": "Cloud platforms hosting models, agents, guardrails, enterprise AI APIs and managed infrastructure.",
+    "sovereignty_score": 1,
+    "criticality": 5,
+    "market_importance": 5,
+    "france_or_eu_fit": 4,
+    "color": "red",
+    "confidence": [
+      "cloud",
+      "platform"
+    ],
+    "tags": [],
+    "sources": [],
+    "fact_status": "known"
+  },
+  {
+    "id": "gpu_compute_layer",
+    "name": "GPU / Accelerator Compute Layer",
+    "type": "capability_layer",
+    "country": "",
+    "region": "Global",
+    "sector": [
+      "AI infrastructure",
+      "chips"
+    ],
+    "strategic_role": "Compute bottleneck layer",
+    "description": "High-end GPUs, accelerators, AI superclusters and AI-specific cloud capacity.",
+    "sovereignty_score": 1,
+    "criticality": 5,
+    "market_importance": 5,
+    "france_or_eu_fit": 5,
+    "color": "red",
+    "confidence": [
+      "compute",
+      "bottleneck"
+    ],
+    "tags": [],
+    "sources": [],
+    "fact_status": "known"
+  },
+  {
+    "id": "chip_supply_chain_layer",
+    "name": "Advanced Chip Supply Chain",
+    "type": "capability_layer",
+    "country": "",
+    "region": "Global",
+    "sector": [
+      "chips",
+      "semiconductor"
+    ],
+    "strategic_role": "Semiconductor dependency layer",
+    "description": "AI accelerators depend on HBM, foundries, lithography, packaging, networking and export controls.",
+    "sovereignty_score": 1,
+    "criticality": 5,
+    "market_importance": 5,
+    "france_or_eu_fit": 5,
+    "color": "red",
+    "confidence": [
+      "chips",
+      "supply_chain"
+    ],
+    "tags": [],
+    "sources": [],
+    "fact_status": "known"
+  },
+  {
+    "id": "ai_data_center_energy_layer",
+    "name": "AI Data Center / Energy Layer",
+    "type": "capability_layer",
+    "country": "",
+    "region": "Global",
+    "sector": [
+      "data center",
+      "energy"
+    ],
+    "strategic_role": "Physical AI infrastructure layer",
+    "description": "Power, cooling, land, networking and grid connection for AI data centers and AI factories.",
+    "sovereignty_score": 1,
+    "criticality": 5,
+    "market_importance": 5,
+    "france_or_eu_fit": 5,
+    "color": "red",
+    "confidence": [
+      "data_center",
+      "energy"
+    ],
+    "tags": [],
+    "sources": [],
+    "fact_status": "known"
+  },
+  {
+    "id": "model_distribution_layer",
+    "name": "Model Distribution / Registry Layer",
+    "type": "software_platform",
+    "country": "",
+    "region": "Global",
+    "sector": [
+      "AI software supply chain"
+    ],
+    "strategic_role": "Model/dataset registry layer",
+    "description": "Model hubs, package registries and distribution paths for open models, datasets and AI artifacts.",
+    "sovereignty_score": 2,
+    "criticality": 5,
+    "market_importance": 5,
+    "france_or_eu_fit": 4,
+    "color": "orange",
+    "confidence": [
+      "model_hub",
+      "supply_chain"
+    ],
+    "tags": [],
+    "sources": [],
+    "fact_status": "known"
+  },
+  {
+    "id": "ai_serving_inference_layer",
+    "name": "AI Serving / Inference Runtime Layer",
+    "type": "software_platform",
+    "country": "",
+    "region": "Global",
+    "sector": [
+      "AI infrastructure"
+    ],
+    "strategic_role": "Model serving runtime layer",
+    "description": "Software that determines latency, throughput, cost and deployment reliability.",
+    "sovereignty_score": 2,
+    "criticality": 5,
+    "market_importance": 5,
+    "france_or_eu_fit": 5,
+    "color": "orange",
+    "confidence": [
+      "serving",
+      "inference"
+    ],
+    "tags": [],
+    "sources": [],
+    "fact_status": "known"
+  },
+  {
+    "id": "ai_tooling_observability_layer",
+    "name": "AI Tooling / Observability Layer",
+    "type": "software_platform",
+    "country": "",
+    "region": "Global",
+    "sector": [
+      "MLOps",
+      "AI platform"
+    ],
+    "strategic_role": "Operations layer",
+    "description": "Training orchestration, observability, evaluation, experiment tracking, deployment, monitoring and governance.",
+    "sovereignty_score": 2,
+    "criticality": 4,
+    "market_importance": 5,
+    "france_or_eu_fit": 5,
+    "color": "orange",
+    "confidence": [
+      "MLOps",
+      "observability"
+    ],
+    "tags": [],
+    "sources": [],
+    "fact_status": "known"
+  },
+  {
+    "id": "ai_safety_governance_layer",
+    "name": "AI Safety / Governance / Compliance",
+    "type": "capability_layer",
+    "country": "",
+    "region": "Global",
+    "sector": [
+      "regulation",
+      "security"
+    ],
+    "strategic_role": "Safety/regulatory layer",
+    "description": "Regulation, model risk management, security, compliance, evaluation, audit and policy constraints.",
+    "sovereignty_score": 3,
+    "criticality": 5,
+    "market_importance": 5,
+    "france_or_eu_fit": 5,
+    "color": "blue",
+    "confidence": [
+      "safety",
+      "governance"
+    ],
+    "tags": [],
+    "sources": [],
+    "fact_status": "known"
+  },
+  {
+    "id": "training_data_layer",
+    "name": "Training Data / Data Rights Layer",
+    "type": "capability_layer",
+    "country": "",
+    "region": "Global",
+    "sector": [
+      "data"
+    ],
+    "strategic_role": "Data layer",
+    "description": "High-quality data, proprietary datasets, synthetic data, licensing, privacy and data governance.",
+    "sovereignty_score": 2,
+    "criticality": 5,
+    "market_importance": 5,
+    "france_or_eu_fit": 5,
+    "color": "orange",
+    "confidence": [
+      "data",
+      "rights"
+    ],
+    "tags": [],
+    "sources": [],
+    "fact_status": "known"
+  },
+  {
+    "id": "enterprise_buyer_layer",
+    "name": "Enterprise Buyer / Workflow Layer",
+    "type": "capability_layer",
+    "country": "",
+    "region": "Global",
+    "sector": [
+      "enterprise AI"
+    ],
+    "strategic_role": "Demand layer",
+    "description": "Enterprises and governments adopting AI inside workflows: productivity, software, legal, finance, manufacturing, defense, healthcare.",
+    "sovereignty_score": 3,
+    "criticality": 5,
+    "market_importance": 5,
+    "france_or_eu_fit": 5,
+    "color": "blue",
+    "confidence": [
+      "buyers",
+      "enterprise"
+    ],
+    "tags": [],
+    "sources": [],
+    "fact_status": "known"
+  },
+  {
+    "id": "us_ai_ecosystem",
+    "name": "US AI Ecosystem",
+    "type": "region_cluster",
+    "country": "United States",
+    "region": "North America",
+    "sector": [
+      "AI"
+    ],
+    "strategic_role": "Dominant frontier AI cluster",
+    "description": "US-based model labs, hyperscalers, chips, AI clouds and enterprise platforms.",
+    "sovereignty_score": 2,
+    "criticality": 5,
+    "market_importance": 5,
+    "france_or_eu_fit": 3,
+    "color": "blue",
+    "confidence": [
+      "US"
+    ],
+    "tags": [],
+    "sources": [],
+    "fact_status": "known"
+  },
+  {
+    "id": "china_ai_ecosystem",
+    "name": "China AI Ecosystem",
+    "type": "region_cluster",
+    "country": "China",
+    "region": "Asia",
+    "sector": [
+      "AI"
+    ],
+    "strategic_role": "Large independent AI ecosystem",
+    "description": "Chinese model companies, cloud platforms, domestic AI accelerators and state/consumer deployment.",
+    "sovereignty_score": 3,
+    "criticality": 5,
+    "market_importance": 5,
+    "france_or_eu_fit": 2,
+    "color": "blue",
+    "confidence": [
+      "China"
+    ],
+    "tags": [],
+    "sources": [],
+    "fact_status": "known"
+  },
+  {
+    "id": "eu_ai_ecosystem",
+    "name": "European AI Ecosystem",
+    "type": "region_cluster",
+    "country": "EU/Europe",
+    "region": "Europe",
+    "sector": [
+      "AI"
+    ],
+    "strategic_role": "Sovereignty-driven AI ecosystem",
+    "description": "European model companies, AI Factories, sovereign cloud and regulation-driven adoption.",
+    "sovereignty_score": 4,
+    "criticality": 5,
+    "market_importance": 4,
+    "france_or_eu_fit": 5,
+    "color": "green",
+    "confidence": [
+      "Europe",
+      "EU"
+    ],
+    "tags": [],
+    "sources": [],
+    "fact_status": "known"
+  },
+  {
+    "id": "middle_east_ai_ecosystem",
+    "name": "Middle East AI Ecosystem",
+    "type": "region_cluster",
+    "country": "Gulf",
+    "region": "Middle East",
+    "sector": [
+      "AI infrastructure"
+    ],
+    "strategic_role": "Capital-and-energy-backed AI ecosystem",
+    "description": "Gulf AI infrastructure, sovereign funds, AI cloud ambitions and Arabic-language model opportunity.",
+    "sovereignty_score": 3,
+    "criticality": 4,
+    "market_importance": 4,
+    "france_or_eu_fit": 3,
+    "color": "blue",
+    "confidence": [
+      "Middle_East",
+      "capital",
+      "energy"
+    ],
+    "tags": [],
+    "sources": [],
+    "fact_status": "known"
+  },
+  {
+    "id": "canada_ai_ecosystem",
+    "name": "Canadian AI Ecosystem",
+    "type": "region_cluster",
+    "country": "Canada",
+    "region": "North America",
+    "sector": [
+      "AI"
+    ],
+    "strategic_role": "Enterprise/private AI cluster",
+    "description": "Cohere and research/enterprise AI ecosystem.",
+    "sovereignty_score": 3,
+    "criticality": 4,
+    "market_importance": 4,
+    "france_or_eu_fit": 3,
+    "color": "blue",
+    "confidence": [
+      "Canada"
+    ],
+    "tags": [],
+    "sources": [],
+    "fact_status": "known"
+  },
+  {
+    "id": "openai",
+    "name": "OpenAI",
+    "type": "company",
+    "country": "United States",
+    "region": "North America",
+    "sector": [
+      "foundation models",
+      "AI platform"
+    ],
+    "strategic_role": "Frontier model/API/enterprise AI platform",
+    "description": "Frontier models, ChatGPT, API platform, enterprise AI, Codex and agentic workflows.",
+    "sovereignty_score": 1,
+    "criticality": 5,
+    "market_importance": 5,
+    "france_or_eu_fit": 3,
+    "color": "red",
+    "confidence": "high",
+    "tags": [
+      "US",
+      "closed_model",
+      "API"
+    ],
+    "sources": [
+      "openai_business"
+    ],
+    "fact_status": "known"
+  },
+  {
+    "id": "anthropic",
+    "name": "Anthropic / Claude",
+    "type": "company",
+    "country": "United States",
+    "region": "North America",
+    "sector": [
+      "foundation models",
+      "AI safety"
+    ],
+    "strategic_role": "Claude model/API/enterprise platform",
+    "description": "Claude models, Claude Code, enterprise/government/industry solutions and API platform.",
+    "sovereignty_score": 1,
+    "criticality": 5,
+    "market_importance": 5,
+    "france_or_eu_fit": 3,
+    "color": "red",
+    "confidence": "high",
+    "tags": [
+      "US",
+      "closed_model",
+      "API",
+      "safety"
+    ],
+    "sources": [
+      "anthropic_claude"
+    ],
+    "fact_status": "known"
+  },
+  {
+    "id": "google_deepmind",
+    "name": "Google DeepMind / Gemini",
+    "type": "company",
+    "country": "United States/UK",
+    "region": "Global",
+    "sector": [
+      "foundation models",
+      "cloud"
+    ],
+    "strategic_role": "Gemini model family and research lab",
+    "description": "Gemini models integrated into Google ecosystem and cloud AI platform.",
+    "sovereignty_score": 1,
+    "criticality": 5,
+    "market_importance": 5,
+    "france_or_eu_fit": 3,
+    "color": "red",
+    "confidence": "high",
+    "tags": [
+      "US",
+      "UK",
+      "closed_model",
+      "cloud"
+    ],
+    "sources": [
+      "google_vertex_gemini"
+    ],
+    "fact_status": "known"
+  },
+  {
+    "id": "meta_ai",
+    "name": "Meta AI / Llama",
+    "type": "company",
+    "country": "United States",
+    "region": "North America",
+    "sector": [
+      "open-weight models",
+      "consumer AI"
+    ],
+    "strategic_role": "Open-weight model and consumer AI platform",
+    "description": "Llama model family and Meta AI assistant ecosystem.",
+    "sovereignty_score": 1,
+    "criticality": 5,
+    "market_importance": 5,
+    "france_or_eu_fit": 3,
+    "color": "orange",
+    "confidence": "medium",
+    "tags": [
+      "US",
+      "open_weight",
+      "consumer"
+    ],
+    "sources": [
+      "meta_llama"
+    ],
+    "fact_status": "known"
+  },
+  {
+    "id": "xai",
+    "name": "xAI / Grok",
+    "type": "company",
+    "country": "United States",
+    "region": "North America",
+    "sector": [
+      "foundation models",
+      "AI platform"
+    ],
+    "strategic_role": "Grok model/API and supercluster-backed AI lab",
+    "description": "Grok models, unified API and Colossus/supercluster positioning.",
+    "sovereignty_score": 1,
+    "criticality": 5,
+    "market_importance": 4,
+    "france_or_eu_fit": 2,
+    "color": "red",
+    "confidence": "high",
+    "tags": [
+      "US",
+      "closed_model",
+      "API"
+    ],
+    "sources": [
+      "xai"
+    ],
+    "fact_status": "known"
+  },
+  {
+    "id": "mistral_ai",
+    "name": "Mistral AI",
+    "type": "company",
+    "country": "France",
+    "region": "Europe",
+    "sector": [
+      "foundation models",
+      "enterprise AI"
+    ],
+    "strategic_role": "European frontier AI company",
+    "description": "European model company building frontier models, assistants, agents, services and enterprise AI platform.",
+    "sovereignty_score": 4,
+    "criticality": 5,
+    "market_importance": 5,
+    "france_or_eu_fit": 5,
+    "color": "green",
+    "confidence": "high",
+    "tags": [
+      "France",
+      "EU",
+      "frontier_model"
+    ],
+    "sources": [
+      "mistral"
+    ],
+    "fact_status": "known"
+  },
+  {
+    "id": "cohere",
+    "name": "Cohere",
+    "type": "company",
+    "country": "Canada",
+    "region": "North America",
+    "sector": [
+      "enterprise AI",
+      "models"
+    ],
+    "strategic_role": "Enterprise AI model/platform company",
+    "description": "Private, secure, customizable enterprise AI with Command, Embed, Rerank, Aya, private deployments and industry solutions.",
+    "sovereignty_score": 3,
+    "criticality": 4,
+    "market_importance": 4,
+    "france_or_eu_fit": 3,
+    "color": "blue",
+    "confidence": "high",
+    "tags": [
+      "Canada",
+      "enterprise_ai"
+    ],
+    "sources": [
+      "cohere"
+    ],
+    "fact_status": "known"
+  },
+  {
+    "id": "deepseek",
+    "name": "DeepSeek",
+    "type": "company",
+    "country": "China",
+    "region": "Asia",
+    "sector": [
+      "foundation models",
+      "open models"
+    ],
+    "strategic_role": "Chinese frontier/open model lab",
+    "description": "DeepSeek chat/API and open research/model releases including R1/V3/Coder lines.",
+    "sovereignty_score": 3,
+    "criticality": 5,
+    "market_importance": 4,
+    "france_or_eu_fit": 2,
+    "color": "orange",
+    "confidence": "high",
+    "tags": [
+      "China",
+      "open_weight",
+      "API"
+    ],
+    "sources": [
+      "deepseek"
+    ],
+    "fact_status": "known"
+  },
+  {
+    "id": "alibaba_qwen",
+    "name": "Alibaba Cloud / Qwen",
+    "type": "company",
+    "country": "China",
+    "region": "Asia",
+    "sector": [
+      "foundation models",
+      "cloud"
+    ],
+    "strategic_role": "Qwen model family and Alibaba Cloud platform",
+    "description": "Qwen open-source/multimodal/multilingual model family with Alibaba Cloud deployment, APIs and community links.",
+    "sovereignty_score": 3,
+    "criticality": 5,
+    "market_importance": 5,
+    "france_or_eu_fit": 2,
+    "color": "orange",
+    "confidence": "high",
+    "tags": [
+      "China",
+      "cloud",
+      "open_weight"
+    ],
+    "sources": [
+      "qwen"
+    ],
+    "fact_status": "known"
+  },
+  {
+    "id": "baidu_ernie",
+    "name": "Baidu AI / ERNIE ecosystem",
+    "type": "company",
+    "country": "China",
+    "region": "Asia",
+    "sector": [
+      "AI platform",
+      "foundation models"
+    ],
+    "strategic_role": "Baidu AI platform and model ecosystem",
+    "description": "Baidu AI open platform with AI services and model capabilities.",
+    "sovereignty_score": 3,
+    "criticality": 4,
+    "market_importance": 4,
+    "france_or_eu_fit": 2,
+    "color": "orange",
+    "confidence": "medium",
+    "tags": [
+      "China",
+      "cloud",
+      "AI_platform"
+    ],
+    "sources": [
+      "baidu_ai"
+    ],
+    "fact_status": "known"
+  },
+  {
+    "id": "perplexity",
+    "name": "Perplexity",
+    "type": "company",
+    "country": "United States",
+    "region": "North America",
+    "sector": [
+      "AI search",
+      "enterprise AI"
+    ],
+    "strategic_role": "AI answer/research/search platform",
+    "description": "Enterprise AI research/search platform over files, web and tools with citation-driven answers and security positioning.",
+    "sovereignty_score": 1,
+    "criticality": 4,
+    "market_importance": 4,
+    "france_or_eu_fit": 3,
+    "color": "orange",
+    "confidence": "high",
+    "tags": [
+      "US",
+      "search",
+      "enterprise_ai"
+    ],
+    "sources": [
+      "perplexity_enterprise"
+    ],
+    "fact_status": "known"
+  },
+  {
+    "id": "g42",
+    "name": "G42 / Core42 ecosystem",
+    "type": "company",
+    "country": "United Arab Emirates",
+    "region": "Middle East",
+    "sector": [
+      "AI holding",
+      "AI infrastructure"
+    ],
+    "strategic_role": "UAE AI holding/infrastructure ecosystem",
+    "description": "AI ecosystem/holding company across infrastructure and vertical AI in UAE.",
+    "sovereignty_score": 3,
+    "criticality": 4,
+    "market_importance": 4,
+    "france_or_eu_fit": 3,
+    "color": "blue",
+    "confidence": "medium",
+    "tags": [
+      "UAE",
+      "Middle_East",
+      "AI_infrastructure"
+    ],
+    "sources": [
+      "g42"
+    ],
+    "fact_status": "known"
+  },
+  {
+    "id": "humain",
+    "name": "HUMAIN",
+    "type": "company",
+    "country": "Saudi Arabia",
+    "region": "Middle East",
+    "sector": [
+      "AI infrastructure",
+      "models"
+    ],
+    "strategic_role": "Saudi sovereign AI infrastructure and model company",
+    "description": "PIF-backed AI company announced to build AI infrastructure, cloud, data centers and Arabic multimodal LLM.",
+    "sovereignty_score": 3,
+    "criticality": 4,
+    "market_importance": 4,
+    "france_or_eu_fit": 2,
+    "color": "blue",
+    "confidence": "medium",
+    "tags": [
+      "Saudi",
+      "Middle_East",
+      "sovereign_AI"
+    ],
+    "sources": [
+      "humain_reuters"
+    ],
+    "fact_status": "known"
+  },
+  {
+    "id": "aws_bedrock",
+    "name": "Amazon Bedrock",
+    "type": "cloud_provider",
+    "country": "United States",
+    "region": "Global",
+    "sector": [
+      "AI platform",
+      "cloud"
+    ],
+    "strategic_role": "Multi-model genAI platform",
+    "description": "AWS platform for production generative AI applications and agents, model choice, customization, guardrails and enterprise security.",
+    "sovereignty_score": 1,
+    "criticality": 5,
+    "market_importance": 5,
+    "france_or_eu_fit": 2,
+    "color": "red",
+    "confidence": "high",
+    "tags": [
+      "US",
+      "hyperscaler",
+      "model_platform"
+    ],
+    "sources": [
+      "aws_bedrock"
+    ],
+    "fact_status": "known"
+  },
+  {
+    "id": "azure_openai_foundry",
+    "name": "Microsoft Azure OpenAI / AI Foundry",
+    "type": "cloud_provider",
+    "country": "United States",
+    "region": "Global",
+    "sector": [
+      "AI platform",
+      "cloud"
+    ],
+    "strategic_role": "Azure model platform",
+    "description": "Microsoft Azure platform for OpenAI and Foundry AI models, agents and cloud AI services.",
+    "sovereignty_score": 1,
+    "criticality": 5,
+    "market_importance": 5,
+    "france_or_eu_fit": 2,
+    "color": "red",
+    "confidence": "high",
+    "tags": [
+      "US",
+      "hyperscaler",
+      "model_platform"
+    ],
+    "sources": [
+      "azure_openai"
+    ],
+    "fact_status": "known"
+  },
+  {
+    "id": "google_cloud_vertex",
+    "name": "Google Cloud Vertex / Gemini Enterprise",
+    "type": "cloud_provider",
+    "country": "United States",
+    "region": "Global",
+    "sector": [
+      "AI platform",
+      "cloud"
+    ],
+    "strategic_role": "Google Cloud AI platform",
+    "description": "Google Cloud Gemini Enterprise/Vertex AI model, agent and enterprise AI platform.",
+    "sovereignty_score": 1,
+    "criticality": 5,
+    "market_importance": 5,
+    "france_or_eu_fit": 2,
+    "color": "red",
+    "confidence": "high",
+    "tags": [
+      "US",
+      "hyperscaler",
+      "model_platform"
+    ],
+    "sources": [
+      "google_vertex_gemini"
+    ],
+    "fact_status": "known"
+  },
+  {
+    "id": "oracle_cloud_ai",
+    "name": "Oracle Cloud AI",
+    "type": "cloud_provider",
+    "country": "United States",
+    "region": "Global",
+    "sector": [
+      "AI infrastructure",
+      "cloud"
+    ],
+    "strategic_role": "Enterprise cloud AI infrastructure",
+    "description": "Oracle AI and cloud infrastructure services.",
+    "sovereignty_score": 1,
+    "criticality": 4,
+    "market_importance": 4,
+    "france_or_eu_fit": 2,
+    "color": "orange",
+    "confidence": "medium",
+    "tags": [
+      "US",
+      "cloud"
+    ],
+    "sources": [
+      "oracle_ai"
+    ],
+    "fact_status": "known"
+  },
+  {
+    "id": "ibm_watsonx",
+    "name": "IBM watsonx",
+    "type": "software_platform",
+    "country": "United States",
+    "region": "Global",
+    "sector": [
+      "enterprise AI",
+      "data platform"
+    ],
+    "strategic_role": "Enterprise AI/data platform",
+    "description": "IBM watsonx enterprise AI and data platform.",
+    "sovereignty_score": 2,
+    "criticality": 4,
+    "market_importance": 4,
+    "france_or_eu_fit": 2,
+    "color": "orange",
+    "confidence": "medium",
+    "tags": [
+      "US",
+      "enterprise_ai"
+    ],
+    "sources": [
+      "ibm_watsonx"
+    ],
+    "fact_status": "known"
+  },
+  {
+    "id": "databricks_mosaic_ai",
+    "name": "Databricks Mosaic AI",
+    "type": "software_platform",
+    "country": "United States",
+    "region": "Global",
+    "sector": [
+      "data platform",
+      "enterprise AI"
+    ],
+    "strategic_role": "Data/AI development platform",
+    "description": "Databricks data/ML platform and Mosaic AI tooling.",
+    "sovereignty_score": 2,
+    "criticality": 4,
+    "market_importance": 4,
+    "france_or_eu_fit": 3,
+    "color": "orange",
+    "confidence": "medium",
+    "tags": [
+      "data_platform",
+      "MLOps"
+    ],
+    "sources": [
+      "databricks_mosaic"
+    ],
+    "fact_status": "known"
+  },
+  {
+    "id": "snowflake_cortex_ai",
+    "name": "Snowflake Cortex AI",
+    "type": "software_platform",
+    "country": "United States",
+    "region": "Global",
+    "sector": [
+      "data platform",
+      "enterprise AI"
+    ],
+    "strategic_role": "Data cloud AI layer",
+    "description": "Snowflake data cloud AI layer for enterprise workloads.",
+    "sovereignty_score": 2,
+    "criticality": 4,
+    "market_importance": 4,
+    "france_or_eu_fit": 3,
+    "color": "orange",
+    "confidence": "medium",
+    "tags": [
+      "data_platform",
+      "enterprise_ai"
+    ],
+    "sources": [
+      "snowflake_cortex"
+    ],
+    "fact_status": "known"
+  },
+  {
+    "id": "coreweave",
+    "name": "CoreWeave",
+    "type": "cloud_provider",
+    "country": "United States",
+    "region": "Global",
+    "sector": [
+      "AI cloud",
+      "GPU cloud"
+    ],
+    "strategic_role": "AI-native GPU cloud",
+    "description": "AI-native cloud platform with GPU compute, managed Kubernetes, data/storage/networking and AI workload infrastructure.",
+    "sovereignty_score": 1,
+    "criticality": 5,
+    "market_importance": 5,
+    "france_or_eu_fit": 2,
+    "color": "red",
+    "confidence": "high",
+    "tags": [
+      "US",
+      "GPU_cloud",
+      "AI_infra"
+    ],
+    "sources": [
+      "coreweave"
+    ],
+    "fact_status": "known"
+  },
+  {
+    "id": "lambda_cloud",
+    "name": "Lambda",
+    "type": "cloud_provider",
+    "country": "United States",
+    "region": "Global",
+    "sector": [
+      "AI cloud",
+      "GPU cloud"
+    ],
+    "strategic_role": "GPU cloud provider",
+    "description": "AI cloud / GPU infrastructure provider.",
+    "sovereignty_score": 1,
+    "criticality": 4,
+    "market_importance": 4,
+    "france_or_eu_fit": 2,
+    "color": "orange",
+    "confidence": "medium",
+    "tags": [
+      "US",
+      "GPU_cloud"
+    ],
+    "sources": [
+      "lambda"
+    ],
+    "fact_status": "known"
+  },
+  {
+    "id": "nebius",
+    "name": "Nebius",
+    "type": "cloud_provider",
+    "country": "Netherlands",
+    "region": "Europe/Global",
+    "sector": [
+      "AI cloud",
+      "GPU cloud"
+    ],
+    "strategic_role": "AI cloud provider",
+    "description": "AI cloud and infrastructure provider with European/Global AI cloud relevance.",
+    "sovereignty_score": 3,
+    "criticality": 4,
+    "market_importance": 4,
+    "france_or_eu_fit": 4,
+    "color": "blue",
+    "confidence": "medium",
+    "tags": [
+      "Europe",
+      "AI_cloud"
+    ],
+    "sources": [
+      "nebius"
+    ],
+    "fact_status": "known"
+  },
+  {
+    "id": "crusoe",
+    "name": "Crusoe",
+    "type": "cloud_provider",
+    "country": "United States",
+    "region": "Global",
+    "sector": [
+      "AI infrastructure",
+      "energy"
+    ],
+    "strategic_role": "Energy-aware AI infrastructure provider",
+    "description": "AI factory company and renewable/energy-aware AI infrastructure provider.",
+    "sovereignty_score": 1,
+    "criticality": 4,
+    "market_importance": 4,
+    "france_or_eu_fit": 2,
+    "color": "orange",
+    "confidence": "medium",
+    "tags": [
+      "US",
+      "energy",
+      "AI_factory"
+    ],
+    "sources": [
+      "crusoe"
+    ],
+    "fact_status": "known"
+  },
+  {
+    "id": "nvidia",
+    "name": "NVIDIA",
+    "type": "chip_supplier",
+    "country": "United States",
+    "region": "Global",
+    "sector": [
+      "GPU",
+      "AI infrastructure"
+    ],
+    "strategic_role": "Dominant AI accelerator and platform supplier",
+    "description": "Data center accelerated computing, GPUs, networking, HGX and AI infrastructure software.",
+    "sovereignty_score": 1,
+    "criticality": 5,
+    "market_importance": 5,
+    "france_or_eu_fit": 1,
+    "color": "red",
+    "confidence": "high",
+    "tags": [
+      "GPU",
+      "US",
+      "compute_bottleneck"
+    ],
+    "sources": [
+      "nvidia_datacenter",
+      "nvidia_hgx"
+    ],
+    "fact_status": "known"
+  },
+  {
+    "id": "amd",
+    "name": "AMD",
+    "type": "chip_supplier",
+    "country": "United States",
+    "region": "Global",
+    "sector": [
+      "GPU",
+      "AI infrastructure"
+    ],
+    "strategic_role": "AI/HPC accelerator and CPU supplier",
+    "description": "AMD Instinct AI/HPC accelerators and data center platforms.",
+    "sovereignty_score": 1,
+    "criticality": 5,
+    "market_importance": 5,
+    "france_or_eu_fit": 1,
+    "color": "red",
+    "confidence": "high",
+    "tags": [
+      "GPU",
+      "US",
+      "compute"
+    ],
+    "sources": [
+      "amd_mi300"
+    ],
+    "fact_status": "known"
+  },
+  {
+    "id": "intel",
+    "name": "Intel / Gaudi",
+    "type": "chip_supplier",
+    "country": "United States",
+    "region": "Global",
+    "sector": [
+      "AI accelerator",
+      "CPU"
+    ],
+    "strategic_role": "AI accelerator and CPU supplier",
+    "description": "Intel Gaudi AI accelerator family and broader CPU/AI hardware stack.",
+    "sovereignty_score": 1,
+    "criticality": 4,
+    "market_importance": 4,
+    "france_or_eu_fit": 1,
+    "color": "orange",
+    "confidence": "medium",
+    "tags": [
+      "US",
+      "accelerator"
+    ],
+    "sources": [
+      "intel_gaudi"
+    ],
+    "fact_status": "known"
+  },
+  {
+    "id": "tsmc",
+    "name": "TSMC",
+    "type": "manufacturing_partner",
+    "country": "Taiwan",
+    "region": "Asia",
+    "sector": [
+      "semiconductor",
+      "foundry"
+    ],
+    "strategic_role": "Advanced semiconductor foundry",
+    "description": "Critical foundry for advanced chips and AI accelerators.",
+    "sovereignty_score": 1,
+    "criticality": 5,
+    "market_importance": 5,
+    "france_or_eu_fit": 1,
+    "color": "red",
+    "confidence": "high",
+    "tags": [
+      "Taiwan",
+      "foundry",
+      "bottleneck"
+    ],
+    "sources": [
+      "tsmc"
+    ],
+    "fact_status": "known"
+  },
+  {
+    "id": "asml",
+    "name": "ASML",
+    "type": "hardware_component",
+    "country": "Netherlands",
+    "region": "Europe",
+    "sector": [
+      "semiconductor equipment"
+    ],
+    "strategic_role": "EUV lithography monopoly-like bottleneck/enabler",
+    "description": "EUV lithography systems for advanced chip manufacturing.",
+    "sovereignty_score": 5,
+    "criticality": 5,
+    "market_importance": 5,
+    "france_or_eu_fit": 5,
+    "color": "blue",
+    "confidence": "high",
+    "tags": [
+      "Netherlands",
+      "EUV",
+      "semiconductor_equipment"
+    ],
+    "sources": [
+      "asml_euv"
+    ],
+    "fact_status": "known"
+  },
+  {
+    "id": "samsung_semiconductor",
+    "name": "Samsung Semiconductor",
+    "type": "manufacturing_partner",
+    "country": "South Korea",
+    "region": "Asia",
+    "sector": [
+      "memory",
+      "foundry"
+    ],
+    "strategic_role": "Memory/foundry supplier",
+    "description": "Memory and foundry layer in AI chip supply chain.",
+    "sovereignty_score": 2,
+    "criticality": 5,
+    "market_importance": 5,
+    "france_or_eu_fit": 2,
+    "color": "orange",
+    "confidence": "medium",
+    "tags": [
+      "South_Korea",
+      "HBM",
+      "foundry"
+    ],
+    "sources": [],
+    "fact_status": "known"
+  },
+  {
+    "id": "sk_hynix",
+    "name": "SK hynix",
+    "type": "manufacturing_partner",
+    "country": "South Korea",
+    "region": "Asia",
+    "sector": [
+      "memory",
+      "HBM"
+    ],
+    "strategic_role": "HBM memory supplier",
+    "description": "HBM memory supplier critical to AI accelerators.",
+    "sovereignty_score": 2,
+    "criticality": 5,
+    "market_importance": 5,
+    "france_or_eu_fit": 2,
+    "color": "red",
+    "confidence": "medium",
+    "tags": [
+      "South_Korea",
+      "HBM",
+      "memory"
+    ],
+    "sources": [],
+    "fact_status": "known"
+  },
+  {
+    "id": "micron",
+    "name": "Micron",
+    "type": "manufacturing_partner",
+    "country": "United States",
+    "region": "Global",
+    "sector": [
+      "memory",
+      "HBM"
+    ],
+    "strategic_role": "Memory supplier",
+    "description": "Memory supplier relevant to AI accelerators and data centers.",
+    "sovereignty_score": 2,
+    "criticality": 4,
+    "market_importance": 4,
+    "france_or_eu_fit": 2,
+    "color": "orange",
+    "confidence": "medium",
+    "tags": [
+      "US",
+      "HBM",
+      "memory"
+    ],
+    "sources": [],
+    "fact_status": "known"
+  },
+  {
+    "id": "broadcom",
+    "name": "Broadcom",
+    "type": "chip_supplier",
+    "country": "United States",
+    "region": "Global",
+    "sector": [
+      "networking",
+      "ASIC"
+    ],
+    "strategic_role": "AI networking/custom silicon supplier",
+    "description": "Networking and custom accelerator/silicon supplier in AI data center stack.",
+    "sovereignty_score": 1,
+    "criticality": 5,
+    "market_importance": 5,
+    "france_or_eu_fit": 2,
+    "color": "red",
+    "confidence": "medium",
+    "tags": [
+      "US",
+      "networking",
+      "custom_silicon"
+    ],
+    "sources": [],
+    "fact_status": "known"
+  },
+  {
+    "id": "marvell",
+    "name": "Marvell",
+    "type": "chip_supplier",
+    "country": "United States",
+    "region": "Global",
+    "sector": [
+      "networking",
+      "custom silicon"
+    ],
+    "strategic_role": "Data center networking/custom silicon supplier",
+    "description": "Networking and custom silicon supplier for AI infrastructure.",
+    "sovereignty_score": 1,
+    "criticality": 4,
+    "market_importance": 4,
+    "france_or_eu_fit": 2,
+    "color": "orange",
+    "confidence": "medium",
+    "tags": [
+      "US",
+      "networking"
+    ],
+    "sources": [],
+    "fact_status": "known"
+  },
+  {
+    "id": "synopsys",
+    "name": "Synopsys",
+    "type": "software_platform",
+    "country": "United States",
+    "region": "Global",
+    "sector": [
+      "EDA",
+      "semiconductor"
+    ],
+    "strategic_role": "Chip design software supplier",
+    "description": "EDA software used in semiconductor design.",
+    "sovereignty_score": 1,
+    "criticality": 5,
+    "market_importance": 5,
+    "france_or_eu_fit": 2,
+    "color": "red",
+    "confidence": "medium",
+    "tags": [
+      "US",
+      "EDA"
+    ],
+    "sources": [],
+    "fact_status": "known"
+  },
+  {
+    "id": "cadence",
+    "name": "Cadence",
+    "type": "software_platform",
+    "country": "United States",
+    "region": "Global",
+    "sector": [
+      "EDA",
+      "semiconductor"
+    ],
+    "strategic_role": "Chip design software supplier",
+    "description": "EDA software used in semiconductor design.",
+    "sovereignty_score": 1,
+    "criticality": 5,
+    "market_importance": 5,
+    "france_or_eu_fit": 2,
+    "color": "red",
+    "confidence": "medium",
+    "tags": [
+      "US",
+      "EDA"
+    ],
+    "sources": [],
+    "fact_status": "known"
+  },
+  {
+    "id": "arm",
+    "name": "Arm",
+    "type": "hardware_component",
+    "country": "United Kingdom",
+    "region": "Global",
+    "sector": [
+      "IP",
+      "CPU"
+    ],
+    "strategic_role": "CPU/IP architecture supplier",
+    "description": "CPU/IP architecture layer used across mobile, edge, cloud and some accelerator ecosystems.",
+    "sovereignty_score": 2,
+    "criticality": 4,
+    "market_importance": 5,
+    "france_or_eu_fit": 3,
+    "color": "orange",
+    "confidence": "medium",
+    "tags": [
+      "UK",
+      "IP"
+    ],
+    "sources": [],
+    "fact_status": "known"
+  },
+  {
+    "id": "hugging_face",
+    "name": "Hugging Face",
+    "type": "company",
+    "country": "France/US",
+    "region": "Global",
+    "sector": [
+      "model hub",
+      "open-source AI"
+    ],
+    "strategic_role": "Model/dataset/application hub",
+    "description": "Global model, dataset and application distribution platform.",
+    "sovereignty_score": 3,
+    "criticality": 5,
+    "market_importance": 5,
+    "france_or_eu_fit": 5,
+    "color": "blue",
+    "confidence": "high",
+    "tags": [
+      "model_hub",
+      "France",
+      "US"
+    ],
+    "sources": [
+      "huggingface"
+    ],
+    "fact_status": "known"
+  },
+  {
+    "id": "pytorch",
+    "name": "PyTorch",
+    "type": "open_source_project",
+    "country": "Global",
+    "region": "Global",
+    "sector": [
+      "deep learning"
+    ],
+    "strategic_role": "Deep learning framework",
+    "description": "Open-source deep learning framework.",
+    "sovereignty_score": 2,
+    "criticality": 5,
+    "market_importance": 5,
+    "france_or_eu_fit": 4,
+    "color": "orange",
+    "confidence": "high",
+    "tags": [
+      "framework",
+      "open_source"
+    ],
+    "sources": [
+      "pytorch"
+    ],
+    "fact_status": "known"
+  },
+  {
+    "id": "tensorflow",
+    "name": "TensorFlow",
+    "type": "open_source_project",
+    "country": "Global",
+    "region": "Global",
+    "sector": [
+      "machine learning"
+    ],
+    "strategic_role": "ML framework",
+    "description": "Open-source machine learning platform.",
+    "sovereignty_score": 2,
+    "criticality": 4,
+    "market_importance": 4,
+    "france_or_eu_fit": 3,
+    "color": "orange",
+    "confidence": "high",
+    "tags": [
+      "framework",
+      "open_source"
+    ],
+    "sources": [
+      "tensorflow"
+    ],
+    "fact_status": "known"
+  },
+  {
+    "id": "kubernetes",
+    "name": "Kubernetes",
+    "type": "open_source_project",
+    "country": "Global",
+    "region": "Global",
+    "sector": [
+      "cloud-native"
+    ],
+    "strategic_role": "Container orchestration layer",
+    "description": "Open-source container orchestration platform.",
+    "sovereignty_score": 2,
+    "criticality": 5,
+    "market_importance": 5,
+    "france_or_eu_fit": 4,
+    "color": "orange",
+    "confidence": "high",
+    "tags": [
+      "orchestration",
+      "open_source"
+    ],
+    "sources": [
+      "kubernetes"
+    ],
+    "fact_status": "known"
+  },
+  {
+    "id": "vllm",
+    "name": "vLLM",
+    "type": "open_source_project",
+    "country": "Global",
+    "region": "Global",
+    "sector": [
+      "LLM serving"
+    ],
+    "strategic_role": "LLM inference serving engine",
+    "description": "Open-source high-throughput and memory-efficient LLM serving engine.",
+    "sovereignty_score": 2,
+    "criticality": 5,
+    "market_importance": 5,
+    "france_or_eu_fit": 5,
+    "color": "orange",
+    "confidence": "high",
+    "tags": [
+      "serving",
+      "open_source"
+    ],
+    "sources": [
+      "vllm"
+    ],
+    "fact_status": "known"
+  },
+  {
+    "id": "triton_inference",
+    "name": "NVIDIA Triton Inference Server",
+    "type": "software_platform",
+    "country": "United States",
+    "region": "Global",
+    "sector": [
+      "inference"
+    ],
+    "strategic_role": "Inference serving server",
+    "description": "Inference serving software for AI models.",
+    "sovereignty_score": 1,
+    "criticality": 4,
+    "market_importance": 4,
+    "france_or_eu_fit": 2,
+    "color": "orange",
+    "confidence": "medium",
+    "tags": [
+      "serving",
+      "NVIDIA"
+    ],
+    "sources": [
+      "triton_inference"
+    ],
+    "fact_status": "known"
+  },
+  {
+    "id": "ray",
+    "name": "Ray",
+    "type": "open_source_project",
+    "country": "Global",
+    "region": "Global",
+    "sector": [
+      "distributed computing",
+      "AI"
+    ],
+    "strategic_role": "Distributed workload framework",
+    "description": "Distributed computing framework used for AI training, serving and data workloads.",
+    "sovereignty_score": 2,
+    "criticality": 4,
+    "market_importance": 4,
+    "france_or_eu_fit": 4,
+    "color": "orange",
+    "confidence": "medium",
+    "tags": [
+      "distributed",
+      "open_source"
+    ],
+    "sources": [
+      "ray"
+    ],
+    "fact_status": "known"
+  },
+  {
+    "id": "mlflow",
+    "name": "MLflow",
+    "type": "open_source_project",
+    "country": "Global",
+    "region": "Global",
+    "sector": [
+      "MLOps"
+    ],
+    "strategic_role": "ML lifecycle platform",
+    "description": "ML lifecycle and experiment tracking platform.",
+    "sovereignty_score": 2,
+    "criticality": 4,
+    "market_importance": 4,
+    "france_or_eu_fit": 4,
+    "color": "orange",
+    "confidence": "medium",
+    "tags": [
+      "MLOps",
+      "open_source"
+    ],
+    "sources": [
+      "mlflow"
+    ],
+    "fact_status": "known"
+  },
+  {
+    "id": "wandb",
+    "name": "Weights & Biases",
+    "type": "company",
+    "country": "United States",
+    "region": "Global",
+    "sector": [
+      "MLOps",
+      "observability"
+    ],
+    "strategic_role": "Experiment tracking and model development platform",
+    "description": "AI/ML experiment tracking, evaluation and model development tooling.",
+    "sovereignty_score": 1,
+    "criticality": 4,
+    "market_importance": 4,
+    "france_or_eu_fit": 3,
+    "color": "orange",
+    "confidence": "medium",
+    "tags": [
+      "MLOps",
+      "observability"
+    ],
+    "sources": [
+      "wandb"
+    ],
+    "fact_status": "known"
+  },
+  {
+    "id": "cuda",
+    "name": "CUDA",
+    "type": "software_platform",
+    "country": "United States",
+    "region": "Global",
+    "sector": [
+      "GPU software"
+    ],
+    "strategic_role": "NVIDIA GPU programming stack",
+    "description": "NVIDIA GPU programming/runtime ecosystem; a software moat around NVIDIA GPUs.",
+    "sovereignty_score": 1,
+    "criticality": 5,
+    "market_importance": 5,
+    "france_or_eu_fit": 1,
+    "color": "red",
+    "confidence": "medium",
+    "tags": [
+      "NVIDIA",
+      "GPU_software",
+      "lock_in"
+    ],
+    "sources": [
+      "nvidia_datacenter"
+    ],
+    "fact_status": "known"
+  },
+  {
+    "id": "rocm",
+    "name": "ROCm",
+    "type": "software_platform",
+    "country": "United States",
+    "region": "Global",
+    "sector": [
+      "GPU software"
+    ],
+    "strategic_role": "AMD GPU software stack",
+    "description": "AMD open software stack for accelerators and AI developers.",
+    "sovereignty_score": 1,
+    "criticality": 4,
+    "market_importance": 4,
+    "france_or_eu_fit": 2,
+    "color": "orange",
+    "confidence": "medium",
+    "tags": [
+      "AMD",
+      "GPU_software"
+    ],
+    "sources": [
+      "amd_mi300"
+    ],
+    "fact_status": "known"
+  },
+  {
+    "id": "microsoft_copilot",
+    "name": "Microsoft Copilot ecosystem",
+    "type": "software_platform",
+    "country": "United States",
+    "region": "Global",
+    "sector": [
+      "enterprise AI"
+    ],
+    "strategic_role": "Productivity AI distribution layer",
+    "description": "Microsoft productivity and developer AI distribution layer.",
+    "sovereignty_score": 1,
+    "criticality": 5,
+    "market_importance": 5,
+    "france_or_eu_fit": 2,
+    "color": "red",
+    "confidence": "medium",
+    "tags": [
+      "enterprise_distribution"
+    ],
+    "sources": [
+      "azure_openai"
+    ],
+    "fact_status": "known"
+  },
+  {
+    "id": "google_workspace_ai",
+    "name": "Google Workspace/Gemini ecosystem",
+    "type": "software_platform",
+    "country": "United States",
+    "region": "Global",
+    "sector": [
+      "enterprise AI"
+    ],
+    "strategic_role": "Productivity AI distribution layer",
+    "description": "Google productivity and enterprise AI distribution layer.",
+    "sovereignty_score": 1,
+    "criticality": 5,
+    "market_importance": 5,
+    "france_or_eu_fit": 2,
+    "color": "red",
+    "confidence": "medium",
+    "tags": [
+      "enterprise_distribution"
+    ],
+    "sources": [
+      "google_vertex_gemini"
+    ],
+    "fact_status": "known"
+  },
+  {
+    "id": "salesforce_einstein",
+    "name": "Salesforce Einstein",
+    "type": "software_platform",
+    "country": "United States",
+    "region": "Global",
+    "sector": [
+      "CRM AI"
+    ],
+    "strategic_role": "CRM AI layer",
+    "description": "Salesforce AI layer for enterprise/customer workflows.",
+    "sovereignty_score": 1,
+    "criticality": 4,
+    "market_importance": 5,
+    "france_or_eu_fit": 2,
+    "color": "orange",
+    "confidence": "medium",
+    "tags": [
+      "CRM",
+      "enterprise"
+    ],
+    "sources": [
+      "salesforce_einstein"
+    ],
+    "fact_status": "known"
+  },
+  {
+    "id": "sap_business_ai",
+    "name": "SAP Business AI",
+    "type": "software_platform",
+    "country": "Germany",
+    "region": "Global",
+    "sector": [
+      "ERP AI"
+    ],
+    "strategic_role": "ERP/business AI layer",
+    "description": "SAP business AI for enterprise processes.",
+    "sovereignty_score": 4,
+    "criticality": 4,
+    "market_importance": 5,
+    "france_or_eu_fit": 5,
+    "color": "green",
+    "confidence": "medium",
+    "tags": [
+      "ERP",
+      "Europe",
+      "enterprise"
+    ],
+    "sources": [
+      "sap_ai"
+    ],
+    "fact_status": "known"
+  },
+  {
+    "id": "servicenow_ai",
+    "name": "ServiceNow AI",
+    "type": "software_platform",
+    "country": "United States",
+    "region": "Global",
+    "sector": [
+      "workflow AI"
+    ],
+    "strategic_role": "Enterprise workflow AI layer",
+    "description": "ServiceNow AI for workflows and service management.",
+    "sovereignty_score": 1,
+    "criticality": 4,
+    "market_importance": 5,
+    "france_or_eu_fit": 2,
+    "color": "orange",
+    "confidence": "medium",
+    "tags": [
+      "workflow",
+      "enterprise"
+    ],
+    "sources": [
+      "servicenow_ai"
+    ],
+    "fact_status": "known"
+  },
+  {
+    "id": "adobe_firefly",
+    "name": "Adobe Firefly ecosystem",
+    "type": "software_platform",
+    "country": "United States",
+    "region": "Global",
+    "sector": [
+      "creative AI"
+    ],
+    "strategic_role": "Creative AI distribution layer",
+    "description": "Creative AI distribution through Adobe creative tools.",
+    "sovereignty_score": 1,
+    "criticality": 4,
+    "market_importance": 4,
+    "france_or_eu_fit": 2,
+    "color": "orange",
+    "confidence": "medium",
+    "tags": [
+      "creative_ai"
+    ],
+    "sources": [],
+    "fact_status": "known"
+  },
+  {
+    "id": "canva_ai",
+    "name": "Canva AI ecosystem",
+    "type": "software_platform",
+    "country": "Australia",
+    "region": "Global",
+    "sector": [
+      "creative AI"
+    ],
+    "strategic_role": "Design AI distribution layer",
+    "description": "Design AI distribution layer through Canva workflow.",
+    "sovereignty_score": 2,
+    "criticality": 3,
+    "market_importance": 4,
+    "france_or_eu_fit": 2,
+    "color": "orange",
+    "confidence": "low",
+    "tags": [
+      "creative_ai"
+    ],
+    "sources": [],
+    "fact_status": "known"
+  }
+]

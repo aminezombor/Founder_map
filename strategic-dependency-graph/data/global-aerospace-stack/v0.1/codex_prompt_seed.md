@@ -5,7 +5,7 @@ Extend the Strategic Dependency Graph UI to support the Global Aerospace Stack d
 Use:
 
 ```text
-strategic-dependency-graph/data/global-aerospace-stack/v0.1/global_aerospace_stack_graph_v0.json
+data/global-aerospace-stack/v0.1/global_aerospace_stack_graph_v0.json
 ```
 
 ## Required dataset selector

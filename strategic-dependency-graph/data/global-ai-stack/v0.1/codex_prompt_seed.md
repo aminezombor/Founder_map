@@ -5,7 +5,7 @@ Build or extend the Strategic Dependency Graph UI to support the Global AI Stack
 Use:
 
 ```text
-strategic-dependency-graph/data/global-ai-stack/v0.1/global_ai_stack_graph_v0.json
+data/global-ai-stack/v0.1/global_ai_stack_graph_v0.json
 ```
 
 ## Required additions
@@ -28,7 +28,6 @@ For Global AI Stack, the interface must make regional comparison obvious:
 ## Visual priorities
 
 Red nodes/edges are strategic bottlenecks:
-
 - GPU / Accelerator Compute Layer
 - Advanced Chip Supply Chain
 - AI Data Center / Energy Layer
@@ -38,7 +37,6 @@ Red nodes/edges are strategic bottlenecks:
 - US hyperscaler model platforms
 
 Blue nodes/edges are strategic enablers:
-
 - AI Safety / Governance / Compliance
 - ASML
 - EU AI regulation / AI Factories
@@ -46,14 +44,12 @@ Blue nodes/edges are strategic enablers:
 - model/cloud platforms
 
 Green nodes are sovereign/regional strengths:
-
 - European AI Ecosystem
 - Mistral AI
 - ASML
 - SAP Business AI
 
 Orange nodes are dependency or exposure zones:
-
 - open-weight model distribution
 - inference runtime
 - AI tooling

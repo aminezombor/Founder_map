@@ -1,10 +1,12 @@
 # Global Aerospace Stack Database v0.1
 
-This is the fourth database for Founder Map / Strategic Dependency Graph.
+Created: 2026-06-21
 
 ## What this is
 
 A public-source strategic dependency graph for the global aerospace stack.
+
+This is the fourth database for Founder Map / Strategic Dependency Graph.
 
 It maps aircraft OEMs, engine/propulsion systems, Tier-1 suppliers, certification/regulation, MRO/aftermarket, air traffic operations, space launch, satellite systems, sustainability layers, software/data layers and strategic bottlenecks.
 
@@ -71,7 +73,7 @@ sources: 50
 Primary data file:
 
 ```text
-strategic-dependency-graph/data/global-aerospace-stack/v0.1/global_aerospace_stack_graph_v0.json
+data/global-aerospace-stack/v0.1/global_aerospace_stack_graph_v0.json
 ```
 
 Recommended UI behavior:

@@ -1,0 +1,2220 @@
+[
+  {
+    "id": "european_defence_stack",
+    "name": "European Defence Stack",
+    "type": "sector_view",
+    "country": "EU/Europe",
+    "region": "Europe",
+    "sector": [
+      "defence",
+      "sovereignty"
+    ],
+    "strategic_role": "Top-level strategic view",
+    "description": "Public-source map of European defence industry, capability layers, bottlenecks and opportunity zones.",
+    "sovereignty_score": 4,
+    "criticality": 5,
+    "market_importance": 5,
+    "france_or_eu_fit": 5,
+    "color": "blue",
+    "confidence": [
+      "view",
+      "defence"
+    ],
+    "tags": [],
+    "sources": [],
+    "fact_status": "known"
+  },
+  {
+    "id": "policy_funding_layer",
+    "name": "Policy / Funding / Procurement Layer",
+    "type": "capability_layer",
+    "country": "EU/Europe",
+    "region": "Europe",
+    "sector": [
+      "policy",
+      "funding"
+    ],
+    "strategic_role": "Institutional demand layer",
+    "description": "EU, NATO and national funding/procurement structures shaping defence demand.",
+    "sovereignty_score": 4,
+    "criticality": 5,
+    "market_importance": 5,
+    "france_or_eu_fit": 5,
+    "color": "blue",
+    "confidence": [
+      "policy",
+      "funding"
+    ],
+    "tags": [],
+    "sources": [],
+    "fact_status": "known"
+  },
+  {
+    "id": "defence_prime_layer",
+    "name": "Defence Prime Layer",
+    "type": "capability_layer",
+    "country": "EU/Europe",
+    "region": "Europe",
+    "sector": [
+      "prime contractors"
+    ],
+    "strategic_role": "Industrial integrator layer",
+    "description": "Major European defence primes and system integrators.",
+    "sovereignty_score": 4,
+    "criticality": 5,
+    "market_importance": 5,
+    "france_or_eu_fit": 5,
+    "color": "green",
+    "confidence": [
+      "primes"
+    ],
+    "tags": [],
+    "sources": [],
+    "fact_status": "known"
+  },
+  {
+    "id": "land_systems_layer",
+    "name": "Land Systems Layer",
+    "type": "capability_layer",
+    "country": "EU/Europe",
+    "region": "Europe",
+    "sector": [
+      "land systems"
+    ],
+    "strategic_role": "Armoured vehicles, artillery and land platforms",
+    "description": "Tanks, armoured vehicles, artillery, ground robotics and land platform modernization.",
+    "sovereignty_score": 4,
+    "criticality": 5,
+    "market_importance": 5,
+    "france_or_eu_fit": 5,
+    "color": "orange",
+    "confidence": [
+      "land",
+      "vehicles"
+    ],
+    "tags": [],
+    "sources": [],
+    "fact_status": "known"
+  },
+  {
+    "id": "air_combat_layer",
+    "name": "Air Combat Layer",
+    "type": "capability_layer",
+    "country": "EU/Europe",
+    "region": "Europe",
+    "sector": [
+      "air combat"
+    ],
+    "strategic_role": "Combat aircraft and collaborative air systems",
+    "description": "Combat aircraft, FCAS/SCAF, Eurofighter, Rafale, air combat cloud and loyal wingman concepts.",
+    "sovereignty_score": 4,
+    "criticality": 5,
+    "market_importance": 5,
+    "france_or_eu_fit": 5,
+    "color": "orange",
+    "confidence": [
+      "air",
+      "FCAS"
+    ],
+    "tags": [],
+    "sources": [],
+    "fact_status": "known"
+  },
+  {
+    "id": "naval_systems_layer",
+    "name": "Naval Systems Layer",
+    "type": "capability_layer",
+    "country": "EU/Europe",
+    "region": "Europe",
+    "sector": [
+      "naval"
+    ],
+    "strategic_role": "Surface/subsurface naval systems",
+    "description": "Surface combatants, submarines, naval combat systems, maritime surveillance and lifecycle support.",
+    "sovereignty_score": 4,
+    "criticality": 5,
+    "market_importance": 5,
+    "france_or_eu_fit": 5,
+    "color": "green",
+    "confidence": [
+      "naval"
+    ],
+    "tags": [],
+    "sources": [],
+    "fact_status": "known"
+  },
+  {
+    "id": "missiles_air_defence_layer",
+    "name": "Missiles / Air Defence Layer",
+    "type": "capability_layer",
+    "country": "EU/Europe",
+    "region": "Europe",
+    "sector": [
+      "missiles",
+      "air defence"
+    ],
+    "strategic_role": "Precision effects and air defence",
+    "description": "Missiles, interceptors, air defence, deep strike and force protection systems.",
+    "sovereignty_score": 3,
+    "criticality": 5,
+    "market_importance": 5,
+    "france_or_eu_fit": 5,
+    "color": "orange",
+    "confidence": [
+      "missiles",
+      "air_defence"
+    ],
+    "tags": [],
+    "sources": [],
+    "fact_status": "known"
+  },
+  {
+    "id": "c4isr_sensors_layer",
+    "name": "C4ISR / Sensors Layer",
+    "type": "capability_layer",
+    "country": "EU/Europe",
+    "region": "Europe",
+    "sector": [
+      "C4ISR",
+      "sensors"
+    ],
+    "strategic_role": "Information superiority layer",
+    "description": "Command, control, communications, computers, intelligence, surveillance, reconnaissance, sensors and battlefield management.",
+    "sovereignty_score": 3,
+    "criticality": 5,
+    "market_importance": 5,
+    "france_or_eu_fit": 5,
+    "color": "orange",
+    "confidence": [
+      "C4ISR",
+      "sensors"
+    ],
+    "tags": [],
+    "sources": [],
+    "fact_status": "known"
+  },
+  {
+    "id": "cyber_ew_layer",
+    "name": "Cyber / Electronic Warfare Layer",
+    "type": "capability_layer",
+    "country": "EU/Europe",
+    "region": "Europe",
+    "sector": [
+      "cyber",
+      "electronic warfare"
+    ],
+    "strategic_role": "Cyber-resilience and spectrum layer",
+    "description": "Cybersecurity, electronic warfare, signals intelligence, spectrum monitoring, secure systems and resilience.",
+    "sovereignty_score": 3,
+    "criticality": 5,
+    "market_importance": 5,
+    "france_or_eu_fit": 5,
+    "color": "orange",
+    "confidence": [
+      "cyber",
+      "EW"
+    ],
+    "tags": [],
+    "sources": [],
+    "fact_status": "known"
+  },
+  {
+    "id": "space_secure_connectivity_layer",
+    "name": "Space / Secure Connectivity Layer",
+    "type": "capability_layer",
+    "country": "EU/Europe",
+    "region": "Europe",
+    "sector": [
+      "space",
+      "satcom"
+    ],
+    "strategic_role": "Space-enabled defence infrastructure",
+    "description": "Satcom, ISR, navigation, PRS, secure connectivity, space situational awareness and maritime RF intelligence.",
+    "sovereignty_score": 4,
+    "criticality": 5,
+    "market_importance": 5,
+    "france_or_eu_fit": 5,
+    "color": "blue",
+    "confidence": [
+      "space",
+      "satcom"
+    ],
+    "tags": [],
+    "sources": [],
+    "fact_status": "known"
+  },
+  {
+    "id": "drones_autonomy_layer",
+    "name": "Drones / Autonomy Layer",
+    "type": "capability_layer",
+    "country": "EU/Europe",
+    "region": "Europe",
+    "sector": [
+      "drones",
+      "autonomy"
+    ],
+    "strategic_role": "Robotics and autonomy layer",
+    "description": "Uncrewed aerial systems, ground robotics, autonomous ISR, counter-UAS and autonomy software.",
+    "sovereignty_score": 3,
+    "criticality": 5,
+    "market_importance": 5,
+    "france_or_eu_fit": 5,
+    "color": "orange",
+    "confidence": [
+      "drones",
+      "robotics",
+      "autonomy"
+    ],
+    "tags": [],
+    "sources": [],
+    "fact_status": "known"
+  },
+  {
+    "id": "ammo_energetics_layer",
+    "name": "Ammunition / Energetics Layer",
+    "type": "capability_layer",
+    "country": "EU/Europe",
+    "region": "Europe",
+    "sector": [
+      "ammunition",
+      "energetics"
+    ],
+    "strategic_role": "Mass and sustainment layer",
+    "description": "Munitions, propellants, explosives, energetics, missile motors and production capacity.",
+    "sovereignty_score": 2,
+    "criticality": 5,
+    "market_importance": 5,
+    "france_or_eu_fit": 5,
+    "color": "red",
+    "confidence": [
+      "ammunition",
+      "supply_chain"
+    ],
+    "tags": [],
+    "sources": [],
+    "fact_status": "known"
+  },
+  {
+    "id": "industrial_supply_chain_layer",
+    "name": "Industrial Supply Chain Layer",
+    "type": "capability_layer",
+    "country": "EU/Europe",
+    "region": "Europe",
+    "sector": [
+      "supply chain"
+    ],
+    "strategic_role": "Industrial bottleneck layer",
+    "description": "Components, semiconductors, machine tools, raw materials, workforce, certification, test ranges and production ramp-up.",
+    "sovereignty_score": 2,
+    "criticality": 5,
+    "market_importance": 5,
+    "france_or_eu_fit": 5,
+    "color": "red",
+    "confidence": [
+      "supply_chain",
+      "bottleneck"
+    ],
+    "tags": [],
+    "sources": [],
+    "fact_status": "known"
+  },
+  {
+    "id": "simulation_training_layer",
+    "name": "Simulation / Training Layer",
+    "type": "capability_layer",
+    "country": "EU/Europe",
+    "region": "Europe",
+    "sector": [
+      "simulation",
+      "training"
+    ],
+    "strategic_role": "Synthetic environment layer",
+    "description": "Simulation, digital twins, training systems, mission rehearsal and test/evaluation tooling.",
+    "sovereignty_score": 3,
+    "criticality": 4,
+    "market_importance": 4,
+    "france_or_eu_fit": 5,
+    "color": "orange",
+    "confidence": [
+      "simulation",
+      "training"
+    ],
+    "tags": [],
+    "sources": [],
+    "fact_status": "known"
+  },
+  {
+    "id": "defence_ai_software_layer",
+    "name": "Defence AI / Software Layer",
+    "type": "capability_layer",
+    "country": "EU/Europe",
+    "region": "Europe",
+    "sector": [
+      "AI",
+      "software"
+    ],
+    "strategic_role": "Software-defined defence layer",
+    "description": "AI, data fusion, autonomy, targeting assistance, battle management, secure deployment and decision support.",
+    "sovereignty_score": 3,
+    "criticality": 5,
+    "market_importance": 5,
+    "france_or_eu_fit": 5,
+    "color": "orange",
+    "confidence": [
+      "AI",
+      "software",
+      "dual_use"
+    ],
+    "tags": [],
+    "sources": [],
+    "fact_status": "known"
+  },
+  {
+    "id": "dg_defis",
+    "name": "DG DEFIS",
+    "type": "government_agency",
+    "country": "EU",
+    "region": "Europe",
+    "sector": [
+      "policy"
+    ],
+    "strategic_role": "EU Defence Industry and Space directorate",
+    "description": "European Commission directorate for defence industry and space.",
+    "sovereignty_score": 5,
+    "criticality": 5,
+    "market_importance": 5,
+    "france_or_eu_fit": 5,
+    "color": "blue",
+    "confidence": "high",
+    "tags": [
+      "EU",
+      "policy"
+    ],
+    "sources": [
+      "edis",
+      "edf"
+    ],
+    "fact_status": "known"
+  },
+  {
+    "id": "edis",
+    "name": "European Defence Industrial Strategy",
+    "type": "official_strategy",
+    "country": "EU",
+    "region": "Europe",
+    "sector": [
+      "policy",
+      "strategy"
+    ],
+    "strategic_role": "EU industrial strategy to 2035",
+    "description": "First-ever European Defence Industrial Strategy: strengthens EDTIB, readiness and European collaboration.",
+    "sovereignty_score": 5,
+    "criticality": 5,
+    "market_importance": 5,
+    "france_or_eu_fit": 5,
+    "color": "blue",
+    "confidence": "high",
+    "tags": [
+      "EU",
+      "strategy"
+    ],
+    "sources": [
+      "edis"
+    ],
+    "fact_status": "known"
+  },
+  {
+    "id": "edf",
+    "name": "European Defence Fund",
+    "type": "funding_program",
+    "country": "EU",
+    "region": "Europe",
+    "sector": [
+      "funding",
+      "R&D"
+    ],
+    "strategic_role": "EU defence R&D funding instrument",
+    "description": "EU fund supporting collaborative defence research and capability development.",
+    "sovereignty_score": 5,
+    "criticality": 5,
+    "market_importance": 5,
+    "france_or_eu_fit": 5,
+    "color": "blue",
+    "confidence": "high",
+    "tags": [
+      "EU",
+      "funding"
+    ],
+    "sources": [
+      "edf"
+    ],
+    "fact_status": "known"
+  },
+  {
+    "id": "edip",
+    "name": "European Defence Industry Programme",
+    "type": "funding_program",
+    "country": "EU",
+    "region": "Europe",
+    "sector": [
+      "funding",
+      "procurement"
+    ],
+    "strategic_role": "EU defence industrial programme",
+    "description": "Programme framework for strengthening EU defence industrial readiness and joint procurement.",
+    "sovereignty_score": 5,
+    "criticality": 5,
+    "market_importance": 5,
+    "france_or_eu_fit": 5,
+    "color": "blue",
+    "confidence": "medium",
+    "tags": [
+      "EU",
+      "funding"
+    ],
+    "sources": [
+      "edip"
+    ],
+    "fact_status": "known"
+  },
+  {
+    "id": "eudis",
+    "name": "EU Defence Innovation Scheme",
+    "type": "funding_program",
+    "country": "EU",
+    "region": "Europe",
+    "sector": [
+      "innovation",
+      "SME"
+    ],
+    "strategic_role": "EU defence innovation scheme",
+    "description": "Innovation support for disruptive defence technologies, startups and SMEs.",
+    "sovereignty_score": 5,
+    "criticality": 4,
+    "market_importance": 4,
+    "france_or_eu_fit": 5,
+    "color": "blue",
+    "confidence": "high",
+    "tags": [
+      "EU",
+      "innovation",
+      "SME"
+    ],
+    "sources": [
+      "eudis",
+      "edf"
+    ],
+    "fact_status": "known"
+  },
+  {
+    "id": "eda",
+    "name": "European Defence Agency",
+    "type": "government_agency",
+    "country": "EU",
+    "region": "Europe",
+    "sector": [
+      "defence cooperation"
+    ],
+    "strategic_role": "EU defence cooperation agency",
+    "description": "Agency supporting capability development and collaboration among member states.",
+    "sovereignty_score": 5,
+    "criticality": 5,
+    "market_importance": 5,
+    "france_or_eu_fit": 5,
+    "color": "blue",
+    "confidence": "medium",
+    "tags": [
+      "EU",
+      "coordination"
+    ],
+    "sources": [
+      "eda",
+      "card"
+    ],
+    "fact_status": "known"
+  },
+  {
+    "id": "card",
+    "name": "Coordinated Annual Review on Defence",
+    "type": "official_assessment",
+    "country": "EU",
+    "region": "Europe",
+    "sector": [
+      "capability assessment"
+    ],
+    "strategic_role": "European defence assessment mechanism",
+    "description": "Mechanism for identifying defence capability trends, gaps and cooperation opportunities.",
+    "sovereignty_score": 5,
+    "criticality": 4,
+    "market_importance": 4,
+    "france_or_eu_fit": 5,
+    "color": "blue",
+    "confidence": "medium",
+    "tags": [
+      "EU",
+      "assessment"
+    ],
+    "sources": [
+      "card"
+    ],
+    "fact_status": "known"
+  },
+  {
+    "id": "pesco",
+    "name": "PESCO",
+    "type": "funding_program",
+    "country": "EU",
+    "region": "Europe",
+    "sector": [
+      "defence cooperation"
+    ],
+    "strategic_role": "EU structured defence cooperation",
+    "description": "Framework for collaborative defence projects across participating EU member states.",
+    "sovereignty_score": 5,
+    "criticality": 4,
+    "market_importance": 4,
+    "france_or_eu_fit": 5,
+    "color": "blue",
+    "confidence": "medium",
+    "tags": [
+      "EU",
+      "cooperation"
+    ],
+    "sources": [
+      "pesco"
+    ],
+    "fact_status": "known"
+  },
+  {
+    "id": "occar",
+    "name": "OCCAR",
+    "type": "program_management",
+    "country": "Europe",
+    "region": "Europe",
+    "sector": [
+      "joint armament"
+    ],
+    "strategic_role": "European joint programme manager",
+    "description": "Programme management organization for joint armament cooperation.",
+    "sovereignty_score": 5,
+    "criticality": 4,
+    "market_importance": 4,
+    "france_or_eu_fit": 5,
+    "color": "blue",
+    "confidence": "medium",
+    "tags": [
+      "program_management"
+    ],
+    "sources": [
+      "occar"
+    ],
+    "fact_status": "known"
+  },
+  {
+    "id": "nato_diana",
+    "name": "NATO DIANA",
+    "type": "funding_program",
+    "country": "NATO",
+    "region": "Europe/North America",
+    "sector": [
+      "dual-use",
+      "innovation"
+    ],
+    "strategic_role": "NATO defence innovation accelerator",
+    "description": "Accelerator for dual-use technologies across the NATO ecosystem.",
+    "sovereignty_score": 4,
+    "criticality": 4,
+    "market_importance": 4,
+    "france_or_eu_fit": 4,
+    "color": "blue",
+    "confidence": "medium",
+    "tags": [
+      "NATO",
+      "dual_use"
+    ],
+    "sources": [
+      "nato_diana"
+    ],
+    "fact_status": "known"
+  },
+  {
+    "id": "france_dga",
+    "name": "DGA",
+    "type": "government_agency",
+    "country": "France",
+    "region": "Europe",
+    "sector": [
+      "procurement",
+      "R&D"
+    ],
+    "strategic_role": "French armament agency",
+    "description": "French armament procurement and technology agency.",
+    "sovereignty_score": 5,
+    "criticality": 5,
+    "market_importance": 5,
+    "france_or_eu_fit": 5,
+    "color": "blue",
+    "confidence": "high",
+    "tags": [
+      "France",
+      "procurement"
+    ],
+    "sources": [
+      "france_dga"
+    ],
+    "fact_status": "known"
+  },
+  {
+    "id": "aid_france",
+    "name": "Agence de l'innovation de défense",
+    "type": "government_agency",
+    "country": "France",
+    "region": "Europe",
+    "sector": [
+      "innovation"
+    ],
+    "strategic_role": "French defence innovation agency",
+    "description": "French agency focused on defence innovation and dual-use technology scouting.",
+    "sovereignty_score": 5,
+    "criticality": 4,
+    "market_importance": 4,
+    "france_or_eu_fit": 5,
+    "color": "blue",
+    "confidence": "medium",
+    "tags": [
+      "France",
+      "innovation"
+    ],
+    "sources": [
+      "aid_france"
+    ],
+    "fact_status": "known"
+  },
+  {
+    "id": "france_2030",
+    "name": "France 2030",
+    "type": "funding_program",
+    "country": "France",
+    "region": "Europe",
+    "sector": [
+      "industrial strategy"
+    ],
+    "strategic_role": "French strategic investment plan",
+    "description": "French strategic investment programme relevant to deeptech, industrial sovereignty and dual-use technology.",
+    "sovereignty_score": 5,
+    "criticality": 4,
+    "market_importance": 4,
+    "france_or_eu_fit": 5,
+    "color": "blue",
+    "confidence": "medium",
+    "tags": [
+      "France",
+      "funding"
+    ],
+    "sources": [
+      "france2030"
+    ],
+    "fact_status": "known"
+  },
+  {
+    "id": "iris2",
+    "name": "IRIS² Secure Connectivity",
+    "type": "official_space_program",
+    "country": "EU",
+    "region": "Europe",
+    "sector": [
+      "space",
+      "satcom"
+    ],
+    "strategic_role": "EU secure satellite connectivity programme",
+    "description": "EU secure connectivity satellite constellation programme.",
+    "sovereignty_score": 5,
+    "criticality": 5,
+    "market_importance": 5,
+    "france_or_eu_fit": 5,
+    "color": "blue",
+    "confidence": "medium",
+    "tags": [
+      "EU",
+      "space",
+      "satcom"
+    ],
+    "sources": [
+      "iris2"
+    ],
+    "fact_status": "known"
+  },
+  {
+    "id": "galileo_prs",
+    "name": "Galileo PRS",
+    "type": "official_space_program",
+    "country": "EU",
+    "region": "Europe",
+    "sector": [
+      "navigation",
+      "security"
+    ],
+    "strategic_role": "Public Regulated Service",
+    "description": "Encrypted navigation service for government-authorised users.",
+    "sovereignty_score": 5,
+    "criticality": 5,
+    "market_importance": 5,
+    "france_or_eu_fit": 5,
+    "color": "blue",
+    "confidence": "medium",
+    "tags": [
+      "EU",
+      "navigation"
+    ],
+    "sources": [
+      "galileo_prs"
+    ],
+    "fact_status": "known"
+  },
+  {
+    "id": "govsatcom",
+    "name": "GOVSATCOM",
+    "type": "official_space_program",
+    "country": "EU",
+    "region": "Europe",
+    "sector": [
+      "satcom"
+    ],
+    "strategic_role": "EU governmental satellite communications",
+    "description": "Governmental satellite communications capability for EU users.",
+    "sovereignty_score": 5,
+    "criticality": 5,
+    "market_importance": 5,
+    "france_or_eu_fit": 5,
+    "color": "blue",
+    "confidence": "medium",
+    "tags": [
+      "EU",
+      "satcom"
+    ],
+    "sources": [
+      "govsatcom"
+    ],
+    "fact_status": "known"
+  },
+  {
+    "id": "airbus_defence_space",
+    "name": "Airbus Defence and Space",
+    "type": "defense_prime",
+    "country": "France/Germany/Spain",
+    "region": "Europe",
+    "sector": [
+      "air combat",
+      "space",
+      "UAS",
+      "C4ISR"
+    ],
+    "strategic_role": "European aerospace/defence prime",
+    "description": "Military aircraft, UAS, FCAS, military space, connectivity, intelligence/data and Multi-Domain Combat Cloud.",
+    "sovereignty_score": 5,
+    "criticality": 5,
+    "market_importance": 5,
+    "france_or_eu_fit": 5,
+    "color": "green",
+    "confidence": "high",
+    "tags": [
+      "prime",
+      "air",
+      "space",
+      "France"
+    ],
+    "sources": [
+      "airbus_defence"
+    ],
+    "fact_status": "known"
+  },
+  {
+    "id": "thales",
+    "name": "Thales",
+    "type": "defense_prime",
+    "country": "France",
+    "region": "Europe",
+    "sector": [
+      "sensors",
+      "C4ISR",
+      "cyber",
+      "satcom",
+      "naval"
+    ],
+    "strategic_role": "European defence electronics and systems prime",
+    "description": "Defence electronics, radars, sensors, communications, cyber, space and C4ISR.",
+    "sovereignty_score": 5,
+    "criticality": 5,
+    "market_importance": 5,
+    "france_or_eu_fit": 5,
+    "color": "green",
+    "confidence": "medium",
+    "tags": [
+      "prime",
+      "France",
+      "electronics"
+    ],
+    "sources": [
+      "thales_defence"
+    ],
+    "fact_status": "known"
+  },
+  {
+    "id": "leonardo",
+    "name": "Leonardo",
+    "type": "defense_prime",
+    "country": "Italy",
+    "region": "Europe",
+    "sector": [
+      "aircraft",
+      "helicopters",
+      "electronics",
+      "space"
+    ],
+    "strategic_role": "Italian defence/aerospace prime",
+    "description": "Aircraft, helicopters, sensors, electronics, cyber/security and space systems.",
+    "sovereignty_score": 5,
+    "criticality": 5,
+    "market_importance": 5,
+    "france_or_eu_fit": 4,
+    "color": "green",
+    "confidence": "medium",
+    "tags": [
+      "prime",
+      "Italy"
+    ],
+    "sources": [
+      "leonardo_defence"
+    ],
+    "fact_status": "known"
+  },
+  {
+    "id": "rheinmetall",
+    "name": "Rheinmetall",
+    "type": "defense_prime",
+    "country": "Germany",
+    "region": "Europe",
+    "sector": [
+      "land systems",
+      "ammunition",
+      "air defence"
+    ],
+    "strategic_role": "German land/ammunition/defence prime",
+    "description": "Military vehicles, weapons, ammunition, air defence, electronics and soldier systems.",
+    "sovereignty_score": 5,
+    "criticality": 5,
+    "market_importance": 5,
+    "france_or_eu_fit": 4,
+    "color": "green",
+    "confidence": "medium",
+    "tags": [
+      "prime",
+      "Germany",
+      "ammunition"
+    ],
+    "sources": [
+      "rheinmetall_defence"
+    ],
+    "fact_status": "known"
+  },
+  {
+    "id": "mbda",
+    "name": "MBDA",
+    "type": "defense_prime",
+    "country": "France/UK/Germany/Italy/Spain",
+    "region": "Europe",
+    "sector": [
+      "missiles",
+      "air defence",
+      "deep strike"
+    ],
+    "strategic_role": "European missile systems company",
+    "description": "European complex weapon systems and missile company across air, land and naval domains.",
+    "sovereignty_score": 5,
+    "criticality": 5,
+    "market_importance": 5,
+    "france_or_eu_fit": 5,
+    "color": "green",
+    "confidence": "high",
+    "tags": [
+      "prime",
+      "missiles",
+      "France"
+    ],
+    "sources": [
+      "mbda"
+    ],
+    "fact_status": "known"
+  },
+  {
+    "id": "dassault_aviation",
+    "name": "Dassault Aviation",
+    "type": "defense_prime",
+    "country": "France",
+    "region": "Europe",
+    "sector": [
+      "combat aircraft"
+    ],
+    "strategic_role": "French combat aircraft prime",
+    "description": "Rafale and combat aircraft design/manufacturing ecosystem.",
+    "sovereignty_score": 5,
+    "criticality": 5,
+    "market_importance": 5,
+    "france_or_eu_fit": 5,
+    "color": "green",
+    "confidence": "medium",
+    "tags": [
+      "prime",
+      "France",
+      "air"
+    ],
+    "sources": [
+      "dassault_defense"
+    ],
+    "fact_status": "known"
+  },
+  {
+    "id": "safran",
+    "name": "Safran",
+    "type": "defense_prime",
+    "country": "France",
+    "region": "Europe",
+    "sector": [
+      "optronics",
+      "navigation",
+      "propulsion",
+      "electronics"
+    ],
+    "strategic_role": "French defence aerospace/electronics supplier",
+    "description": "Optronics, navigation, electronics, engines/propulsion and aircraft equipment.",
+    "sovereignty_score": 5,
+    "criticality": 5,
+    "market_importance": 5,
+    "france_or_eu_fit": 5,
+    "color": "green",
+    "confidence": "medium",
+    "tags": [
+      "prime",
+      "France",
+      "sensors"
+    ],
+    "sources": [
+      "safran_defense"
+    ],
+    "fact_status": "known"
+  },
+  {
+    "id": "naval_group",
+    "name": "Naval Group",
+    "type": "defense_prime",
+    "country": "France",
+    "region": "Europe",
+    "sector": [
+      "naval",
+      "submarines",
+      "combat systems"
+    ],
+    "strategic_role": "French naval defence prime",
+    "description": "Submarines, surface ships, naval combat systems and lifecycle services.",
+    "sovereignty_score": 5,
+    "criticality": 5,
+    "market_importance": 5,
+    "france_or_eu_fit": 5,
+    "color": "green",
+    "confidence": "medium",
+    "tags": [
+      "prime",
+      "France",
+      "naval"
+    ],
+    "sources": [
+      "naval_group"
+    ],
+    "fact_status": "known"
+  },
+  {
+    "id": "knds",
+    "name": "KNDS",
+    "type": "defense_prime",
+    "country": "France/Germany",
+    "region": "Europe",
+    "sector": [
+      "land systems",
+      "artillery"
+    ],
+    "strategic_role": "European land systems prime",
+    "description": "Tanks, artillery, armoured vehicles and land systems.",
+    "sovereignty_score": 5,
+    "criticality": 5,
+    "market_importance": 5,
+    "france_or_eu_fit": 5,
+    "color": "green",
+    "confidence": "medium",
+    "tags": [
+      "prime",
+      "France",
+      "Germany",
+      "land"
+    ],
+    "sources": [
+      "knds"
+    ],
+    "fact_status": "known"
+  },
+  {
+    "id": "bae_systems",
+    "name": "BAE Systems",
+    "type": "defense_prime",
+    "country": "United Kingdom",
+    "region": "Europe",
+    "sector": [
+      "air",
+      "naval",
+      "land",
+      "electronics"
+    ],
+    "strategic_role": "UK defence/aerospace prime",
+    "description": "Major defence, aerospace and security company.",
+    "sovereignty_score": 4,
+    "criticality": 5,
+    "market_importance": 5,
+    "france_or_eu_fit": 3,
+    "color": "green",
+    "confidence": "medium",
+    "tags": [
+      "prime",
+      "UK"
+    ],
+    "sources": [
+      "bae_systems"
+    ],
+    "fact_status": "known"
+  },
+  {
+    "id": "saab",
+    "name": "Saab",
+    "type": "defense_prime",
+    "country": "Sweden",
+    "region": "Europe",
+    "sector": [
+      "air",
+      "sensors",
+      "naval",
+      "land"
+    ],
+    "strategic_role": "Swedish defence and security company",
+    "description": "Aeronautics, surveillance, naval, land and advanced defence systems.",
+    "sovereignty_score": 5,
+    "criticality": 5,
+    "market_importance": 5,
+    "france_or_eu_fit": 3,
+    "color": "green",
+    "confidence": "medium",
+    "tags": [
+      "prime",
+      "Sweden"
+    ],
+    "sources": [
+      "saab"
+    ],
+    "fact_status": "known"
+  },
+  {
+    "id": "indra",
+    "name": "Indra",
+    "type": "defense_prime",
+    "country": "Spain",
+    "region": "Europe",
+    "sector": [
+      "defence electronics",
+      "C4ISR",
+      "simulation"
+    ],
+    "strategic_role": "Spanish defence technology company",
+    "description": "Defence/security systems, C4ISR, radars, simulation, command systems.",
+    "sovereignty_score": 5,
+    "criticality": 4,
+    "market_importance": 4,
+    "france_or_eu_fit": 3,
+    "color": "green",
+    "confidence": "medium",
+    "tags": [
+      "prime",
+      "Spain"
+    ],
+    "sources": [
+      "indra"
+    ],
+    "fact_status": "known"
+  },
+  {
+    "id": "hensoldt",
+    "name": "Hensoldt",
+    "type": "defense_supplier",
+    "country": "Germany",
+    "region": "Europe",
+    "sector": [
+      "sensors",
+      "radar",
+      "EW"
+    ],
+    "strategic_role": "European sensor specialist",
+    "description": "Radar, optronics, electronic warfare and sensor systems.",
+    "sovereignty_score": 5,
+    "criticality": 5,
+    "market_importance": 4,
+    "france_or_eu_fit": 4,
+    "color": "green",
+    "confidence": "medium",
+    "tags": [
+      "Germany",
+      "sensors"
+    ],
+    "sources": [
+      "hensoldt"
+    ],
+    "fact_status": "known"
+  },
+  {
+    "id": "kongsberg",
+    "name": "Kongsberg Defence & Aerospace",
+    "type": "defense_prime",
+    "country": "Norway",
+    "region": "Europe",
+    "sector": [
+      "missiles",
+      "air defence",
+      "naval",
+      "space"
+    ],
+    "strategic_role": "Norwegian defence/aerospace prime",
+    "description": "Missiles, air defence, naval, space and command systems.",
+    "sovereignty_score": 5,
+    "criticality": 5,
+    "market_importance": 4,
+    "france_or_eu_fit": 3,
+    "color": "green",
+    "confidence": "medium",
+    "tags": [
+      "Norway",
+      "missiles"
+    ],
+    "sources": [
+      "kongsberg"
+    ],
+    "fact_status": "known"
+  },
+  {
+    "id": "diehl_defence",
+    "name": "Diehl Defence",
+    "type": "defense_supplier",
+    "country": "Germany",
+    "region": "Europe",
+    "sector": [
+      "air defence",
+      "missiles",
+      "ammunition"
+    ],
+    "strategic_role": "German guided missile/air defence supplier",
+    "description": "Air defence, guided missiles, ammunition and protection systems.",
+    "sovereignty_score": 5,
+    "criticality": 5,
+    "market_importance": 4,
+    "france_or_eu_fit": 3,
+    "color": "green",
+    "confidence": "medium",
+    "tags": [
+      "Germany",
+      "air_defence"
+    ],
+    "sources": [
+      "diehl_defence"
+    ],
+    "fact_status": "known"
+  },
+  {
+    "id": "fincantieri",
+    "name": "Fincantieri",
+    "type": "defense_prime",
+    "country": "Italy",
+    "region": "Europe",
+    "sector": [
+      "naval"
+    ],
+    "strategic_role": "Italian naval shipbuilding prime",
+    "description": "Naval vessels and shipbuilding systems.",
+    "sovereignty_score": 5,
+    "criticality": 4,
+    "market_importance": 4,
+    "france_or_eu_fit": 3,
+    "color": "green",
+    "confidence": "medium",
+    "tags": [
+      "Italy",
+      "naval"
+    ],
+    "sources": [
+      "fincantieri"
+    ],
+    "fact_status": "known"
+  },
+  {
+    "id": "patria",
+    "name": "Patria",
+    "type": "defense_supplier",
+    "country": "Finland",
+    "region": "Europe",
+    "sector": [
+      "vehicles",
+      "maintenance",
+      "lifecycle"
+    ],
+    "strategic_role": "Nordic defence supplier",
+    "description": "Armoured vehicles, lifecycle support and defence systems.",
+    "sovereignty_score": 5,
+    "criticality": 4,
+    "market_importance": 4,
+    "france_or_eu_fit": 2,
+    "color": "green",
+    "confidence": "medium",
+    "tags": [
+      "Finland",
+      "vehicles"
+    ],
+    "sources": [
+      "patria"
+    ],
+    "fact_status": "known"
+  },
+  {
+    "id": "bittium",
+    "name": "Bittium",
+    "type": "defense_supplier",
+    "country": "Finland",
+    "region": "Europe",
+    "sector": [
+      "secure communications"
+    ],
+    "strategic_role": "Secure communications supplier",
+    "description": "Secure communications and defence/security systems.",
+    "sovereignty_score": 5,
+    "criticality": 4,
+    "market_importance": 4,
+    "france_or_eu_fit": 2,
+    "color": "green",
+    "confidence": "medium",
+    "tags": [
+      "Finland",
+      "communications"
+    ],
+    "sources": [
+      "bittium"
+    ],
+    "fact_status": "known"
+  },
+  {
+    "id": "rohde_schwarz",
+    "name": "Rohde & Schwarz Defence",
+    "type": "defense_supplier",
+    "country": "Germany",
+    "region": "Europe",
+    "sector": [
+      "secure communications",
+      "EW",
+      "test"
+    ],
+    "strategic_role": "Secure comms/test/EW supplier",
+    "description": "Secure communications, electronic warfare, monitoring and test systems.",
+    "sovereignty_score": 5,
+    "criticality": 4,
+    "market_importance": 4,
+    "france_or_eu_fit": 3,
+    "color": "green",
+    "confidence": "medium",
+    "tags": [
+      "Germany",
+      "communications"
+    ],
+    "sources": [
+      "rohde_schwarz_defence"
+    ],
+    "fact_status": "known"
+  },
+  {
+    "id": "helsing",
+    "name": "Helsing",
+    "type": "dual_use_startup",
+    "country": "Germany/Europe",
+    "region": "Europe",
+    "sector": [
+      "AI",
+      "software",
+      "autonomy"
+    ],
+    "strategic_role": "European AI defence software company",
+    "description": "Software and AI company focused on defence systems and autonomous capability.",
+    "sovereignty_score": 4,
+    "criticality": 5,
+    "market_importance": 4,
+    "france_or_eu_fit": 4,
+    "color": "blue",
+    "confidence": "medium",
+    "tags": [
+      "AI",
+      "dual_use",
+      "startup"
+    ],
+    "sources": [
+      "helsing"
+    ],
+    "fact_status": "known"
+  },
+  {
+    "id": "quantum_systems",
+    "name": "Quantum Systems",
+    "type": "dual_use_startup",
+    "country": "Germany",
+    "region": "Europe",
+    "sector": [
+      "drones",
+      "ISR"
+    ],
+    "strategic_role": "Aerial intelligence / UAS company",
+    "description": "Unmanned aerial systems and aerial intelligence.",
+    "sovereignty_score": 4,
+    "criticality": 4,
+    "market_importance": 4,
+    "france_or_eu_fit": 3,
+    "color": "blue",
+    "confidence": "medium",
+    "tags": [
+      "drones",
+      "ISR"
+    ],
+    "sources": [
+      "quantum_systems"
+    ],
+    "fact_status": "known"
+  },
+  {
+    "id": "tekever",
+    "name": "TEKEVER",
+    "type": "dual_use_startup",
+    "country": "Portugal",
+    "region": "Europe",
+    "sector": [
+      "UAS",
+      "maritime surveillance"
+    ],
+    "strategic_role": "Unmanned systems company",
+    "description": "UAS and surveillance systems, including maritime ISR.",
+    "sovereignty_score": 4,
+    "criticality": 4,
+    "market_importance": 4,
+    "france_or_eu_fit": 2,
+    "color": "blue",
+    "confidence": "medium",
+    "tags": [
+      "drones",
+      "ISR"
+    ],
+    "sources": [
+      "tekever"
+    ],
+    "fact_status": "known"
+  },
+  {
+    "id": "arx_robotics",
+    "name": "ARX Robotics",
+    "type": "dual_use_startup",
+    "country": "Germany",
+    "region": "Europe",
+    "sector": [
+      "ground robotics"
+    ],
+    "strategic_role": "Defence robotics startup",
+    "description": "Autonomous ground systems and robotics for defence.",
+    "sovereignty_score": 4,
+    "criticality": 4,
+    "market_importance": 4,
+    "france_or_eu_fit": 3,
+    "color": "blue",
+    "confidence": "medium",
+    "tags": [
+      "robotics",
+      "land"
+    ],
+    "sources": [
+      "arx_robotics"
+    ],
+    "fact_status": "known"
+  },
+  {
+    "id": "unseenlabs",
+    "name": "Unseenlabs",
+    "type": "dual_use_startup",
+    "country": "France",
+    "region": "Europe",
+    "sector": [
+      "space ISR",
+      "maritime surveillance"
+    ],
+    "strategic_role": "Space-based maritime RF intelligence company",
+    "description": "Maritime surveillance from space-based RF detection.",
+    "sovereignty_score": 5,
+    "criticality": 4,
+    "market_importance": 4,
+    "france_or_eu_fit": 5,
+    "color": "blue",
+    "confidence": "medium",
+    "tags": [
+      "France",
+      "space",
+      "ISR"
+    ],
+    "sources": [
+      "unseenlabs"
+    ],
+    "fact_status": "known"
+  },
+  {
+    "id": "safran_ai_preligens",
+    "name": "Safran AI / Preligens",
+    "type": "dual_use_company",
+    "country": "France",
+    "region": "Europe",
+    "sector": [
+      "AI",
+      "geospatial intelligence"
+    ],
+    "strategic_role": "AI/geospatial intelligence company",
+    "description": "AI-enabled intelligence/geospatial analysis associated with Safran AI.",
+    "sovereignty_score": 5,
+    "criticality": 4,
+    "market_importance": 4,
+    "france_or_eu_fit": 5,
+    "color": "blue",
+    "confidence": "medium",
+    "tags": [
+      "France",
+      "AI",
+      "ISR"
+    ],
+    "sources": [
+      "preligens"
+    ],
+    "fact_status": "known"
+  },
+  {
+    "id": "delair",
+    "name": "Delair",
+    "type": "dual_use_startup",
+    "country": "France",
+    "region": "Europe",
+    "sector": [
+      "drones",
+      "aerial intelligence"
+    ],
+    "strategic_role": "French drone/aerial intelligence company",
+    "description": "Drones and aerial intelligence for industrial/security/defence-adjacent use cases.",
+    "sovereignty_score": 5,
+    "criticality": 4,
+    "market_importance": 4,
+    "france_or_eu_fit": 5,
+    "color": "blue",
+    "confidence": "medium",
+    "tags": [
+      "France",
+      "drones"
+    ],
+    "sources": [
+      "delair"
+    ],
+    "fact_status": "known"
+  },
+  {
+    "id": "exotrail",
+    "name": "Exotrail",
+    "type": "dual_use_startup",
+    "country": "France",
+    "region": "Europe",
+    "sector": [
+      "space mobility"
+    ],
+    "strategic_role": "Space mobility company",
+    "description": "Space logistics/mobility and satellite maneuvering services with defence-adjacent relevance.",
+    "sovereignty_score": 5,
+    "criticality": 4,
+    "market_importance": 4,
+    "france_or_eu_fit": 5,
+    "color": "blue",
+    "confidence": "medium",
+    "tags": [
+      "France",
+      "space"
+    ],
+    "sources": [
+      "exotrail"
+    ],
+    "fact_status": "known"
+  },
+  {
+    "id": "harfanglab",
+    "name": "HarfangLab",
+    "type": "dual_use_startup",
+    "country": "France",
+    "region": "Europe",
+    "sector": [
+      "cybersecurity"
+    ],
+    "strategic_role": "Endpoint cybersecurity company",
+    "description": "Cybersecurity/EDR company relevant to sovereign defence and critical infrastructure.",
+    "sovereignty_score": 5,
+    "criticality": 4,
+    "market_importance": 4,
+    "france_or_eu_fit": 5,
+    "color": "blue",
+    "confidence": "medium",
+    "tags": [
+      "France",
+      "cyber"
+    ],
+    "sources": [
+      "harfanglab"
+    ],
+    "fact_status": "known"
+  },
+  {
+    "id": "sentrycs",
+    "name": "Sentrycs",
+    "type": "dual_use_startup",
+    "country": "Europe/Israel",
+    "region": "Europe/Global",
+    "sector": [
+      "counter-UAS",
+      "RF cyber"
+    ],
+    "strategic_role": "Counter-drone detection/mitigation company",
+    "description": "Counter-drone cyber/RF system company for critical infrastructure/security markets.",
+    "sovereignty_score": 3,
+    "criticality": 4,
+    "market_importance": 4,
+    "france_or_eu_fit": 2,
+    "color": "orange",
+    "confidence": "medium",
+    "tags": [
+      "counter_UAS"
+    ],
+    "sources": [
+      "sentrycs"
+    ],
+    "fact_status": "known"
+  },
+  {
+    "id": "fcas_scaf",
+    "name": "FCAS / SCAF",
+    "type": "major_program",
+    "country": "France/Germany/Spain",
+    "region": "Europe",
+    "sector": [
+      "air combat",
+      "combat cloud"
+    ],
+    "strategic_role": "Future Combat Air System",
+    "description": "European future air combat programme involving manned/unmanned systems and combat cloud concepts.",
+    "sovereignty_score": 5,
+    "criticality": 5,
+    "market_importance": 5,
+    "france_or_eu_fit": 5,
+    "color": "blue",
+    "confidence": "medium",
+    "tags": [
+      "FCAS",
+      "France",
+      "Germany",
+      "Spain"
+    ],
+    "sources": [
+      "airbus_defence",
+      "dassault_defense"
+    ],
+    "fact_status": "known"
+  },
+  {
+    "id": "mgcs",
+    "name": "MGCS",
+    "type": "major_program",
+    "country": "France/Germany",
+    "region": "Europe",
+    "sector": [
+      "land systems"
+    ],
+    "strategic_role": "Main Ground Combat System",
+    "description": "Future Franco-German main ground combat system concept.",
+    "sovereignty_score": 5,
+    "criticality": 5,
+    "market_importance": 5,
+    "france_or_eu_fit": 5,
+    "color": "blue",
+    "confidence": "medium",
+    "tags": [
+      "MGCS",
+      "land"
+    ],
+    "sources": [
+      "knds",
+      "rheinmetall_defence"
+    ],
+    "fact_status": "known"
+  },
+  {
+    "id": "eurodrone",
+    "name": "Eurodrone",
+    "type": "major_program",
+    "country": "Europe",
+    "region": "Europe",
+    "sector": [
+      "UAS"
+    ],
+    "strategic_role": "European MALE RPAS programme",
+    "description": "European medium-altitude long-endurance remotely piloted aircraft programme.",
+    "sovereignty_score": 5,
+    "criticality": 4,
+    "market_importance": 4,
+    "france_or_eu_fit": 4,
+    "color": "blue",
+    "confidence": "medium",
+    "tags": [
+      "UAS"
+    ],
+    "sources": [
+      "airbus_defence"
+    ],
+    "fact_status": "known"
+  },
+  {
+    "id": "rafale_ecosystem",
+    "name": "Rafale Ecosystem",
+    "type": "major_program",
+    "country": "France",
+    "region": "Europe",
+    "sector": [
+      "combat aircraft"
+    ],
+    "strategic_role": "French combat aircraft ecosystem",
+    "description": "French combat aircraft ecosystem with aircraft, engines, sensors, electronic warfare and weapons integration.",
+    "sovereignty_score": 5,
+    "criticality": 5,
+    "market_importance": 5,
+    "france_or_eu_fit": 5,
+    "color": "green",
+    "confidence": "medium",
+    "tags": [
+      "France",
+      "air"
+    ],
+    "sources": [
+      "dassault_defense",
+      "safran_defense",
+      "thales_defence",
+      "mbda"
+    ],
+    "fact_status": "known"
+  },
+  {
+    "id": "eurofighter_ecosystem",
+    "name": "Eurofighter Ecosystem",
+    "type": "major_program",
+    "country": "Europe",
+    "region": "Europe",
+    "sector": [
+      "combat aircraft"
+    ],
+    "strategic_role": "European combat aircraft ecosystem",
+    "description": "European combat aircraft ecosystem with major UK/German/Italian/Spanish industry participation.",
+    "sovereignty_score": 4,
+    "criticality": 5,
+    "market_importance": 5,
+    "france_or_eu_fit": 3,
+    "color": "green",
+    "confidence": "medium",
+    "tags": [
+      "air"
+    ],
+    "sources": [
+      "airbus_defence",
+      "bae_systems",
+      "leonardo_defence"
+    ],
+    "fact_status": "known"
+  },
+  {
+    "id": "aster_sampt",
+    "name": "Aster / SAMP-T Ecosystem",
+    "type": "major_program",
+    "country": "France/Italy",
+    "region": "Europe",
+    "sector": [
+      "air defence"
+    ],
+    "strategic_role": "European air and missile defence system",
+    "description": "Aster missiles and SAMP/T air defence ecosystem.",
+    "sovereignty_score": 5,
+    "criticality": 5,
+    "market_importance": 5,
+    "france_or_eu_fit": 5,
+    "color": "green",
+    "confidence": "medium",
+    "tags": [
+      "France",
+      "Italy",
+      "air_defence"
+    ],
+    "sources": [
+      "mbda",
+      "thales_defence"
+    ],
+    "fact_status": "known"
+  },
+  {
+    "id": "iris_t_slm",
+    "name": "IRIS-T SLM Ecosystem",
+    "type": "major_program",
+    "country": "Germany",
+    "region": "Europe",
+    "sector": [
+      "air defence"
+    ],
+    "strategic_role": "European air defence system",
+    "description": "German-led air defence ecosystem around Diehl Defence and partners.",
+    "sovereignty_score": 5,
+    "criticality": 5,
+    "market_importance": 4,
+    "france_or_eu_fit": 3,
+    "color": "green",
+    "confidence": "medium",
+    "tags": [
+      "Germany",
+      "air_defence"
+    ],
+    "sources": [
+      "diehl_defence"
+    ],
+    "fact_status": "known"
+  },
+  {
+    "id": "naval_combat_systems",
+    "name": "Naval Combat Systems",
+    "type": "capability_layer",
+    "country": "Europe",
+    "region": "Europe",
+    "sector": [
+      "naval",
+      "combat systems"
+    ],
+    "strategic_role": "Naval combat system layer",
+    "description": "Combat management systems, sensors, weapons integration, sonar/radar and ship lifecycle support.",
+    "sovereignty_score": 4,
+    "criticality": 5,
+    "market_importance": 5,
+    "france_or_eu_fit": 5,
+    "color": "green",
+    "confidence": "medium",
+    "tags": [
+      "naval",
+      "systems"
+    ],
+    "sources": [
+      "naval_group",
+      "thales_defence",
+      "fincantieri"
+    ],
+    "fact_status": "known"
+  },
+  {
+    "id": "military_satcom",
+    "name": "Military Satcom / Secure Connectivity",
+    "type": "capability_layer",
+    "country": "EU/Europe",
+    "region": "Europe",
+    "sector": [
+      "satcom",
+      "space"
+    ],
+    "strategic_role": "Secure communications capability",
+    "description": "Satellite communications and secure connectivity for government/defence users.",
+    "sovereignty_score": 5,
+    "criticality": 5,
+    "market_importance": 5,
+    "france_or_eu_fit": 5,
+    "color": "blue",
+    "confidence": "medium",
+    "tags": [
+      "satcom"
+    ],
+    "sources": [
+      "iris2",
+      "govsatcom",
+      "airbus_space",
+      "thales_defence"
+    ],
+    "fact_status": "known"
+  },
+  {
+    "id": "galileo_prs_capability",
+    "name": "Galileo PRS Capability",
+    "type": "capability_layer",
+    "country": "EU",
+    "region": "Europe",
+    "sector": [
+      "navigation"
+    ],
+    "strategic_role": "Secure navigation service",
+    "description": "Encrypted navigation service for government-authorised users.",
+    "sovereignty_score": 5,
+    "criticality": 5,
+    "market_importance": 4,
+    "france_or_eu_fit": 5,
+    "color": "blue",
+    "confidence": "medium",
+    "tags": [
+      "navigation",
+      "EU"
+    ],
+    "sources": [
+      "galileo_prs"
+    ],
+    "fact_status": "known"
+  },
+  {
+    "id": "counter_uas_capability",
+    "name": "Counter-UAS Capability",
+    "type": "capability_layer",
+    "country": "Europe",
+    "region": "Europe",
+    "sector": [
+      "counter-UAS",
+      "sensors",
+      "EW"
+    ],
+    "strategic_role": "Drone detection and response layer",
+    "description": "Detection, tracking, identification and non-sensitive response coordination for drones around critical assets.",
+    "sovereignty_score": 3,
+    "criticality": 5,
+    "market_importance": 5,
+    "france_or_eu_fit": 5,
+    "color": "orange",
+    "confidence": "medium",
+    "tags": [
+      "counter_UAS"
+    ],
+    "sources": [
+      "sentrycs",
+      "hensoldt",
+      "thales_defence",
+      "mbda"
+    ],
+    "fact_status": "known"
+  },
+  {
+    "id": "battle_management",
+    "name": "Battle Management / C2 Software",
+    "type": "software_platform",
+    "country": "Europe",
+    "region": "Europe",
+    "sector": [
+      "C2",
+      "software"
+    ],
+    "strategic_role": "Command and control software layer",
+    "description": "Software for command, control, situational awareness, data fusion and interoperability.",
+    "sovereignty_score": 3,
+    "criticality": 5,
+    "market_importance": 5,
+    "france_or_eu_fit": 5,
+    "color": "orange",
+    "confidence": "medium",
+    "tags": [
+      "C2",
+      "software"
+    ],
+    "sources": [
+      "airbus_defence",
+      "thales_defence",
+      "indra"
+    ],
+    "fact_status": "known"
+  },
+  {
+    "id": "defence_procurement_data",
+    "name": "Defence Procurement / Supplier Data",
+    "type": "data_layer",
+    "country": "EU/Europe",
+    "region": "Europe",
+    "sector": [
+      "procurement",
+      "supplier intelligence"
+    ],
+    "strategic_role": "Market/supplier visibility layer",
+    "description": "Structured data about suppliers, capabilities, procurement priorities and industrial dependencies.",
+    "sovereignty_score": 2,
+    "criticality": 5,
+    "market_importance": 5,
+    "france_or_eu_fit": 5,
+    "color": "red",
+    "confidence": "medium",
+    "tags": [
+      "data",
+      "procurement"
+    ],
+    "sources": [
+      "edis",
+      "edf",
+      "card"
+    ],
+    "fact_status": "known"
+  },
+  {
+    "id": "semiconductor_dependency",
+    "name": "Semiconductor / Electronics Dependency",
+    "type": "dependency_layer",
+    "country": "Global",
+    "region": "Global",
+    "sector": [
+      "semiconductors",
+      "electronics"
+    ],
+    "strategic_role": "Microelectronics bottleneck",
+    "description": "Advanced chips, FPGAs, sensors, processors, secure components and electronics supply exposure.",
+    "sovereignty_score": 2,
+    "criticality": 5,
+    "market_importance": 5,
+    "france_or_eu_fit": 5,
+    "color": "red",
+    "confidence": "medium",
+    "tags": [
+      "chips",
+      "electronics"
+    ],
+    "sources": [],
+    "fact_status": "known"
+  },
+  {
+    "id": "energetics_dependency",
+    "name": "Energetics / Propellants / Explosives Dependency",
+    "type": "dependency_layer",
+    "country": "EU/Europe",
+    "region": "Europe",
+    "sector": [
+      "energetics",
+      "ammunition"
+    ],
+    "strategic_role": "Energetics bottleneck",
+    "description": "Propellants, explosives, solid rocket motors and specialist chemicals/materials for munitions and missiles.",
+    "sovereignty_score": 2,
+    "criticality": 5,
+    "market_importance": 5,
+    "france_or_eu_fit": 5,
+    "color": "red",
+    "confidence": "medium",
+    "tags": [
+      "energetics",
+      "bottleneck"
+    ],
+    "sources": [
+      "edf",
+      "edis"
+    ],
+    "fact_status": "known"
+  },
+  {
+    "id": "critical_raw_materials",
+    "name": "Critical Raw Materials",
+    "type": "dependency_layer",
+    "country": "Global",
+    "region": "Global",
+    "sector": [
+      "materials"
+    ],
+    "strategic_role": "Materials dependency",
+    "description": "Titanium, rare earths, energetic precursors, specialty metals, composites and secure supply chains.",
+    "sovereignty_score": 2,
+    "criticality": 5,
+    "market_importance": 5,
+    "france_or_eu_fit": 5,
+    "color": "red",
+    "confidence": "medium",
+    "tags": [
+      "materials"
+    ],
+    "sources": [
+      "edis"
+    ],
+    "fact_status": "known"
+  },
+  {
+    "id": "skilled_workforce",
+    "name": "Skilled Defence Workforce",
+    "type": "dependency_layer",
+    "country": "EU/Europe",
+    "region": "Europe",
+    "sector": [
+      "talent"
+    ],
+    "strategic_role": "Talent and engineering capacity",
+    "description": "Engineers, technicians, manufacturing workers, cybersecurity specialists and cleared talent.",
+    "sovereignty_score": 3,
+    "criticality": 5,
+    "market_importance": 5,
+    "france_or_eu_fit": 5,
+    "color": "orange",
+    "confidence": "medium",
+    "tags": [
+      "talent"
+    ],
+    "sources": [
+      "edis",
+      "edf"
+    ],
+    "fact_status": "known"
+  },
+  {
+    "id": "test_ranges_certification",
+    "name": "Test Ranges / Qualification / Certification",
+    "type": "dependency_layer",
+    "country": "EU/Europe",
+    "region": "Europe",
+    "sector": [
+      "test",
+      "certification"
+    ],
+    "strategic_role": "Test and qualification bottleneck",
+    "description": "Facilities and processes required to test, validate, qualify and certify defence systems.",
+    "sovereignty_score": 3,
+    "criticality": 5,
+    "market_importance": 5,
+    "france_or_eu_fit": 5,
+    "color": "orange",
+    "confidence": "medium",
+    "tags": [
+      "test",
+      "certification"
+    ],
+    "sources": [
+      "edf",
+      "occar"
+    ],
+    "fact_status": "known"
+  },
+  {
+    "id": "interoperability_standards",
+    "name": "Interoperability Standards",
+    "type": "dependency_layer",
+    "country": "NATO/EU",
+    "region": "Europe",
+    "sector": [
+      "interoperability"
+    ],
+    "strategic_role": "NATO/EU compatibility layer",
+    "description": "Standards, interfaces and integration requirements for coalition operations.",
+    "sovereignty_score": 3,
+    "criticality": 5,
+    "market_importance": 5,
+    "france_or_eu_fit": 4,
+    "color": "orange",
+    "confidence": "medium",
+    "tags": [
+      "interoperability"
+    ],
+    "sources": [
+      "edf",
+      "pesco"
+    ],
+    "fact_status": "known"
+  },
+  {
+    "id": "secure_cloud_edge_compute",
+    "name": "Secure Cloud / Edge Compute",
+    "type": "dependency_layer",
+    "country": "EU/Europe",
+    "region": "Europe",
+    "sector": [
+      "cloud",
+      "edge",
+      "software"
+    ],
+    "strategic_role": "Defence software infrastructure",
+    "description": "Secure compute, edge deployment and data infrastructure for AI, C2, ISR and autonomy.",
+    "sovereignty_score": 3,
+    "criticality": 5,
+    "market_importance": 5,
+    "france_or_eu_fit": 5,
+    "color": "orange",
+    "confidence": "medium",
+    "tags": [
+      "cloud",
+      "edge",
+      "AI"
+    ],
+    "sources": [
+      "airbus_defence",
+      "helsing"
+    ],
+    "fact_status": "known"
+  },
+  {
+    "id": "classified_compliance_export_control",
+    "name": "Classified Compliance / Export Control",
+    "type": "dependency_layer",
+    "country": "EU/Europe",
+    "region": "Europe",
+    "sector": [
+      "compliance",
+      "export control"
+    ],
+    "strategic_role": "Compliance bottleneck",
+    "description": "Export controls, clearance, classified handling, cyber requirements and procurement eligibility.",
+    "sovereignty_score": 3,
+    "criticality": 5,
+    "market_importance": 5,
+    "france_or_eu_fit": 5,
+    "color": "orange",
+    "confidence": "medium",
+    "tags": [
+      "compliance"
+    ],
+    "sources": [
+      "edis",
+      "edf"
+    ],
+    "fact_status": "known"
+  },
+  {
+    "id": "supply_chain_visibility_gap",
+    "name": "Supply Chain Visibility Gap",
+    "type": "dependency_layer",
+    "country": "EU/Europe",
+    "region": "Europe",
+    "sector": [
+      "supply chain",
+      "data"
+    ],
+    "strategic_role": "Visibility bottleneck",
+    "description": "Fragmented supplier and dependency data across defence, dual-use and industrial base.",
+    "sovereignty_score": 1,
+    "criticality": 5,
+    "market_importance": 5,
+    "france_or_eu_fit": 5,
+    "color": "red",
+    "confidence": "medium",
+    "tags": [
+      "data_gap",
+      "opportunity"
+    ],
+    "sources": [
+      "edis",
+      "card"
+    ],
+    "fact_status": "known"
+  }
+]

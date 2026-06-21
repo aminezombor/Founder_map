@@ -1,0 +1,508 @@
+[
+  {
+    "id": "opp_industrial_graph_os",
+    "title": "Industrial dependency graph OS for factories and critical suppliers",
+    "type": "Data/visibility",
+    "score": 90.0,
+    "reason": "Every database so far points back to supplier visibility, digital thread, OT assets and bottlenecks. A graph OS that maps machines, suppliers, software, OT assets, data flows, compliance and production dependencies can serve aerospace, defence, energy and manufacturing.",
+    "affected_nodes": [
+      "industrial_software_ot_stack",
+      "aerospace_supply_chain_visibility_layer",
+      "european_defence_stack_ref",
+      "brownfield_integration_gap",
+      "industrial_data_quality_gap"
+    ],
+    "dependency_types": [
+      "dependency_graph",
+      "supplier_visibility",
+      "OT_assets"
+    ],
+    "buyer_types": [
+      "industrial groups",
+      "defence suppliers",
+      "aerospace SMEs",
+      "VCs",
+      "public agencies"
+    ],
+    "criticality": 5,
+    "dependency_risk": 5,
+    "market_importance": 5,
+    "urgency": 5,
+    "accessibility": 5,
+    "france_fit": 5,
+    "eu_fit": 5,
+    "incumbent_strength": 4,
+    "regulatory_friction": 3,
+    "capital_intensity": 1,
+    "confidence": "high",
+    "sources": [
+      "siemens_xcelerator",
+      "dassault_3dexperience",
+      "ptc_products"
+    ]
+  },
+  {
+    "id": "opp_iec62443_evidence_ci",
+    "title": "IEC 62443 continuous evidence and patch-status platform",
+    "type": "Compliance/trust",
+    "score": 87.5,
+    "reason": "ISA/IEC 62443 creates continuous evidence needs around IACS security. A lightweight platform can track assets, zones/conduits, patch state, vendor SBOMs, controls and audit evidence across OT environments.",
+    "affected_nodes": [
+      "isa_iec_62443",
+      "industrial_security_compliance_gap",
+      "ot_cybersecurity_layer",
+      "claroty_node",
+      "dragos_node",
+      "nozomi_node"
+    ],
+    "dependency_types": [
+      "IEC62443",
+      "OT_security",
+      "compliance",
+      "evidence"
+    ],
+    "buyer_types": [
+      "manufacturers",
+      "critical infrastructure",
+      "integrators",
+      "defence suppliers",
+      "auditors"
+    ],
+    "criticality": 5,
+    "dependency_risk": 5,
+    "market_importance": 5,
+    "urgency": 5,
+    "accessibility": 5,
+    "france_fit": 5,
+    "eu_fit": 5,
+    "incumbent_strength": 4,
+    "regulatory_friction": 5,
+    "capital_intensity": 1,
+    "confidence": "high",
+    "sources": [
+      "isa_iec_62443"
+    ]
+  },
+  {
+    "id": "opp_uns_builder",
+    "title": "Unified Namespace builder and data-quality monitor",
+    "type": "Infrastructure + DataOps",
+    "score": 91.2,
+    "reason": "Factories need contextual OT data before AI or analytics can work. A UNS builder that validates MQTT/Sparkplug/OPC UA streams, naming, units, lineage and missing metadata attacks a real bottleneck.",
+    "affected_nodes": [
+      "unified_namespace",
+      "mqtt_sparkplug",
+      "opc_ua",
+      "industrial_dataops_layer",
+      "industrial_data_quality_gap"
+    ],
+    "dependency_types": [
+      "UNS",
+      "MQTT",
+      "OPC_UA",
+      "data_quality"
+    ],
+    "buyer_types": [
+      "manufacturers",
+      "system integrators",
+      "industrial data teams",
+      "plant managers"
+    ],
+    "criticality": 5,
+    "dependency_risk": 5,
+    "market_importance": 5,
+    "urgency": 5,
+    "accessibility": 5,
+    "france_fit": 5,
+    "eu_fit": 5,
+    "incumbent_strength": 3,
+    "regulatory_friction": 3,
+    "capital_intensity": 1,
+    "confidence": "high",
+    "sources": [
+      "opcfoundation_opcua",
+      "sparkplug",
+      "unified_namespace"
+    ]
+  },
+  {
+    "id": "opp_brownfield_connector_marketplace",
+    "title": "Brownfield machine connector marketplace",
+    "type": "Integration opportunity",
+    "score": 51.0,
+    "reason": "Brownfield factories are full of legacy PLCs, machines and proprietary protocols. A verified connector marketplace with templates, drivers, test harnesses and integrator reviews can reduce IT/OT integration cost.",
+    "affected_nodes": [
+      "brownfield_integration_gap",
+      "industrial_connectivity_layer",
+      "kepware_node",
+      "inductive_ignition_node",
+      "litmus_node",
+      "highbyte_node"
+    ],
+    "dependency_types": [
+      "brownfield",
+      "connectors",
+      "protocols"
+    ],
+    "buyer_types": [
+      "manufacturers",
+      "integrators",
+      "machine builders",
+      "industrial software vendors"
+    ],
+    "criticality": 5,
+    "dependency_risk": 5,
+    "market_importance": 5,
+    "urgency": 5,
+    "accessibility": 4,
+    "france_fit": 5,
+    "eu_fit": 5,
+    "incumbent_strength": 4,
+    "regulatory_friction": 3,
+    "capital_intensity": 2,
+    "confidence": "medium",
+    "sources": [
+      "opcfoundation_opcua",
+      "kepware",
+      "rockwell_factorytalk"
+    ]
+  },
+  {
+    "id": "opp_ai_ready_factory_score",
+    "title": "AI-ready factory score and remediation engine",
+    "type": "Industrial AI + data/visibility",
+    "score": 91.2,
+    "reason": "Industrial AI fails without data quality, asset models, connectivity, security and operator trust. A score/remediation engine can tell plants exactly what blocks AI deployment and what to fix first.",
+    "affected_nodes": [
+      "industrial_ai_layer",
+      "industrial_ai_trust_gap",
+      "industrial_data_quality_gap",
+      "industrial_ontology",
+      "ot_cybersecurity_layer"
+    ],
+    "dependency_types": [
+      "AI_readiness",
+      "data_quality",
+      "OT_security",
+      "ontology"
+    ],
+    "buyer_types": [
+      "manufacturers",
+      "AI vendors",
+      "consultancies",
+      "industrial cloud providers"
+    ],
+    "criticality": 5,
+    "dependency_risk": 5,
+    "market_importance": 5,
+    "urgency": 5,
+    "accessibility": 5,
+    "france_fit": 5,
+    "eu_fit": 5,
+    "incumbent_strength": 3,
+    "regulatory_friction": 3,
+    "capital_intensity": 1,
+    "confidence": "high",
+    "sources": [
+      "siemens_xcelerator",
+      "palantir_aip",
+      "cognite"
+    ]
+  },
+  {
+    "id": "opp_simulation_to_mes_bridge",
+    "title": "Simulation-to-MES bridge for validated production change",
+    "type": "Industrial software + simulation",
+    "score": 37.3,
+    "reason": "Simulation is powerful but often disconnected from the shop floor. A bridge from simulation/digital-twin outputs into MES, recipes, work instructions and change-control can create high-value industrial workflow software.",
+    "affected_nodes": [
+      "simulation_to_shopfloor_gap",
+      "cae_simulation_layer",
+      "digital_twin_layer",
+      "mes_mom_layer",
+      "industrial_change_management_gap"
+    ],
+    "dependency_types": [
+      "simulation",
+      "MES",
+      "digital_twin",
+      "change_control"
+    ],
+    "buyer_types": [
+      "aerospace suppliers",
+      "automotive plants",
+      "industrial engineering teams",
+      "defence manufacturing"
+    ],
+    "criticality": 5,
+    "dependency_risk": 4,
+    "market_importance": 5,
+    "urgency": 5,
+    "accessibility": 4,
+    "france_fit": 5,
+    "eu_fit": 5,
+    "incumbent_strength": 4,
+    "regulatory_friction": 4,
+    "capital_intensity": 2,
+    "confidence": "medium",
+    "sources": [
+      "dassault_3dexperience",
+      "siemens_xcelerator",
+      "nvidia_omniverse"
+    ]
+  },
+  {
+    "id": "opp_plc_change_control",
+    "title": "PLC and machine-parameter change-control vault",
+    "type": "OT governance",
+    "score": 39.8,
+    "reason": "PLC code, recipes and machine parameters often change without strong unified audit, rollback and impact analysis. A vendor-neutral change-control vault is accessible and painful.",
+    "affected_nodes": [
+      "plc_control_layer",
+      "industrial_change_management_gap",
+      "ot_cybersecurity_layer",
+      "rockwell_factorytalk_node",
+      "codesys_node"
+    ],
+    "dependency_types": [
+      "PLC",
+      "change_control",
+      "audit",
+      "rollback"
+    ],
+    "buyer_types": [
+      "manufacturers",
+      "integrators",
+      "regulated plants",
+      "OT security teams"
+    ],
+    "criticality": 5,
+    "dependency_risk": 4,
+    "market_importance": 5,
+    "urgency": 5,
+    "accessibility": 4,
+    "france_fit": 5,
+    "eu_fit": 5,
+    "incumbent_strength": 3,
+    "regulatory_friction": 4,
+    "capital_intensity": 1,
+    "confidence": "medium",
+    "sources": [
+      "rockwell_factorytalk",
+      "codesys",
+      "isa_iec_62443"
+    ]
+  },
+  {
+    "id": "opp_frontline_to_digital_thread",
+    "title": "Frontline-to-digital-thread work instruction platform",
+    "type": "Frontline operations + traceability",
+    "score": 55.2,
+    "reason": "Operators and technicians generate real evidence, deviations, fixes and tribal knowledge. Connecting frontline work instructions to PLM/MES/quality records can close digital-thread gaps without replacing big systems.",
+    "affected_nodes": [
+      "industrial_frontline_layer",
+      "digital_thread_breakage",
+      "quality_traceability_layer",
+      "tulip_node",
+      "maintainx_node"
+    ],
+    "dependency_types": [
+      "frontline",
+      "work_instructions",
+      "traceability",
+      "quality"
+    ],
+    "buyer_types": [
+      "aerospace SMEs",
+      "medical device manufacturers",
+      "defence suppliers",
+      "regulated manufacturing"
+    ],
+    "criticality": 4,
+    "dependency_risk": 4,
+    "market_importance": 5,
+    "urgency": 5,
+    "accessibility": 5,
+    "france_fit": 5,
+    "eu_fit": 5,
+    "incumbent_strength": 3,
+    "regulatory_friction": 3,
+    "capital_intensity": 1,
+    "confidence": "high",
+    "sources": [
+      "tulip",
+      "maintainx",
+      "dassault_3dexperience",
+      "ptc_products"
+    ]
+  },
+  {
+    "id": "opp_ot_asset_intelligence_for_procurement",
+    "title": "OT asset intelligence for procurement and cyber insurance",
+    "type": "Data/visibility + security",
+    "score": 28.6,
+    "reason": "OT asset data is valuable beyond security: procurement, lifecycle planning, insurance, maintenance and modernization. A normalized asset intelligence layer can sit on top of security discovery tools.",
+    "affected_nodes": [
+      "ot_cyber_visibility_gap",
+      "claroty_node",
+      "dragos_node",
+      "nozomi_node",
+      "armis_node",
+      "maintenance_reliability_layer"
+    ],
+    "dependency_types": [
+      "OT_assets",
+      "cyber_insurance",
+      "procurement",
+      "lifecycle"
+    ],
+    "buyer_types": [
+      "manufacturers",
+      "insurers",
+      "procurement teams",
+      "OT security teams"
+    ],
+    "criticality": 5,
+    "dependency_risk": 4,
+    "market_importance": 5,
+    "urgency": 4,
+    "accessibility": 4,
+    "france_fit": 5,
+    "eu_fit": 5,
+    "incumbent_strength": 4,
+    "regulatory_friction": 4,
+    "capital_intensity": 1,
+    "confidence": "medium",
+    "sources": [
+      "claroty",
+      "dragos",
+      "nozomi",
+      "armis"
+    ]
+  },
+  {
+    "id": "opp_factory_energy_digital_twin",
+    "title": "Machine-level energy and emissions digital twin",
+    "type": "Sustainability + industrial software",
+    "score": 38.5,
+    "reason": "Factories need energy visibility at asset/line/product level. A machine-level energy/emissions twin can connect meters, machines, work orders and product carbon reporting.",
+    "affected_nodes": [
+      "factory_energy_visibility_gap",
+      "digital_twin_layer",
+      "industrial_dataops_layer",
+      "schneider_ecostruxure_node",
+      "abb_ability_node"
+    ],
+    "dependency_types": [
+      "energy",
+      "emissions",
+      "digital_twin",
+      "DataOps"
+    ],
+    "buyer_types": [
+      "manufacturers",
+      "energy managers",
+      "industrial sites",
+      "ESG teams"
+    ],
+    "criticality": 5,
+    "dependency_risk": 4,
+    "market_importance": 5,
+    "urgency": 5,
+    "accessibility": 4,
+    "france_fit": 5,
+    "eu_fit": 5,
+    "incumbent_strength": 4,
+    "regulatory_friction": 3,
+    "capital_intensity": 2,
+    "confidence": "medium",
+    "sources": [
+      "schneider_ecostruxure",
+      "abb_ability",
+      "siemens_xcelerator"
+    ]
+  },
+  {
+    "id": "opp_industrial_vendor_lockin_translator",
+    "title": "Industrial vendor-lock-in translator and migration assistant",
+    "type": "Substitution + integration",
+    "score": 27.3,
+    "reason": "Factories struggle to migrate between vendor stacks because tags, recipes, screens, PLC code, reports and histories are trapped. A translator/migration assistant can reduce switching friction.",
+    "affected_nodes": [
+      "vendor_lockin_gap",
+      "industrial_connectivity_layer",
+      "scada_hmi_layer",
+      "mes_mom_layer",
+      "digital_thread"
+    ],
+    "dependency_types": [
+      "migration",
+      "vendor_lockin",
+      "connectivity"
+    ],
+    "buyer_types": [
+      "manufacturers",
+      "integrators",
+      "modernization teams",
+      "industrial software vendors"
+    ],
+    "criticality": 5,
+    "dependency_risk": 4,
+    "market_importance": 5,
+    "urgency": 4,
+    "accessibility": 4,
+    "france_fit": 5,
+    "eu_fit": 5,
+    "incumbent_strength": 5,
+    "regulatory_friction": 3,
+    "capital_intensity": 2,
+    "confidence": "medium",
+    "sources": [
+      "opcfoundation_opcua",
+      "rockwell_factorytalk",
+      "siemens_xcelerator"
+    ]
+  },
+  {
+    "id": "opp_industrial_opportunity_engine",
+    "title": "Industrial software opportunity engine for founders and investors",
+    "type": "Data/visibility",
+    "score": 56.5,
+    "reason": "This cross-cutting layer exposes where AI, defence, aerospace and manufacturing all hit the same bottlenecks: data context, traceability, compliance, OT security, simulation-to-shopfloor and supplier visibility.",
+    "affected_nodes": [
+      "industrial_software_ot_stack",
+      "eu_ai_stack_ref",
+      "european_defence_stack_ref",
+      "global_aerospace_stack_ref",
+      "global_ai_stack_ref"
+    ],
+    "dependency_types": [
+      "market_intelligence",
+      "opportunity_extraction",
+      "dependency_graph"
+    ],
+    "buyer_types": [
+      "founders",
+      "VCs",
+      "corporates",
+      "public agencies"
+    ],
+    "criticality": 5,
+    "dependency_risk": 4,
+    "market_importance": 4,
+    "urgency": 5,
+    "accessibility": 5,
+    "france_fit": 5,
+    "eu_fit": 5,
+    "incumbent_strength": 3,
+    "regulatory_friction": 2,
+    "capital_intensity": 1,
+    "confidence": "high",
+    "sources": [
+      "siemens_xcelerator",
+      "dassault_3dexperience",
+      "isa_iec_62443",
+      "opcfoundation_opcua"
+    ]
+  }
+]

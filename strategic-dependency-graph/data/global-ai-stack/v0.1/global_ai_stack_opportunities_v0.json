@@ -1,0 +1,541 @@
+[
+  {
+    "id": "opp_global_gpu_broker",
+    "title": "Global GPU capacity intelligence and allocation broker",
+    "type": "Infrastructure + data/visibility",
+    "score": 68.3,
+    "reason": "The global model and AI cloud stack is bottlenecked by accelerator availability, data-center capacity and power. A broker/observability layer can help startups, enterprises and investors locate capacity and plan cost/risk.",
+    "affected_nodes": [
+      "gpu_compute_layer",
+      "coreweave",
+      "lambda_cloud",
+      "nebius",
+      "nvidia",
+      "amd",
+      "ai_data_center_energy_layer"
+    ],
+    "dependency_types": [
+      "GPU",
+      "capacity",
+      "pricing",
+      "availability"
+    ],
+    "buyer_types": [
+      "AI startups",
+      "enterprises",
+      "VC portfolios",
+      "cloud buyers",
+      "public agencies"
+    ],
+    "criticality": 5,
+    "dependency_risk": 5,
+    "market_importance": 5,
+    "urgency": 5,
+    "accessibility": 4,
+    "france_fit": 5,
+    "eu_fit": 5,
+    "incumbent_strength": 4,
+    "regulatory_friction": 2,
+    "capital_intensity": 3,
+    "confidence": "high",
+    "sources": [
+      "coreweave",
+      "nvidia_datacenter",
+      "amd_mi300"
+    ]
+  },
+  {
+    "id": "opp_model_router_sovereignty",
+    "title": "Model router with sovereignty, latency, cost and compliance policies",
+    "type": "Tooling + compliance",
+    "score": 69.6,
+    "reason": "Enterprises now have many models across OpenAI, Anthropic, Gemini, Grok, Qwen, Mistral, Cohere and others. A policy-aware router can optimize quality, cost, data residency, latency and regulatory constraints.",
+    "affected_nodes": [
+      "openai",
+      "anthropic",
+      "google_deepmind",
+      "mistral_ai",
+      "cohere",
+      "alibaba_qwen",
+      "ai_cloud_platform_layer",
+      "ai_safety_governance_layer"
+    ],
+    "dependency_types": [
+      "model_routing",
+      "compliance",
+      "FinOps"
+    ],
+    "buyer_types": [
+      "regulated enterprises",
+      "AI SaaS",
+      "public sector",
+      "AI platforms"
+    ],
+    "criticality": 5,
+    "dependency_risk": 4,
+    "market_importance": 5,
+    "urgency": 5,
+    "accessibility": 5,
+    "france_fit": 5,
+    "eu_fit": 5,
+    "incumbent_strength": 4,
+    "regulatory_friction": 3,
+    "capital_intensity": 1,
+    "confidence": "high",
+    "sources": [
+      "openai_business",
+      "anthropic_claude",
+      "google_vertex_gemini",
+      "mistral",
+      "cohere",
+      "qwen",
+      "eu_ai_act"
+    ]
+  },
+  {
+    "id": "opp_ai_supply_chain_risk_os",
+    "title": "AI supply-chain risk OS for models, data and dependencies",
+    "type": "Security + data/visibility",
+    "score": 70.9,
+    "reason": "Open models, closed APIs, model hubs and enterprise integrations create a new AI supply chain. Buyers need provenance, license, safety, source and dependency visibility.",
+    "affected_nodes": [
+      "model_distribution_layer",
+      "hugging_face",
+      "ai_safety_governance_layer",
+      "training_data_layer",
+      "enterprise_buyer_layer"
+    ],
+    "dependency_types": [
+      "model_supply_chain",
+      "data_rights",
+      "security"
+    ],
+    "buyer_types": [
+      "enterprises",
+      "model hubs",
+      "governments",
+      "auditors",
+      "VC due diligence"
+    ],
+    "criticality": 5,
+    "dependency_risk": 4,
+    "market_importance": 5,
+    "urgency": 5,
+    "accessibility": 5,
+    "france_fit": 5,
+    "eu_fit": 5,
+    "incumbent_strength": 3,
+    "regulatory_friction": 3,
+    "capital_intensity": 1,
+    "confidence": "high",
+    "sources": [
+      "huggingface",
+      "perplexity_enterprise",
+      "eu_ai_act"
+    ]
+  },
+  {
+    "id": "opp_eu_ai_stack_comparison_dashboard",
+    "title": "Europe-vs-world AI strategic comparison dashboard",
+    "type": "Data/visibility",
+    "score": 56.2,
+    "reason": "The global graph reveals Europe’s strengths and weaknesses against the US, China and Middle East: regulation, ASML, Mistral, AI Factories vs compute/chip/cloud exposure. This can become a paid intelligence product.",
+    "affected_nodes": [
+      "eu_ai_ecosystem",
+      "us_ai_ecosystem",
+      "china_ai_ecosystem",
+      "middle_east_ai_ecosystem",
+      "gpu_compute_layer",
+      "chip_supply_chain_layer"
+    ],
+    "dependency_types": [
+      "market_intelligence",
+      "sovereignty",
+      "dependency_graph"
+    ],
+    "buyer_types": [
+      "VCs",
+      "corporates",
+      "public agencies",
+      "founders",
+      "defense-adjacent actors"
+    ],
+    "criticality": 5,
+    "dependency_risk": 4,
+    "market_importance": 4,
+    "urgency": 5,
+    "accessibility": 5,
+    "france_fit": 5,
+    "eu_fit": 5,
+    "incumbent_strength": 3,
+    "regulatory_friction": 2,
+    "capital_intensity": 1,
+    "confidence": "high",
+    "sources": [
+      "eu_ai_factories",
+      "eu_chips_act",
+      "openai_business",
+      "qwen",
+      "deepseek",
+      "humain_reuters"
+    ]
+  },
+  {
+    "id": "opp_ai_inference_finops",
+    "title": "AI inference FinOps and observability layer",
+    "type": "Infrastructure + operational efficiency",
+    "score": 70.9,
+    "reason": "Inference will dominate costs as AI moves from training demos into production. A cross-model observability layer can monitor cost, latency, quality, safety and usage across providers.",
+    "affected_nodes": [
+      "ai_serving_inference_layer",
+      "vllm",
+      "triton_inference",
+      "aws_bedrock",
+      "azure_openai_foundry",
+      "google_cloud_vertex",
+      "coreweave"
+    ],
+    "dependency_types": [
+      "inference",
+      "FinOps",
+      "observability"
+    ],
+    "buyer_types": [
+      "AI SaaS",
+      "enterprises",
+      "platform teams",
+      "cloud providers"
+    ],
+    "criticality": 5,
+    "dependency_risk": 4,
+    "market_importance": 5,
+    "urgency": 5,
+    "accessibility": 5,
+    "france_fit": 5,
+    "eu_fit": 5,
+    "incumbent_strength": 4,
+    "regulatory_friction": 2,
+    "capital_intensity": 1,
+    "confidence": "high",
+    "sources": [
+      "aws_bedrock",
+      "azure_openai",
+      "google_vertex_gemini",
+      "vllm"
+    ]
+  },
+  {
+    "id": "opp_ai_data_center_energy_intel",
+    "title": "AI data-center energy and grid intelligence",
+    "type": "Infrastructure + data/visibility",
+    "score": 20.4,
+    "reason": "Data center power and cooling is becoming a strategic bottleneck. Software that maps grid capacity, cooling options, renewables, permits and AI workload demand can serve cloud, real estate and public-sector buyers.",
+    "affected_nodes": [
+      "ai_data_center_energy_layer",
+      "coreweave",
+      "crusoe",
+      "humain",
+      "g42",
+      "ai_cloud_platform_layer"
+    ],
+    "dependency_types": [
+      "energy",
+      "data_center",
+      "permitting",
+      "cooling"
+    ],
+    "buyer_types": [
+      "data center operators",
+      "cloud providers",
+      "utilities",
+      "public agencies",
+      "infrastructure funds"
+    ],
+    "criticality": 5,
+    "dependency_risk": 5,
+    "market_importance": 5,
+    "urgency": 5,
+    "accessibility": 3,
+    "france_fit": 4,
+    "eu_fit": 4,
+    "incumbent_strength": 5,
+    "regulatory_friction": 4,
+    "capital_intensity": 4,
+    "confidence": "medium",
+    "sources": [
+      "coreweave",
+      "crusoe",
+      "humain_reuters",
+      "g42"
+    ]
+  },
+  {
+    "id": "opp_multilingual_public_sector_models",
+    "title": "Multilingual public-sector AI deployment kit",
+    "type": "Tooling + compliance",
+    "score": 20.2,
+    "reason": "Europe and the Middle East both have multilingual/public-sector needs. The gap is not only models, but deployment, evaluation, audit, retrieval, translation and data controls.",
+    "affected_nodes": [
+      "mistral_ai",
+      "cohere",
+      "alibaba_qwen",
+      "humain",
+      "ai_safety_governance_layer",
+      "training_data_layer"
+    ],
+    "dependency_types": [
+      "language",
+      "public_sector",
+      "compliance",
+      "deployment"
+    ],
+    "buyer_types": [
+      "public sector",
+      "local governments",
+      "regulated enterprises",
+      "education",
+      "healthcare"
+    ],
+    "criticality": 4,
+    "dependency_risk": 4,
+    "market_importance": 5,
+    "urgency": 4,
+    "accessibility": 4,
+    "france_fit": 5,
+    "eu_fit": 5,
+    "incumbent_strength": 3,
+    "regulatory_friction": 4,
+    "capital_intensity": 2,
+    "confidence": "medium",
+    "sources": [
+      "mistral",
+      "cohere",
+      "qwen",
+      "humain_reuters",
+      "eu_ai_act"
+    ]
+  },
+  {
+    "id": "opp_ai_procurement_due_diligence",
+    "title": "AI procurement due-diligence engine",
+    "type": "Compliance/trust + data/visibility",
+    "score": 70.9,
+    "reason": "Every enterprise choosing AI models/cloud is now making dependency, privacy, cost and regulatory bets. A due-diligence engine can score providers and architecture choices against real dependency graph logic.",
+    "affected_nodes": [
+      "enterprise_buyer_layer",
+      "ai_cloud_platform_layer",
+      "ai_safety_governance_layer",
+      "chip_supply_chain_layer",
+      "training_data_layer"
+    ],
+    "dependency_types": [
+      "procurement",
+      "risk",
+      "compliance",
+      "vendor_selection"
+    ],
+    "buyer_types": [
+      "enterprise procurement",
+      "CISOs",
+      "public sector",
+      "VCs",
+      "consultancies"
+    ],
+    "criticality": 5,
+    "dependency_risk": 4,
+    "market_importance": 5,
+    "urgency": 5,
+    "accessibility": 5,
+    "france_fit": 5,
+    "eu_fit": 5,
+    "incumbent_strength": 3,
+    "regulatory_friction": 3,
+    "capital_intensity": 1,
+    "confidence": "high",
+    "sources": [
+      "aws_bedrock",
+      "azure_openai",
+      "perplexity_enterprise",
+      "eu_ai_act"
+    ]
+  },
+  {
+    "id": "opp_open_weight_enterprise_runtime",
+    "title": "Enterprise runtime for open-weight models",
+    "type": "Tooling + infrastructure",
+    "score": 38.1,
+    "reason": "Open-weight models from Meta/Llama, DeepSeek, Qwen and Mistral create demand for secure deployment, quantization, serving, monitoring and governance in enterprises.",
+    "affected_nodes": [
+      "meta_ai",
+      "deepseek",
+      "alibaba_qwen",
+      "mistral_ai",
+      "vllm",
+      "kubernetes",
+      "ai_safety_governance_layer"
+    ],
+    "dependency_types": [
+      "open_weight",
+      "serving",
+      "MLOps",
+      "security"
+    ],
+    "buyer_types": [
+      "enterprises",
+      "AI SaaS",
+      "sovereign cloud providers",
+      "public sector"
+    ],
+    "criticality": 5,
+    "dependency_risk": 4,
+    "market_importance": 5,
+    "urgency": 5,
+    "accessibility": 4,
+    "france_fit": 5,
+    "eu_fit": 5,
+    "incumbent_strength": 4,
+    "regulatory_friction": 3,
+    "capital_intensity": 2,
+    "confidence": "medium",
+    "sources": [
+      "qwen",
+      "deepseek",
+      "mistral",
+      "vllm",
+      "kubernetes"
+    ]
+  },
+  {
+    "id": "opp_hbm_substitution_intel",
+    "title": "HBM / memory supply risk intelligence",
+    "type": "Data/visibility + substitution",
+    "score": 10.9,
+    "reason": "AI accelerators depend on high-bandwidth memory and advanced packaging. Buyers and governments need visibility into memory constraints, supplier concentration and substitution timelines.",
+    "affected_nodes": [
+      "sk_hynix",
+      "samsung_semiconductor",
+      "micron",
+      "nvidia",
+      "amd",
+      "chip_supply_chain_layer"
+    ],
+    "dependency_types": [
+      "HBM",
+      "memory",
+      "chip_supply_chain"
+    ],
+    "buyer_types": [
+      "cloud providers",
+      "governments",
+      "chip buyers",
+      "infrastructure funds"
+    ],
+    "criticality": 5,
+    "dependency_risk": 5,
+    "market_importance": 4,
+    "urgency": 4,
+    "accessibility": 3,
+    "france_fit": 4,
+    "eu_fit": 4,
+    "incumbent_strength": 4,
+    "regulatory_friction": 3,
+    "capital_intensity": 3,
+    "confidence": "medium",
+    "sources": [
+      "nvidia_datacenter",
+      "amd_mi300",
+      "eu_chips_act"
+    ]
+  },
+  {
+    "id": "opp_benchmark_truth_layer",
+    "title": "Benchmark and evaluation truth layer for model buyers",
+    "type": "Data/visibility + trust",
+    "score": 52.2,
+    "reason": "Model choice is noisy. Enterprises need evals tied to their data, costs, latency, safety, hallucination risk, tool use and compliance—not generic leaderboard theater.",
+    "affected_nodes": [
+      "openai",
+      "anthropic",
+      "google_deepmind",
+      "mistral_ai",
+      "cohere",
+      "deepseek",
+      "alibaba_qwen",
+      "ai_tooling_observability_layer"
+    ],
+    "dependency_types": [
+      "evaluation",
+      "benchmarking",
+      "model_selection"
+    ],
+    "buyer_types": [
+      "enterprises",
+      "AI platforms",
+      "public sector",
+      "VC tech diligence"
+    ],
+    "criticality": 5,
+    "dependency_risk": 3,
+    "market_importance": 5,
+    "urgency": 5,
+    "accessibility": 5,
+    "france_fit": 5,
+    "eu_fit": 5,
+    "incumbent_strength": 3,
+    "regulatory_friction": 2,
+    "capital_intensity": 1,
+    "confidence": "high",
+    "sources": [
+      "openai_business",
+      "anthropic_claude",
+      "google_vertex_gemini",
+      "cohere",
+      "qwen"
+    ]
+  },
+  {
+    "id": "opp_cross_cloud_ai_disaster_recovery",
+    "title": "Cross-cloud AI continuity and fallback layer",
+    "type": "Infrastructure + resilience",
+    "score": 21.5,
+    "reason": "AI applications increasingly depend on a few model APIs and clouds. A failover layer across models/providers can protect enterprises from outages, pricing shocks, rate limits and geopolitical constraints.",
+    "affected_nodes": [
+      "openai",
+      "anthropic",
+      "google_deepmind",
+      "aws_bedrock",
+      "azure_openai_foundry",
+      "google_cloud_vertex",
+      "ai_cloud_platform_layer"
+    ],
+    "dependency_types": [
+      "resilience",
+      "failover",
+      "model_routing"
+    ],
+    "buyer_types": [
+      "AI SaaS",
+      "regulated enterprises",
+      "critical infrastructure",
+      "public sector"
+    ],
+    "criticality": 5,
+    "dependency_risk": 4,
+    "market_importance": 4,
+    "urgency": 4,
+    "accessibility": 4,
+    "france_fit": 5,
+    "eu_fit": 5,
+    "incumbent_strength": 3,
+    "regulatory_friction": 3,
+    "capital_intensity": 2,
+    "confidence": "medium",
+    "sources": [
+      "aws_bedrock",
+      "azure_openai",
+      "google_vertex_gemini",
+      "openai_business",
+      "anthropic_claude"
+    ]
+  }
+]

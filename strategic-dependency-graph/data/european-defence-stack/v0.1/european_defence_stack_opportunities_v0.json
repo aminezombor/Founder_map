@@ -1,0 +1,507 @@
+[
+  {
+    "id": "opp_defence_supplier_visibility",
+    "title": "European defence supplier dependency intelligence platform",
+    "type": "Data/visibility",
+    "score": 91.2,
+    "reason": "EDIS pushes industrial readiness, but the supply base is fragmented. A structured dependency graph for suppliers, bottlenecks, capabilities and national/EU fit can serve primes, investors and public agencies.",
+    "affected_nodes": [
+      "supply_chain_visibility_gap",
+      "industrial_supply_chain_layer",
+      "defence_prime_layer",
+      "edis",
+      "card"
+    ],
+    "dependency_types": [
+      "supply_chain",
+      "procurement",
+      "industrial_readiness"
+    ],
+    "buyer_types": [
+      "defence primes",
+      "VCs",
+      "public agencies",
+      "industrial groups"
+    ],
+    "criticality": 5,
+    "dependency_risk": 5,
+    "market_importance": 5,
+    "urgency": 5,
+    "accessibility": 5,
+    "france_fit": 5,
+    "eu_fit": 5,
+    "incumbent_strength": 3,
+    "regulatory_friction": 3,
+    "capital_intensity": 1,
+    "confidence": "high",
+    "sources": [
+      "edis",
+      "card"
+    ]
+  },
+  {
+    "id": "opp_edf_edip_sme_workspace",
+    "title": "EDF / EDIP proposal and consortium workspace for SMEs",
+    "type": "Compliance + integration",
+    "score": 41.2,
+    "reason": "EDF/EUDIS/EDIP opportunities are hard for SMEs to navigate. A workspace that matches capabilities, partners, eligibility, calls and documentation can lower barriers into defence innovation.",
+    "affected_nodes": [
+      "edf",
+      "eudis",
+      "edip",
+      "classified_compliance_export_control",
+      "defence_procurement_data"
+    ],
+    "dependency_types": [
+      "funding",
+      "consortium",
+      "compliance"
+    ],
+    "buyer_types": [
+      "SMEs",
+      "dual-use startups",
+      "regional clusters",
+      "consultancies"
+    ],
+    "criticality": 4,
+    "dependency_risk": 4,
+    "market_importance": 4,
+    "urgency": 5,
+    "accessibility": 5,
+    "france_fit": 5,
+    "eu_fit": 5,
+    "incumbent_strength": 3,
+    "regulatory_friction": 4,
+    "capital_intensity": 1,
+    "confidence": "high",
+    "sources": [
+      "edf",
+      "eudis",
+      "edip"
+    ]
+  },
+  {
+    "id": "opp_cuas_critical_infra_console",
+    "title": "Counter-UAS command and evidence console for critical infrastructure",
+    "type": "Defense-adjacent + security software",
+    "score": 37.3,
+    "reason": "Drone threats are rising across military and civilian critical sites. A software layer for detection evidence, incident workflow, integration and compliance can avoid building weapons while serving real demand.",
+    "affected_nodes": [
+      "counter_uas_capability",
+      "drones_autonomy_layer",
+      "sentrycs",
+      "hensoldt",
+      "thales"
+    ],
+    "dependency_types": [
+      "counter_UAS",
+      "critical_infrastructure",
+      "C2"
+    ],
+    "buyer_types": [
+      "airports",
+      "energy sites",
+      "stadiums",
+      "ports",
+      "public security",
+      "defence bases"
+    ],
+    "criticality": 5,
+    "dependency_risk": 4,
+    "market_importance": 5,
+    "urgency": 5,
+    "accessibility": 4,
+    "france_fit": 5,
+    "eu_fit": 5,
+    "incumbent_strength": 4,
+    "regulatory_friction": 4,
+    "capital_intensity": 2,
+    "confidence": "medium",
+    "sources": [
+      "sentrycs",
+      "edis"
+    ]
+  },
+  {
+    "id": "opp_secure_combat_cloud_connectors",
+    "title": "Secure combat-cloud connector layer for European defence systems",
+    "type": "Infrastructure + integration",
+    "score": 31.7,
+    "reason": "Airbus and European air-combat concepts point toward multi-domain combat cloud and interoperable C2. The gap is not only platforms; it is secure connectors, schemas, adapters and audit layers.",
+    "affected_nodes": [
+      "fcas_scaf",
+      "battle_management",
+      "secure_cloud_edge_compute",
+      "airbus_defence_space",
+      "thales",
+      "indra"
+    ],
+    "dependency_types": [
+      "C2",
+      "combat_cloud",
+      "interoperability",
+      "secure_compute"
+    ],
+    "buyer_types": [
+      "primes",
+      "system integrators",
+      "defence agencies",
+      "NATO/EU programmes"
+    ],
+    "criticality": 5,
+    "dependency_risk": 5,
+    "market_importance": 5,
+    "urgency": 5,
+    "accessibility": 3,
+    "france_fit": 5,
+    "eu_fit": 5,
+    "incumbent_strength": 5,
+    "regulatory_friction": 5,
+    "capital_intensity": 2,
+    "confidence": "medium",
+    "sources": [
+      "airbus_defence",
+      "edf"
+    ]
+  },
+  {
+    "id": "opp_defence_export_control_os",
+    "title": "Defence export-control and classified-compliance OS",
+    "type": "Compliance/trust",
+    "score": 67.5,
+    "reason": "European defence/dual-use companies face export controls, classified handling, cybersecurity and procurement eligibility. A software OS for compliance evidence and workflows is accessible and B2B-heavy.",
+    "affected_nodes": [
+      "classified_compliance_export_control",
+      "defence_prime_layer",
+      "eudis",
+      "france_dga",
+      "aid_france"
+    ],
+    "dependency_types": [
+      "export_control",
+      "classification",
+      "compliance"
+    ],
+    "buyer_types": [
+      "dual-use startups",
+      "defence suppliers",
+      "SMEs",
+      "primes"
+    ],
+    "criticality": 5,
+    "dependency_risk": 4,
+    "market_importance": 5,
+    "urgency": 5,
+    "accessibility": 5,
+    "france_fit": 5,
+    "eu_fit": 5,
+    "incumbent_strength": 4,
+    "regulatory_friction": 5,
+    "capital_intensity": 1,
+    "confidence": "high",
+    "sources": [
+      "edis",
+      "edf"
+    ]
+  },
+  {
+    "id": "opp_ammo_supply_chain_ops",
+    "title": "Ammunition and energetics supply-chain observability",
+    "type": "Industrial software + data/visibility",
+    "score": 30.4,
+    "reason": "Ammunition/energetics is a red bottleneck. A non-weapon software layer for capacity, supplier risk, lead times, materials and production readiness can support primes and ministries.",
+    "affected_nodes": [
+      "ammo_energetics_layer",
+      "energetics_dependency",
+      "rheinmetall",
+      "mbda",
+      "diehl_defence",
+      "critical_raw_materials"
+    ],
+    "dependency_types": [
+      "ammunition",
+      "energetics",
+      "supply_chain",
+      "industrial_ops"
+    ],
+    "buyer_types": [
+      "primes",
+      "ministries",
+      "industrial planners",
+      "investors"
+    ],
+    "criticality": 5,
+    "dependency_risk": 5,
+    "market_importance": 5,
+    "urgency": 5,
+    "accessibility": 3,
+    "france_fit": 5,
+    "eu_fit": 5,
+    "incumbent_strength": 5,
+    "regulatory_friction": 5,
+    "capital_intensity": 3,
+    "confidence": "medium",
+    "sources": [
+      "edis",
+      "edf",
+      "mbda",
+      "rheinmetall_defence"
+    ]
+  },
+  {
+    "id": "opp_defence_readiness_maintenance",
+    "title": "Fleet readiness and predictive maintenance platform for defence assets",
+    "type": "Operational efficiency",
+    "score": 17.4,
+    "reason": "European forces need higher readiness from existing assets. Maintenance data, spares visibility, lifecycle support and predictive alerts are software-accessible compared with building platforms.",
+    "affected_nodes": [
+      "land_systems_layer",
+      "air_combat_layer",
+      "naval_systems_layer",
+      "patria",
+      "airbus_defence_space",
+      "naval_group"
+    ],
+    "dependency_types": [
+      "maintenance",
+      "readiness",
+      "lifecycle"
+    ],
+    "buyer_types": [
+      "armed forces",
+      "primes",
+      "MRO providers",
+      "fleet operators"
+    ],
+    "criticality": 5,
+    "dependency_risk": 3,
+    "market_importance": 5,
+    "urgency": 4,
+    "accessibility": 4,
+    "france_fit": 5,
+    "eu_fit": 5,
+    "incumbent_strength": 4,
+    "regulatory_friction": 4,
+    "capital_intensity": 2,
+    "confidence": "medium",
+    "sources": [
+      "edis",
+      "airbus_defence",
+      "patria",
+      "naval_group"
+    ]
+  },
+  {
+    "id": "opp_space_isr_tasking_layer",
+    "title": "Space ISR tasking and fusion layer for maritime/security users",
+    "type": "Data/visibility + defense-adjacent",
+    "score": 14.2,
+    "reason": "Europe has space ISR actors and secure connectivity programmes. A layer for tasking, fusing and delivering maritime/geospatial intelligence can serve public security and defence-adjacent users.",
+    "affected_nodes": [
+      "space_secure_connectivity_layer",
+      "unseenlabs",
+      "safran_ai_preligens",
+      "iris2",
+      "govsatcom",
+      "galileo_prs_capability"
+    ],
+    "dependency_types": [
+      "space_ISR",
+      "maritime",
+      "data_fusion"
+    ],
+    "buyer_types": [
+      "navies",
+      "coast guards",
+      "ports",
+      "insurers",
+      "maritime security"
+    ],
+    "criticality": 4,
+    "dependency_risk": 4,
+    "market_importance": 4,
+    "urgency": 4,
+    "accessibility": 4,
+    "france_fit": 5,
+    "eu_fit": 5,
+    "incumbent_strength": 3,
+    "regulatory_friction": 4,
+    "capital_intensity": 2,
+    "confidence": "medium",
+    "sources": [
+      "unseenlabs",
+      "preligens",
+      "iris2",
+      "govsatcom"
+    ]
+  },
+  {
+    "id": "opp_simulation_synthetic_training",
+    "title": "Synthetic training and mission rehearsal toolkit for European SMEs",
+    "type": "Simulation + tooling",
+    "score": 7.9,
+    "reason": "EDF highlights simulation, multi-domain operations and critical technologies. SMEs/primes need reusable simulation/training components without rebuilding bespoke environments every time.",
+    "affected_nodes": [
+      "simulation_training_layer",
+      "defence_ai_software_layer",
+      "edf",
+      "indra",
+      "airbus_defence_space"
+    ],
+    "dependency_types": [
+      "simulation",
+      "training",
+      "digital_twin"
+    ],
+    "buyer_types": [
+      "SMEs",
+      "primes",
+      "training centers",
+      "defence agencies"
+    ],
+    "criticality": 4,
+    "dependency_risk": 3,
+    "market_importance": 4,
+    "urgency": 4,
+    "accessibility": 4,
+    "france_fit": 5,
+    "eu_fit": 5,
+    "incumbent_strength": 4,
+    "regulatory_friction": 3,
+    "capital_intensity": 2,
+    "confidence": "medium",
+    "sources": [
+      "edf",
+      "indra",
+      "airbus_defence"
+    ]
+  },
+  {
+    "id": "opp_defence_procurement_radar",
+    "title": "Defence procurement radar for founders and investors",
+    "type": "Data/visibility",
+    "score": 42.5,
+    "reason": "Defence opportunities are scattered across EU, national, NATO and prime channels. A radar that tracks calls, tenders, capability gaps, supplier needs and fit scores can help founders position intelligently.",
+    "affected_nodes": [
+      "defence_procurement_data",
+      "edf",
+      "edip",
+      "eudis",
+      "france_dga",
+      "nato_diana"
+    ],
+    "dependency_types": [
+      "procurement",
+      "tenders",
+      "funding",
+      "market_intelligence"
+    ],
+    "buyer_types": [
+      "founders",
+      "VCs",
+      "SMEs",
+      "consultancies"
+    ],
+    "criticality": 4,
+    "dependency_risk": 4,
+    "market_importance": 4,
+    "urgency": 5,
+    "accessibility": 5,
+    "france_fit": 5,
+    "eu_fit": 5,
+    "incumbent_strength": 3,
+    "regulatory_friction": 3,
+    "capital_intensity": 1,
+    "confidence": "high",
+    "sources": [
+      "edf",
+      "eudis",
+      "nato_diana",
+      "france_dga"
+    ]
+  },
+  {
+    "id": "opp_dual_use_security_clearance_pathway",
+    "title": "Dual-use startup security-clearance and procurement readiness pathway",
+    "type": "Integration + compliance",
+    "score": 29.8,
+    "reason": "Promising dual-use startups hit friction around security, procurement, documentation, pilots and trust. A guided readiness pathway can prepare them for primes and public buyers.",
+    "affected_nodes": [
+      "eudis",
+      "nato_diana",
+      "aid_france",
+      "classified_compliance_export_control",
+      "helsing",
+      "quantum_systems"
+    ],
+    "dependency_types": [
+      "startup_readiness",
+      "security",
+      "procurement"
+    ],
+    "buyer_types": [
+      "dual-use startups",
+      "accelerators",
+      "VCs",
+      "innovation agencies"
+    ],
+    "criticality": 4,
+    "dependency_risk": 4,
+    "market_importance": 4,
+    "urgency": 5,
+    "accessibility": 5,
+    "france_fit": 5,
+    "eu_fit": 5,
+    "incumbent_strength": 3,
+    "regulatory_friction": 4,
+    "capital_intensity": 1,
+    "confidence": "medium",
+    "sources": [
+      "eudis",
+      "nato_diana",
+      "aid_france"
+    ]
+  },
+  {
+    "id": "opp_interoperability_test_harness",
+    "title": "European interoperability test harness for defence software",
+    "type": "Tooling + trust",
+    "score": 36.0,
+    "reason": "Fragmentation and interoperability are central defence pain points. A test harness that validates schemas, APIs, data exchange, audit logs and security controls could serve C2, ISR and combat-cloud teams.",
+    "affected_nodes": [
+      "interoperability_standards",
+      "battle_management",
+      "c4isr_sensors_layer",
+      "secure_cloud_edge_compute",
+      "fcas_scaf"
+    ],
+    "dependency_types": [
+      "interoperability",
+      "C2",
+      "testing",
+      "APIs"
+    ],
+    "buyer_types": [
+      "system integrators",
+      "primes",
+      "defence software teams",
+      "public agencies"
+    ],
+    "criticality": 5,
+    "dependency_risk": 4,
+    "market_importance": 5,
+    "urgency": 5,
+    "accessibility": 4,
+    "france_fit": 5,
+    "eu_fit": 5,
+    "incumbent_strength": 4,
+    "regulatory_friction": 5,
+    "capital_intensity": 2,
+    "confidence": "medium",
+    "sources": [
+      "edf",
+      "pesco",
+      "airbus_defence"
+    ]
+  }
+]

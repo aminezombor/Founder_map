@@ -1,0 +1,45 @@
+source_id,title,url,type,notes
+openai_business,OpenAI — Business,https://openai.com/business/,company_official,"OpenAI business/API platform, enterprise controls, multimodal models and GPT-5 family references."
+anthropic_claude,Claude by Anthropic,https://www.anthropic.com/claude,company_official,"Claude product, models, platform, enterprise/government/industry use cases."
+google_vertex_gemini,Google Cloud — Gemini Enterprise Agent Platform / Vertex AI,https://cloud.google.com/products/gemini-enterprise-agent-platform,company_official,Google Cloud AI platform and Gemini enterprise/agent platform.
+meta_llama,Meta AI — Llama,https://www.llama.com/,company_official,Meta Llama model family official site. Some crawlers may require auth; keep as source URL.
+aws_bedrock,AWS — Amazon Bedrock,https://aws.amazon.com/bedrock/,company_official,"AWS generative AI application/agent platform with model choice, guardrails, customization and enterprise security."
+azure_openai,Microsoft Azure — Azure OpenAI in Foundry Models,https://azure.microsoft.com/en-us/products/ai-foundry/models/openai/,company_official,Azure OpenAI / Foundry model offering.
+nvidia_datacenter,NVIDIA — Data Center,https://www.nvidia.com/en-us/data-center/,company_official,NVIDIA data center accelerated computing platform.
+nvidia_hgx,NVIDIA — HGX,https://www.nvidia.com/en-us/data-center/hgx/,company_official,NVIDIA HGX platform for AI/HPC systems.
+amd_mi300,AMD — Instinct MI300 Series,https://www.amd.com/en/products/accelerators/instinct/mi300.html,company_official,AMD Instinct data center AI/HPC accelerators.
+intel_gaudi,Intel — Gaudi AI Accelerators,https://www.intel.com/content/www/us/en/products/details/processors/ai-accelerators/gaudi.html,company_official,Intel Gaudi AI accelerator product family.
+tsmc,TSMC — Official site,https://www.tsmc.com/english,company_official,Dedicated semiconductor foundry.
+asml_euv,ASML — EUV Lithography Systems,https://www.asml.com/en/products/euv-lithography-systems,company_official,EUV lithography systems for advanced chip manufacturing.
+deepseek,DeepSeek — Official site,https://www.deepseek.com/,company_official,"DeepSeek models, chat, API platform and open research links."
+qwen,Alibaba Cloud — Qwen,https://www.alibabacloud.com/en/solutions/generative-ai/qwen,company_official,"Qwen model family, multilingual/multimodal capabilities, Alibaba Cloud deployment and open-source community links."
+baidu_ai,Baidu AI Open Platform,https://ai.baidu.com/,company_official,Baidu AI products and open platform.
+xai,xAI — Official site,https://x.ai/,company_official,"Grok, API, business/government offers, multimodal frontier models and Colossus positioning."
+cohere,Cohere — Official site,https://cohere.com/,company_official,"Enterprise AI models, retrieval/rerank/embed, private deployments and industry solutions."
+mistral,Mistral AI — Official site,https://mistral.ai/,company_official,"European frontier AI models, assistants, agents and enterprise services."
+coreweave,CoreWeave — Official site,https://www.coreweave.com/,company_official,"AI-native cloud platform, GPU compute, managed Kubernetes, AI data centers and AI workload infrastructure."
+lambda,Lambda — Official site,https://lambda.ai/,company_official,AI cloud / GPU infrastructure provider.
+nebius,Nebius — Official site,https://nebius.com/,company_official,AI cloud and infrastructure provider.
+crusoe,Crusoe — Official site,https://www.crusoe.ai/,company_official,AI factory company and renewable/energy-aware AI infrastructure.
+perplexity_enterprise,Perplexity Enterprise,https://www.perplexity.ai/enterprise,company_official,"Enterprise AI research/search platform, internal knowledge, citations, security claims."
+humain_reuters,Reuters — Saudi Arabia launches AI company Humain under PIF,https://www.reuters.com/world/middle-east/saudi-arabia-launches-company-develop-artificial-intelligence-under-pif-2025-05-12/,news_reputable,"Humain launch, AI infrastructure, cloud, data centers, Arabic multimodal LLM."
+g42,G42 — Official site,https://www.g42.ai/,company_official,UAE AI holding company / AI infrastructure and vertical AI ecosystem.
+eu_ai_factories,European Commission — AI Factories,https://digital-strategy.ec.europa.eu/en/policies/ai-factories,official_policy,EU AI Factories network and AI Gigafactories context.
+eu_chips_act,European Commission — European Chips Act,https://digital-strategy.ec.europa.eu/en/policies/european-chips-act,official_policy,EU semiconductor supply-chain resilience and strategic autonomy context.
+eu_ai_act,European Commission — AI Act,https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai,official_regulation,EU AI regulatory framework.
+huggingface,Hugging Face,https://huggingface.co/,company_official,AI model/dataset/application community platform.
+pytorch,PyTorch,https://pytorch.org/,open_source_project,Open source deep learning framework.
+tensorflow,TensorFlow,https://www.tensorflow.org/,open_source_project,Open source machine learning platform.
+kubernetes,Kubernetes,https://kubernetes.io/,open_source_project,Open source container orchestration.
+vllm,vLLM,https://vllm.ai/,open_source_project,Open-source high-throughput LLM serving engine.
+triton_inference,NVIDIA Triton Inference Server,https://developer.nvidia.com/triton-inference-server,software_platform,Inference serving software.
+ray,Ray,https://www.ray.io/,open_source_project,Distributed AI/ML workload framework.
+mlflow,MLflow,https://mlflow.org/,open_source_project,ML lifecycle platform.
+wandb,Weights & Biases,https://wandb.ai/,company_official,ML experiment tracking and model development tooling.
+databricks_mosaic,Databricks Mosaic AI,https://www.databricks.com/product/machine-learning,company_official,Enterprise AI/ML platform and Mosaic AI tooling.
+snowflake_cortex,Snowflake Cortex AI,https://www.snowflake.com/en/data-cloud/cortex/,company_official,Enterprise data cloud AI layer.
+oracle_ai,Oracle Cloud Infrastructure AI,https://www.oracle.com/artificial-intelligence/,company_official,Oracle AI and cloud infrastructure services.
+ibm_watsonx,IBM watsonx,https://www.ibm.com/watsonx,company_official,IBM enterprise AI and data platform.
+salesforce_einstein,Salesforce Einstein,https://www.salesforce.com/artificial-intelligence/,company_official,Salesforce AI platform.
+sap_ai,SAP Business AI,https://www.sap.com/products/artificial-intelligence.html,company_official,SAP business AI for enterprise processes.
+servicenow_ai,ServiceNow AI,https://www.servicenow.com/products/ai.html,company_official,Enterprise workflow AI and agents.

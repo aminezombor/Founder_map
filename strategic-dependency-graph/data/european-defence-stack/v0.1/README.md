@@ -1,10 +1,12 @@
 # European Defence Stack Database v0.1
 
-This is the third database for Founder Map / Strategic Dependency Graph.
+Created: 2026-06-21
 
 ## What this is
 
 A public-source strategic dependency graph for the European defence stack.
+
+This is the third database for Founder Map / Strategic Dependency Graph.
 
 It maps the European defence-industrial base, capability layers, policy/funding structures, primes, dual-use startups, bottlenecks and opportunity zones.
 
@@ -13,7 +15,6 @@ It maps the European defence-industrial base, capability layers, policy/funding 
 This database is for **public-source strategic market and dependency analysis only**.
 
 It does not contain:
-
 - classified data
 - operational tactics
 - weapon construction instructions
@@ -84,7 +85,7 @@ sources: 45
 Primary data file:
 
 ```text
-strategic-dependency-graph/data/european-defence-stack/v0.1/european_defence_stack_graph_v0.json
+data/european-defence-stack/v0.1/european_defence_stack_graph_v0.json
 ```
 
 Recommended UI behavior:

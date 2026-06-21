@@ -1,0 +1,49 @@
+source_id,title,url,type,notes
+siemens_xcelerator,Siemens — Xcelerator / industrial AI / digital twin / software-defined automation,https://www.siemens.com/en-us/,company_official,"Siemens describes AI, digital twin, software-defined automation and Xcelerator marketplace/products including NX, Teamcenter, Femap, Building X, Electrification X."
+siemens_sw,Siemens Digital Industries Software,https://www.sw.siemens.com/en-US/,company_official,Siemens industrial software product ecosystem.
+dassault_3dexperience,Dassault Systèmes — 3DEXPERIENCE platform,https://www.3ds.com/3dexperience/,company_official,"3DEXPERIENCE platform connects people, ideas, data and solutions; single version of truth; virtual twin; cloud; marketplace."
+ptc_products,PTC Products,https://www.ptc.com/en/products,company_official,"PTC product portfolio includes Codebeamer, Modeler, RV&S, Windchill, ThingWorx, Kepware, Vuforia and Onshape-related product lines."
+rockwell_factorytalk,Rockwell Automation — FactoryTalk,https://www.rockwellautomation.com/en-us/products/software/factorytalk.html,company_official,"FactoryTalk software covers design, operations, maintenance, analytics, IIoT, AR and machine learning for industrial environments."
+opcfoundation_opcua,OPC Foundation — OPC UA,https://opcfoundation.org/about/opc-technologies/opc-ua/,standard_body,OPC UA is a platform-independent architecture for industrial interoperability; supports security and machine-to-enterprise connectivity.
+isa_iec_62443,ISA — ISA/IEC 62443 Series of Standards,https://www.isa.org/standards-and-publications/isa-standards/isa-iec-62443-series-of-standards,standard_body,ISA/IEC 62443 defines requirements/processes for secure industrial automation and control systems.
+isa95,ISA — ISA-95 Enterprise-Control System Integration,https://www.isa.org/standards-and-publications/isa-standards/isa-95,standard_body,ISA-95 is the enterprise-control system integration standard used to structure ERP/MES/OT boundaries.
+unified_namespace,HiveMQ — Unified Namespace,https://www.hivemq.com/solutions/manufacturing/unified-namespace/,vendor_reference,Unified Namespace reference for MQTT-based industrial data architecture.
+sparkplug,Eclipse Sparkplug,https://sparkplug.eclipse.org/,open_source_standard,Sparkplug provides MQTT topic namespace and payload standards for industrial devices and applications.
+autodesk_fusion,Autodesk Fusion,https://www.autodesk.com/products/fusion-360/overview,company_official,Cloud-based CAD/CAM/CAE and product design/manufacturing platform.
+hexagon_msc,Hexagon Manufacturing Intelligence,https://hexagon.com/company/divisions/manufacturing-intelligence,company_official,"Manufacturing intelligence, metrology, design/engineering and manufacturing software."
+ansys,Ansys,https://www.ansys.com/,company_official,Engineering simulation software.
+synopsys_ansys,Synopsys — Ansys acquisition,https://www.synopsys.com/company/ansys-acquisition.html,company_official,Synopsys/Ansys transaction context for simulation + EDA convergence.
+mathworks,MathWorks,https://www.mathworks.com/,company_official,"MATLAB and Simulink for engineering computation, model-based design and simulation."
+nvidia_omniverse,NVIDIA Omniverse,https://www.nvidia.com/en-us/omniverse/,company_official,"Platform for 3D workflows, digital twins and industrial simulation."
+schneider_ecostruxure,Schneider Electric EcoStruxure,https://www.se.com/ww/en/work/campaign/innovation/overview.jsp,company_official,IoT-enabled architecture and platform for energy management and automation.
+aveva,AVEVA,https://www.aveva.com/,company_official,"Industrial software for engineering, operations, data, visualization and asset performance."
+abb_ability,ABB Ability,https://global.abb/group/en/technology/abb-ability,company_official,ABB digital platform and industrial software/services.
+honeywell_forge,Honeywell Forge,https://www.honeywellforge.ai/,company_official,Industrial software and operational intelligence platform.
+emerson_software,Emerson Software,https://www.emerson.com/en-us/automation/software,company_official,"Automation software, control, asset management and operations."
+yokogawa,Yokogawa,https://www.yokogawa.com/,company_official,"Industrial automation, control and information systems."
+beckhoff,Beckhoff Automation,https://www.beckhoff.com/,company_official,"PC-based automation, EtherCAT, PLC, motion, control and industrial PCs."
+bosch_rexroth_ctrlx,Bosch Rexroth ctrlX AUTOMATION,https://www.boschrexroth.com/en/xc/products/product-groups/ctrlx-automation/,company_official,Open automation platform and ecosystem.
+codesys,CODESYS,https://www.codesys.com/,company_official,IEC 61131-3 development system and automation software.
+kepware,Kepware,https://www.ptc.com/en/products/kepware,company_official,Industrial connectivity platform from PTC.
+inductive_automation,Inductive Automation — Ignition,https://inductiveautomation.com/ignition/,company_official,SCADA/MES/IIoT platform.
+ignition,Ignition by Inductive Automation,https://inductiveautomation.com/ignition/,company_official,"Industrial application platform with SCADA, IIoT, MES and reporting capabilities."
+sap_digital_manufacturing,SAP Digital Manufacturing,https://www.sap.com/products/scm/digital-manufacturing.html,company_official,"Manufacturing execution, insights and integration in SAP ecosystem."
+oracle_scm_manufacturing,Oracle Manufacturing,https://www.oracle.com/scm/manufacturing/,company_official,Oracle manufacturing and supply chain applications.
+microsoft_azure_iot,Microsoft Azure IoT,https://azure.microsoft.com/en-us/solutions/iot,company_official,Cloud IoT platform and industrial edge/cloud connectivity.
+aws_iot,AWS IoT,https://aws.amazon.com/iot/,company_official,IoT services for industrial and connected device workloads.
+google_cloud_manufacturing,Google Cloud Manufacturing,https://cloud.google.com/solutions/manufacturing,company_official,Cloud platform services for manufacturers.
+snowflake_manufacturing,Snowflake Manufacturing,https://www.snowflake.com/en/solutions/industries/manufacturing/,company_official,Manufacturing data cloud and analytics.
+databricks_manufacturing,Databricks Manufacturing,https://www.databricks.com/solutions/industries/manufacturing,company_official,Manufacturing data and AI lakehouse.
+palantir_aip,Palantir AIP,https://www.palantir.com/platforms/aip/,company_official,AI platform and ontology-driven enterprise/industrial operations.
+c3_ai,C3 AI,https://c3.ai/,company_official,"Enterprise AI applications for reliability, supply chain and industrial operations."
+tulip,Tulip Interfaces,https://tulip.co/,company_official,Frontline operations platform for manufacturers.
+maintainx,MaintainX,https://www.getmaintainx.com/,company_official,Maintenance and frontline operations management software.
+uptake,Uptake,https://www.uptake.com/,company_official,Industrial intelligence and predictive maintenance.
+cognite,Cognite,https://www.cognite.com/,company_official,Industrial data operations platform.
+litmus,Litmus,https://litmus.io/,company_official,Industrial edge data platform.
+highbyte,HighByte,https://www.highbyte.com/,company_official,Industrial DataOps and contextualization platform.
+claroty,Claroty,https://claroty.com/,company_official,Cyber-physical systems security and OT asset visibility.
+dragos,Dragos,https://www.dragos.com/,company_official,Industrial cybersecurity and threat intelligence.
+nozomi,Nozomi Networks,https://www.nozominetworks.com/,company_official,OT and IoT security monitoring.
+armis,Armis,https://www.armis.com/,company_official,"Cyber exposure management, asset intelligence, OT/IoT security."
+tenable_ot,Tenable OT,https://www.tenable.com/products/tenable-ot,company_official,OT security and exposure management.

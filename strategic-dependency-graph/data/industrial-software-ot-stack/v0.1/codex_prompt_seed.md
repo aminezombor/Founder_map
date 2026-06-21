@@ -5,7 +5,7 @@ Extend the Strategic Dependency Graph UI to support the Industrial Software / OT
 Use:
 
 ```text
-strategic-dependency-graph/data/industrial-software-ot-stack/v0.1/industrial_software_ot_stack_graph_v0.json
+data/industrial-software-ot-stack/v0.1/industrial_software_ot_stack_graph_v0.json
 ```
 
 ## Required dataset selector

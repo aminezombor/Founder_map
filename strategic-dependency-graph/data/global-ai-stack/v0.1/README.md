@@ -1,6 +1,6 @@
 # Global AI Stack Database v0.1
 
-This is the second database for Founder Map / Strategic Dependency Graph.
+Created: 2026-06-21
 
 ## What this is
 
@@ -76,7 +76,7 @@ sources: 44
 Primary data file:
 
 ```text
-strategic-dependency-graph/data/global-ai-stack/v0.1/global_ai_stack_graph_v0.json
+data/global-ai-stack/v0.1/global_ai_stack_graph_v0.json
 ```
 
 Recommended UI behavior:

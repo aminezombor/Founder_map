@@ -2,6 +2,7 @@
   "project": "Strategic Dependency Graph",
   "database": "Industrial Software / OT Stack",
   "version": "0.1",
+  "created": "2026-06-21",
   "node_count": 81,
   "edge_count": 262,
   "opportunity_count": 12,
@@ -12,6 +13,5 @@
     "This is a strategic dependency graph, not a supplier-contract database.",
     "Edges marked fact_status=inferred are system-level dependency hypotheses.",
     "Designed for Codex ingestion and website graph generation."
-  ],
-  "local_package": "industrial_software_ot_stack_database_v0_1.zip"
+  ]
 }

@@ -1,0 +1,352 @@
+[
+  {
+    "source_id": "airbus_commercial",
+    "title": "Airbus — Commercial Aircraft",
+    "url": "https://www.airbus.com/en/products-services/commercial-aircraft",
+    "type": "company_official",
+    "notes": "Airbus designs, builds and supports commercial aircraft; portfolio includes passenger aircraft, freighters and services."
+  },
+  {
+    "source_id": "airbus_space",
+    "title": "Airbus — Space",
+    "url": "https://www.airbus.com/en/products-services/space",
+    "type": "company_official",
+    "notes": "Airbus space portfolio: Earth observation, telecom/navigation satellites, exploration, ground systems, space equipment and support."
+  },
+  {
+    "source_id": "airbus_defence",
+    "title": "Airbus — Defence",
+    "url": "https://www.airbus.com/en/products-services/defence",
+    "type": "company_official",
+    "notes": "Airbus defence portfolio: military aircraft, UAS, FCAS, military space, connectivity, intelligence/data."
+  },
+  {
+    "source_id": "boeing_commercial",
+    "title": "Boeing — Commercial",
+    "url": "https://www.boeing.com/commercial",
+    "type": "company_official",
+    "notes": "Boeing commercial aircraft portfolio includes 737 MAX, 777, 777X, 787 and freighters."
+  },
+  {
+    "source_id": "boeing_space",
+    "title": "Boeing — Space",
+    "url": "https://www.boeing.com/space",
+    "type": "company_official",
+    "notes": "Boeing space systems: satellites, launch/space systems and government space products."
+  },
+  {
+    "source_id": "boeing_services",
+    "title": "Boeing — Services",
+    "url": "https://www.boeing.com/services",
+    "type": "company_official",
+    "notes": "Boeing Global Services supports commercial and government aircraft, sustainment and training."
+  },
+  {
+    "source_id": "safran_aerospace",
+    "title": "Safran — Aerospace",
+    "url": "https://www.safran-group.com/markets/aerospace",
+    "type": "company_official",
+    "notes": "Safran aerospace portfolio: aircraft engines, equipment, interiors, landing systems, electrical and avionics."
+  },
+  {
+    "source_id": "safran_engines",
+    "title": "Safran Aircraft Engines",
+    "url": "https://www.safran-group.com/companies/safran-aircraft-engines",
+    "type": "company_official",
+    "notes": "Safran Aircraft Engines develops, produces and supports aircraft engines."
+  },
+  {
+    "source_id": "cfm",
+    "title": "CFM International",
+    "url": "https://www.cfmaeroengines.com/",
+    "type": "joint_venture_official",
+    "notes": "CFM International is the 50/50 joint company of GE Aerospace and Safran Aircraft Engines."
+  },
+  {
+    "source_id": "ge_aerospace_commercial",
+    "title": "GE Aerospace — Commercial Aircraft Engines & Services",
+    "url": "https://www.geaerospace.com/commercial",
+    "type": "company_official",
+    "notes": "GE Aerospace commercial aircraft engines and services."
+  },
+  {
+    "source_id": "rolls_royce_civil",
+    "title": "Rolls-Royce — Civil Aerospace",
+    "url": "https://www.rolls-royce.com/products-and-services/civil-aerospace.aspx",
+    "type": "company_official",
+    "notes": "Rolls-Royce civil aerospace products and services."
+  },
+  {
+    "source_id": "pratt_whitney",
+    "title": "Pratt & Whitney",
+    "url": "https://www.prattwhitney.com/",
+    "type": "company_official",
+    "notes": "Aircraft engines and propulsion systems."
+  },
+  {
+    "source_id": "rtx_collins",
+    "title": "Collins Aerospace",
+    "url": "https://www.collinsaerospace.com/",
+    "type": "company_official",
+    "notes": "Avionics, aircraft systems, interiors, mission systems and aerospace technology."
+  },
+  {
+    "source_id": "rtx_raytheon",
+    "title": "Raytheon",
+    "url": "https://www.rtx.com/raytheon",
+    "type": "company_official",
+    "notes": "RTX business with air, land, sea, space, integrated air defense and advanced technology capabilities."
+  },
+  {
+    "source_id": "honeywell_aerospace",
+    "title": "Honeywell Aerospace Technologies",
+    "url": "https://www.honeywellaerospace.com/",
+    "type": "company_official",
+    "notes": "Aerospace products, services, software, avionics, navigation, connectivity, engines/APU support and customer portal."
+  },
+  {
+    "source_id": "thales_avionics",
+    "title": "Thales — Aerospace",
+    "url": "https://www.thalesgroup.com/en/markets/aerospace",
+    "type": "company_official",
+    "notes": "Aerospace avionics, connectivity, air traffic management, flight deck and systems."
+  },
+  {
+    "source_id": "leonardo_aeronautics",
+    "title": "Leonardo — Aeronautics",
+    "url": "https://www.leonardo.com/en/business/aeronautics",
+    "type": "company_official",
+    "notes": "Leonardo aeronautics portfolio: aircraft, UAVs, aerostructures and support."
+  },
+  {
+    "source_id": "dassault_group",
+    "title": "Dassault Aviation — Group",
+    "url": "https://www.dassault-aviation.com/en/group/",
+    "type": "company_official",
+    "notes": "Dassault Aviation corporate and aircraft portfolio context."
+  },
+  {
+    "source_id": "embraer",
+    "title": "Embraer",
+    "url": "https://embraer.com/",
+    "type": "company_official",
+    "notes": "Brazilian aerospace company producing commercial, executive and defense aircraft."
+  },
+  {
+    "source_id": "comac",
+    "title": "COMAC",
+    "url": "https://english.comac.cc/",
+    "type": "company_official",
+    "notes": "Chinese commercial aircraft manufacturer."
+  },
+  {
+    "source_id": "bombardier",
+    "title": "Bombardier",
+    "url": "https://bombardier.com/en",
+    "type": "company_official",
+    "notes": "Business jet manufacturer and services provider."
+  },
+  {
+    "source_id": "gulfstream",
+    "title": "Gulfstream Aerospace",
+    "url": "https://www.gulfstream.com/",
+    "type": "company_official",
+    "notes": "Business aviation aircraft manufacturer."
+  },
+  {
+    "source_id": "textron_aviation",
+    "title": "Textron Aviation",
+    "url": "https://txtav.com/",
+    "type": "company_official",
+    "notes": "Cessna, Beechcraft and Hawker aircraft ecosystem."
+  },
+  {
+    "source_id": "spacex",
+    "title": "SpaceX",
+    "url": "https://www.spacex.com/",
+    "type": "company_official",
+    "notes": "Launch, spacecraft and Starlink satellite constellation company."
+  },
+  {
+    "source_id": "blue_origin",
+    "title": "Blue Origin",
+    "url": "https://www.blueorigin.com/",
+    "type": "company_official",
+    "notes": "Launch vehicles, engines and space systems."
+  },
+  {
+    "source_id": "rocket_lab",
+    "title": "Rocket Lab",
+    "url": "https://www.rocketlabusa.com/",
+    "type": "company_official",
+    "notes": "Launch and space systems company."
+  },
+  {
+    "source_id": "arianespace",
+    "title": "Arianespace",
+    "url": "https://www.arianespace.com/",
+    "type": "company_official",
+    "notes": "European launch services provider."
+  },
+  {
+    "source_id": "arianegroup",
+    "title": "ArianeGroup",
+    "url": "https://www.ariane.group/en/",
+    "type": "company_official",
+    "notes": "European space launch and propulsion company."
+  },
+  {
+    "source_id": "esa",
+    "title": "European Space Agency",
+    "url": "https://www.esa.int/",
+    "type": "official_space_agency",
+    "notes": "European intergovernmental space agency."
+  },
+  {
+    "source_id": "easa",
+    "title": "EASA — European Union Aviation Safety Agency",
+    "url": "https://www.easa.europa.eu/en",
+    "type": "regulator_official",
+    "notes": "European aviation safety regulator."
+  },
+  {
+    "source_id": "faa",
+    "title": "FAA",
+    "url": "https://www.faa.gov/",
+    "type": "regulator_official",
+    "notes": "US aviation regulator."
+  },
+  {
+    "source_id": "icao",
+    "title": "ICAO",
+    "url": "https://www.icao.int/",
+    "type": "international_body",
+    "notes": "International Civil Aviation Organization."
+  },
+  {
+    "source_id": "eurocontrol",
+    "title": "EUROCONTROL",
+    "url": "https://www.eurocontrol.int/",
+    "type": "official_atm",
+    "notes": "European air traffic management organization."
+  },
+  {
+    "source_id": "iata",
+    "title": "IATA",
+    "url": "https://www.iata.org/",
+    "type": "industry_body",
+    "notes": "International Air Transport Association."
+  },
+  {
+    "source_id": "nasa",
+    "title": "NASA",
+    "url": "https://www.nasa.gov/",
+    "type": "space_agency",
+    "notes": "US space agency."
+  },
+  {
+    "source_id": "eutelsat",
+    "title": "Eutelsat Group",
+    "url": "https://www.eutelsat.com/",
+    "type": "company_official",
+    "notes": "European satellite operator, including GEO/LEO connectivity after OneWeb combination."
+  },
+  {
+    "source_id": "ses",
+    "title": "SES",
+    "url": "https://www.ses.com/",
+    "type": "company_official",
+    "notes": "Satellite communications provider."
+  },
+  {
+    "source_id": "intelsat",
+    "title": "Intelsat",
+    "url": "https://www.intelsat.com/",
+    "type": "company_official",
+    "notes": "Satellite communications provider."
+  },
+  {
+    "source_id": "thales_alenia_space",
+    "title": "Thales Alenia Space",
+    "url": "https://www.thalesaleniaspace.com/",
+    "type": "company_official",
+    "notes": "Satellite systems and space infrastructure joint venture."
+  },
+  {
+    "source_id": "ohb",
+    "title": "OHB",
+    "url": "https://www.ohb.de/en/",
+    "type": "company_official",
+    "notes": "German space and technology group."
+  },
+  {
+    "source_id": "mtu",
+    "title": "MTU Aero Engines",
+    "url": "https://www.mtu.de/",
+    "type": "company_official",
+    "notes": "German engine manufacturer and MRO provider."
+  },
+  {
+    "source_id": "spirit_aerosystems",
+    "title": "Spirit AeroSystems",
+    "url": "https://www.spiritaero.com/",
+    "type": "company_official",
+    "notes": "Aerostructures supplier."
+  },
+  {
+    "source_id": "gkn_aerospace",
+    "title": "GKN Aerospace",
+    "url": "https://www.gknaerospace.com/",
+    "type": "company_official",
+    "notes": "Aerospace systems and structures supplier."
+  },
+  {
+    "source_id": "liebherr_aerospace",
+    "title": "Liebherr Aerospace",
+    "url": "https://www.liebherr.com/en/int/products/aerospace-and-transportation-systems/aerospace/aerospace.html",
+    "type": "company_official",
+    "notes": "Aircraft systems supplier including landing gear, flight control, air management and actuation systems."
+  },
+  {
+    "source_id": "parker_aerospace",
+    "title": "Parker Aerospace",
+    "url": "https://www.parker.com/us/en/divisions/aerospace-group.html",
+    "type": "company_official",
+    "notes": "Motion and control systems for aerospace."
+  },
+  {
+    "source_id": "moog_aircraft",
+    "title": "Moog Aircraft",
+    "url": "https://www.moog.com/markets/aircraft.html",
+    "type": "company_official",
+    "notes": "Flight control and actuation systems."
+  },
+  {
+    "source_id": "satcom_direct",
+    "title": "Satcom Direct",
+    "url": "https://www.satcomdirect.com/",
+    "type": "company_official",
+    "notes": "Aviation connectivity and data services."
+  },
+  {
+    "source_id": "flightradar24",
+    "title": "Flightradar24",
+    "url": "https://www.flightradar24.com/",
+    "type": "company_official",
+    "notes": "Flight tracking data service."
+  },
+  {
+    "source_id": "sita",
+    "title": "SITA",
+    "url": "https://www.sita.aero/",
+    "type": "company_official",
+    "notes": "Air transport IT and communications provider."
+  },
+  {
+    "source_id": "aerospike_placeholder",
+    "title": "Placeholder — Aero supply chain sources to enrich",
+    "url": "",
+    "type": "internal_placeholder",
+    "notes": "Several supplier relations should be enriched with annual reports and official partner pages in v0.2."
+  }
+]

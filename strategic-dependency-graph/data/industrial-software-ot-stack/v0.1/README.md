@@ -1,10 +1,12 @@
 # Industrial Software / OT Stack Database v0.1
 
-This is the fifth database for Founder Map / Strategic Dependency Graph.
+Created: 2026-06-21
 
 ## What this is
 
 A public-source strategic dependency graph for industrial software, operational technology, automation, simulation and industrial data.
+
+This is the fifth database for Founder Map / Strategic Dependency Graph.
 
 It is the cross-cutting layer that connects the previous databases:
 
@@ -80,7 +82,7 @@ sources: 48
 Primary data file:
 
 ```text
-strategic-dependency-graph/data/industrial-software-ot-stack/v0.1/industrial_software_ot_stack_graph_v0.json
+data/industrial-software-ot-stack/v0.1/industrial_software_ot_stack_graph_v0.json
 ```
 
 Recommended UI behavior:

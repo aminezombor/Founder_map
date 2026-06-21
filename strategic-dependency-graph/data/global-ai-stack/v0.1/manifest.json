@@ -2,6 +2,7 @@
   "project": "Strategic Dependency Graph",
   "database": "Global AI Stack",
   "version": "0.1",
+  "created": "2026-06-21",
   "node_count": 72,
   "edge_count": 229,
   "opportunity_count": 12,
@@ -12,6 +13,5 @@
     "Edges marked fact_status=inferred are system-level dependency hypotheses.",
     "Global comparison lens: US, EU, China, Middle East, Canada.",
     "Designed for Codex ingestion and website graph generation."
-  ],
-  "local_package": "global_ai_stack_database_v0_1.zip"
+  ]
 }

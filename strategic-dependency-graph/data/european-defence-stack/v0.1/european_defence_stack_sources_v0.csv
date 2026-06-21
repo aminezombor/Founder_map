@@ -1,0 +1,46 @@
+source_id,title,url,type,notes
+edis,European Commission — EDIS | Our common defence industrial strategy,https://defence-industry-space.ec.europa.eu/eu-defence-industry/edis-our-common-defence-industrial-strategy_en,official_strategy,"EDIS sets a vision for European defence industrial policy until 2035 and emphasizes strengthening EDTIB, readiness, collaborative investment and strategic partnerships."
+edf,European Commission — European Defence Fund,https://defence-industry-space.ec.europa.eu/eu-defence-industry/european-defence-fund-edf-official-webpage-european-commission_en,official_funding,EDF supports collaborative defence research and development across EU member states; nearly €7.3B budget for 2021-2027.
+edip,European Commission — EDIP | Forging Europe's Defence,https://defence-industry-space.ec.europa.eu/eu-defence-industry/edip-future-defence-investment_en,official_policy,European Defence Industry Programme policy context; may need enrichment when final regulation/source page is stable.
+eda,European Defence Agency,https://eda.europa.eu/,official_agency,"European Defence Agency coordinates capability development, defence research, training and collaborative defence initiatives."
+card,European Defence Agency — Coordinated Annual Review on Defence,https://eda.europa.eu/what-we-do/all-activities/activities-search/coordinated-annual-review-on-defence-(card),official_assessment,CARD monitors European defence capability landscape and collaboration opportunities.
+eudis,EUDIS — EU Defence Innovation Scheme,https://eudis.europa.eu/,official_innovation,"EU defence innovation scheme supporting startups, SMEs and disruptive defence technologies."
+pesco,PESCO — Permanent Structured Cooperation,https://www.pesco.europa.eu/,official_program,EU framework for defence cooperation projects among member states.
+occar,OCCAR — Organisation for Joint Armament Cooperation,https://www.occar.int/,official_program_management,European joint armament programme management organization.
+nato_diana,NATO DIANA,https://www.diana.nato.int/,official_innovation,NATO Defence Innovation Accelerator for the North Atlantic.
+france_dga,Direction générale de l'armement — DGA,https://www.defense.gouv.fr/dga,official_procurement,French armament procurement and technology agency.
+aid_france,Agence de l'innovation de défense,https://www.defense.gouv.fr/aid,official_innovation,French Defence Innovation Agency.
+france2030,France 2030,https://www.info.gouv.fr/grand-dossier/france-2030-en/understanding-france-2030,official_public_program,"French strategic investment plan, useful for dual-use industrial/technology lens."
+airbus_defence,Airbus — Defence,https://www.airbus.com/en/products-services/defence,company_official,"Airbus defence portfolio includes military aircraft, UAS, FCAS, military space, connectivity, intelligence/data and Multi-Domain Combat Cloud."
+airbus_space,Airbus — Space,https://www.airbus.com/en/products-services/space,company_official,Airbus space portfolio.
+thales_defence,Thales — Defence and Security,https://www.thalesgroup.com/en/markets/defence-and-security,company_official,"Thales defence/security portfolio; sensors, cybersecurity, communications, C4ISR, avionics, space and naval systems."
+leonardo_defence,Leonardo — Defence & Security,https://www.leonardo.com/en/markets/defence-security,company_official,"Leonardo defence/security portfolio: aircraft, helicopters, electronics, sensors, space and cyber/security."
+rheinmetall_defence,Rheinmetall — Defence,https://www.rheinmetall.com/en/products/defence,company_official,"Rheinmetall defence portfolio: vehicles, weapons/ammunition, air defence, electronics and soldier systems."
+mbda,MBDA,https://www.mbda-systems.com/,company_official,"European missile systems company; complex weapon systems, air defence, deep strike, force protection and air dominance products."
+dassault_defense,Dassault Aviation — Defense,https://www.dassault-aviation.com/en/defense/,company_official,Dassault defense aircraft and Rafale ecosystem.
+safran_defense,Safran — Defense,https://www.safran-group.com/markets/defense,company_official,"Safran defence markets: optronics, navigation, electronics, propulsion and aircraft equipment."
+naval_group,Naval Group,https://www.naval-group.com/en,company_official,"French naval defence group: submarines, surface ships, combat systems, services."
+knds,KNDS,https://www.knds.com/,company_official,"European land systems company formed by Krauss-Maffei Wegmann and Nexter; tanks, artillery and land systems."
+bae_systems,BAE Systems,https://www.baesystems.com/en/our-company/our-businesses,company_official,"UK-based defence, aerospace and security company."
+saab,Saab,https://www.saab.com/products,company_official,"Swedish defence and security company: aeronautics, surveillance, naval, land and advanced systems."
+indra,Indra,https://www.indracompany.com/en/defence-security,company_official,Spanish defence/security and technology company.
+hensoldt,Hensoldt,https://www.hensoldt.net/,company_official,German sensor solutions company for defence and security.
+kongsberg,Kongsberg Defence & Aerospace,https://www.kongsberg.com/kda/,company_official,"Norwegian defence/aerospace company: missiles, air defence, space, naval and command systems."
+diehl_defence,Diehl Defence,https://www.diehl.com/defence/en/,company_official,"German defence company with air defence, guided missiles, ammunition and protection systems."
+fincantieri,Fincantieri — Naval Vessels,https://www.fincantieri.com/en/products-and-services/naval-vessels/,company_official,Italian naval shipbuilding and systems.
+patria,Patria,https://www.patriagroup.com/,company_official,"Finnish defence and technology company: vehicles, maintenance, lifecycle support and systems."
+bittium,Bittium Defence & Security,https://www.bittium.com/defense-security/,company_official,Finnish secure communications and defence/security systems.
+rohde_schwarz_defence,Rohde & Schwarz — Defence,https://www.rohde-schwarz.com/solutions/aerospace-defense-security/defense/defense_229218.html,company_official,"Secure communications, test and measurement, electronic warfare and monitoring."
+helsing,Helsing,https://helsing.ai/,company_official,European software and AI defence company.
+quantum_systems,Quantum Systems,https://quantum-systems.com/,company_official,German aerial intelligence / unmanned systems company.
+tekever,TEKEVER,https://www.tekever.com/,company_official,Portuguese unmanned systems and surveillance company.
+arx_robotics,ARX Robotics,https://www.arx-robotics.com/,company_official,German defence robotics and autonomous ground systems startup.
+unseenlabs,Unseenlabs,https://unseenlabs.space/,company_official,French maritime surveillance by space-based RF detection.
+preligens,Preligens / Safran AI,https://www.safran.ai/,company_official,AI for intelligence and geospatial analysis; now associated with Safran AI.
+delair,Delair,https://delair.aero/,company_official,French drone and aerial intelligence company.
+exotrail,Exotrail,https://www.exotrail.com/,company_official,French space mobility company.
+harfanglab,HarfangLab,https://harfanglab.io/,company_official,French endpoint detection and cybersecurity company.
+sentrycs,Sentrycs,https://sentrycs.com/,company_official,Counter-drone cyber/RF detection and mitigation company.
+iris2,European Commission — IRIS²,https://defence-industry-space.ec.europa.eu/eu-space/iris2-secure-connectivity_en,official_space_program,EU secure connectivity satellite programme.
+galileo_prs,EU Agency for the Space Programme — Galileo PRS,https://www.euspa.europa.eu/eu-space-programme/galileo/services/prs,official_space_program,Galileo Public Regulated Service for government-authorised users.
+govsatcom,European Commission — GOVSATCOM,https://defence-industry-space.ec.europa.eu/eu-space/govsatcom_en,official_space_program,EU Governmental Satellite Communications.

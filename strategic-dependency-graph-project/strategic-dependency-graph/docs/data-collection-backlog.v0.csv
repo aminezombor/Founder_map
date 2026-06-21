@@ -1,6 +1,0 @@
-view,priority,collection_scope,target_v0_nodes,target_v0_edges,status
-EU AI Stack,1,"foundation models, cloud/HPC, GPUs/chips, data centers, energy, open source, research labs, public programs, regulated buyers",50,120,next
-Global AI Stack,2,"US/China/Middle East/EU model companies, cloud providers, chip suppliers, data-center operators, AI infrastructure",150,350,later
-European Defense Stack,3,"defense primes, dual-use startups, sensors, drones, satellites, cybersecurity, simulation, secure comms, manufacturing bottlenecks",80,200,later
-Global Aerospace Stack,4,"aircraft, space, avionics, engines, materials, simulation, certification, maintenance, autonomy, satellite infrastructure",120,300,later
-Industrial Software View,5,"PLM, CAD, CAE, MES, ERP, SCADA, digital twins, simulation, robotics software, industrial cybersecurity, supply chain software",,,cross-cutting

@@ -1,0 +1,338 @@
+[
+  {
+    "source_id": "siemens_xcelerator",
+    "title": "Siemens — Xcelerator / industrial AI / digital twin / software-defined automation",
+    "url": "https://www.siemens.com/en-us/",
+    "type": "company_official",
+    "notes": "Siemens describes AI, digital twin, software-defined automation and Xcelerator marketplace/products including NX, Teamcenter, Femap, Building X, Electrification X."
+  },
+  {
+    "source_id": "siemens_sw",
+    "title": "Siemens Digital Industries Software",
+    "url": "https://www.sw.siemens.com/en-US/",
+    "type": "company_official",
+    "notes": "Siemens industrial software product ecosystem."
+  },
+  {
+    "source_id": "dassault_3dexperience",
+    "title": "Dassault Systèmes — 3DEXPERIENCE platform",
+    "url": "https://www.3ds.com/3dexperience/",
+    "type": "company_official",
+    "notes": "3DEXPERIENCE platform connects people, ideas, data and solutions; single version of truth; virtual twin; cloud; marketplace."
+  },
+  {
+    "source_id": "ptc_products",
+    "title": "PTC Products",
+    "url": "https://www.ptc.com/en/products",
+    "type": "company_official",
+    "notes": "PTC product portfolio includes Codebeamer, Modeler, RV&S, Windchill, ThingWorx, Kepware, Vuforia and Onshape-related product lines."
+  },
+  {
+    "source_id": "rockwell_factorytalk",
+    "title": "Rockwell Automation — FactoryTalk",
+    "url": "https://www.rockwellautomation.com/en-us/products/software/factorytalk.html",
+    "type": "company_official",
+    "notes": "FactoryTalk software covers design, operations, maintenance, analytics, IIoT, AR and machine learning for industrial environments."
+  },
+  {
+    "source_id": "opcfoundation_opcua",
+    "title": "OPC Foundation — OPC UA",
+    "url": "https://opcfoundation.org/about/opc-technologies/opc-ua/",
+    "type": "standard_body",
+    "notes": "OPC UA is a platform-independent architecture for industrial interoperability; supports security and machine-to-enterprise connectivity."
+  },
+  {
+    "source_id": "isa_iec_62443",
+    "title": "ISA — ISA/IEC 62443 Series of Standards",
+    "url": "https://www.isa.org/standards-and-publications/isa-standards/isa-iec-62443-series-of-standards",
+    "type": "standard_body",
+    "notes": "ISA/IEC 62443 defines requirements/processes for secure industrial automation and control systems."
+  },
+  {
+    "source_id": "isa95",
+    "title": "ISA — ISA-95 Enterprise-Control System Integration",
+    "url": "https://www.isa.org/standards-and-publications/isa-standards/isa-95",
+    "type": "standard_body",
+    "notes": "ISA-95 is the enterprise-control system integration standard used to structure ERP/MES/OT boundaries."
+  },
+  {
+    "source_id": "unified_namespace",
+    "title": "HiveMQ — Unified Namespace",
+    "url": "https://www.hivemq.com/solutions/manufacturing/unified-namespace/",
+    "type": "vendor_reference",
+    "notes": "Unified Namespace reference for MQTT-based industrial data architecture."
+  },
+  {
+    "source_id": "sparkplug",
+    "title": "Eclipse Sparkplug",
+    "url": "https://sparkplug.eclipse.org/",
+    "type": "open_source_standard",
+    "notes": "Sparkplug provides MQTT topic namespace and payload standards for industrial devices and applications."
+  },
+  {
+    "source_id": "autodesk_fusion",
+    "title": "Autodesk Fusion",
+    "url": "https://www.autodesk.com/products/fusion-360/overview",
+    "type": "company_official",
+    "notes": "Cloud-based CAD/CAM/CAE and product design/manufacturing platform."
+  },
+  {
+    "source_id": "hexagon_msc",
+    "title": "Hexagon Manufacturing Intelligence",
+    "url": "https://hexagon.com/company/divisions/manufacturing-intelligence",
+    "type": "company_official",
+    "notes": "Manufacturing intelligence, metrology, design/engineering and manufacturing software."
+  },
+  {
+    "source_id": "ansys",
+    "title": "Ansys",
+    "url": "https://www.ansys.com/",
+    "type": "company_official",
+    "notes": "Engineering simulation software."
+  },
+  {
+    "source_id": "synopsys_ansys",
+    "title": "Synopsys — Ansys acquisition",
+    "url": "https://www.synopsys.com/company/ansys-acquisition.html",
+    "type": "company_official",
+    "notes": "Synopsys/Ansys transaction context for simulation + EDA convergence."
+  },
+  {
+    "source_id": "mathworks",
+    "title": "MathWorks",
+    "url": "https://www.mathworks.com/",
+    "type": "company_official",
+    "notes": "MATLAB and Simulink for engineering computation, model-based design and simulation."
+  },
+  {
+    "source_id": "nvidia_omniverse",
+    "title": "NVIDIA Omniverse",
+    "url": "https://www.nvidia.com/en-us/omniverse/",
+    "type": "company_official",
+    "notes": "Platform for 3D workflows, digital twins and industrial simulation."
+  },
+  {
+    "source_id": "schneider_ecostruxure",
+    "title": "Schneider Electric EcoStruxure",
+    "url": "https://www.se.com/ww/en/work/campaign/innovation/overview.jsp",
+    "type": "company_official",
+    "notes": "IoT-enabled architecture and platform for energy management and automation."
+  },
+  {
+    "source_id": "aveva",
+    "title": "AVEVA",
+    "url": "https://www.aveva.com/",
+    "type": "company_official",
+    "notes": "Industrial software for engineering, operations, data, visualization and asset performance."
+  },
+  {
+    "source_id": "abb_ability",
+    "title": "ABB Ability",
+    "url": "https://global.abb/group/en/technology/abb-ability",
+    "type": "company_official",
+    "notes": "ABB digital platform and industrial software/services."
+  },
+  {
+    "source_id": "honeywell_forge",
+    "title": "Honeywell Forge",
+    "url": "https://www.honeywellforge.ai/",
+    "type": "company_official",
+    "notes": "Industrial software and operational intelligence platform."
+  },
+  {
+    "source_id": "emerson_software",
+    "title": "Emerson Software",
+    "url": "https://www.emerson.com/en-us/automation/software",
+    "type": "company_official",
+    "notes": "Automation software, control, asset management and operations."
+  },
+  {
+    "source_id": "yokogawa",
+    "title": "Yokogawa",
+    "url": "https://www.yokogawa.com/",
+    "type": "company_official",
+    "notes": "Industrial automation, control and information systems."
+  },
+  {
+    "source_id": "beckhoff",
+    "title": "Beckhoff Automation",
+    "url": "https://www.beckhoff.com/",
+    "type": "company_official",
+    "notes": "PC-based automation, EtherCAT, PLC, motion, control and industrial PCs."
+  },
+  {
+    "source_id": "bosch_rexroth_ctrlx",
+    "title": "Bosch Rexroth ctrlX AUTOMATION",
+    "url": "https://www.boschrexroth.com/en/xc/products/product-groups/ctrlx-automation/",
+    "type": "company_official",
+    "notes": "Open automation platform and ecosystem."
+  },
+  {
+    "source_id": "codesys",
+    "title": "CODESYS",
+    "url": "https://www.codesys.com/",
+    "type": "company_official",
+    "notes": "IEC 61131-3 development system and automation software."
+  },
+  {
+    "source_id": "kepware",
+    "title": "Kepware",
+    "url": "https://www.ptc.com/en/products/kepware",
+    "type": "company_official",
+    "notes": "Industrial connectivity platform from PTC."
+  },
+  {
+    "source_id": "inductive_automation",
+    "title": "Inductive Automation — Ignition",
+    "url": "https://inductiveautomation.com/ignition/",
+    "type": "company_official",
+    "notes": "SCADA/MES/IIoT platform."
+  },
+  {
+    "source_id": "ignition",
+    "title": "Ignition by Inductive Automation",
+    "url": "https://inductiveautomation.com/ignition/",
+    "type": "company_official",
+    "notes": "Industrial application platform with SCADA, IIoT, MES and reporting capabilities."
+  },
+  {
+    "source_id": "sap_digital_manufacturing",
+    "title": "SAP Digital Manufacturing",
+    "url": "https://www.sap.com/products/scm/digital-manufacturing.html",
+    "type": "company_official",
+    "notes": "Manufacturing execution, insights and integration in SAP ecosystem."
+  },
+  {
+    "source_id": "oracle_scm_manufacturing",
+    "title": "Oracle Manufacturing",
+    "url": "https://www.oracle.com/scm/manufacturing/",
+    "type": "company_official",
+    "notes": "Oracle manufacturing and supply chain applications."
+  },
+  {
+    "source_id": "microsoft_azure_iot",
+    "title": "Microsoft Azure IoT",
+    "url": "https://azure.microsoft.com/en-us/solutions/iot",
+    "type": "company_official",
+    "notes": "Cloud IoT platform and industrial edge/cloud connectivity."
+  },
+  {
+    "source_id": "aws_iot",
+    "title": "AWS IoT",
+    "url": "https://aws.amazon.com/iot/",
+    "type": "company_official",
+    "notes": "IoT services for industrial and connected device workloads."
+  },
+  {
+    "source_id": "google_cloud_manufacturing",
+    "title": "Google Cloud Manufacturing",
+    "url": "https://cloud.google.com/solutions/manufacturing",
+    "type": "company_official",
+    "notes": "Cloud platform services for manufacturers."
+  },
+  {
+    "source_id": "snowflake_manufacturing",
+    "title": "Snowflake Manufacturing",
+    "url": "https://www.snowflake.com/en/solutions/industries/manufacturing/",
+    "type": "company_official",
+    "notes": "Manufacturing data cloud and analytics."
+  },
+  {
+    "source_id": "databricks_manufacturing",
+    "title": "Databricks Manufacturing",
+    "url": "https://www.databricks.com/solutions/industries/manufacturing",
+    "type": "company_official",
+    "notes": "Manufacturing data and AI lakehouse."
+  },
+  {
+    "source_id": "palantir_aip",
+    "title": "Palantir AIP",
+    "url": "https://www.palantir.com/platforms/aip/",
+    "type": "company_official",
+    "notes": "AI platform and ontology-driven enterprise/industrial operations."
+  },
+  {
+    "source_id": "c3_ai",
+    "title": "C3 AI",
+    "url": "https://c3.ai/",
+    "type": "company_official",
+    "notes": "Enterprise AI applications for reliability, supply chain and industrial operations."
+  },
+  {
+    "source_id": "tulip",
+    "title": "Tulip Interfaces",
+    "url": "https://tulip.co/",
+    "type": "company_official",
+    "notes": "Frontline operations platform for manufacturers."
+  },
+  {
+    "source_id": "maintainx",
+    "title": "MaintainX",
+    "url": "https://www.getmaintainx.com/",
+    "type": "company_official",
+    "notes": "Maintenance and frontline operations management software."
+  },
+  {
+    "source_id": "uptake",
+    "title": "Uptake",
+    "url": "https://www.uptake.com/",
+    "type": "company_official",
+    "notes": "Industrial intelligence and predictive maintenance."
+  },
+  {
+    "source_id": "cognite",
+    "title": "Cognite",
+    "url": "https://www.cognite.com/",
+    "type": "company_official",
+    "notes": "Industrial data operations platform."
+  },
+  {
+    "source_id": "litmus",
+    "title": "Litmus",
+    "url": "https://litmus.io/",
+    "type": "company_official",
+    "notes": "Industrial edge data platform."
+  },
+  {
+    "source_id": "highbyte",
+    "title": "HighByte",
+    "url": "https://www.highbyte.com/",
+    "type": "company_official",
+    "notes": "Industrial DataOps and contextualization platform."
+  },
+  {
+    "source_id": "claroty",
+    "title": "Claroty",
+    "url": "https://claroty.com/",
+    "type": "company_official",
+    "notes": "Cyber-physical systems security and OT asset visibility."
+  },
+  {
+    "source_id": "dragos",
+    "title": "Dragos",
+    "url": "https://www.dragos.com/",
+    "type": "company_official",
+    "notes": "Industrial cybersecurity and threat intelligence."
+  },
+  {
+    "source_id": "nozomi",
+    "title": "Nozomi Networks",
+    "url": "https://www.nozominetworks.com/",
+    "type": "company_official",
+    "notes": "OT and IoT security monitoring."
+  },
+  {
+    "source_id": "armis",
+    "title": "Armis",
+    "url": "https://www.armis.com/",
+    "type": "company_official",
+    "notes": "Cyber exposure management, asset intelligence, OT/IoT security."
+  },
+  {
+    "source_id": "tenable_ot",
+    "title": "Tenable OT",
+    "url": "https://www.tenable.com/products/tenable-ot",
+    "type": "company_official",
+    "notes": "OT security and exposure management."
+  }
+]
