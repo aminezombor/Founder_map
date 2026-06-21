@@ -1,0 +1,2375 @@
+[
+  {
+    "id": "eu_ai_stack",
+    "name": "EU AI Stack",
+    "type": "sector_view",
+    "country": "EU",
+    "region": "Europe",
+    "sector": [
+      "AI"
+    ],
+    "strategic_role": "Top-level strategic view",
+    "description": "The first battlefield: EU AI companies, compute, cloud, chips, AI factories, software stack, regulation and opportunity signals.",
+    "sovereignty_score": 3,
+    "criticality": 5,
+    "market_importance": 5,
+    "france_or_eu_fit": 5,
+    "color": "blue",
+    "confidence": "high",
+    "tags": [
+      "EU_AI",
+      "view"
+    ],
+    "sources": [
+      "eu_ai_factories_policy"
+    ],
+    "fact_status": "known"
+  },
+  {
+    "id": "ai_compute",
+    "name": "AI Compute",
+    "type": "capability_layer",
+    "country": "",
+    "region": "Global",
+    "sector": [
+      "AI infrastructure"
+    ],
+    "strategic_role": "Core compute layer",
+    "description": "GPU/HPC/accelerator capacity for training, fine-tuning and inference.",
+    "sovereignty_score": 1,
+    "criticality": 5,
+    "market_importance": 5,
+    "france_or_eu_fit": 5,
+    "color": "red",
+    "confidence": "high",
+    "tags": [
+      "compute",
+      "bottleneck"
+    ],
+    "sources": [
+      "eu_ai_factories_policy",
+      "nvidia_data_center",
+      "amd_mi300"
+    ],
+    "fact_status": "known"
+  },
+  {
+    "id": "gpu_accelerators",
+    "name": "GPU / AI Accelerators",
+    "type": "hardware_component",
+    "country": "",
+    "region": "Global",
+    "sector": [
+      "chips",
+      "AI infrastructure"
+    ],
+    "strategic_role": "Accelerator hardware layer",
+    "description": "High-end AI chips and accelerators used for AI training/inference.",
+    "sovereignty_score": 1,
+    "criticality": 5,
+    "market_importance": 5,
+    "france_or_eu_fit": 5,
+    "color": "red",
+    "confidence": "high",
+    "tags": [
+      "chips",
+      "compute",
+      "bottleneck"
+    ],
+    "sources": [
+      "nvidia_data_center",
+      "amd_mi300",
+      "intel_gaudi"
+    ],
+    "fact_status": "known"
+  },
+  {
+    "id": "ai_hpc_supercomputing",
+    "name": "AI-Optimized HPC / Supercomputing",
+    "type": "capability_layer",
+    "country": "EU",
+    "region": "Europe",
+    "sector": [
+      "HPC",
+      "AI infrastructure"
+    ],
+    "strategic_role": "Public compute infrastructure",
+    "description": "EuroHPC AI Factories and supercomputers as public AI compute backbone.",
+    "sovereignty_score": 4,
+    "criticality": 5,
+    "market_importance": 5,
+    "france_or_eu_fit": 5,
+    "color": "green",
+    "confidence": "high",
+    "tags": [
+      "EuroHPC",
+      "compute"
+    ],
+    "sources": [
+      "eu_ai_factories_policy",
+      "eurohpc_ai_factories",
+      "eurohpc_ai_systems"
+    ],
+    "fact_status": "known"
+  },
+  {
+    "id": "cloud_native_ai_platform",
+    "name": "Cloud-Native AI Platform Layer",
+    "type": "software_platform",
+    "country": "",
+    "region": "Global",
+    "sector": [
+      "AI infrastructure",
+      "cloud"
+    ],
+    "strategic_role": "Usability/orchestration layer",
+    "description": "Kubernetes, serving, storage, registry and MLOps tooling that makes AI infrastructure usable.",
+    "sovereignty_score": 2,
+    "criticality": 5,
+    "market_importance": 5,
+    "france_or_eu_fit": 5,
+    "color": "orange",
+    "confidence": "medium",
+    "tags": [
+      "cloud_native",
+      "tooling"
+    ],
+    "sources": [
+      "kubernetes",
+      "vllm",
+      "cloud_hpc_divide_paper"
+    ],
+    "fact_status": "known"
+  },
+  {
+    "id": "model_distribution",
+    "name": "Model Distribution / Registry",
+    "type": "software_platform",
+    "country": "",
+    "region": "Global",
+    "sector": [
+      "AI software supply chain"
+    ],
+    "strategic_role": "Model registry and distribution layer",
+    "description": "Platforms used to distribute, discover and reuse models/datasets.",
+    "sovereignty_score": 2,
+    "criticality": 4,
+    "market_importance": 5,
+    "france_or_eu_fit": 4,
+    "color": "orange",
+    "confidence": "high",
+    "tags": [
+      "model_hub",
+      "supply_chain"
+    ],
+    "sources": [
+      "huggingface",
+      "mistral_hf",
+      "hf_supply_chain_paper"
+    ],
+    "fact_status": "known"
+  },
+  {
+    "id": "llm_serving",
+    "name": "LLM Serving Layer",
+    "type": "software_platform",
+    "country": "",
+    "region": "Global",
+    "sector": [
+      "AI infrastructure"
+    ],
+    "strategic_role": "Inference serving runtime",
+    "description": "Software for high-throughput, cost-efficient model serving.",
+    "sovereignty_score": 2,
+    "criticality": 5,
+    "market_importance": 5,
+    "france_or_eu_fit": 5,
+    "color": "orange",
+    "confidence": "medium",
+    "tags": [
+      "serving",
+      "inference"
+    ],
+    "sources": [
+      "vllm",
+      "vllm_perf_paper"
+    ],
+    "fact_status": "known"
+  },
+  {
+    "id": "sovereign_cloud",
+    "name": "Sovereign Cloud",
+    "type": "capability_layer",
+    "country": "EU",
+    "region": "Europe",
+    "sector": [
+      "cloud",
+      "sovereignty"
+    ],
+    "strategic_role": "Sovereign infrastructure layer",
+    "description": "Cloud services designed around sovereignty, data residency and control.",
+    "sovereignty_score": 3,
+    "criticality": 5,
+    "market_importance": 5,
+    "france_or_eu_fit": 5,
+    "color": "orange",
+    "confidence": "high",
+    "tags": [
+      "cloud",
+      "sovereignty"
+    ],
+    "sources": [
+      "ovh_sovereign",
+      "aws_sovereign",
+      "microsoft_sovereign",
+      "ionos_public_sector"
+    ],
+    "fact_status": "known"
+  },
+  {
+    "id": "data_centers",
+    "name": "Data Centers",
+    "type": "capability_layer",
+    "country": "",
+    "region": "Global",
+    "sector": [
+      "data center",
+      "AI infrastructure"
+    ],
+    "strategic_role": "Physical infrastructure layer",
+    "description": "Facilities hosting compute/storage/networking for AI.",
+    "sovereignty_score": 2,
+    "criticality": 5,
+    "market_importance": 5,
+    "france_or_eu_fit": 5,
+    "color": "orange",
+    "confidence": "high",
+    "tags": [
+      "energy",
+      "compute",
+      "infra"
+    ],
+    "sources": [
+      "eu_ai_gigafactories",
+      "scaleway_gpu",
+      "ovh_gpu"
+    ],
+    "fact_status": "known"
+  },
+  {
+    "id": "energy_power_capacity",
+    "name": "Energy / Power Capacity",
+    "type": "capability_layer",
+    "country": "",
+    "region": "Global",
+    "sector": [
+      "energy",
+      "AI infrastructure"
+    ],
+    "strategic_role": "Power bottleneck",
+    "description": "Electricity supply, grid connection, cooling and energy efficiency for AI compute facilities.",
+    "sovereignty_score": 2,
+    "criticality": 5,
+    "market_importance": 5,
+    "france_or_eu_fit": 5,
+    "color": "red",
+    "confidence": "high",
+    "tags": [
+      "energy",
+      "bottleneck"
+    ],
+    "sources": [
+      "eu_ai_gigafactories",
+      "eu_ai_factories_policy"
+    ],
+    "fact_status": "known"
+  },
+  {
+    "id": "training_data",
+    "name": "Training Data",
+    "type": "capability_layer",
+    "country": "",
+    "region": "Global",
+    "sector": [
+      "data",
+      "AI"
+    ],
+    "strategic_role": "Data layer",
+    "description": "High-quality, compliant, domain-specific and multilingual training data.",
+    "sovereignty_score": 3,
+    "criticality": 5,
+    "market_importance": 5,
+    "france_or_eu_fit": 5,
+    "color": "orange",
+    "confidence": "medium",
+    "tags": [
+      "data",
+      "language",
+      "domain_data"
+    ],
+    "sources": [
+      "eu_ai_gigafactories",
+      "aleph_alpha",
+      "owkin"
+    ],
+    "fact_status": "known"
+  },
+  {
+    "id": "ai_compliance",
+    "name": "AI Compliance / Governance",
+    "type": "capability_layer",
+    "country": "EU",
+    "region": "Europe",
+    "sector": [
+      "regulation",
+      "AI"
+    ],
+    "strategic_role": "Regulatory control layer",
+    "description": "Compliance, risk management and evidence tooling for AI Act / sector regulation.",
+    "sovereignty_score": 3,
+    "criticality": 5,
+    "market_importance": 5,
+    "france_or_eu_fit": 5,
+    "color": "blue",
+    "confidence": "high",
+    "tags": [
+      "AI_Act",
+      "compliance"
+    ],
+    "sources": [
+      "eu_ai_act"
+    ],
+    "fact_status": "known"
+  },
+  {
+    "id": "secure_ai_deployment",
+    "name": "Secure AI Deployment",
+    "type": "capability_layer",
+    "country": "",
+    "region": "Global",
+    "sector": [
+      "security",
+      "AI"
+    ],
+    "strategic_role": "Security and deployment layer",
+    "description": "Secure, auditable, controllable deployment of AI systems in regulated environments.",
+    "sovereignty_score": 3,
+    "criticality": 5,
+    "market_importance": 5,
+    "france_or_eu_fit": 5,
+    "color": "orange",
+    "confidence": "medium",
+    "tags": [
+      "security",
+      "deployment"
+    ],
+    "sources": [
+      "aleph_alpha",
+      "lighton",
+      "orange_lighton"
+    ],
+    "fact_status": "known"
+  },
+  {
+    "id": "semiconductor_manufacturing",
+    "name": "Semiconductor Manufacturing",
+    "type": "capability_layer",
+    "country": "",
+    "region": "Global",
+    "sector": [
+      "chips"
+    ],
+    "strategic_role": "Chip supply chain layer",
+    "description": "Foundry, packaging and manufacturing layer behind AI accelerators.",
+    "sovereignty_score": 1,
+    "criticality": 5,
+    "market_importance": 5,
+    "france_or_eu_fit": 5,
+    "color": "red",
+    "confidence": "high",
+    "tags": [
+      "chips",
+      "foundry",
+      "bottleneck"
+    ],
+    "sources": [
+      "tsmc",
+      "asml",
+      "eu_chips_act"
+    ],
+    "fact_status": "known"
+  },
+  {
+    "id": "european_ai_talent",
+    "name": "European AI Talent",
+    "type": "capability_layer",
+    "country": "EU",
+    "region": "Europe",
+    "sector": [
+      "talent",
+      "AI"
+    ],
+    "strategic_role": "Talent pool",
+    "description": "Researchers, engineers and operators across European universities, labs, startups and companies.",
+    "sovereignty_score": 4,
+    "criticality": 5,
+    "market_importance": 5,
+    "france_or_eu_fit": 5,
+    "color": "green",
+    "confidence": "medium",
+    "tags": [
+      "talent"
+    ],
+    "sources": [
+      "eu_ai_factories_policy",
+      "eurohpc_ai2f_press"
+    ],
+    "fact_status": "known"
+  },
+  {
+    "id": "european_commission",
+    "name": "European Commission",
+    "type": "government_agency",
+    "country": "EU",
+    "region": "Europe",
+    "sector": [
+      "policy"
+    ],
+    "strategic_role": "EU executive body",
+    "description": "Policy and funding actor for EU AI, AI Factories, AI Gigafactories, AI Act, Chips Act.",
+    "sovereignty_score": 5,
+    "criticality": 5,
+    "market_importance": 5,
+    "france_or_eu_fit": 5,
+    "color": "blue",
+    "confidence": "high",
+    "tags": [
+      "policy",
+      "EU"
+    ],
+    "sources": [
+      "eu_ai_factories_policy",
+      "eu_ai_act",
+      "eu_chips_act",
+      "eu_ai_gigafactories"
+    ],
+    "fact_status": "known"
+  },
+  {
+    "id": "eurohpc_ju",
+    "name": "EuroHPC Joint Undertaking",
+    "type": "government_agency",
+    "country": "EU",
+    "region": "Europe",
+    "sector": [
+      "HPC",
+      "AI infrastructure"
+    ],
+    "strategic_role": "EU HPC funding/operator body",
+    "description": "Joint initiative coordinating European supercomputing and AI Factories.",
+    "sovereignty_score": 5,
+    "criticality": 5,
+    "market_importance": 5,
+    "france_or_eu_fit": 5,
+    "color": "blue",
+    "confidence": "high",
+    "tags": [
+      "EuroHPC"
+    ],
+    "sources": [
+      "eurohpc_ai_factories"
+    ],
+    "fact_status": "known"
+  },
+  {
+    "id": "european_ai_office",
+    "name": "European AI Office",
+    "type": "government_agency",
+    "country": "EU",
+    "region": "Europe",
+    "sector": [
+      "AI regulation"
+    ],
+    "strategic_role": "EU AI coordination body",
+    "description": "Coordinates AI Act implementation and AI ecosystem actions.",
+    "sovereignty_score": 5,
+    "criticality": 4,
+    "market_importance": 4,
+    "france_or_eu_fit": 4,
+    "color": "blue",
+    "confidence": "medium",
+    "tags": [
+      "AI_Act"
+    ],
+    "sources": [
+      "eu_ai_factories_policy",
+      "eu_ai_act"
+    ],
+    "fact_status": "known"
+  },
+  {
+    "id": "ai_factories_network",
+    "name": "EuroHPC AI Factories Network",
+    "type": "funding_program",
+    "country": "EU",
+    "region": "Europe",
+    "sector": [
+      "AI infrastructure",
+      "HPC"
+    ],
+    "strategic_role": "AI compute/support network",
+    "description": "Network of AI Factories providing compute and support to European users, startups, SMEs and public authorities.",
+    "sovereignty_score": 5,
+    "criticality": 5,
+    "market_importance": 5,
+    "france_or_eu_fit": 5,
+    "color": "green",
+    "confidence": "high",
+    "tags": [
+      "AI_Factories",
+      "compute"
+    ],
+    "sources": [
+      "eu_ai_factories_policy",
+      "eurohpc_ai_factories"
+    ],
+    "fact_status": "known"
+  },
+  {
+    "id": "investai_facility",
+    "name": "InvestAI Facility",
+    "type": "funding_program",
+    "country": "EU",
+    "region": "Europe",
+    "sector": [
+      "AI infrastructure"
+    ],
+    "strategic_role": "AI gigafactory funding mechanism",
+    "description": "European fund for up to five AI Gigafactories.",
+    "sovereignty_score": 5,
+    "criticality": 5,
+    "market_importance": 5,
+    "france_or_eu_fit": 5,
+    "color": "blue",
+    "confidence": "high",
+    "tags": [
+      "AI_Gigafactories"
+    ],
+    "sources": [
+      "eu_ai_factories_policy",
+      "eu_ai_gigafactories"
+    ],
+    "fact_status": "known"
+  },
+  {
+    "id": "ai_gigafactories",
+    "name": "AI Gigafactories",
+    "type": "capability_layer",
+    "country": "EU",
+    "region": "Europe",
+    "sector": [
+      "AI infrastructure",
+      "data center"
+    ],
+    "strategic_role": "Large-scale AI compute facilities",
+    "description": "Large-scale facilities for next-generation AI model training with advanced processors, power capacity, supply chains, networking and automation.",
+    "sovereignty_score": 4,
+    "criticality": 5,
+    "market_importance": 5,
+    "france_or_eu_fit": 5,
+    "color": "blue",
+    "confidence": "high",
+    "tags": [
+      "AI_Gigafactories",
+      "compute"
+    ],
+    "sources": [
+      "eu_ai_factories_policy",
+      "eu_ai_gigafactories"
+    ],
+    "fact_status": "known"
+  },
+  {
+    "id": "eu_ai_act_node",
+    "name": "EU AI Act",
+    "type": "regulator",
+    "country": "EU",
+    "region": "Europe",
+    "sector": [
+      "regulation"
+    ],
+    "strategic_role": "AI regulatory framework",
+    "description": "EU comprehensive AI legal framework affecting AI deployment and compliance.",
+    "sovereignty_score": 5,
+    "criticality": 5,
+    "market_importance": 5,
+    "france_or_eu_fit": 5,
+    "color": "blue",
+    "confidence": "high",
+    "tags": [
+      "AI_Act",
+      "regulation"
+    ],
+    "sources": [
+      "eu_ai_act"
+    ],
+    "fact_status": "known"
+  },
+  {
+    "id": "eu_chips_act_node",
+    "name": "European Chips Act",
+    "type": "funding_program",
+    "country": "EU",
+    "region": "Europe",
+    "sector": [
+      "chips",
+      "policy"
+    ],
+    "strategic_role": "Semiconductor strategic policy",
+    "description": "EU semiconductor resilience and industrial capacity framework.",
+    "sovereignty_score": 5,
+    "criticality": 5,
+    "market_importance": 5,
+    "france_or_eu_fit": 5,
+    "color": "blue",
+    "confidence": "high",
+    "tags": [
+      "chips",
+      "EU_policy"
+    ],
+    "sources": [
+      "eu_chips_act"
+    ],
+    "fact_status": "known"
+  },
+  {
+    "id": "france_2030",
+    "name": "France 2030",
+    "type": "funding_program",
+    "country": "France",
+    "region": "Europe",
+    "sector": [
+      "industrial strategy",
+      "funding"
+    ],
+    "strategic_role": "French strategic investment plan",
+    "description": "French public investment program for strategic sectors and innovation.",
+    "sovereignty_score": 5,
+    "criticality": 5,
+    "market_importance": 5,
+    "france_or_eu_fit": 5,
+    "color": "blue",
+    "confidence": "medium",
+    "tags": [
+      "France",
+      "funding"
+    ],
+    "sources": [
+      "france2030"
+    ],
+    "fact_status": "known"
+  },
+  {
+    "id": "ai2f_france",
+    "name": "AI2F — AI Factory France",
+    "type": "funding_program",
+    "country": "France",
+    "region": "Europe",
+    "sector": [
+      "AI infrastructure",
+      "HPC"
+    ],
+    "strategic_role": "AI Factory",
+    "description": "French AI Factory leveraging Alice Recoque and existing GENCI-owned infrastructures.",
+    "sovereignty_score": 5,
+    "criticality": 4,
+    "market_importance": 4,
+    "france_or_eu_fit": 4,
+    "color": "green",
+    "confidence": "high",
+    "tags": [
+      "AI_Factory",
+      "EuroHPC"
+    ],
+    "sources": [
+      "eurohpc_ai2f_press"
+    ],
+    "fact_status": "known"
+  },
+  {
+    "id": "lumi_aif",
+    "name": "LUMI AI Factory",
+    "type": "funding_program",
+    "country": "Finland",
+    "region": "Europe",
+    "sector": [
+      "AI infrastructure",
+      "HPC"
+    ],
+    "strategic_role": "AI Factory",
+    "description": "AI Factory built around LUMI ecosystem.",
+    "sovereignty_score": 5,
+    "criticality": 4,
+    "market_importance": 4,
+    "france_or_eu_fit": 3,
+    "color": "green",
+    "confidence": "high",
+    "tags": [
+      "AI_Factory",
+      "EuroHPC"
+    ],
+    "sources": [
+      "eu_ai_factories_policy",
+      "eurohpc_ai_systems"
+    ],
+    "fact_status": "known"
+  },
+  {
+    "id": "jaif_germany",
+    "name": "JAIF — Jülich AI Factory",
+    "type": "funding_program",
+    "country": "Germany",
+    "region": "Europe",
+    "sector": [
+      "AI infrastructure",
+      "HPC"
+    ],
+    "strategic_role": "AI Factory",
+    "description": "German AI Factory associated with Jülich/JUPITER ecosystem.",
+    "sovereignty_score": 5,
+    "criticality": 4,
+    "market_importance": 4,
+    "france_or_eu_fit": 3,
+    "color": "green",
+    "confidence": "high",
+    "tags": [
+      "AI_Factory",
+      "EuroHPC"
+    ],
+    "sources": [
+      "eu_ai_factories_policy",
+      "eurohpc_ai2f_press"
+    ],
+    "fact_status": "known"
+  },
+  {
+    "id": "hammerhai_germany",
+    "name": "HammerHAI",
+    "type": "funding_program",
+    "country": "Germany",
+    "region": "Europe",
+    "sector": [
+      "AI infrastructure",
+      "HPC"
+    ],
+    "strategic_role": "AI Factory",
+    "description": "German AI Factory node in EuroHPC network.",
+    "sovereignty_score": 5,
+    "criticality": 4,
+    "market_importance": 4,
+    "france_or_eu_fit": 3,
+    "color": "green",
+    "confidence": "high",
+    "tags": [
+      "AI_Factory",
+      "EuroHPC"
+    ],
+    "sources": [
+      "eu_ai_factories_policy"
+    ],
+    "fact_status": "known"
+  },
+  {
+    "id": "meluxina_ai",
+    "name": "MeluXina-AI",
+    "type": "funding_program",
+    "country": "Luxembourg",
+    "region": "Europe",
+    "sector": [
+      "AI infrastructure",
+      "HPC"
+    ],
+    "strategic_role": "AI Factory",
+    "description": "Luxembourg AI Factory around MeluXina supercomputer.",
+    "sovereignty_score": 5,
+    "criticality": 4,
+    "market_importance": 4,
+    "france_or_eu_fit": 3,
+    "color": "green",
+    "confidence": "high",
+    "tags": [
+      "AI_Factory",
+      "EuroHPC"
+    ],
+    "sources": [
+      "eu_ai_factories_policy",
+      "eurohpc_ai_systems"
+    ],
+    "fact_status": "known"
+  },
+  {
+    "id": "it4lia_italy",
+    "name": "IT4LIA",
+    "type": "funding_program",
+    "country": "Italy",
+    "region": "Europe",
+    "sector": [
+      "AI infrastructure",
+      "HPC"
+    ],
+    "strategic_role": "AI Factory",
+    "description": "Italian AI Factory leveraging Leonardo and Bologna Tecnopolo.",
+    "sovereignty_score": 5,
+    "criticality": 4,
+    "market_importance": 4,
+    "france_or_eu_fit": 3,
+    "color": "green",
+    "confidence": "high",
+    "tags": [
+      "AI_Factory",
+      "EuroHPC"
+    ],
+    "sources": [
+      "eu_ai_factories_policy",
+      "eurohpc_ai_systems"
+    ],
+    "fact_status": "known"
+  },
+  {
+    "id": "bsc_aif_spain",
+    "name": "BSC AIF",
+    "type": "funding_program",
+    "country": "Spain",
+    "region": "Europe",
+    "sector": [
+      "AI infrastructure",
+      "HPC"
+    ],
+    "strategic_role": "AI Factory",
+    "description": "Barcelona AI Factory around MareNostrum 5 upgrade.",
+    "sovereignty_score": 5,
+    "criticality": 4,
+    "market_importance": 4,
+    "france_or_eu_fit": 3,
+    "color": "green",
+    "confidence": "high",
+    "tags": [
+      "AI_Factory",
+      "EuroHPC"
+    ],
+    "sources": [
+      "eu_ai_factories_policy",
+      "eurohpc_ai_systems"
+    ],
+    "fact_status": "known"
+  },
+  {
+    "id": "onehealth_ai_spain",
+    "name": "1HealthAI",
+    "type": "funding_program",
+    "country": "Spain",
+    "region": "Europe",
+    "sector": [
+      "AI infrastructure",
+      "HPC"
+    ],
+    "strategic_role": "AI Factory",
+    "description": "Spanish One-Health AI Factory.",
+    "sovereignty_score": 5,
+    "criticality": 4,
+    "market_importance": 4,
+    "france_or_eu_fit": 3,
+    "color": "green",
+    "confidence": "high",
+    "tags": [
+      "AI_Factory",
+      "EuroHPC"
+    ],
+    "sources": [
+      "eu_ai_factories_policy"
+    ],
+    "fact_status": "known"
+  },
+  {
+    "id": "pharos_greece",
+    "name": "Pharos",
+    "type": "funding_program",
+    "country": "Greece",
+    "region": "Europe",
+    "sector": [
+      "AI infrastructure",
+      "HPC"
+    ],
+    "strategic_role": "AI Factory",
+    "description": "Greek AI Factory.",
+    "sovereignty_score": 5,
+    "criticality": 4,
+    "market_importance": 4,
+    "france_or_eu_fit": 3,
+    "color": "green",
+    "confidence": "high",
+    "tags": [
+      "AI_Factory",
+      "EuroHPC"
+    ],
+    "sources": [
+      "eu_ai_factories_policy"
+    ],
+    "fact_status": "known"
+  },
+  {
+    "id": "mimer_sweden",
+    "name": "MIMER",
+    "type": "funding_program",
+    "country": "Sweden",
+    "region": "Europe",
+    "sector": [
+      "AI infrastructure",
+      "HPC"
+    ],
+    "strategic_role": "AI Factory",
+    "description": "Swedish AI Factory.",
+    "sovereignty_score": 5,
+    "criticality": 4,
+    "market_importance": 4,
+    "france_or_eu_fit": 3,
+    "color": "green",
+    "confidence": "high",
+    "tags": [
+      "AI_Factory",
+      "EuroHPC"
+    ],
+    "sources": [
+      "eu_ai_factories_policy"
+    ],
+    "fact_status": "known"
+  },
+  {
+    "id": "ai_at_austria",
+    "name": "AI:AT",
+    "type": "funding_program",
+    "country": "Austria",
+    "region": "Europe",
+    "sector": [
+      "AI infrastructure",
+      "HPC"
+    ],
+    "strategic_role": "AI Factory",
+    "description": "Austrian AI Factory.",
+    "sovereignty_score": 5,
+    "criticality": 4,
+    "market_importance": 4,
+    "france_or_eu_fit": 3,
+    "color": "green",
+    "confidence": "high",
+    "tags": [
+      "AI_Factory",
+      "EuroHPC"
+    ],
+    "sources": [
+      "eu_ai_factories_policy",
+      "eurohpc_ai2f_press"
+    ],
+    "fact_status": "known"
+  },
+  {
+    "id": "brainpp_bulgaria",
+    "name": "BRAIN++",
+    "type": "funding_program",
+    "country": "Bulgaria",
+    "region": "Europe",
+    "sector": [
+      "AI infrastructure",
+      "HPC"
+    ],
+    "strategic_role": "AI Factory",
+    "description": "Bulgarian Robotics & AI Nexus AI Factory.",
+    "sovereignty_score": 5,
+    "criticality": 4,
+    "market_importance": 4,
+    "france_or_eu_fit": 3,
+    "color": "green",
+    "confidence": "high",
+    "tags": [
+      "AI_Factory",
+      "EuroHPC"
+    ],
+    "sources": [
+      "eu_ai_factories_policy",
+      "eurohpc_ai2f_press"
+    ],
+    "fact_status": "known"
+  },
+  {
+    "id": "piast_aif_poland",
+    "name": "PIAST AIF",
+    "type": "funding_program",
+    "country": "Poland",
+    "region": "Europe",
+    "sector": [
+      "AI infrastructure",
+      "HPC"
+    ],
+    "strategic_role": "AI Factory",
+    "description": "Polish AI Factory.",
+    "sovereignty_score": 5,
+    "criticality": 4,
+    "market_importance": 4,
+    "france_or_eu_fit": 3,
+    "color": "green",
+    "confidence": "high",
+    "tags": [
+      "AI_Factory",
+      "EuroHPC"
+    ],
+    "sources": [
+      "eu_ai_factories_policy"
+    ],
+    "fact_status": "known"
+  },
+  {
+    "id": "gaia_ai_poland",
+    "name": "Gaia AI Factory",
+    "type": "funding_program",
+    "country": "Poland",
+    "region": "Europe",
+    "sector": [
+      "AI infrastructure",
+      "HPC"
+    ],
+    "strategic_role": "AI Factory",
+    "description": "Polish Gaia AI Factory.",
+    "sovereignty_score": 5,
+    "criticality": 4,
+    "market_importance": 4,
+    "france_or_eu_fit": 3,
+    "color": "green",
+    "confidence": "high",
+    "tags": [
+      "AI_Factory",
+      "EuroHPC"
+    ],
+    "sources": [
+      "eu_ai_factories_policy"
+    ],
+    "fact_status": "known"
+  },
+  {
+    "id": "slaif_slovenia",
+    "name": "SLAIF",
+    "type": "funding_program",
+    "country": "Slovenia",
+    "region": "Europe",
+    "sector": [
+      "AI infrastructure",
+      "HPC"
+    ],
+    "strategic_role": "AI Factory",
+    "description": "Slovenian AI Factory.",
+    "sovereignty_score": 5,
+    "criticality": 4,
+    "market_importance": 4,
+    "france_or_eu_fit": 3,
+    "color": "green",
+    "confidence": "high",
+    "tags": [
+      "AI_Factory",
+      "EuroHPC"
+    ],
+    "sources": [
+      "eu_ai_factories_policy",
+      "eurohpc_ai2f_press"
+    ],
+    "fact_status": "known"
+  },
+  {
+    "id": "czai_czechia",
+    "name": "CZAI",
+    "type": "funding_program",
+    "country": "Czechia",
+    "region": "Europe",
+    "sector": [
+      "AI infrastructure",
+      "HPC"
+    ],
+    "strategic_role": "AI Factory",
+    "description": "Czech AI Factory.",
+    "sovereignty_score": 5,
+    "criticality": 4,
+    "market_importance": 4,
+    "france_or_eu_fit": 3,
+    "color": "green",
+    "confidence": "high",
+    "tags": [
+      "AI_Factory",
+      "EuroHPC"
+    ],
+    "sources": [
+      "eu_ai_factories_policy"
+    ],
+    "fact_status": "known"
+  },
+  {
+    "id": "litai_lithuania",
+    "name": "LitAI Factory",
+    "type": "funding_program",
+    "country": "Lithuania",
+    "region": "Europe",
+    "sector": [
+      "AI infrastructure",
+      "HPC"
+    ],
+    "strategic_role": "AI Factory",
+    "description": "Lithuanian AI Factory.",
+    "sovereignty_score": 5,
+    "criticality": 4,
+    "market_importance": 4,
+    "france_or_eu_fit": 3,
+    "color": "green",
+    "confidence": "high",
+    "tags": [
+      "AI_Factory",
+      "EuroHPC"
+    ],
+    "sources": [
+      "eu_ai_factories_policy"
+    ],
+    "fact_status": "known"
+  },
+  {
+    "id": "nlaif_netherlands",
+    "name": "NLAIF",
+    "type": "funding_program",
+    "country": "Netherlands",
+    "region": "Europe",
+    "sector": [
+      "AI infrastructure",
+      "HPC"
+    ],
+    "strategic_role": "AI Factory",
+    "description": "Netherlands AI Factory.",
+    "sovereignty_score": 5,
+    "criticality": 4,
+    "market_importance": 4,
+    "france_or_eu_fit": 3,
+    "color": "green",
+    "confidence": "high",
+    "tags": [
+      "AI_Factory",
+      "EuroHPC"
+    ],
+    "sources": [
+      "eu_ai_factories_policy"
+    ],
+    "fact_status": "known"
+  },
+  {
+    "id": "ro_ai_romania",
+    "name": "RO AI Factory",
+    "type": "funding_program",
+    "country": "Romania",
+    "region": "Europe",
+    "sector": [
+      "AI infrastructure",
+      "HPC"
+    ],
+    "strategic_role": "AI Factory",
+    "description": "Romanian AI Factory.",
+    "sovereignty_score": 5,
+    "criticality": 4,
+    "market_importance": 4,
+    "france_or_eu_fit": 3,
+    "color": "green",
+    "confidence": "high",
+    "tags": [
+      "AI_Factory",
+      "EuroHPC"
+    ],
+    "sources": [
+      "eu_ai_factories_policy"
+    ],
+    "fact_status": "known"
+  },
+  {
+    "id": "alice_recoque",
+    "name": "Alice Recoque Exascale Supercomputer",
+    "type": "data_center",
+    "country": "France",
+    "region": "Europe",
+    "sector": [
+      "HPC",
+      "AI compute"
+    ],
+    "strategic_role": "AI/HPC infrastructure",
+    "description": "Second EuroHPC exascale supercomputer; AI-ready and linked to AI2F.",
+    "sovereignty_score": 5,
+    "criticality": 5,
+    "market_importance": 4,
+    "france_or_eu_fit": 5,
+    "color": "green",
+    "confidence": "high",
+    "tags": [
+      "HPC",
+      "compute"
+    ],
+    "sources": [
+      "eurohpc_ai2f_press"
+    ],
+    "fact_status": "known"
+  },
+  {
+    "id": "jean_zay",
+    "name": "Jean Zay Supercomputer",
+    "type": "data_center",
+    "country": "France",
+    "region": "Europe",
+    "sector": [
+      "HPC",
+      "AI compute"
+    ],
+    "strategic_role": "AI/HPC infrastructure",
+    "description": "Existing French national infrastructure owned by GENCI at IDRIS/CNRS.",
+    "sovereignty_score": 5,
+    "criticality": 5,
+    "market_importance": 4,
+    "france_or_eu_fit": 5,
+    "color": "green",
+    "confidence": "high",
+    "tags": [
+      "HPC",
+      "compute"
+    ],
+    "sources": [
+      "eurohpc_ai2f_press"
+    ],
+    "fact_status": "known"
+  },
+  {
+    "id": "adastra",
+    "name": "Adastra Supercomputer",
+    "type": "data_center",
+    "country": "France",
+    "region": "Europe",
+    "sector": [
+      "HPC",
+      "AI compute"
+    ],
+    "strategic_role": "AI/HPC infrastructure",
+    "description": "Existing French national infrastructure at CINES/France Universités.",
+    "sovereignty_score": 5,
+    "criticality": 5,
+    "market_importance": 4,
+    "france_or_eu_fit": 5,
+    "color": "green",
+    "confidence": "high",
+    "tags": [
+      "HPC",
+      "compute"
+    ],
+    "sources": [
+      "eurohpc_ai2f_press"
+    ],
+    "fact_status": "known"
+  },
+  {
+    "id": "joliot_curie",
+    "name": "Joliot-Curie Supercomputer",
+    "type": "data_center",
+    "country": "France",
+    "region": "Europe",
+    "sector": [
+      "HPC",
+      "AI compute"
+    ],
+    "strategic_role": "AI/HPC infrastructure",
+    "description": "Existing French national infrastructure at TGCC/CEA.",
+    "sovereignty_score": 5,
+    "criticality": 5,
+    "market_importance": 4,
+    "france_or_eu_fit": 5,
+    "color": "green",
+    "confidence": "high",
+    "tags": [
+      "HPC",
+      "compute"
+    ],
+    "sources": [
+      "eurohpc_ai2f_press"
+    ],
+    "fact_status": "known"
+  },
+  {
+    "id": "lumi_supercomputer",
+    "name": "LUMI Supercomputer",
+    "type": "data_center",
+    "country": "Finland",
+    "region": "Europe",
+    "sector": [
+      "HPC",
+      "AI compute"
+    ],
+    "strategic_role": "AI/HPC infrastructure",
+    "description": "EuroHPC supercomputer used by LUMI AI Factory.",
+    "sovereignty_score": 5,
+    "criticality": 5,
+    "market_importance": 4,
+    "france_or_eu_fit": 3,
+    "color": "green",
+    "confidence": "high",
+    "tags": [
+      "HPC",
+      "compute"
+    ],
+    "sources": [
+      "eurohpc_ai_systems"
+    ],
+    "fact_status": "known"
+  },
+  {
+    "id": "meluxina_supercomputer",
+    "name": "MeluXina Supercomputer",
+    "type": "data_center",
+    "country": "Luxembourg",
+    "region": "Europe",
+    "sector": [
+      "HPC",
+      "AI compute"
+    ],
+    "strategic_role": "AI/HPC infrastructure",
+    "description": "EuroHPC petascale supercomputer in Luxembourg.",
+    "sovereignty_score": 5,
+    "criticality": 5,
+    "market_importance": 4,
+    "france_or_eu_fit": 3,
+    "color": "green",
+    "confidence": "high",
+    "tags": [
+      "HPC",
+      "compute"
+    ],
+    "sources": [
+      "eurohpc_ai_systems"
+    ],
+    "fact_status": "known"
+  },
+  {
+    "id": "leonardo_supercomputer",
+    "name": "Leonardo Supercomputer",
+    "type": "data_center",
+    "country": "Italy",
+    "region": "Europe",
+    "sector": [
+      "HPC",
+      "AI compute"
+    ],
+    "strategic_role": "AI/HPC infrastructure",
+    "description": "EuroHPC supercomputer used by IT4LIA.",
+    "sovereignty_score": 5,
+    "criticality": 5,
+    "market_importance": 4,
+    "france_or_eu_fit": 3,
+    "color": "green",
+    "confidence": "high",
+    "tags": [
+      "HPC",
+      "compute"
+    ],
+    "sources": [
+      "eurohpc_ai_systems"
+    ],
+    "fact_status": "known"
+  },
+  {
+    "id": "marenostrum5",
+    "name": "MareNostrum 5",
+    "type": "data_center",
+    "country": "Spain",
+    "region": "Europe",
+    "sector": [
+      "HPC",
+      "AI compute"
+    ],
+    "strategic_role": "AI/HPC infrastructure",
+    "description": "EuroHPC supercomputer to be upgraded for AI Factory capacity.",
+    "sovereignty_score": 5,
+    "criticality": 5,
+    "market_importance": 4,
+    "france_or_eu_fit": 3,
+    "color": "green",
+    "confidence": "high",
+    "tags": [
+      "HPC",
+      "compute"
+    ],
+    "sources": [
+      "eurohpc_ai_systems"
+    ],
+    "fact_status": "known"
+  },
+  {
+    "id": "discoverer_supercomputer",
+    "name": "Discoverer Supercomputer",
+    "type": "data_center",
+    "country": "Bulgaria",
+    "region": "Europe",
+    "sector": [
+      "HPC",
+      "AI compute"
+    ],
+    "strategic_role": "AI/HPC infrastructure",
+    "description": "EuroHPC supercomputer in Sofia.",
+    "sovereignty_score": 5,
+    "criticality": 5,
+    "market_importance": 4,
+    "france_or_eu_fit": 3,
+    "color": "green",
+    "confidence": "high",
+    "tags": [
+      "HPC",
+      "compute"
+    ],
+    "sources": [
+      "eurohpc_ai_systems"
+    ],
+    "fact_status": "known"
+  },
+  {
+    "id": "vega_supercomputer",
+    "name": "Vega Supercomputer",
+    "type": "data_center",
+    "country": "Slovenia",
+    "region": "Europe",
+    "sector": [
+      "HPC",
+      "AI compute"
+    ],
+    "strategic_role": "AI/HPC infrastructure",
+    "description": "EuroHPC supercomputer in Slovenia.",
+    "sovereignty_score": 5,
+    "criticality": 5,
+    "market_importance": 4,
+    "france_or_eu_fit": 3,
+    "color": "green",
+    "confidence": "high",
+    "tags": [
+      "HPC",
+      "compute"
+    ],
+    "sources": [
+      "eurohpc_ai_systems"
+    ],
+    "fact_status": "known"
+  },
+  {
+    "id": "genci",
+    "name": "GENCI",
+    "type": "government_agency",
+    "country": "France",
+    "region": "Europe",
+    "sector": [
+      "AI ecosystem"
+    ],
+    "strategic_role": "French AI ecosystem node",
+    "description": "French hosting entity leading AI2F.",
+    "sovereignty_score": 5,
+    "criticality": 4,
+    "market_importance": 4,
+    "france_or_eu_fit": 5,
+    "color": "green",
+    "confidence": "high",
+    "tags": [
+      "France",
+      "AI2F"
+    ],
+    "sources": [
+      "eurohpc_ai2f_press"
+    ],
+    "fact_status": "known"
+  },
+  {
+    "id": "cea",
+    "name": "CEA",
+    "type": "research_lab",
+    "country": "France",
+    "region": "Europe",
+    "sector": [
+      "AI ecosystem"
+    ],
+    "strategic_role": "French AI ecosystem node",
+    "description": "French research organization and AI2F partner.",
+    "sovereignty_score": 5,
+    "criticality": 4,
+    "market_importance": 4,
+    "france_or_eu_fit": 5,
+    "color": "green",
+    "confidence": "high",
+    "tags": [
+      "France",
+      "AI2F"
+    ],
+    "sources": [
+      "eurohpc_ai2f_press"
+    ],
+    "fact_status": "known"
+  },
+  {
+    "id": "cnrs",
+    "name": "CNRS",
+    "type": "research_lab",
+    "country": "France",
+    "region": "Europe",
+    "sector": [
+      "AI ecosystem"
+    ],
+    "strategic_role": "French AI ecosystem node",
+    "description": "French research organization and AI2F partner.",
+    "sovereignty_score": 5,
+    "criticality": 4,
+    "market_importance": 4,
+    "france_or_eu_fit": 5,
+    "color": "green",
+    "confidence": "high",
+    "tags": [
+      "France",
+      "AI2F"
+    ],
+    "sources": [
+      "eurohpc_ai2f_press"
+    ],
+    "fact_status": "known"
+  },
+  {
+    "id": "inria",
+    "name": "Inria",
+    "type": "research_lab",
+    "country": "France",
+    "region": "Europe",
+    "sector": [
+      "AI ecosystem"
+    ],
+    "strategic_role": "French AI ecosystem node",
+    "description": "French national research institute for digital science and technology; AI2F partner.",
+    "sovereignty_score": 5,
+    "criticality": 4,
+    "market_importance": 4,
+    "france_or_eu_fit": 5,
+    "color": "green",
+    "confidence": "high",
+    "tags": [
+      "France",
+      "AI2F"
+    ],
+    "sources": [
+      "eurohpc_ai2f_press"
+    ],
+    "fact_status": "known"
+  },
+  {
+    "id": "idris_cnrs",
+    "name": "IDRIS / CNRS",
+    "type": "research_lab",
+    "country": "France",
+    "region": "Europe",
+    "sector": [
+      "AI ecosystem"
+    ],
+    "strategic_role": "French AI ecosystem node",
+    "description": "Host of Jean Zay according to AI2F description.",
+    "sovereignty_score": 5,
+    "criticality": 4,
+    "market_importance": 4,
+    "france_or_eu_fit": 5,
+    "color": "green",
+    "confidence": "high",
+    "tags": [
+      "France",
+      "AI2F"
+    ],
+    "sources": [
+      "eurohpc_ai2f_press"
+    ],
+    "fact_status": "known"
+  },
+  {
+    "id": "cines",
+    "name": "CINES",
+    "type": "research_lab",
+    "country": "France",
+    "region": "Europe",
+    "sector": [
+      "AI ecosystem"
+    ],
+    "strategic_role": "French AI ecosystem node",
+    "description": "Host of Adastra according to AI2F description.",
+    "sovereignty_score": 5,
+    "criticality": 4,
+    "market_importance": 4,
+    "france_or_eu_fit": 5,
+    "color": "green",
+    "confidence": "high",
+    "tags": [
+      "France",
+      "AI2F"
+    ],
+    "sources": [
+      "eurohpc_ai2f_press"
+    ],
+    "fact_status": "known"
+  },
+  {
+    "id": "tgcc_cea",
+    "name": "TGCC / CEA",
+    "type": "research_lab",
+    "country": "France",
+    "region": "Europe",
+    "sector": [
+      "AI ecosystem"
+    ],
+    "strategic_role": "French AI ecosystem node",
+    "description": "Host of Joliot-Curie according to AI2F description.",
+    "sovereignty_score": 5,
+    "criticality": 4,
+    "market_importance": 4,
+    "france_or_eu_fit": 5,
+    "color": "green",
+    "confidence": "high",
+    "tags": [
+      "France",
+      "AI2F"
+    ],
+    "sources": [
+      "eurohpc_ai2f_press"
+    ],
+    "fact_status": "known"
+  },
+  {
+    "id": "french_tech",
+    "name": "La French Tech",
+    "type": "funding_program",
+    "country": "France",
+    "region": "Europe",
+    "sector": [
+      "AI ecosystem"
+    ],
+    "strategic_role": "French AI ecosystem node",
+    "description": "French innovation ecosystem partner in AI2F.",
+    "sovereignty_score": 5,
+    "criticality": 4,
+    "market_importance": 4,
+    "france_or_eu_fit": 5,
+    "color": "green",
+    "confidence": "high",
+    "tags": [
+      "France",
+      "AI2F"
+    ],
+    "sources": [
+      "eurohpc_ai2f_press"
+    ],
+    "fact_status": "known"
+  },
+  {
+    "id": "station_f",
+    "name": "Station F",
+    "type": "startup_ecosystem",
+    "country": "France",
+    "region": "Europe",
+    "sector": [
+      "AI ecosystem"
+    ],
+    "strategic_role": "French AI ecosystem node",
+    "description": "French startup campus and AI2F ecosystem partner.",
+    "sovereignty_score": 5,
+    "criticality": 4,
+    "market_importance": 4,
+    "france_or_eu_fit": 5,
+    "color": "green",
+    "confidence": "high",
+    "tags": [
+      "France",
+      "AI2F"
+    ],
+    "sources": [
+      "eurohpc_ai2f_press"
+    ],
+    "fact_status": "known"
+  },
+  {
+    "id": "hub_france_ia",
+    "name": "Hub France IA",
+    "type": "startup_ecosystem",
+    "country": "France",
+    "region": "Europe",
+    "sector": [
+      "AI ecosystem"
+    ],
+    "strategic_role": "French AI ecosystem node",
+    "description": "French AI association/ecosystem partner in AI2F.",
+    "sovereignty_score": 5,
+    "criticality": 4,
+    "market_importance": 4,
+    "france_or_eu_fit": 5,
+    "color": "green",
+    "confidence": "high",
+    "tags": [
+      "France",
+      "AI2F"
+    ],
+    "sources": [
+      "eurohpc_ai2f_press"
+    ],
+    "fact_status": "known"
+  },
+  {
+    "id": "mistral_ai",
+    "name": "Mistral AI",
+    "type": "company",
+    "country": "France",
+    "region": "Europe",
+    "sector": [
+      "AI"
+    ],
+    "strategic_role": "foundation models / agents / enterprise AI platform",
+    "description": "French frontier AI company building models, assistants, agents and enterprise AI tooling.",
+    "sovereignty_score": 4,
+    "criticality": 5,
+    "market_importance": 5,
+    "france_or_eu_fit": 5,
+    "color": "green",
+    "confidence": "high",
+    "tags": [
+      "France",
+      "foundation_models",
+      "EU_AI"
+    ],
+    "sources": [
+      "mistral",
+      "mistral_hf"
+    ],
+    "fact_status": "known"
+  },
+  {
+    "id": "hugging_face",
+    "name": "Hugging Face",
+    "type": "company",
+    "country": "France/US",
+    "region": "Europe",
+    "sector": [
+      "AI"
+    ],
+    "strategic_role": "model hub / AI community platform",
+    "description": "AI community platform for models, datasets and applications; key model distribution layer.",
+    "sovereignty_score": 3,
+    "criticality": 5,
+    "market_importance": 5,
+    "france_or_eu_fit": 5,
+    "color": "grey",
+    "confidence": "high",
+    "tags": [
+      "France",
+      "model_hub",
+      "open_source"
+    ],
+    "sources": [
+      "huggingface"
+    ],
+    "fact_status": "known"
+  },
+  {
+    "id": "lighton_ai",
+    "name": "LightOn",
+    "type": "company",
+    "country": "France",
+    "region": "Europe",
+    "sector": [
+      "AI"
+    ],
+    "strategic_role": "enterprise GenAI / document AI",
+    "description": "French enterprise GenAI company focused on secure and customizable GenAI/document workflows.",
+    "sovereignty_score": 4,
+    "criticality": 4,
+    "market_importance": 4,
+    "france_or_eu_fit": 5,
+    "color": "green",
+    "confidence": "high",
+    "tags": [
+      "France",
+      "enterprise_ai",
+      "secure_genai"
+    ],
+    "sources": [
+      "lighton",
+      "orange_lighton"
+    ],
+    "fact_status": "known"
+  },
+  {
+    "id": "owkin",
+    "name": "Owkin",
+    "type": "company",
+    "country": "France/US",
+    "region": "Europe",
+    "sector": [
+      "AI"
+    ],
+    "strategic_role": "AI biotech / AI scientist",
+    "description": "AI biotech company using multimodal patient data and AI for biopharma R&D and clinical research.",
+    "sovereignty_score": 3,
+    "criticality": 4,
+    "market_importance": 4,
+    "france_or_eu_fit": 5,
+    "color": "grey",
+    "confidence": "high",
+    "tags": [
+      "France",
+      "health_ai",
+      "biotech"
+    ],
+    "sources": [
+      "owkin",
+      "owkin_portrait"
+    ],
+    "fact_status": "known"
+  },
+  {
+    "id": "aleph_alpha",
+    "name": "Aleph Alpha",
+    "type": "company",
+    "country": "Germany",
+    "region": "Europe",
+    "sector": [
+      "AI"
+    ],
+    "strategic_role": "specialized language models",
+    "description": "German/European AI company developing specialized language models for enterprises and public institutions.",
+    "sovereignty_score": 4,
+    "criticality": 4,
+    "market_importance": 4,
+    "france_or_eu_fit": 4,
+    "color": "green",
+    "confidence": "high",
+    "tags": [
+      "Germany",
+      "foundation_models",
+      "public_sector"
+    ],
+    "sources": [
+      "aleph_alpha"
+    ],
+    "fact_status": "known"
+  },
+  {
+    "id": "deepl",
+    "name": "DeepL",
+    "type": "company",
+    "country": "Germany",
+    "region": "Europe",
+    "sector": [
+      "AI"
+    ],
+    "strategic_role": "language AI / translation",
+    "description": "German AI-first translation/language platform for individuals and businesses.",
+    "sovereignty_score": 4,
+    "criticality": 4,
+    "market_importance": 5,
+    "france_or_eu_fit": 3,
+    "color": "green",
+    "confidence": "high",
+    "tags": [
+      "Germany",
+      "language_ai"
+    ],
+    "sources": [
+      "deepl"
+    ],
+    "fact_status": "known"
+  },
+  {
+    "id": "synthesia",
+    "name": "Synthesia",
+    "type": "company",
+    "country": "United Kingdom",
+    "region": "Europe",
+    "sector": [
+      "AI"
+    ],
+    "strategic_role": "AI video / avatars",
+    "description": "AI video generation platform for business.",
+    "sovereignty_score": 3,
+    "criticality": 4,
+    "market_importance": 5,
+    "france_or_eu_fit": 2,
+    "color": "grey",
+    "confidence": "high",
+    "tags": [
+      "UK",
+      "synthetic_media"
+    ],
+    "sources": [
+      "synthesia"
+    ],
+    "fact_status": "known"
+  },
+  {
+    "id": "helsing",
+    "name": "Helsing",
+    "type": "company",
+    "country": "Germany",
+    "region": "Europe",
+    "sector": [
+      "AI"
+    ],
+    "strategic_role": "defense AI / autonomy",
+    "description": "European AI defense company developing AI-enabled autonomous systems and software-defined hardware.",
+    "sovereignty_score": 4,
+    "criticality": 5,
+    "market_importance": 4,
+    "france_or_eu_fit": 4,
+    "color": "green",
+    "confidence": "high",
+    "tags": [
+      "Germany",
+      "defense_ai",
+      "dual_use"
+    ],
+    "sources": [
+      "helsing",
+      "helsing_company"
+    ],
+    "fact_status": "known"
+  },
+  {
+    "id": "ovhcloud",
+    "name": "OVHcloud",
+    "type": "cloud_provider",
+    "country": "France",
+    "region": "Europe",
+    "sector": [
+      "AI infrastructure"
+    ],
+    "strategic_role": "sovereign/public cloud",
+    "description": "European cloud provider with public cloud and GPU offers.",
+    "sovereignty_score": 4,
+    "criticality": 5,
+    "market_importance": 5,
+    "france_or_eu_fit": 5,
+    "color": "green",
+    "confidence": "high",
+    "tags": [
+      "cloud",
+      "France",
+      "compute"
+    ],
+    "sources": [
+      "ovhcloud",
+      "ovh_gpu",
+      "ovh_sovereign"
+    ],
+    "fact_status": "known"
+  },
+  {
+    "id": "scaleway",
+    "name": "Scaleway",
+    "type": "cloud_provider",
+    "country": "France",
+    "region": "Europe",
+    "sector": [
+      "AI infrastructure"
+    ],
+    "strategic_role": "European cloud & AI cloud",
+    "description": "European cloud provider with GPU infrastructure and AI services.",
+    "sovereignty_score": 4,
+    "criticality": 5,
+    "market_importance": 4,
+    "france_or_eu_fit": 5,
+    "color": "green",
+    "confidence": "high",
+    "tags": [
+      "cloud",
+      "France",
+      "gpu"
+    ],
+    "sources": [
+      "scaleway",
+      "scaleway_gpu"
+    ],
+    "fact_status": "known"
+  },
+  {
+    "id": "orange_business",
+    "name": "Orange Business / Cloud Avenue",
+    "type": "cloud_provider",
+    "country": "France",
+    "region": "Europe",
+    "sector": [
+      "AI infrastructure"
+    ],
+    "strategic_role": "trusted cloud / GenAI offers",
+    "description": "French cloud/enterprise provider with Cloud Avenue and trusted GenAI offers with LightOn.",
+    "sovereignty_score": 4,
+    "criticality": 4,
+    "market_importance": 4,
+    "france_or_eu_fit": 5,
+    "color": "green",
+    "confidence": "high",
+    "tags": [
+      "cloud",
+      "France",
+      "enterprise_ai"
+    ],
+    "sources": [
+      "orange_cloud_avenue",
+      "orange_lighton"
+    ],
+    "fact_status": "known"
+  },
+  {
+    "id": "ionos",
+    "name": "IONOS Cloud",
+    "type": "cloud_provider",
+    "country": "Germany",
+    "region": "Europe",
+    "sector": [
+      "AI infrastructure"
+    ],
+    "strategic_role": "German cloud / sovereign cloud",
+    "description": "German cloud provider with public-sector sovereign cloud positioning.",
+    "sovereignty_score": 4,
+    "criticality": 4,
+    "market_importance": 4,
+    "france_or_eu_fit": 3,
+    "color": "green",
+    "confidence": "high",
+    "tags": [
+      "cloud",
+      "Germany"
+    ],
+    "sources": [
+      "ionos_cloud",
+      "ionos_public_sector"
+    ],
+    "fact_status": "known"
+  },
+  {
+    "id": "aws_european_sovereign_cloud",
+    "name": "AWS European Sovereign Cloud",
+    "type": "cloud_provider",
+    "country": "US/EU",
+    "region": "Global",
+    "sector": [
+      "AI infrastructure"
+    ],
+    "strategic_role": "sovereign cloud offer",
+    "description": "AWS sovereign cloud offer designed for European sovereignty requirements.",
+    "sovereignty_score": 2,
+    "criticality": 5,
+    "market_importance": 5,
+    "france_or_eu_fit": 2,
+    "color": "orange",
+    "confidence": "high",
+    "tags": [
+      "cloud",
+      "US_hyperscaler",
+      "sovereignty"
+    ],
+    "sources": [
+      "aws_sovereign"
+    ],
+    "fact_status": "known"
+  },
+  {
+    "id": "microsoft_sovereign_cloud",
+    "name": "Microsoft Sovereign Cloud",
+    "type": "cloud_provider",
+    "country": "US/EU",
+    "region": "Global",
+    "sector": [
+      "AI infrastructure"
+    ],
+    "strategic_role": "sovereign cloud offer",
+    "description": "Microsoft sovereign cloud capabilities across AI, productivity, security and cloud.",
+    "sovereignty_score": 2,
+    "criticality": 5,
+    "market_importance": 5,
+    "france_or_eu_fit": 2,
+    "color": "orange",
+    "confidence": "high",
+    "tags": [
+      "cloud",
+      "US_hyperscaler",
+      "sovereignty"
+    ],
+    "sources": [
+      "microsoft_sovereign"
+    ],
+    "fact_status": "known"
+  },
+  {
+    "id": "nvidia",
+    "name": "NVIDIA",
+    "type": "chip_supplier",
+    "country": "United States",
+    "region": "Global",
+    "sector": [
+      "AI infrastructure"
+    ],
+    "strategic_role": "AI accelerator platform",
+    "description": "Dominant AI accelerated computing supplier with GPUs, networking, HGX and software stack.",
+    "sovereignty_score": 1,
+    "criticality": 5,
+    "market_importance": 5,
+    "france_or_eu_fit": 1,
+    "color": "orange",
+    "confidence": "high",
+    "tags": [
+      "GPU",
+      "US",
+      "compute"
+    ],
+    "sources": [
+      "nvidia_data_center",
+      "nvidia_hgx"
+    ],
+    "fact_status": "known"
+  },
+  {
+    "id": "amd",
+    "name": "AMD",
+    "type": "chip_supplier",
+    "country": "United States",
+    "region": "Global",
+    "sector": [
+      "AI infrastructure"
+    ],
+    "strategic_role": "AI/HPC accelerators",
+    "description": "Supplier of Instinct AI/HPC accelerators.",
+    "sovereignty_score": 1,
+    "criticality": 5,
+    "market_importance": 4,
+    "france_or_eu_fit": 1,
+    "color": "orange",
+    "confidence": "high",
+    "tags": [
+      "GPU",
+      "US",
+      "compute"
+    ],
+    "sources": [
+      "amd_mi300"
+    ],
+    "fact_status": "known"
+  },
+  {
+    "id": "intel_gaudi",
+    "name": "Intel Gaudi",
+    "type": "chip_supplier",
+    "country": "United States",
+    "region": "Global",
+    "sector": [
+      "AI infrastructure"
+    ],
+    "strategic_role": "AI accelerator",
+    "description": "Intel AI accelerator product line.",
+    "sovereignty_score": 1,
+    "criticality": 4,
+    "market_importance": 3,
+    "france_or_eu_fit": 1,
+    "color": "orange",
+    "confidence": "high",
+    "tags": [
+      "accelerator",
+      "US"
+    ],
+    "sources": [
+      "intel_gaudi"
+    ],
+    "fact_status": "known"
+  },
+  {
+    "id": "tsmc",
+    "name": "TSMC",
+    "type": "manufacturing_partner",
+    "country": "Taiwan",
+    "region": "Global",
+    "sector": [
+      "AI infrastructure"
+    ],
+    "strategic_role": "semiconductor foundry",
+    "description": "Advanced semiconductor foundry critical to AI chip manufacturing supply chains.",
+    "sovereignty_score": 1,
+    "criticality": 5,
+    "market_importance": 5,
+    "france_or_eu_fit": 1,
+    "color": "orange",
+    "confidence": "high",
+    "tags": [
+      "foundry",
+      "Taiwan",
+      "chips"
+    ],
+    "sources": [
+      "tsmc"
+    ],
+    "fact_status": "known"
+  },
+  {
+    "id": "asml",
+    "name": "ASML",
+    "type": "hardware_component",
+    "country": "Netherlands",
+    "region": "Europe",
+    "sector": [
+      "AI infrastructure"
+    ],
+    "strategic_role": "semiconductor lithography",
+    "description": "European semiconductor equipment supplier; EUV lithography is critical for advanced chips.",
+    "sovereignty_score": 5,
+    "criticality": 5,
+    "market_importance": 5,
+    "france_or_eu_fit": 5,
+    "color": "green",
+    "confidence": "high",
+    "tags": [
+      "Netherlands",
+      "semiconductor_equipment",
+      "sovereign_enabler"
+    ],
+    "sources": [
+      "asml",
+      "asml_euv"
+    ],
+    "fact_status": "known"
+  },
+  {
+    "id": "sipearl",
+    "name": "SiPearl",
+    "type": "chip_supplier",
+    "country": "France",
+    "region": "Europe",
+    "sector": [
+      "AI infrastructure"
+    ],
+    "strategic_role": "European HPC/AI CPU",
+    "description": "European fabless CPU company for sovereign supercomputing, AI and data centres.",
+    "sovereignty_score": 5,
+    "criticality": 4,
+    "market_importance": 3,
+    "france_or_eu_fit": 5,
+    "color": "green",
+    "confidence": "high",
+    "tags": [
+      "France",
+      "chips",
+      "sovereign_enabler"
+    ],
+    "sources": [
+      "sipearl",
+      "sipearl_processor"
+    ],
+    "fact_status": "known"
+  },
+  {
+    "id": "pytorch",
+    "name": "PyTorch",
+    "type": "open_source_project",
+    "country": "Global",
+    "region": "Global",
+    "sector": [
+      "AI infrastructure"
+    ],
+    "strategic_role": "deep learning framework",
+    "description": "Open-source deep learning framework widely used for research and production.",
+    "sovereignty_score": 2,
+    "criticality": 5,
+    "market_importance": 5,
+    "france_or_eu_fit": 4,
+    "color": "orange",
+    "confidence": "high",
+    "tags": [
+      "open_source",
+      "framework"
+    ],
+    "sources": [
+      "pytorch"
+    ],
+    "fact_status": "known"
+  },
+  {
+    "id": "tensorflow",
+    "name": "TensorFlow",
+    "type": "open_source_project",
+    "country": "Global",
+    "region": "Global",
+    "sector": [
+      "AI infrastructure"
+    ],
+    "strategic_role": "machine learning platform",
+    "description": "End-to-end open-source ML platform.",
+    "sovereignty_score": 2,
+    "criticality": 4,
+    "market_importance": 4,
+    "france_or_eu_fit": 3,
+    "color": "orange",
+    "confidence": "high",
+    "tags": [
+      "open_source",
+      "framework"
+    ],
+    "sources": [
+      "tensorflow"
+    ],
+    "fact_status": "known"
+  },
+  {
+    "id": "kubernetes",
+    "name": "Kubernetes",
+    "type": "open_source_project",
+    "country": "Global",
+    "region": "Global",
+    "sector": [
+      "AI infrastructure"
+    ],
+    "strategic_role": "container orchestration",
+    "description": "Open-source platform for container orchestration and workload portability.",
+    "sovereignty_score": 2,
+    "criticality": 5,
+    "market_importance": 5,
+    "france_or_eu_fit": 4,
+    "color": "orange",
+    "confidence": "high",
+    "tags": [
+      "open_source",
+      "cloud_native"
+    ],
+    "sources": [
+      "kubernetes"
+    ],
+    "fact_status": "known"
+  },
+  {
+    "id": "vllm",
+    "name": "vLLM",
+    "type": "open_source_project",
+    "country": "Global",
+    "region": "Global",
+    "sector": [
+      "AI infrastructure"
+    ],
+    "strategic_role": "LLM inference serving",
+    "description": "Open-source LLM serving engine for high-throughput and memory-efficient inference.",
+    "sovereignty_score": 2,
+    "criticality": 5,
+    "market_importance": 4,
+    "france_or_eu_fit": 5,
+    "color": "orange",
+    "confidence": "high",
+    "tags": [
+      "open_source",
+      "llm_serving"
+    ],
+    "sources": [
+      "vllm"
+    ],
+    "fact_status": "known"
+  }
+]

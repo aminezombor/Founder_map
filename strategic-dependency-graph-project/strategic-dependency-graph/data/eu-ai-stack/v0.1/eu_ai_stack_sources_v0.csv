@@ -1,0 +1,47 @@
+source_id,title,url,type,notes
+eu_ai_factories_policy,European Commission — AI Factories,https://digital-strategy.ec.europa.eu/en/policies/ai-factories,official_policy,"Official EU AI Factories overview, list of 19 AI Factories, InvestAI / AI Gigafactories context."
+eurohpc_ai_factories,EuroHPC JU — AI Factories,https://www.eurohpc-ju.europa.eu/ai-factories_en,official_program,"EuroHPC AI Factories network, access framing for SMEs and startups."
+eurohpc_ai_systems,EuroHPC JU — AI Factories Systems,https://www.eurohpc-ju.europa.eu/ai-factories/ai-factories-systems_en,official_program,"AI Factory systems: LUMI, MeluXina, Leonardo, MareNostrum 5, Discoverer, Vega."
+eurohpc_ai2f_press,"EuroHPC JU — Additional AI Factories, March 2025",https://www.eurohpc-ju.europa.eu/eurohpc-ju-selects-additional-ai-factories-strengthen-europes-ai-leadership-2025-03-12_en,official_press_release,"AI2F France, Alice Recoque, GENCI, CEA, CNRS, Inria, French infrastructure details."
+eu_ai_act,European Commission — AI Act,https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai,official_regulation,EU AI Act regulatory framework.
+eu_ai_gigafactories,European Commission — AI Gigafactories,https://commission.europa.eu/topics/competitiveness/competitiveness-coordination-tool-projects/ai-gigafactories_en,official_program,EU goal to support large-scale AI compute facilities and high-quality data access.
+eu_chips_act,European Commission — European Chips Act,https://digital-strategy.ec.europa.eu/en/policies/european-chips-act,official_policy,EU semiconductor supply-chain resilience and strategic autonomy context.
+france2030,French Government — France 2030,https://www.info.gouv.fr/grand-dossier/france-2030-en/understanding-france-2030,official_public_program,French strategic investment context.
+mistral,Mistral AI — Official site,https://mistral.ai/,company_official,"Frontier AI models, assistants, agents, services, enterprise AI platform."
+huggingface,Hugging Face — Official site,https://huggingface.co/,company_official,"AI community platform for models, datasets, applications."
+mistral_hf,Mistral AI official Hugging Face organization,https://huggingface.co/mistralai,platform_profile,Official Mistral AI model distribution channel on Hugging Face.
+aleph_alpha,Aleph Alpha — Official site,https://aleph-alpha.com/en/,company_official,Specialized language models and AI solutions for enterprises/public institutions in Europe.
+lighton,LightOn — Official site,https://www.lighton.ai/,company_official,Enterprise GenAI/document AI platform.
+orange_lighton,Orange Business — LightOn chooses Cloud Avenue,https://www.orange-business.com/en/about-us/customer-stories/lighton-chooses-cloudavenue,customer_story,LightOn cloud infrastructure relationship with Orange Business Cloud Avenue.
+deepl,DeepL — Official site,https://www.deepl.com/en,company_official,"AI-first translation, writing, voice/API platform."
+synthesia,Synthesia — Official site,https://www.synthesia.io/,company_official,AI video generation platform for business.
+helsing,Helsing — Official site,https://helsing.ai/fr,company_official,AI-enabled autonomous defense systems.
+helsing_company,Helsing — Company page,https://helsing.ai/company,company_official,Software-native defense company; AI algorithms and software-defined hardware.
+owkin,Owkin — Official site,https://www.owkin.com/,company_official,AI for biopharma R&D and clinical research.
+owkin_portrait,Owkin — PortrAIt project,https://www.owkin.com/newsfeed/owkin-launches-portrait-a-33-million-project-to-make-france-a-global-leader-in-using-ai-to-diagnose-and-treat-diseases,company_news,France AI diagnostics project funded by Bpifrance-led consortium.
+ovhcloud,OVHcloud — Official site,https://www.ovhcloud.com/en/,company_official,European cloud provider.
+ovh_gpu,OVHcloud — Cloud GPU,https://www.ovhcloud.com/en/public-cloud/gpu/,company_official,"GPU cloud servers for ML, DL, HPC and AI."
+ovh_sovereign,OVHcloud — Sovereign Cloud,https://www.ovhcloud.com/en/about-us/sovereign-cloud/,company_official,"Sovereign cloud positioning: data protection, no extraterritorial rights."
+scaleway,Scaleway — Official site,https://www.scaleway.com/en/,company_official,European cloud & AI provider.
+scaleway_gpu,Scaleway — GPU Instances,https://www.scaleway.com/en/gpu-instances/,company_official,GPU instances for training/fine-tuning/serving with European data residency.
+orange_cloud_avenue,Orange Business — Cloud Avenue,https://www.orange-business.com/en/our-solutions/cloud/cloud-avenue,company_official,Cloud Avenue / Trusted GenAI powered by Orange Business and LightOn.
+ionos_cloud,IONOS Cloud — Official site,https://cloud.ionos.com/,company_official,German cloud provider.
+ionos_public_sector,IONOS Group — Sovereign cloud for the public sector,https://www.ionos-group.com/investor-relations/newsroom/sovereign-cloud-for-the-public-sector-ionos-available-via-govdigital.html,company_press_release,German public-sector sovereign cloud context.
+aws_sovereign,AWS — European Digital Sovereignty,https://aws.amazon.com/compliance/europe-digital-sovereignty/,company_official,AWS European Sovereign Cloud.
+microsoft_sovereign,Microsoft — Sovereign Cloud,https://www.microsoft.com/en-us/sovereignty,company_official,Microsoft sovereign cloud across AI/productivity/security/cloud.
+nvidia_data_center,NVIDIA — Data Center,https://www.nvidia.com/en-us/data-center/,company_official,NVIDIA accelerated computing platform for AI data centers.
+nvidia_hgx,NVIDIA — HGX Platform,https://www.nvidia.com/en-us/data-center/hgx/,company_official,"HGX platform: GPUs, NVLink, networking, software stack for AI/HPC."
+amd_mi300,AMD — Instinct MI300 Series,https://www.amd.com/en/products/accelerators/instinct/mi300.html,company_official,AI/HPC accelerators.
+intel_gaudi,Intel — Gaudi AI Accelerators,https://www.intel.com/content/www/us/en/products/details/processors/ai-accelerators/gaudi.html,company_official,Gaudi 3 AI accelerators.
+tsmc,TSMC — Official site,https://www.tsmc.com/english,company_official,Dedicated semiconductor foundry.
+asml,ASML — Official site,https://www.asml.nl/,company_official,Lithography technology for semiconductor manufacturing.
+asml_euv,ASML — EUV Lithography Systems,https://www.asml.com/products/euv-lithography-systems,company_official,EUV systems for advanced logic/memory chips.
+sipearl,SiPearl — Official site,https://sipearl.com/,company_official,"European high-performance energy-efficient CPUs for sovereign supercomputing, AI and data centres."
+sipearl_processor,SiPearl — European Processor,https://sipearl.com/european-processor,company_official,"European fabless designer of high-performance CPUs for HPC, AI and data centres."
+pytorch,PyTorch — Official site,https://pytorch.org/,open_source_project,Open source deep learning framework.
+tensorflow,TensorFlow — Official site,https://www.tensorflow.org/,open_source_project,End-to-end open source machine learning platform.
+kubernetes,Kubernetes — Official site,https://kubernetes.io/,open_source_project,Open-source container orchestration.
+vllm,vLLM — Official site,https://vllm.ai/,open_source_project,High-throughput and memory-efficient inference/serving engine for LLMs.
+cloud_hpc_divide_paper,AI Factories: It's time to rethink the Cloud-HPC divide,https://arxiv.org/abs/2509.12849,research_paper,Paper framing cloud-native usability gaps around AI Factories/HPC.
+hf_supply_chain_paper,AI/ML Supply Chain Attacks in Hugging Face Models,https://arxiv.org/abs/2410.04490,research_paper,Research into security vulnerabilities in ML model supply chains.
+vllm_perf_paper,Comparative Analysis of LLM Inference Serving Systems,https://arxiv.org/abs/2511.17593,research_paper,vLLM/TGI serving performance tradeoffs.

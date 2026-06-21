@@ -1,0 +1,278 @@
+{
+  "eu_ai_factories_policy": {
+    "title": "European Commission — AI Factories",
+    "url": "https://digital-strategy.ec.europa.eu/en/policies/ai-factories",
+    "type": "official_policy",
+    "notes": "Official EU AI Factories overview, list of 19 AI Factories, InvestAI / AI Gigafactories context."
+  },
+  "eurohpc_ai_factories": {
+    "title": "EuroHPC JU — AI Factories",
+    "url": "https://www.eurohpc-ju.europa.eu/ai-factories_en",
+    "type": "official_program",
+    "notes": "EuroHPC AI Factories network, access framing for SMEs and startups."
+  },
+  "eurohpc_ai_systems": {
+    "title": "EuroHPC JU — AI Factories Systems",
+    "url": "https://www.eurohpc-ju.europa.eu/ai-factories/ai-factories-systems_en",
+    "type": "official_program",
+    "notes": "AI Factory systems: LUMI, MeluXina, Leonardo, MareNostrum 5, Discoverer, Vega."
+  },
+  "eurohpc_ai2f_press": {
+    "title": "EuroHPC JU — Additional AI Factories, March 2025",
+    "url": "https://www.eurohpc-ju.europa.eu/eurohpc-ju-selects-additional-ai-factories-strengthen-europes-ai-leadership-2025-03-12_en",
+    "type": "official_press_release",
+    "notes": "AI2F France, Alice Recoque, GENCI, CEA, CNRS, Inria, French infrastructure details."
+  },
+  "eu_ai_act": {
+    "title": "European Commission — AI Act",
+    "url": "https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai",
+    "type": "official_regulation",
+    "notes": "EU AI Act regulatory framework."
+  },
+  "eu_ai_gigafactories": {
+    "title": "European Commission — AI Gigafactories",
+    "url": "https://commission.europa.eu/topics/competitiveness/competitiveness-coordination-tool-projects/ai-gigafactories_en",
+    "type": "official_program",
+    "notes": "EU goal to support large-scale AI compute facilities and high-quality data access."
+  },
+  "eu_chips_act": {
+    "title": "European Commission — European Chips Act",
+    "url": "https://digital-strategy.ec.europa.eu/en/policies/european-chips-act",
+    "type": "official_policy",
+    "notes": "EU semiconductor supply-chain resilience and strategic autonomy context."
+  },
+  "france2030": {
+    "title": "French Government — France 2030",
+    "url": "https://www.info.gouv.fr/grand-dossier/france-2030-en/understanding-france-2030",
+    "type": "official_public_program",
+    "notes": "French strategic investment context."
+  },
+  "mistral": {
+    "title": "Mistral AI — Official site",
+    "url": "https://mistral.ai/",
+    "type": "company_official",
+    "notes": "Frontier AI models, assistants, agents, services, enterprise AI platform."
+  },
+  "huggingface": {
+    "title": "Hugging Face — Official site",
+    "url": "https://huggingface.co/",
+    "type": "company_official",
+    "notes": "AI community platform for models, datasets, applications."
+  },
+  "mistral_hf": {
+    "title": "Mistral AI official Hugging Face organization",
+    "url": "https://huggingface.co/mistralai",
+    "type": "platform_profile",
+    "notes": "Official Mistral AI model distribution channel on Hugging Face."
+  },
+  "aleph_alpha": {
+    "title": "Aleph Alpha — Official site",
+    "url": "https://aleph-alpha.com/en/",
+    "type": "company_official",
+    "notes": "Specialized language models and AI solutions for enterprises/public institutions in Europe."
+  },
+  "lighton": {
+    "title": "LightOn — Official site",
+    "url": "https://www.lighton.ai/",
+    "type": "company_official",
+    "notes": "Enterprise GenAI/document AI platform."
+  },
+  "orange_lighton": {
+    "title": "Orange Business — LightOn chooses Cloud Avenue",
+    "url": "https://www.orange-business.com/en/about-us/customer-stories/lighton-chooses-cloudavenue",
+    "type": "customer_story",
+    "notes": "LightOn cloud infrastructure relationship with Orange Business Cloud Avenue."
+  },
+  "deepl": {
+    "title": "DeepL — Official site",
+    "url": "https://www.deepl.com/en",
+    "type": "company_official",
+    "notes": "AI-first translation, writing, voice/API platform."
+  },
+  "synthesia": {
+    "title": "Synthesia — Official site",
+    "url": "https://www.synthesia.io/",
+    "type": "company_official",
+    "notes": "AI video generation platform for business."
+  },
+  "helsing": {
+    "title": "Helsing — Official site",
+    "url": "https://helsing.ai/fr",
+    "type": "company_official",
+    "notes": "AI-enabled autonomous defense systems."
+  },
+  "helsing_company": {
+    "title": "Helsing — Company page",
+    "url": "https://helsing.ai/company",
+    "type": "company_official",
+    "notes": "Software-native defense company; AI algorithms and software-defined hardware."
+  },
+  "owkin": {
+    "title": "Owkin — Official site",
+    "url": "https://www.owkin.com/",
+    "type": "company_official",
+    "notes": "AI for biopharma R&D and clinical research."
+  },
+  "owkin_portrait": {
+    "title": "Owkin — PortrAIt project",
+    "url": "https://www.owkin.com/newsfeed/owkin-launches-portrait-a-33-million-project-to-make-france-a-global-leader-in-using-ai-to-diagnose-and-treat-diseases",
+    "type": "company_news",
+    "notes": "France AI diagnostics project funded by Bpifrance-led consortium."
+  },
+  "ovhcloud": {
+    "title": "OVHcloud — Official site",
+    "url": "https://www.ovhcloud.com/en/",
+    "type": "company_official",
+    "notes": "European cloud provider."
+  },
+  "ovh_gpu": {
+    "title": "OVHcloud — Cloud GPU",
+    "url": "https://www.ovhcloud.com/en/public-cloud/gpu/",
+    "type": "company_official",
+    "notes": "GPU cloud servers for ML, DL, HPC and AI."
+  },
+  "ovh_sovereign": {
+    "title": "OVHcloud — Sovereign Cloud",
+    "url": "https://www.ovhcloud.com/en/about-us/sovereign-cloud/",
+    "type": "company_official",
+    "notes": "Sovereign cloud positioning: data protection, no extraterritorial rights."
+  },
+  "scaleway": {
+    "title": "Scaleway — Official site",
+    "url": "https://www.scaleway.com/en/",
+    "type": "company_official",
+    "notes": "European cloud & AI provider."
+  },
+  "scaleway_gpu": {
+    "title": "Scaleway — GPU Instances",
+    "url": "https://www.scaleway.com/en/gpu-instances/",
+    "type": "company_official",
+    "notes": "GPU instances for training/fine-tuning/serving with European data residency."
+  },
+  "orange_cloud_avenue": {
+    "title": "Orange Business — Cloud Avenue",
+    "url": "https://www.orange-business.com/en/our-solutions/cloud/cloud-avenue",
+    "type": "company_official",
+    "notes": "Cloud Avenue / Trusted GenAI powered by Orange Business and LightOn."
+  },
+  "ionos_cloud": {
+    "title": "IONOS Cloud — Official site",
+    "url": "https://cloud.ionos.com/",
+    "type": "company_official",
+    "notes": "German cloud provider."
+  },
+  "ionos_public_sector": {
+    "title": "IONOS Group — Sovereign cloud for the public sector",
+    "url": "https://www.ionos-group.com/investor-relations/newsroom/sovereign-cloud-for-the-public-sector-ionos-available-via-govdigital.html",
+    "type": "company_press_release",
+    "notes": "German public-sector sovereign cloud context."
+  },
+  "aws_sovereign": {
+    "title": "AWS — European Digital Sovereignty",
+    "url": "https://aws.amazon.com/compliance/europe-digital-sovereignty/",
+    "type": "company_official",
+    "notes": "AWS European Sovereign Cloud."
+  },
+  "microsoft_sovereign": {
+    "title": "Microsoft — Sovereign Cloud",
+    "url": "https://www.microsoft.com/en-us/sovereignty",
+    "type": "company_official",
+    "notes": "Microsoft sovereign cloud across AI/productivity/security/cloud."
+  },
+  "nvidia_data_center": {
+    "title": "NVIDIA — Data Center",
+    "url": "https://www.nvidia.com/en-us/data-center/",
+    "type": "company_official",
+    "notes": "NVIDIA accelerated computing platform for AI data centers."
+  },
+  "nvidia_hgx": {
+    "title": "NVIDIA — HGX Platform",
+    "url": "https://www.nvidia.com/en-us/data-center/hgx/",
+    "type": "company_official",
+    "notes": "HGX platform: GPUs, NVLink, networking, software stack for AI/HPC."
+  },
+  "amd_mi300": {
+    "title": "AMD — Instinct MI300 Series",
+    "url": "https://www.amd.com/en/products/accelerators/instinct/mi300.html",
+    "type": "company_official",
+    "notes": "AI/HPC accelerators."
+  },
+  "intel_gaudi": {
+    "title": "Intel — Gaudi AI Accelerators",
+    "url": "https://www.intel.com/content/www/us/en/products/details/processors/ai-accelerators/gaudi.html",
+    "type": "company_official",
+    "notes": "Gaudi 3 AI accelerators."
+  },
+  "tsmc": {
+    "title": "TSMC — Official site",
+    "url": "https://www.tsmc.com/english",
+    "type": "company_official",
+    "notes": "Dedicated semiconductor foundry."
+  },
+  "asml": {
+    "title": "ASML — Official site",
+    "url": "https://www.asml.nl/",
+    "type": "company_official",
+    "notes": "Lithography technology for semiconductor manufacturing."
+  },
+  "asml_euv": {
+    "title": "ASML — EUV Lithography Systems",
+    "url": "https://www.asml.com/products/euv-lithography-systems",
+    "type": "company_official",
+    "notes": "EUV systems for advanced logic/memory chips."
+  },
+  "sipearl": {
+    "title": "SiPearl — Official site",
+    "url": "https://sipearl.com/",
+    "type": "company_official",
+    "notes": "European high-performance energy-efficient CPUs for sovereign supercomputing, AI and data centres."
+  },
+  "sipearl_processor": {
+    "title": "SiPearl — European Processor",
+    "url": "https://sipearl.com/european-processor",
+    "type": "company_official",
+    "notes": "European fabless designer of high-performance CPUs for HPC, AI and data centres."
+  },
+  "pytorch": {
+    "title": "PyTorch — Official site",
+    "url": "https://pytorch.org/",
+    "type": "open_source_project",
+    "notes": "Open source deep learning framework."
+  },
+  "tensorflow": {
+    "title": "TensorFlow — Official site",
+    "url": "https://www.tensorflow.org/",
+    "type": "open_source_project",
+    "notes": "End-to-end open source machine learning platform."
+  },
+  "kubernetes": {
+    "title": "Kubernetes — Official site",
+    "url": "https://kubernetes.io/",
+    "type": "open_source_project",
+    "notes": "Open-source container orchestration."
+  },
+  "vllm": {
+    "title": "vLLM — Official site",
+    "url": "https://vllm.ai/",
+    "type": "open_source_project",
+    "notes": "High-throughput and memory-efficient inference/serving engine for LLMs."
+  },
+  "cloud_hpc_divide_paper": {
+    "title": "AI Factories: It's time to rethink the Cloud-HPC divide",
+    "url": "https://arxiv.org/abs/2509.12849",
+    "type": "research_paper",
+    "notes": "Paper framing cloud-native usability gaps around AI Factories/HPC."
+  },
+  "hf_supply_chain_paper": {
+    "title": "AI/ML Supply Chain Attacks in Hugging Face Models",
+    "url": "https://arxiv.org/abs/2410.04490",
+    "type": "research_paper",
+    "notes": "Research into security vulnerabilities in ML model supply chains."
+  },
+  "vllm_perf_paper": {
+    "title": "Comparative Analysis of LLM Inference Serving Systems",
+    "url": "https://arxiv.org/abs/2511.17593",
+    "type": "research_paper",
+    "notes": "vLLM/TGI serving performance tradeoffs."
+  }
+}

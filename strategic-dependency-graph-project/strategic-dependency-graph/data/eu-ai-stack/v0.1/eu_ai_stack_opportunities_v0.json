@@ -1,0 +1,505 @@
+[
+  {
+    "id": "opp_eu_hpc_cloud_bridge",
+    "title": "Cloud-native AI layer for EuroHPC AI Factories",
+    "type": "Infrastructure + tooling",
+    "score": 44.1,
+    "reason": "AI Factories create compute capacity, but HPC systems are not naturally cloud-native. A layer that makes EuroHPC resources usable like cloud infrastructure could unlock startups/SMEs.",
+    "affected_nodes": [
+      "ai_factories_network",
+      "cloud_native_ai_platform",
+      "ai_hpc_supercomputing",
+      "kubernetes",
+      "vllm"
+    ],
+    "dependency_types": [
+      "HPC",
+      "cloud_native",
+      "AI_compute"
+    ],
+    "buyer_types": [
+      "AI startups",
+      "SMEs",
+      "research labs",
+      "AI Factories",
+      "public sector"
+    ],
+    "criticality": 5,
+    "dependency_risk": 4,
+    "market_importance": 5,
+    "urgency": 5,
+    "accessibility": 4,
+    "france_fit": 5,
+    "eu_fit": 5,
+    "incumbent_strength": 3,
+    "regulatory_friction": 3,
+    "capital_intensity": 3,
+    "confidence": "high",
+    "sources": [
+      "eu_ai_factories_policy",
+      "cloud_hpc_divide_paper",
+      "kubernetes",
+      "vllm"
+    ]
+  },
+  {
+    "id": "opp_gpu_allocation_broker",
+    "title": "European GPU allocation and observability broker",
+    "type": "Infrastructure + data/visibility",
+    "score": 60.0,
+    "reason": "Compute is a critical red dependency. A broker/observability layer could help startups discover, reserve, route and optimize scarce GPU/HPC capacity across European providers.",
+    "affected_nodes": [
+      "gpu_accelerators",
+      "ovhcloud",
+      "scaleway",
+      "ai_factories_network",
+      "data_centers"
+    ],
+    "dependency_types": [
+      "GPU",
+      "compute",
+      "observability"
+    ],
+    "buyer_types": [
+      "AI startups",
+      "cloud providers",
+      "VC portfolios",
+      "public programs"
+    ],
+    "criticality": 5,
+    "dependency_risk": 5,
+    "market_importance": 5,
+    "urgency": 5,
+    "accessibility": 4,
+    "france_fit": 5,
+    "eu_fit": 5,
+    "incumbent_strength": 3,
+    "regulatory_friction": 2,
+    "capital_intensity": 3,
+    "confidence": "high",
+    "sources": [
+      "scaleway_gpu",
+      "ovh_gpu",
+      "eu_ai_factories_policy"
+    ]
+  },
+  {
+    "id": "opp_ai_act_evidence",
+    "title": "AI Act evidence and compliance automation for regulated AI",
+    "type": "Compliance/trust",
+    "score": 58.5,
+    "reason": "EU AI deployment will require evidence, governance, risk documentation and compliance workflows. This is accessible to a software startup and strongly relevant to France/EU.",
+    "affected_nodes": [
+      "eu_ai_act_node",
+      "ai_compliance",
+      "secure_ai_deployment",
+      "aleph_alpha",
+      "lighton_ai"
+    ],
+    "dependency_types": [
+      "AI_Act",
+      "governance",
+      "regulated_AI"
+    ],
+    "buyer_types": [
+      "enterprises",
+      "public institutions",
+      "health AI",
+      "financial services",
+      "defense-adjacent suppliers"
+    ],
+    "criticality": 5,
+    "dependency_risk": 4,
+    "market_importance": 5,
+    "urgency": 5,
+    "accessibility": 5,
+    "france_fit": 5,
+    "eu_fit": 5,
+    "incumbent_strength": 4,
+    "regulatory_friction": 4,
+    "capital_intensity": 1,
+    "confidence": "high",
+    "sources": [
+      "eu_ai_act",
+      "aleph_alpha",
+      "lighton"
+    ]
+  },
+  {
+    "id": "opp_secure_public_sector_rag",
+    "title": "Secure sovereign RAG/document AI for public-sector workflows",
+    "type": "Tooling + compliance",
+    "score": 13.7,
+    "reason": "European public institutions and regulated companies need private GenAI over sensitive documents, with sovereignty and traceability. French positioning is strong through LightOn, Orange, AI2F and public programs.",
+    "affected_nodes": [
+      "lighton_ai",
+      "orange_business",
+      "secure_ai_deployment",
+      "ai_compliance",
+      "sovereign_cloud"
+    ],
+    "dependency_types": [
+      "secure_genai",
+      "RAG",
+      "documents",
+      "sovereign_cloud"
+    ],
+    "buyer_types": [
+      "public sector",
+      "local authorities",
+      "universities",
+      "regulated enterprises"
+    ],
+    "criticality": 4,
+    "dependency_risk": 4,
+    "market_importance": 5,
+    "urgency": 4,
+    "accessibility": 4,
+    "france_fit": 5,
+    "eu_fit": 5,
+    "incumbent_strength": 4,
+    "regulatory_friction": 4,
+    "capital_intensity": 2,
+    "confidence": "medium",
+    "sources": [
+      "lighton",
+      "orange_lighton",
+      "orange_cloud_avenue",
+      "eu_ai_act"
+    ]
+  },
+  {
+    "id": "opp_model_supply_chain_security",
+    "title": "Model supply-chain security scanner for AI hubs and enterprises",
+    "type": "Security + data/visibility",
+    "score": 18.2,
+    "reason": "Model registries and open model reuse create supply-chain risk. A scanner that checks licenses, provenance, unsafe serialization and known risk patterns could be useful for enterprises and public AI deployments.",
+    "affected_nodes": [
+      "hugging_face",
+      "model_distribution",
+      "secure_ai_deployment",
+      "hf_supply_chain_paper"
+    ],
+    "dependency_types": [
+      "model_registry",
+      "supply_chain_security",
+      "governance"
+    ],
+    "buyer_types": [
+      "enterprises",
+      "AI platforms",
+      "public sector",
+      "model hubs"
+    ],
+    "criticality": 4,
+    "dependency_risk": 4,
+    "market_importance": 4,
+    "urgency": 4,
+    "accessibility": 5,
+    "france_fit": 4,
+    "eu_fit": 5,
+    "incumbent_strength": 3,
+    "regulatory_friction": 3,
+    "capital_intensity": 1,
+    "confidence": "medium",
+    "sources": [
+      "huggingface",
+      "hf_supply_chain_paper",
+      "eu_ai_act"
+    ]
+  },
+  {
+    "id": "opp_eu_inference_optimization",
+    "title": "EU inference cost optimizer and routing layer",
+    "type": "Infrastructure + tooling",
+    "score": 45.6,
+    "reason": "Inference cost and latency will become a bottleneck for enterprises deploying AI. A vLLM/TGI/Kubernetes-based optimizer could run across European GPU/cloud/HPC providers.",
+    "affected_nodes": [
+      "llm_serving",
+      "vllm",
+      "gpu_accelerators",
+      "scaleway",
+      "ovhcloud"
+    ],
+    "dependency_types": [
+      "inference",
+      "routing",
+      "cost_optimization",
+      "GPU"
+    ],
+    "buyer_types": [
+      "AI SaaS",
+      "enterprises",
+      "cloud providers",
+      "AI startups"
+    ],
+    "criticality": 5,
+    "dependency_risk": 4,
+    "market_importance": 5,
+    "urgency": 5,
+    "accessibility": 4,
+    "france_fit": 5,
+    "eu_fit": 5,
+    "incumbent_strength": 4,
+    "regulatory_friction": 2,
+    "capital_intensity": 2,
+    "confidence": "high",
+    "sources": [
+      "vllm",
+      "vllm_perf_paper",
+      "scaleway_gpu",
+      "ovh_gpu"
+    ]
+  },
+  {
+    "id": "opp_energy_ai_data_centers",
+    "title": "AI data center energy/cooling intelligence for Europe",
+    "type": "Infrastructure + operational efficiency",
+    "score": 24.0,
+    "reason": "AI Gigafactories and AI clouds depend on power capacity, cooling and energy efficiency. Software monitoring/optimization around power and cooling has B2B value and sovereignty relevance.",
+    "affected_nodes": [
+      "energy_power_capacity",
+      "data_centers",
+      "ai_gigafactories",
+      "scaleway",
+      "ovhcloud"
+    ],
+    "dependency_types": [
+      "energy",
+      "data_center",
+      "cooling",
+      "AI_compute"
+    ],
+    "buyer_types": [
+      "data center operators",
+      "cloud providers",
+      "AI factories",
+      "utilities"
+    ],
+    "criticality": 5,
+    "dependency_risk": 5,
+    "market_importance": 5,
+    "urgency": 5,
+    "accessibility": 3,
+    "france_fit": 5,
+    "eu_fit": 5,
+    "incumbent_strength": 5,
+    "regulatory_friction": 3,
+    "capital_intensity": 4,
+    "confidence": "medium",
+    "sources": [
+      "eu_ai_gigafactories",
+      "eu_ai_factories_policy"
+    ]
+  },
+  {
+    "id": "opp_eu_language_data_factory",
+    "title": "European language/domain data factory",
+    "type": "Data infrastructure",
+    "score": 10.9,
+    "reason": "Europe has many languages and domain-specific public/industrial data. A secure data curation/evaluation pipeline for EU languages and sectors can serve specialized model builders.",
+    "affected_nodes": [
+      "training_data",
+      "aleph_alpha",
+      "deepl",
+      "mistral_ai",
+      "ai_factories_network"
+    ],
+    "dependency_types": [
+      "data",
+      "language",
+      "evaluation",
+      "synthetic_data"
+    ],
+    "buyer_types": [
+      "AI model companies",
+      "public sector",
+      "enterprises",
+      "AI Factories"
+    ],
+    "criticality": 4,
+    "dependency_risk": 4,
+    "market_importance": 4,
+    "urgency": 4,
+    "accessibility": 4,
+    "france_fit": 5,
+    "eu_fit": 5,
+    "incumbent_strength": 3,
+    "regulatory_friction": 3,
+    "capital_intensity": 2,
+    "confidence": "medium",
+    "sources": [
+      "aleph_alpha",
+      "deepl",
+      "eu_ai_factories_policy"
+    ]
+  },
+  {
+    "id": "opp_ai_factory_access_layer",
+    "title": "Startup access layer for AI Factories",
+    "type": "Integration opportunity",
+    "score": 14.0,
+    "reason": "AI Factories offer compute and support, but startups need discovery, application assistance, usage tracking and workload packaging. Build the front door for the compute network.",
+    "affected_nodes": [
+      "ai_factories_network",
+      "ai2f_france",
+      "cloud_native_ai_platform",
+      "european_ai_talent"
+    ],
+    "dependency_types": [
+      "AI_Factories",
+      "startup_support",
+      "compute_access"
+    ],
+    "buyer_types": [
+      "startups",
+      "SMEs",
+      "AI Factories",
+      "incubators",
+      "VC portfolios"
+    ],
+    "criticality": 4,
+    "dependency_risk": 3,
+    "market_importance": 4,
+    "urgency": 4,
+    "accessibility": 5,
+    "france_fit": 5,
+    "eu_fit": 5,
+    "incumbent_strength": 2,
+    "regulatory_friction": 2,
+    "capital_intensity": 1,
+    "confidence": "medium",
+    "sources": [
+      "eu_ai_factories_policy",
+      "eurohpc_ai_factories"
+    ]
+  },
+  {
+    "id": "opp_sovereign_ai_dependency_dashboard",
+    "title": "Sovereign AI dependency dashboard for VCs/corporates/public agencies",
+    "type": "Data/visibility",
+    "score": 48.6,
+    "reason": "The graph itself can become a B2B product: dependency visibility, opportunity extraction and strategic positioning for investors, industrial groups and policy actors.",
+    "affected_nodes": [
+      "eu_ai_stack",
+      "sovereign_cloud",
+      "gpu_accelerators",
+      "ai_factories_network",
+      "ai_compliance"
+    ],
+    "dependency_types": [
+      "market_intelligence",
+      "dependency_graph",
+      "opportunity_extraction"
+    ],
+    "buyer_types": [
+      "VCs",
+      "corporates",
+      "public agencies",
+      "deeptech builders"
+    ],
+    "criticality": 5,
+    "dependency_risk": 4,
+    "market_importance": 4,
+    "urgency": 5,
+    "accessibility": 5,
+    "france_fit": 5,
+    "eu_fit": 5,
+    "incumbent_strength": 3,
+    "regulatory_friction": 2,
+    "capital_intensity": 1,
+    "confidence": "high",
+    "sources": [
+      "eu_ai_factories_policy",
+      "eu_chips_act",
+      "eu_ai_act",
+      "france2030"
+    ]
+  },
+  {
+    "id": "opp_dual_use_ai_deployment",
+    "title": "Defense-adjacent secure AI deployment stack",
+    "type": "Defense-adjacent",
+    "score": 8.9,
+    "reason": "Companies like Helsing show defense AI is software-native. A civilian-compliant secure AI deployment layer can later cross into defense-adjacent regulated environments.",
+    "affected_nodes": [
+      "helsing",
+      "secure_ai_deployment",
+      "ai_compliance",
+      "sovereign_cloud"
+    ],
+    "dependency_types": [
+      "secure_AI",
+      "dual_use",
+      "deployment"
+    ],
+    "buyer_types": [
+      "defense suppliers",
+      "critical infrastructure",
+      "public sector",
+      "industrial groups"
+    ],
+    "criticality": 5,
+    "dependency_risk": 4,
+    "market_importance": 4,
+    "urgency": 5,
+    "accessibility": 3,
+    "france_fit": 5,
+    "eu_fit": 5,
+    "incumbent_strength": 4,
+    "regulatory_friction": 5,
+    "capital_intensity": 3,
+    "confidence": "medium",
+    "sources": [
+      "helsing",
+      "helsing_company",
+      "eu_ai_act"
+    ]
+  },
+  {
+    "id": "opp_semiconductor_dependency_intel",
+    "title": "AI chip dependency intelligence for European procurement",
+    "type": "Data/visibility + substitution",
+    "score": 22.3,
+    "reason": "European AI builders are exposed to US accelerators and global foundry bottlenecks. A procurement/dependency intelligence tool can help buyers plan alternatives and risk exposure.",
+    "affected_nodes": [
+      "gpu_accelerators",
+      "nvidia",
+      "amd",
+      "tsmc",
+      "asml",
+      "sipearl",
+      "eu_chips_act_node"
+    ],
+    "dependency_types": [
+      "chips",
+      "procurement",
+      "risk_intelligence"
+    ],
+    "buyer_types": [
+      "cloud providers",
+      "AI factories",
+      "public agencies",
+      "large enterprises"
+    ],
+    "criticality": 5,
+    "dependency_risk": 5,
+    "market_importance": 4,
+    "urgency": 4,
+    "accessibility": 4,
+    "france_fit": 5,
+    "eu_fit": 5,
+    "incumbent_strength": 4,
+    "regulatory_friction": 3,
+    "capital_intensity": 2,
+    "confidence": "medium",
+    "sources": [
+      "nvidia_data_center",
+      "amd_mi300",
+      "tsmc",
+      "asml",
+      "sipearl",
+      "eu_chips_act"
+    ]
+  }
+]

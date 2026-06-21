@@ -1,0 +1,2641 @@
+[
+  {
+    "from": "eu_ai_stack",
+    "to": "ai_compute",
+    "type": "contains",
+    "dependency_category": "compute",
+    "reason": "AI compute is a core layer of the EU AI stack.",
+    "dependency_risk": 4,
+    "criticality": 5,
+    "replaceability": 2,
+    "time_to_substitute": "long",
+    "color": "red",
+    "confidence": "high",
+    "sources": [
+      "eu_ai_factories_policy"
+    ],
+    "fact_status": "known",
+    "tags": []
+  },
+  {
+    "from": "eu_ai_stack",
+    "to": "ai_factories_network",
+    "type": "contains",
+    "dependency_category": "public_compute",
+    "reason": "AI Factories are the public compute and support backbone for EU AI startups/SMEs and users.",
+    "dependency_risk": 2,
+    "criticality": 5,
+    "replaceability": 4,
+    "time_to_substitute": "medium",
+    "color": "green",
+    "confidence": "high",
+    "sources": [
+      "eu_ai_factories_policy",
+      "eurohpc_ai_factories"
+    ],
+    "fact_status": "known",
+    "tags": []
+  },
+  {
+    "from": "eu_ai_stack",
+    "to": "sovereign_cloud",
+    "type": "contains",
+    "dependency_category": "cloud",
+    "reason": "Sovereign cloud is a critical deployment/control layer for EU AI.",
+    "dependency_risk": 4,
+    "criticality": 5,
+    "replaceability": 3,
+    "time_to_substitute": "medium",
+    "color": "orange",
+    "confidence": "high",
+    "sources": [
+      "ovh_sovereign",
+      "aws_sovereign",
+      "microsoft_sovereign"
+    ],
+    "fact_status": "known",
+    "tags": []
+  },
+  {
+    "from": "eu_ai_stack",
+    "to": "ai_compliance",
+    "type": "contains",
+    "dependency_category": "regulation",
+    "reason": "Regulation and compliance shape deployment of AI in the EU.",
+    "dependency_risk": 3,
+    "criticality": 5,
+    "replaceability": 3,
+    "time_to_substitute": "medium",
+    "color": "blue",
+    "confidence": "high",
+    "sources": [
+      "eu_ai_act"
+    ],
+    "fact_status": "known",
+    "tags": []
+  },
+  {
+    "from": "eu_ai_stack",
+    "to": "semiconductor_manufacturing",
+    "type": "contains",
+    "dependency_category": "chips",
+    "reason": "AI accelerators depend on semiconductor manufacturing and lithography supply chains.",
+    "dependency_risk": 5,
+    "criticality": 5,
+    "replaceability": 1,
+    "time_to_substitute": "long",
+    "color": "red",
+    "confidence": "high",
+    "sources": [
+      "tsmc",
+      "asml",
+      "eu_chips_act"
+    ],
+    "fact_status": "known",
+    "tags": []
+  },
+  {
+    "from": "eu_ai_stack",
+    "to": "cloud_native_ai_platform",
+    "type": "contains",
+    "dependency_category": "software",
+    "reason": "Cloud-native and MLOps tooling determine AI infrastructure usability.",
+    "dependency_risk": 3,
+    "criticality": 5,
+    "replaceability": 3,
+    "time_to_substitute": "medium",
+    "color": "orange",
+    "confidence": "medium",
+    "sources": [
+      "kubernetes",
+      "vllm",
+      "cloud_hpc_divide_paper"
+    ],
+    "fact_status": "known",
+    "tags": []
+  },
+  {
+    "from": "european_commission",
+    "to": "ai_factories_network",
+    "type": "funded_by",
+    "dependency_category": "public_program",
+    "reason": "The Commission supports AI Factories through EuroHPC/JU policy and funding architecture.",
+    "dependency_risk": 1,
+    "criticality": 5,
+    "replaceability": 5,
+    "time_to_substitute": "long",
+    "color": "blue",
+    "confidence": "high",
+    "sources": [
+      "eu_ai_factories_policy"
+    ],
+    "fact_status": "known",
+    "tags": []
+  },
+  {
+    "from": "european_commission",
+    "to": "investai_facility",
+    "type": "funded_by",
+    "dependency_category": "public_program",
+    "reason": "The Commission's InvestAI facility supports AI Gigafactories.",
+    "dependency_risk": 1,
+    "criticality": 5,
+    "replaceability": 5,
+    "time_to_substitute": "long",
+    "color": "blue",
+    "confidence": "high",
+    "sources": [
+      "eu_ai_factories_policy",
+      "eu_ai_gigafactories"
+    ],
+    "fact_status": "known",
+    "tags": []
+  },
+  {
+    "from": "european_commission",
+    "to": "eu_ai_act_node",
+    "type": "regulated_by",
+    "dependency_category": "regulation",
+    "reason": "The AI Act is the EU AI regulatory framework.",
+    "dependency_risk": 1,
+    "criticality": 5,
+    "replaceability": 5,
+    "time_to_substitute": "long",
+    "color": "blue",
+    "confidence": "high",
+    "sources": [
+      "eu_ai_act"
+    ],
+    "fact_status": "known",
+    "tags": []
+  },
+  {
+    "from": "european_commission",
+    "to": "eu_chips_act_node",
+    "type": "funded_by",
+    "dependency_category": "chips_policy",
+    "reason": "European Chips Act is an EU strategic policy node for semiconductor resilience.",
+    "dependency_risk": 1,
+    "criticality": 5,
+    "replaceability": 5,
+    "time_to_substitute": "long",
+    "color": "blue",
+    "confidence": "high",
+    "sources": [
+      "eu_chips_act"
+    ],
+    "fact_status": "known",
+    "tags": []
+  },
+  {
+    "from": "eurohpc_ju",
+    "to": "ai_factories_network",
+    "type": "operates",
+    "dependency_category": "public_compute",
+    "reason": "EuroHPC JU provides access to computing time and support services offered by AI Factories.",
+    "dependency_risk": 1,
+    "criticality": 5,
+    "replaceability": 5,
+    "time_to_substitute": "long",
+    "color": "blue",
+    "confidence": "high",
+    "sources": [
+      "eu_ai_factories_policy",
+      "eurohpc_ai_factories"
+    ],
+    "fact_status": "known",
+    "tags": []
+  },
+  {
+    "from": "european_ai_office",
+    "to": "eu_ai_act_node",
+    "type": "coordinates",
+    "dependency_category": "regulation",
+    "reason": "European AI Office collaborates on AI Act / AI ecosystem coordination.",
+    "dependency_risk": 1,
+    "criticality": 4,
+    "replaceability": 4,
+    "time_to_substitute": "medium",
+    "color": "blue",
+    "confidence": "medium",
+    "sources": [
+      "eu_ai_factories_policy",
+      "eu_ai_act"
+    ],
+    "fact_status": "known",
+    "tags": []
+  },
+  {
+    "from": "investai_facility",
+    "to": "ai_gigafactories",
+    "type": "funded_by",
+    "dependency_category": "public_private_infra",
+    "reason": "InvestAI supports up to five AI Gigafactories.",
+    "dependency_risk": 2,
+    "criticality": 5,
+    "replaceability": 3,
+    "time_to_substitute": "long",
+    "color": "blue",
+    "confidence": "high",
+    "sources": [
+      "eu_ai_factories_policy",
+      "eu_ai_gigafactories"
+    ],
+    "fact_status": "known",
+    "tags": []
+  },
+  {
+    "from": "ai_gigafactories",
+    "to": "gpu_accelerators",
+    "type": "depends_on",
+    "dependency_category": "compute",
+    "reason": "AI Gigafactories require large-scale advanced AI processors.",
+    "dependency_risk": 5,
+    "criticality": 5,
+    "replaceability": 2,
+    "time_to_substitute": "long",
+    "color": "red",
+    "confidence": "high",
+    "sources": [
+      "eu_ai_factories_policy",
+      "eu_ai_gigafactories"
+    ],
+    "fact_status": "known",
+    "tags": []
+  },
+  {
+    "from": "ai_gigafactories",
+    "to": "energy_power_capacity",
+    "type": "depends_on",
+    "dependency_category": "energy",
+    "reason": "AI Gigafactories require high power capacity and energy efficiency.",
+    "dependency_risk": 5,
+    "criticality": 5,
+    "replaceability": 2,
+    "time_to_substitute": "long",
+    "color": "red",
+    "confidence": "high",
+    "sources": [
+      "eu_ai_factories_policy",
+      "eu_ai_gigafactories"
+    ],
+    "fact_status": "known",
+    "tags": []
+  },
+  {
+    "from": "ai_gigafactories",
+    "to": "data_centers",
+    "type": "depends_on",
+    "dependency_category": "physical_infrastructure",
+    "reason": "AI Gigafactories are large-scale compute facilities requiring data center infrastructure.",
+    "dependency_risk": 5,
+    "criticality": 5,
+    "replaceability": 2,
+    "time_to_substitute": "long",
+    "color": "red",
+    "confidence": "high",
+    "sources": [
+      "eu_ai_gigafactories"
+    ],
+    "fact_status": "known",
+    "tags": []
+  },
+  {
+    "from": "ai_factories_network",
+    "to": "ai2f_france",
+    "type": "contains",
+    "dependency_category": "public_compute",
+    "reason": "ai2f_france is listed as part of the EuroHPC AI Factories network.",
+    "dependency_risk": 1,
+    "criticality": 4,
+    "replaceability": 5,
+    "time_to_substitute": "long",
+    "color": "green",
+    "confidence": "high",
+    "sources": [
+      "eurohpc_ai2f_press"
+    ],
+    "fact_status": "known",
+    "tags": []
+  },
+  {
+    "from": "ai_factories_network",
+    "to": "lumi_aif",
+    "type": "contains",
+    "dependency_category": "public_compute",
+    "reason": "lumi_aif is listed as part of the EuroHPC AI Factories network.",
+    "dependency_risk": 1,
+    "criticality": 4,
+    "replaceability": 5,
+    "time_to_substitute": "long",
+    "color": "green",
+    "confidence": "high",
+    "sources": [
+      "eu_ai_factories_policy",
+      "eurohpc_ai_systems"
+    ],
+    "fact_status": "known",
+    "tags": []
+  },
+  {
+    "from": "ai_factories_network",
+    "to": "jaif_germany",
+    "type": "contains",
+    "dependency_category": "public_compute",
+    "reason": "jaif_germany is listed as part of the EuroHPC AI Factories network.",
+    "dependency_risk": 1,
+    "criticality": 4,
+    "replaceability": 5,
+    "time_to_substitute": "long",
+    "color": "green",
+    "confidence": "high",
+    "sources": [
+      "eu_ai_factories_policy",
+      "eurohpc_ai2f_press"
+    ],
+    "fact_status": "known",
+    "tags": []
+  },
+  {
+    "from": "ai_factories_network",
+    "to": "hammerhai_germany",
+    "type": "contains",
+    "dependency_category": "public_compute",
+    "reason": "hammerhai_germany is listed as part of the EuroHPC AI Factories network.",
+    "dependency_risk": 1,
+    "criticality": 4,
+    "replaceability": 5,
+    "time_to_substitute": "long",
+    "color": "green",
+    "confidence": "high",
+    "sources": [
+      "eu_ai_factories_policy"
+    ],
+    "fact_status": "known",
+    "tags": []
+  },
+  {
+    "from": "ai_factories_network",
+    "to": "meluxina_ai",
+    "type": "contains",
+    "dependency_category": "public_compute",
+    "reason": "meluxina_ai is listed as part of the EuroHPC AI Factories network.",
+    "dependency_risk": 1,
+    "criticality": 4,
+    "replaceability": 5,
+    "time_to_substitute": "long",
+    "color": "green",
+    "confidence": "high",
+    "sources": [
+      "eu_ai_factories_policy",
+      "eurohpc_ai_systems"
+    ],
+    "fact_status": "known",
+    "tags": []
+  },
+  {
+    "from": "ai_factories_network",
+    "to": "it4lia_italy",
+    "type": "contains",
+    "dependency_category": "public_compute",
+    "reason": "it4lia_italy is listed as part of the EuroHPC AI Factories network.",
+    "dependency_risk": 1,
+    "criticality": 4,
+    "replaceability": 5,
+    "time_to_substitute": "long",
+    "color": "green",
+    "confidence": "high",
+    "sources": [
+      "eu_ai_factories_policy",
+      "eurohpc_ai_systems"
+    ],
+    "fact_status": "known",
+    "tags": []
+  },
+  {
+    "from": "ai_factories_network",
+    "to": "bsc_aif_spain",
+    "type": "contains",
+    "dependency_category": "public_compute",
+    "reason": "bsc_aif_spain is listed as part of the EuroHPC AI Factories network.",
+    "dependency_risk": 1,
+    "criticality": 4,
+    "replaceability": 5,
+    "time_to_substitute": "long",
+    "color": "green",
+    "confidence": "high",
+    "sources": [
+      "eu_ai_factories_policy",
+      "eurohpc_ai_systems"
+    ],
+    "fact_status": "known",
+    "tags": []
+  },
+  {
+    "from": "ai_factories_network",
+    "to": "onehealth_ai_spain",
+    "type": "contains",
+    "dependency_category": "public_compute",
+    "reason": "onehealth_ai_spain is listed as part of the EuroHPC AI Factories network.",
+    "dependency_risk": 1,
+    "criticality": 4,
+    "replaceability": 5,
+    "time_to_substitute": "long",
+    "color": "green",
+    "confidence": "high",
+    "sources": [
+      "eu_ai_factories_policy"
+    ],
+    "fact_status": "known",
+    "tags": []
+  },
+  {
+    "from": "ai_factories_network",
+    "to": "pharos_greece",
+    "type": "contains",
+    "dependency_category": "public_compute",
+    "reason": "pharos_greece is listed as part of the EuroHPC AI Factories network.",
+    "dependency_risk": 1,
+    "criticality": 4,
+    "replaceability": 5,
+    "time_to_substitute": "long",
+    "color": "green",
+    "confidence": "high",
+    "sources": [
+      "eu_ai_factories_policy"
+    ],
+    "fact_status": "known",
+    "tags": []
+  },
+  {
+    "from": "ai_factories_network",
+    "to": "mimer_sweden",
+    "type": "contains",
+    "dependency_category": "public_compute",
+    "reason": "mimer_sweden is listed as part of the EuroHPC AI Factories network.",
+    "dependency_risk": 1,
+    "criticality": 4,
+    "replaceability": 5,
+    "time_to_substitute": "long",
+    "color": "green",
+    "confidence": "high",
+    "sources": [
+      "eu_ai_factories_policy"
+    ],
+    "fact_status": "known",
+    "tags": []
+  },
+  {
+    "from": "ai_factories_network",
+    "to": "ai_at_austria",
+    "type": "contains",
+    "dependency_category": "public_compute",
+    "reason": "ai_at_austria is listed as part of the EuroHPC AI Factories network.",
+    "dependency_risk": 1,
+    "criticality": 4,
+    "replaceability": 5,
+    "time_to_substitute": "long",
+    "color": "green",
+    "confidence": "high",
+    "sources": [
+      "eu_ai_factories_policy",
+      "eurohpc_ai2f_press"
+    ],
+    "fact_status": "known",
+    "tags": []
+  },
+  {
+    "from": "ai_factories_network",
+    "to": "brainpp_bulgaria",
+    "type": "contains",
+    "dependency_category": "public_compute",
+    "reason": "brainpp_bulgaria is listed as part of the EuroHPC AI Factories network.",
+    "dependency_risk": 1,
+    "criticality": 4,
+    "replaceability": 5,
+    "time_to_substitute": "long",
+    "color": "green",
+    "confidence": "high",
+    "sources": [
+      "eu_ai_factories_policy",
+      "eurohpc_ai2f_press"
+    ],
+    "fact_status": "known",
+    "tags": []
+  },
+  {
+    "from": "ai_factories_network",
+    "to": "piast_aif_poland",
+    "type": "contains",
+    "dependency_category": "public_compute",
+    "reason": "piast_aif_poland is listed as part of the EuroHPC AI Factories network.",
+    "dependency_risk": 1,
+    "criticality": 4,
+    "replaceability": 5,
+    "time_to_substitute": "long",
+    "color": "green",
+    "confidence": "high",
+    "sources": [
+      "eu_ai_factories_policy"
+    ],
+    "fact_status": "known",
+    "tags": []
+  },
+  {
+    "from": "ai_factories_network",
+    "to": "gaia_ai_poland",
+    "type": "contains",
+    "dependency_category": "public_compute",
+    "reason": "gaia_ai_poland is listed as part of the EuroHPC AI Factories network.",
+    "dependency_risk": 1,
+    "criticality": 4,
+    "replaceability": 5,
+    "time_to_substitute": "long",
+    "color": "green",
+    "confidence": "high",
+    "sources": [
+      "eu_ai_factories_policy"
+    ],
+    "fact_status": "known",
+    "tags": []
+  },
+  {
+    "from": "ai_factories_network",
+    "to": "slaif_slovenia",
+    "type": "contains",
+    "dependency_category": "public_compute",
+    "reason": "slaif_slovenia is listed as part of the EuroHPC AI Factories network.",
+    "dependency_risk": 1,
+    "criticality": 4,
+    "replaceability": 5,
+    "time_to_substitute": "long",
+    "color": "green",
+    "confidence": "high",
+    "sources": [
+      "eu_ai_factories_policy",
+      "eurohpc_ai2f_press"
+    ],
+    "fact_status": "known",
+    "tags": []
+  },
+  {
+    "from": "ai_factories_network",
+    "to": "czai_czechia",
+    "type": "contains",
+    "dependency_category": "public_compute",
+    "reason": "czai_czechia is listed as part of the EuroHPC AI Factories network.",
+    "dependency_risk": 1,
+    "criticality": 4,
+    "replaceability": 5,
+    "time_to_substitute": "long",
+    "color": "green",
+    "confidence": "high",
+    "sources": [
+      "eu_ai_factories_policy"
+    ],
+    "fact_status": "known",
+    "tags": []
+  },
+  {
+    "from": "ai_factories_network",
+    "to": "litai_lithuania",
+    "type": "contains",
+    "dependency_category": "public_compute",
+    "reason": "litai_lithuania is listed as part of the EuroHPC AI Factories network.",
+    "dependency_risk": 1,
+    "criticality": 4,
+    "replaceability": 5,
+    "time_to_substitute": "long",
+    "color": "green",
+    "confidence": "high",
+    "sources": [
+      "eu_ai_factories_policy"
+    ],
+    "fact_status": "known",
+    "tags": []
+  },
+  {
+    "from": "ai_factories_network",
+    "to": "nlaif_netherlands",
+    "type": "contains",
+    "dependency_category": "public_compute",
+    "reason": "nlaif_netherlands is listed as part of the EuroHPC AI Factories network.",
+    "dependency_risk": 1,
+    "criticality": 4,
+    "replaceability": 5,
+    "time_to_substitute": "long",
+    "color": "green",
+    "confidence": "high",
+    "sources": [
+      "eu_ai_factories_policy"
+    ],
+    "fact_status": "known",
+    "tags": []
+  },
+  {
+    "from": "ai_factories_network",
+    "to": "ro_ai_romania",
+    "type": "contains",
+    "dependency_category": "public_compute",
+    "reason": "ro_ai_romania is listed as part of the EuroHPC AI Factories network.",
+    "dependency_risk": 1,
+    "criticality": 4,
+    "replaceability": 5,
+    "time_to_substitute": "long",
+    "color": "green",
+    "confidence": "high",
+    "sources": [
+      "eu_ai_factories_policy"
+    ],
+    "fact_status": "known",
+    "tags": []
+  },
+  {
+    "from": "ai2f_france",
+    "to": "alice_recoque",
+    "type": "depends_on",
+    "dependency_category": "compute",
+    "reason": "ai2f_france uses or is associated with alice_recoque as AI/HPC infrastructure.",
+    "dependency_risk": 2,
+    "criticality": 5,
+    "replaceability": 4,
+    "time_to_substitute": "medium",
+    "color": "green",
+    "confidence": "high",
+    "sources": [
+      "eurohpc_ai_systems",
+      "eurohpc_ai2f_press"
+    ],
+    "fact_status": "known",
+    "tags": []
+  },
+  {
+    "from": "ai2f_france",
+    "to": "jean_zay",
+    "type": "depends_on",
+    "dependency_category": "compute",
+    "reason": "ai2f_france uses or is associated with jean_zay as AI/HPC infrastructure.",
+    "dependency_risk": 2,
+    "criticality": 5,
+    "replaceability": 4,
+    "time_to_substitute": "medium",
+    "color": "green",
+    "confidence": "high",
+    "sources": [
+      "eurohpc_ai_systems",
+      "eurohpc_ai2f_press"
+    ],
+    "fact_status": "known",
+    "tags": []
+  },
+  {
+    "from": "ai2f_france",
+    "to": "adastra",
+    "type": "depends_on",
+    "dependency_category": "compute",
+    "reason": "ai2f_france uses or is associated with adastra as AI/HPC infrastructure.",
+    "dependency_risk": 2,
+    "criticality": 5,
+    "replaceability": 4,
+    "time_to_substitute": "medium",
+    "color": "green",
+    "confidence": "high",
+    "sources": [
+      "eurohpc_ai_systems",
+      "eurohpc_ai2f_press"
+    ],
+    "fact_status": "known",
+    "tags": []
+  },
+  {
+    "from": "ai2f_france",
+    "to": "joliot_curie",
+    "type": "depends_on",
+    "dependency_category": "compute",
+    "reason": "ai2f_france uses or is associated with joliot_curie as AI/HPC infrastructure.",
+    "dependency_risk": 2,
+    "criticality": 5,
+    "replaceability": 4,
+    "time_to_substitute": "medium",
+    "color": "green",
+    "confidence": "high",
+    "sources": [
+      "eurohpc_ai_systems",
+      "eurohpc_ai2f_press"
+    ],
+    "fact_status": "known",
+    "tags": []
+  },
+  {
+    "from": "lumi_aif",
+    "to": "lumi_supercomputer",
+    "type": "depends_on",
+    "dependency_category": "compute",
+    "reason": "lumi_aif uses or is associated with lumi_supercomputer as AI/HPC infrastructure.",
+    "dependency_risk": 2,
+    "criticality": 5,
+    "replaceability": 4,
+    "time_to_substitute": "medium",
+    "color": "green",
+    "confidence": "high",
+    "sources": [
+      "eurohpc_ai_systems",
+      "eurohpc_ai2f_press"
+    ],
+    "fact_status": "known",
+    "tags": []
+  },
+  {
+    "from": "meluxina_ai",
+    "to": "meluxina_supercomputer",
+    "type": "depends_on",
+    "dependency_category": "compute",
+    "reason": "meluxina_ai uses or is associated with meluxina_supercomputer as AI/HPC infrastructure.",
+    "dependency_risk": 2,
+    "criticality": 5,
+    "replaceability": 4,
+    "time_to_substitute": "medium",
+    "color": "green",
+    "confidence": "high",
+    "sources": [
+      "eurohpc_ai_systems",
+      "eurohpc_ai2f_press"
+    ],
+    "fact_status": "known",
+    "tags": []
+  },
+  {
+    "from": "it4lia_italy",
+    "to": "leonardo_supercomputer",
+    "type": "depends_on",
+    "dependency_category": "compute",
+    "reason": "it4lia_italy uses or is associated with leonardo_supercomputer as AI/HPC infrastructure.",
+    "dependency_risk": 2,
+    "criticality": 5,
+    "replaceability": 4,
+    "time_to_substitute": "medium",
+    "color": "green",
+    "confidence": "high",
+    "sources": [
+      "eurohpc_ai_systems",
+      "eurohpc_ai2f_press"
+    ],
+    "fact_status": "known",
+    "tags": []
+  },
+  {
+    "from": "bsc_aif_spain",
+    "to": "marenostrum5",
+    "type": "depends_on",
+    "dependency_category": "compute",
+    "reason": "bsc_aif_spain uses or is associated with marenostrum5 as AI/HPC infrastructure.",
+    "dependency_risk": 2,
+    "criticality": 5,
+    "replaceability": 4,
+    "time_to_substitute": "medium",
+    "color": "green",
+    "confidence": "high",
+    "sources": [
+      "eurohpc_ai_systems",
+      "eurohpc_ai2f_press"
+    ],
+    "fact_status": "known",
+    "tags": []
+  },
+  {
+    "from": "onehealth_ai_spain",
+    "to": "marenostrum5",
+    "type": "depends_on",
+    "dependency_category": "compute",
+    "reason": "onehealth_ai_spain uses or is associated with marenostrum5 as AI/HPC infrastructure.",
+    "dependency_risk": 2,
+    "criticality": 5,
+    "replaceability": 4,
+    "time_to_substitute": "medium",
+    "color": "green",
+    "confidence": "high",
+    "sources": [
+      "eurohpc_ai_systems",
+      "eurohpc_ai2f_press"
+    ],
+    "fact_status": "known",
+    "tags": []
+  },
+  {
+    "from": "brainpp_bulgaria",
+    "to": "discoverer_supercomputer",
+    "type": "depends_on",
+    "dependency_category": "compute",
+    "reason": "brainpp_bulgaria uses or is associated with discoverer_supercomputer as AI/HPC infrastructure.",
+    "dependency_risk": 2,
+    "criticality": 5,
+    "replaceability": 4,
+    "time_to_substitute": "medium",
+    "color": "green",
+    "confidence": "high",
+    "sources": [
+      "eurohpc_ai_systems",
+      "eurohpc_ai2f_press"
+    ],
+    "fact_status": "known",
+    "tags": []
+  },
+  {
+    "from": "slaif_slovenia",
+    "to": "vega_supercomputer",
+    "type": "depends_on",
+    "dependency_category": "compute",
+    "reason": "slaif_slovenia uses or is associated with vega_supercomputer as AI/HPC infrastructure.",
+    "dependency_risk": 2,
+    "criticality": 5,
+    "replaceability": 4,
+    "time_to_substitute": "medium",
+    "color": "green",
+    "confidence": "high",
+    "sources": [
+      "eurohpc_ai_systems",
+      "eurohpc_ai2f_press"
+    ],
+    "fact_status": "known",
+    "tags": []
+  },
+  {
+    "from": "ai2f_france",
+    "to": "genci",
+    "type": "partners_with",
+    "dependency_category": "ecosystem",
+    "reason": "AI2F lists genci as part of the French AI Factory ecosystem.",
+    "dependency_risk": 1,
+    "criticality": 4,
+    "replaceability": 5,
+    "time_to_substitute": "medium",
+    "color": "green",
+    "confidence": "high",
+    "sources": [
+      "eurohpc_ai2f_press"
+    ],
+    "fact_status": "known",
+    "tags": []
+  },
+  {
+    "from": "ai2f_france",
+    "to": "cea",
+    "type": "partners_with",
+    "dependency_category": "ecosystem",
+    "reason": "AI2F lists cea as part of the French AI Factory ecosystem.",
+    "dependency_risk": 1,
+    "criticality": 4,
+    "replaceability": 5,
+    "time_to_substitute": "medium",
+    "color": "green",
+    "confidence": "high",
+    "sources": [
+      "eurohpc_ai2f_press"
+    ],
+    "fact_status": "known",
+    "tags": []
+  },
+  {
+    "from": "ai2f_france",
+    "to": "cnrs",
+    "type": "partners_with",
+    "dependency_category": "ecosystem",
+    "reason": "AI2F lists cnrs as part of the French AI Factory ecosystem.",
+    "dependency_risk": 1,
+    "criticality": 4,
+    "replaceability": 5,
+    "time_to_substitute": "medium",
+    "color": "green",
+    "confidence": "high",
+    "sources": [
+      "eurohpc_ai2f_press"
+    ],
+    "fact_status": "known",
+    "tags": []
+  },
+  {
+    "from": "ai2f_france",
+    "to": "inria",
+    "type": "partners_with",
+    "dependency_category": "ecosystem",
+    "reason": "AI2F lists inria as part of the French AI Factory ecosystem.",
+    "dependency_risk": 1,
+    "criticality": 4,
+    "replaceability": 5,
+    "time_to_substitute": "medium",
+    "color": "green",
+    "confidence": "high",
+    "sources": [
+      "eurohpc_ai2f_press"
+    ],
+    "fact_status": "known",
+    "tags": []
+  },
+  {
+    "from": "ai2f_france",
+    "to": "idris_cnrs",
+    "type": "partners_with",
+    "dependency_category": "ecosystem",
+    "reason": "AI2F lists idris_cnrs as part of the French AI Factory ecosystem.",
+    "dependency_risk": 1,
+    "criticality": 4,
+    "replaceability": 5,
+    "time_to_substitute": "medium",
+    "color": "green",
+    "confidence": "high",
+    "sources": [
+      "eurohpc_ai2f_press"
+    ],
+    "fact_status": "known",
+    "tags": []
+  },
+  {
+    "from": "ai2f_france",
+    "to": "cines",
+    "type": "partners_with",
+    "dependency_category": "ecosystem",
+    "reason": "AI2F lists cines as part of the French AI Factory ecosystem.",
+    "dependency_risk": 1,
+    "criticality": 4,
+    "replaceability": 5,
+    "time_to_substitute": "medium",
+    "color": "green",
+    "confidence": "high",
+    "sources": [
+      "eurohpc_ai2f_press"
+    ],
+    "fact_status": "known",
+    "tags": []
+  },
+  {
+    "from": "ai2f_france",
+    "to": "tgcc_cea",
+    "type": "partners_with",
+    "dependency_category": "ecosystem",
+    "reason": "AI2F lists tgcc_cea as part of the French AI Factory ecosystem.",
+    "dependency_risk": 1,
+    "criticality": 4,
+    "replaceability": 5,
+    "time_to_substitute": "medium",
+    "color": "green",
+    "confidence": "high",
+    "sources": [
+      "eurohpc_ai2f_press"
+    ],
+    "fact_status": "known",
+    "tags": []
+  },
+  {
+    "from": "ai2f_france",
+    "to": "french_tech",
+    "type": "partners_with",
+    "dependency_category": "ecosystem",
+    "reason": "AI2F lists french_tech as part of the French AI Factory ecosystem.",
+    "dependency_risk": 1,
+    "criticality": 4,
+    "replaceability": 5,
+    "time_to_substitute": "medium",
+    "color": "green",
+    "confidence": "high",
+    "sources": [
+      "eurohpc_ai2f_press"
+    ],
+    "fact_status": "known",
+    "tags": []
+  },
+  {
+    "from": "ai2f_france",
+    "to": "station_f",
+    "type": "partners_with",
+    "dependency_category": "ecosystem",
+    "reason": "AI2F lists station_f as part of the French AI Factory ecosystem.",
+    "dependency_risk": 1,
+    "criticality": 4,
+    "replaceability": 5,
+    "time_to_substitute": "medium",
+    "color": "green",
+    "confidence": "high",
+    "sources": [
+      "eurohpc_ai2f_press"
+    ],
+    "fact_status": "known",
+    "tags": []
+  },
+  {
+    "from": "ai2f_france",
+    "to": "hub_france_ia",
+    "type": "partners_with",
+    "dependency_category": "ecosystem",
+    "reason": "AI2F lists hub_france_ia as part of the French AI Factory ecosystem.",
+    "dependency_risk": 1,
+    "criticality": 4,
+    "replaceability": 5,
+    "time_to_substitute": "medium",
+    "color": "green",
+    "confidence": "high",
+    "sources": [
+      "eurohpc_ai2f_press"
+    ],
+    "fact_status": "known",
+    "tags": []
+  },
+  {
+    "from": "genci",
+    "to": "alice_recoque",
+    "type": "owns_or_coordinates",
+    "dependency_category": "compute",
+    "reason": "GENCI is identified as owner/coordinator for French national infrastructure linked to AI2F.",
+    "dependency_risk": 1,
+    "criticality": 5,
+    "replaceability": 4,
+    "time_to_substitute": "medium",
+    "color": "green",
+    "confidence": "high",
+    "sources": [
+      "eurohpc_ai2f_press"
+    ],
+    "fact_status": "known",
+    "tags": []
+  },
+  {
+    "from": "genci",
+    "to": "jean_zay",
+    "type": "owns_or_coordinates",
+    "dependency_category": "compute",
+    "reason": "GENCI is identified as owner/coordinator for French national infrastructure linked to AI2F.",
+    "dependency_risk": 1,
+    "criticality": 5,
+    "replaceability": 4,
+    "time_to_substitute": "medium",
+    "color": "green",
+    "confidence": "high",
+    "sources": [
+      "eurohpc_ai2f_press"
+    ],
+    "fact_status": "known",
+    "tags": []
+  },
+  {
+    "from": "genci",
+    "to": "adastra",
+    "type": "owns_or_coordinates",
+    "dependency_category": "compute",
+    "reason": "GENCI is identified as owner/coordinator for French national infrastructure linked to AI2F.",
+    "dependency_risk": 1,
+    "criticality": 5,
+    "replaceability": 4,
+    "time_to_substitute": "medium",
+    "color": "green",
+    "confidence": "high",
+    "sources": [
+      "eurohpc_ai2f_press"
+    ],
+    "fact_status": "known",
+    "tags": []
+  },
+  {
+    "from": "genci",
+    "to": "joliot_curie",
+    "type": "owns_or_coordinates",
+    "dependency_category": "compute",
+    "reason": "GENCI is identified as owner/coordinator for French national infrastructure linked to AI2F.",
+    "dependency_risk": 1,
+    "criticality": 5,
+    "replaceability": 4,
+    "time_to_substitute": "medium",
+    "color": "green",
+    "confidence": "high",
+    "sources": [
+      "eurohpc_ai2f_press"
+    ],
+    "fact_status": "known",
+    "tags": []
+  },
+  {
+    "from": "mistral_ai",
+    "to": "ai_compute",
+    "type": "depends_on",
+    "dependency_category": "compute",
+    "reason": "AI model/application company requires compute for training, fine-tuning and/or inference.",
+    "dependency_risk": 4,
+    "criticality": 5,
+    "replaceability": 3,
+    "time_to_substitute": "medium",
+    "color": "orange",
+    "confidence": "medium",
+    "sources": [
+      "eu_ai_factories_policy"
+    ],
+    "fact_status": "inferred",
+    "tags": []
+  },
+  {
+    "from": "mistral_ai",
+    "to": "training_data",
+    "type": "depends_on",
+    "dependency_category": "data",
+    "reason": "AI company requires high-quality/domain-specific data for model development or deployment.",
+    "dependency_risk": 4,
+    "criticality": 5,
+    "replaceability": 3,
+    "time_to_substitute": "medium",
+    "color": "orange",
+    "confidence": "medium",
+    "sources": [
+      "eu_ai_gigafactories"
+    ],
+    "fact_status": "inferred",
+    "tags": []
+  },
+  {
+    "from": "mistral_ai",
+    "to": "ai_compliance",
+    "type": "regulated_by",
+    "dependency_category": "regulation",
+    "reason": "AI company operating in Europe is affected by EU AI governance and sector compliance requirements.",
+    "dependency_risk": 3,
+    "criticality": 4,
+    "replaceability": 3,
+    "time_to_substitute": "medium",
+    "color": "blue",
+    "confidence": "medium",
+    "sources": [
+      "eu_ai_act"
+    ],
+    "fact_status": "inferred",
+    "tags": []
+  },
+  {
+    "from": "aleph_alpha",
+    "to": "ai_compute",
+    "type": "depends_on",
+    "dependency_category": "compute",
+    "reason": "AI model/application company requires compute for training, fine-tuning and/or inference.",
+    "dependency_risk": 4,
+    "criticality": 5,
+    "replaceability": 3,
+    "time_to_substitute": "medium",
+    "color": "orange",
+    "confidence": "medium",
+    "sources": [
+      "eu_ai_factories_policy"
+    ],
+    "fact_status": "inferred",
+    "tags": []
+  },
+  {
+    "from": "aleph_alpha",
+    "to": "training_data",
+    "type": "depends_on",
+    "dependency_category": "data",
+    "reason": "AI company requires high-quality/domain-specific data for model development or deployment.",
+    "dependency_risk": 4,
+    "criticality": 5,
+    "replaceability": 3,
+    "time_to_substitute": "medium",
+    "color": "orange",
+    "confidence": "medium",
+    "sources": [
+      "eu_ai_gigafactories"
+    ],
+    "fact_status": "inferred",
+    "tags": []
+  },
+  {
+    "from": "aleph_alpha",
+    "to": "ai_compliance",
+    "type": "regulated_by",
+    "dependency_category": "regulation",
+    "reason": "AI company operating in Europe is affected by EU AI governance and sector compliance requirements.",
+    "dependency_risk": 3,
+    "criticality": 4,
+    "replaceability": 3,
+    "time_to_substitute": "medium",
+    "color": "blue",
+    "confidence": "medium",
+    "sources": [
+      "eu_ai_act"
+    ],
+    "fact_status": "inferred",
+    "tags": []
+  },
+  {
+    "from": "lighton_ai",
+    "to": "ai_compute",
+    "type": "depends_on",
+    "dependency_category": "compute",
+    "reason": "AI model/application company requires compute for training, fine-tuning and/or inference.",
+    "dependency_risk": 4,
+    "criticality": 5,
+    "replaceability": 3,
+    "time_to_substitute": "medium",
+    "color": "orange",
+    "confidence": "medium",
+    "sources": [
+      "eu_ai_factories_policy"
+    ],
+    "fact_status": "inferred",
+    "tags": []
+  },
+  {
+    "from": "lighton_ai",
+    "to": "training_data",
+    "type": "depends_on",
+    "dependency_category": "data",
+    "reason": "AI company requires high-quality/domain-specific data for model development or deployment.",
+    "dependency_risk": 4,
+    "criticality": 5,
+    "replaceability": 3,
+    "time_to_substitute": "medium",
+    "color": "orange",
+    "confidence": "medium",
+    "sources": [
+      "eu_ai_gigafactories"
+    ],
+    "fact_status": "inferred",
+    "tags": []
+  },
+  {
+    "from": "lighton_ai",
+    "to": "ai_compliance",
+    "type": "regulated_by",
+    "dependency_category": "regulation",
+    "reason": "AI company operating in Europe is affected by EU AI governance and sector compliance requirements.",
+    "dependency_risk": 3,
+    "criticality": 4,
+    "replaceability": 3,
+    "time_to_substitute": "medium",
+    "color": "blue",
+    "confidence": "medium",
+    "sources": [
+      "eu_ai_act"
+    ],
+    "fact_status": "inferred",
+    "tags": []
+  },
+  {
+    "from": "deepl",
+    "to": "ai_compute",
+    "type": "depends_on",
+    "dependency_category": "compute",
+    "reason": "AI model/application company requires compute for training, fine-tuning and/or inference.",
+    "dependency_risk": 4,
+    "criticality": 5,
+    "replaceability": 3,
+    "time_to_substitute": "medium",
+    "color": "orange",
+    "confidence": "medium",
+    "sources": [
+      "eu_ai_factories_policy"
+    ],
+    "fact_status": "inferred",
+    "tags": []
+  },
+  {
+    "from": "deepl",
+    "to": "training_data",
+    "type": "depends_on",
+    "dependency_category": "data",
+    "reason": "AI company requires high-quality/domain-specific data for model development or deployment.",
+    "dependency_risk": 4,
+    "criticality": 5,
+    "replaceability": 3,
+    "time_to_substitute": "medium",
+    "color": "orange",
+    "confidence": "medium",
+    "sources": [
+      "eu_ai_gigafactories"
+    ],
+    "fact_status": "inferred",
+    "tags": []
+  },
+  {
+    "from": "deepl",
+    "to": "ai_compliance",
+    "type": "regulated_by",
+    "dependency_category": "regulation",
+    "reason": "AI company operating in Europe is affected by EU AI governance and sector compliance requirements.",
+    "dependency_risk": 3,
+    "criticality": 4,
+    "replaceability": 3,
+    "time_to_substitute": "medium",
+    "color": "blue",
+    "confidence": "medium",
+    "sources": [
+      "eu_ai_act"
+    ],
+    "fact_status": "inferred",
+    "tags": []
+  },
+  {
+    "from": "synthesia",
+    "to": "ai_compute",
+    "type": "depends_on",
+    "dependency_category": "compute",
+    "reason": "AI model/application company requires compute for training, fine-tuning and/or inference.",
+    "dependency_risk": 4,
+    "criticality": 5,
+    "replaceability": 3,
+    "time_to_substitute": "medium",
+    "color": "orange",
+    "confidence": "medium",
+    "sources": [
+      "eu_ai_factories_policy"
+    ],
+    "fact_status": "inferred",
+    "tags": []
+  },
+  {
+    "from": "synthesia",
+    "to": "training_data",
+    "type": "depends_on",
+    "dependency_category": "data",
+    "reason": "AI company requires high-quality/domain-specific data for model development or deployment.",
+    "dependency_risk": 4,
+    "criticality": 5,
+    "replaceability": 3,
+    "time_to_substitute": "medium",
+    "color": "orange",
+    "confidence": "medium",
+    "sources": [
+      "eu_ai_gigafactories"
+    ],
+    "fact_status": "inferred",
+    "tags": []
+  },
+  {
+    "from": "synthesia",
+    "to": "ai_compliance",
+    "type": "regulated_by",
+    "dependency_category": "regulation",
+    "reason": "AI company operating in Europe is affected by EU AI governance and sector compliance requirements.",
+    "dependency_risk": 3,
+    "criticality": 4,
+    "replaceability": 3,
+    "time_to_substitute": "medium",
+    "color": "blue",
+    "confidence": "medium",
+    "sources": [
+      "eu_ai_act"
+    ],
+    "fact_status": "inferred",
+    "tags": []
+  },
+  {
+    "from": "owkin",
+    "to": "ai_compute",
+    "type": "depends_on",
+    "dependency_category": "compute",
+    "reason": "AI model/application company requires compute for training, fine-tuning and/or inference.",
+    "dependency_risk": 4,
+    "criticality": 5,
+    "replaceability": 3,
+    "time_to_substitute": "medium",
+    "color": "orange",
+    "confidence": "medium",
+    "sources": [
+      "eu_ai_factories_policy"
+    ],
+    "fact_status": "inferred",
+    "tags": []
+  },
+  {
+    "from": "owkin",
+    "to": "training_data",
+    "type": "depends_on",
+    "dependency_category": "data",
+    "reason": "AI company requires high-quality/domain-specific data for model development or deployment.",
+    "dependency_risk": 4,
+    "criticality": 5,
+    "replaceability": 3,
+    "time_to_substitute": "medium",
+    "color": "orange",
+    "confidence": "medium",
+    "sources": [
+      "eu_ai_gigafactories"
+    ],
+    "fact_status": "inferred",
+    "tags": []
+  },
+  {
+    "from": "owkin",
+    "to": "ai_compliance",
+    "type": "regulated_by",
+    "dependency_category": "regulation",
+    "reason": "AI company operating in Europe is affected by EU AI governance and sector compliance requirements.",
+    "dependency_risk": 3,
+    "criticality": 4,
+    "replaceability": 3,
+    "time_to_substitute": "medium",
+    "color": "blue",
+    "confidence": "medium",
+    "sources": [
+      "eu_ai_act"
+    ],
+    "fact_status": "inferred",
+    "tags": []
+  },
+  {
+    "from": "helsing",
+    "to": "ai_compute",
+    "type": "depends_on",
+    "dependency_category": "compute",
+    "reason": "AI model/application company requires compute for training, fine-tuning and/or inference.",
+    "dependency_risk": 4,
+    "criticality": 5,
+    "replaceability": 3,
+    "time_to_substitute": "medium",
+    "color": "orange",
+    "confidence": "medium",
+    "sources": [
+      "eu_ai_factories_policy"
+    ],
+    "fact_status": "inferred",
+    "tags": []
+  },
+  {
+    "from": "helsing",
+    "to": "training_data",
+    "type": "depends_on",
+    "dependency_category": "data",
+    "reason": "AI company requires high-quality/domain-specific data for model development or deployment.",
+    "dependency_risk": 4,
+    "criticality": 5,
+    "replaceability": 3,
+    "time_to_substitute": "medium",
+    "color": "orange",
+    "confidence": "medium",
+    "sources": [
+      "eu_ai_gigafactories"
+    ],
+    "fact_status": "inferred",
+    "tags": []
+  },
+  {
+    "from": "helsing",
+    "to": "ai_compliance",
+    "type": "regulated_by",
+    "dependency_category": "regulation",
+    "reason": "AI company operating in Europe is affected by EU AI governance and sector compliance requirements.",
+    "dependency_risk": 3,
+    "criticality": 4,
+    "replaceability": 3,
+    "time_to_substitute": "medium",
+    "color": "blue",
+    "confidence": "medium",
+    "sources": [
+      "eu_ai_act"
+    ],
+    "fact_status": "inferred",
+    "tags": []
+  },
+  {
+    "from": "mistral_ai",
+    "to": "gpu_accelerators",
+    "type": "depends_on",
+    "dependency_category": "compute_hardware",
+    "reason": "Training/fine-tuning/inference of modern AI workloads depends on accelerator hardware.",
+    "dependency_risk": 5,
+    "criticality": 5,
+    "replaceability": 2,
+    "time_to_substitute": "long",
+    "color": "red",
+    "confidence": "medium",
+    "sources": [
+      "nvidia_data_center",
+      "amd_mi300"
+    ],
+    "fact_status": "inferred",
+    "tags": []
+  },
+  {
+    "from": "aleph_alpha",
+    "to": "gpu_accelerators",
+    "type": "depends_on",
+    "dependency_category": "compute_hardware",
+    "reason": "Training/fine-tuning/inference of modern AI workloads depends on accelerator hardware.",
+    "dependency_risk": 5,
+    "criticality": 5,
+    "replaceability": 2,
+    "time_to_substitute": "long",
+    "color": "red",
+    "confidence": "medium",
+    "sources": [
+      "nvidia_data_center",
+      "amd_mi300"
+    ],
+    "fact_status": "inferred",
+    "tags": []
+  },
+  {
+    "from": "lighton_ai",
+    "to": "gpu_accelerators",
+    "type": "depends_on",
+    "dependency_category": "compute_hardware",
+    "reason": "Training/fine-tuning/inference of modern AI workloads depends on accelerator hardware.",
+    "dependency_risk": 5,
+    "criticality": 5,
+    "replaceability": 2,
+    "time_to_substitute": "long",
+    "color": "red",
+    "confidence": "medium",
+    "sources": [
+      "nvidia_data_center",
+      "amd_mi300"
+    ],
+    "fact_status": "inferred",
+    "tags": []
+  },
+  {
+    "from": "deepl",
+    "to": "gpu_accelerators",
+    "type": "depends_on",
+    "dependency_category": "compute_hardware",
+    "reason": "Training/fine-tuning/inference of modern AI workloads depends on accelerator hardware.",
+    "dependency_risk": 5,
+    "criticality": 5,
+    "replaceability": 2,
+    "time_to_substitute": "long",
+    "color": "red",
+    "confidence": "medium",
+    "sources": [
+      "nvidia_data_center",
+      "amd_mi300"
+    ],
+    "fact_status": "inferred",
+    "tags": []
+  },
+  {
+    "from": "synthesia",
+    "to": "gpu_accelerators",
+    "type": "depends_on",
+    "dependency_category": "compute_hardware",
+    "reason": "Training/fine-tuning/inference of modern AI workloads depends on accelerator hardware.",
+    "dependency_risk": 5,
+    "criticality": 5,
+    "replaceability": 2,
+    "time_to_substitute": "long",
+    "color": "red",
+    "confidence": "medium",
+    "sources": [
+      "nvidia_data_center",
+      "amd_mi300"
+    ],
+    "fact_status": "inferred",
+    "tags": []
+  },
+  {
+    "from": "owkin",
+    "to": "gpu_accelerators",
+    "type": "depends_on",
+    "dependency_category": "compute_hardware",
+    "reason": "Training/fine-tuning/inference of modern AI workloads depends on accelerator hardware.",
+    "dependency_risk": 5,
+    "criticality": 5,
+    "replaceability": 2,
+    "time_to_substitute": "long",
+    "color": "red",
+    "confidence": "medium",
+    "sources": [
+      "nvidia_data_center",
+      "amd_mi300"
+    ],
+    "fact_status": "inferred",
+    "tags": []
+  },
+  {
+    "from": "helsing",
+    "to": "gpu_accelerators",
+    "type": "depends_on",
+    "dependency_category": "compute_hardware",
+    "reason": "Training/fine-tuning/inference of modern AI workloads depends on accelerator hardware.",
+    "dependency_risk": 5,
+    "criticality": 5,
+    "replaceability": 2,
+    "time_to_substitute": "long",
+    "color": "red",
+    "confidence": "medium",
+    "sources": [
+      "nvidia_data_center",
+      "amd_mi300"
+    ],
+    "fact_status": "inferred",
+    "tags": []
+  },
+  {
+    "from": "mistral_ai",
+    "to": "hugging_face",
+    "type": "uses",
+    "dependency_category": "model_distribution",
+    "reason": "Mistral AI maintains an official model organization on Hugging Face.",
+    "dependency_risk": 2,
+    "criticality": 4,
+    "replaceability": 4,
+    "time_to_substitute": "short",
+    "color": "orange",
+    "confidence": "high",
+    "sources": [
+      "mistral_hf",
+      "huggingface"
+    ],
+    "fact_status": "known",
+    "tags": []
+  },
+  {
+    "from": "mistral_ai",
+    "to": "model_distribution",
+    "type": "depends_on",
+    "dependency_category": "model_distribution",
+    "reason": "Open/reusable model distribution is strategically important for Mistral-style open models.",
+    "dependency_risk": 3,
+    "criticality": 4,
+    "replaceability": 3,
+    "time_to_substitute": "medium",
+    "color": "orange",
+    "confidence": "medium",
+    "sources": [
+      "mistral_hf",
+      "huggingface"
+    ],
+    "fact_status": "known",
+    "tags": []
+  },
+  {
+    "from": "hugging_face",
+    "to": "model_distribution",
+    "type": "operates",
+    "dependency_category": "model_distribution",
+    "reason": "Hugging Face is the key model/dataset/application collaboration platform.",
+    "dependency_risk": 2,
+    "criticality": 5,
+    "replaceability": 4,
+    "time_to_substitute": "medium",
+    "color": "blue",
+    "confidence": "high",
+    "sources": [
+      "huggingface"
+    ],
+    "fact_status": "known",
+    "tags": []
+  },
+  {
+    "from": "hugging_face",
+    "to": "secure_ai_deployment",
+    "type": "depends_on",
+    "dependency_category": "supply_chain_security",
+    "reason": "Model hubs introduce AI supply-chain security requirements.",
+    "dependency_risk": 4,
+    "criticality": 4,
+    "replaceability": 3,
+    "time_to_substitute": "medium",
+    "color": "orange",
+    "confidence": "medium",
+    "sources": [
+      "hf_supply_chain_paper"
+    ],
+    "fact_status": "inferred",
+    "tags": []
+  },
+  {
+    "from": "lighton_ai",
+    "to": "orange_business",
+    "type": "uses",
+    "dependency_category": "cloud",
+    "reason": "LightOn uses Orange Business Cloud Avenue in a customer story / partnership context.",
+    "dependency_risk": 2,
+    "criticality": 4,
+    "replaceability": 4,
+    "time_to_substitute": "medium",
+    "color": "green",
+    "confidence": "high",
+    "sources": [
+      "orange_lighton"
+    ],
+    "fact_status": "known",
+    "tags": []
+  },
+  {
+    "from": "orange_business",
+    "to": "sovereign_cloud",
+    "type": "supplies_to",
+    "dependency_category": "cloud",
+    "reason": "Orange Business Cloud Avenue is part of a trusted French cloud/GenAI offer.",
+    "dependency_risk": 2,
+    "criticality": 4,
+    "replaceability": 4,
+    "time_to_substitute": "medium",
+    "color": "green",
+    "confidence": "high",
+    "sources": [
+      "orange_cloud_avenue",
+      "orange_lighton"
+    ],
+    "fact_status": "known",
+    "tags": []
+  },
+  {
+    "from": "aleph_alpha",
+    "to": "secure_ai_deployment",
+    "type": "supplies_to",
+    "dependency_category": "enterprise_ai",
+    "reason": "Aleph Alpha positions specialized models for enterprises/public institutions with sovereignty/compliance concerns.",
+    "dependency_risk": 2,
+    "criticality": 4,
+    "replaceability": 4,
+    "time_to_substitute": "medium",
+    "color": "green",
+    "confidence": "high",
+    "sources": [
+      "aleph_alpha"
+    ],
+    "fact_status": "known",
+    "tags": []
+  },
+  {
+    "from": "lighton_ai",
+    "to": "secure_ai_deployment",
+    "type": "supplies_to",
+    "dependency_category": "enterprise_ai",
+    "reason": "LightOn positions secure/customizable enterprise GenAI.",
+    "dependency_risk": 2,
+    "criticality": 4,
+    "replaceability": 4,
+    "time_to_substitute": "medium",
+    "color": "green",
+    "confidence": "high",
+    "sources": [
+      "lighton"
+    ],
+    "fact_status": "known",
+    "tags": []
+  },
+  {
+    "from": "owkin",
+    "to": "training_data",
+    "type": "depends_on",
+    "dependency_category": "health_data",
+    "reason": "Owkin is based on multimodal patient data for biopharma/clinical research.",
+    "dependency_risk": 4,
+    "criticality": 5,
+    "replaceability": 2,
+    "time_to_substitute": "long",
+    "color": "orange",
+    "confidence": "high",
+    "sources": [
+      "owkin"
+    ],
+    "fact_status": "known",
+    "tags": []
+  },
+  {
+    "from": "owkin",
+    "to": "ai_compliance",
+    "type": "regulated_by",
+    "dependency_category": "health_regulation",
+    "reason": "Health AI implies high compliance and privacy requirements.",
+    "dependency_risk": 4,
+    "criticality": 5,
+    "replaceability": 2,
+    "time_to_substitute": "long",
+    "color": "red",
+    "confidence": "medium",
+    "sources": [
+      "owkin"
+    ],
+    "fact_status": "inferred",
+    "tags": []
+  },
+  {
+    "from": "helsing",
+    "to": "secure_ai_deployment",
+    "type": "depends_on",
+    "dependency_category": "defense_security",
+    "reason": "Defense AI requires secure deployment, autonomy and software-defined hardware.",
+    "dependency_risk": 5,
+    "criticality": 5,
+    "replaceability": 2,
+    "time_to_substitute": "long",
+    "color": "red",
+    "confidence": "high",
+    "sources": [
+      "helsing",
+      "helsing_company"
+    ],
+    "fact_status": "known",
+    "tags": []
+  },
+  {
+    "from": "ovhcloud",
+    "to": "sovereign_cloud",
+    "type": "supplies_to",
+    "dependency_category": "cloud",
+    "reason": "ovhcloud is a cloud/sovereign cloud provider relevant to EU AI deployment.",
+    "dependency_risk": 2,
+    "criticality": 5,
+    "replaceability": 3,
+    "time_to_substitute": "medium",
+    "color": "green",
+    "confidence": "high",
+    "sources": [
+      "ovh_sovereign",
+      "scaleway",
+      "orange_cloud_avenue",
+      "ionos_public_sector",
+      "aws_sovereign",
+      "microsoft_sovereign"
+    ],
+    "fact_status": "known",
+    "tags": []
+  },
+  {
+    "from": "scaleway",
+    "to": "sovereign_cloud",
+    "type": "supplies_to",
+    "dependency_category": "cloud",
+    "reason": "scaleway is a cloud/sovereign cloud provider relevant to EU AI deployment.",
+    "dependency_risk": 2,
+    "criticality": 5,
+    "replaceability": 3,
+    "time_to_substitute": "medium",
+    "color": "green",
+    "confidence": "high",
+    "sources": [
+      "ovh_sovereign",
+      "scaleway",
+      "orange_cloud_avenue",
+      "ionos_public_sector",
+      "aws_sovereign",
+      "microsoft_sovereign"
+    ],
+    "fact_status": "known",
+    "tags": []
+  },
+  {
+    "from": "orange_business",
+    "to": "sovereign_cloud",
+    "type": "supplies_to",
+    "dependency_category": "cloud",
+    "reason": "orange_business is a cloud/sovereign cloud provider relevant to EU AI deployment.",
+    "dependency_risk": 2,
+    "criticality": 5,
+    "replaceability": 3,
+    "time_to_substitute": "medium",
+    "color": "green",
+    "confidence": "high",
+    "sources": [
+      "ovh_sovereign",
+      "scaleway",
+      "orange_cloud_avenue",
+      "ionos_public_sector",
+      "aws_sovereign",
+      "microsoft_sovereign"
+    ],
+    "fact_status": "known",
+    "tags": []
+  },
+  {
+    "from": "ionos",
+    "to": "sovereign_cloud",
+    "type": "supplies_to",
+    "dependency_category": "cloud",
+    "reason": "ionos is a cloud/sovereign cloud provider relevant to EU AI deployment.",
+    "dependency_risk": 2,
+    "criticality": 5,
+    "replaceability": 3,
+    "time_to_substitute": "medium",
+    "color": "green",
+    "confidence": "high",
+    "sources": [
+      "ovh_sovereign",
+      "scaleway",
+      "orange_cloud_avenue",
+      "ionos_public_sector",
+      "aws_sovereign",
+      "microsoft_sovereign"
+    ],
+    "fact_status": "known",
+    "tags": []
+  },
+  {
+    "from": "aws_european_sovereign_cloud",
+    "to": "sovereign_cloud",
+    "type": "supplies_to",
+    "dependency_category": "cloud",
+    "reason": "aws_european_sovereign_cloud is a cloud/sovereign cloud provider relevant to EU AI deployment.",
+    "dependency_risk": 4,
+    "criticality": 5,
+    "replaceability": 3,
+    "time_to_substitute": "medium",
+    "color": "orange",
+    "confidence": "high",
+    "sources": [
+      "ovh_sovereign",
+      "scaleway",
+      "orange_cloud_avenue",
+      "ionos_public_sector",
+      "aws_sovereign",
+      "microsoft_sovereign"
+    ],
+    "fact_status": "known",
+    "tags": []
+  },
+  {
+    "from": "microsoft_sovereign_cloud",
+    "to": "sovereign_cloud",
+    "type": "supplies_to",
+    "dependency_category": "cloud",
+    "reason": "microsoft_sovereign_cloud is a cloud/sovereign cloud provider relevant to EU AI deployment.",
+    "dependency_risk": 4,
+    "criticality": 5,
+    "replaceability": 3,
+    "time_to_substitute": "medium",
+    "color": "orange",
+    "confidence": "high",
+    "sources": [
+      "ovh_sovereign",
+      "scaleway",
+      "orange_cloud_avenue",
+      "ionos_public_sector",
+      "aws_sovereign",
+      "microsoft_sovereign"
+    ],
+    "fact_status": "known",
+    "tags": []
+  },
+  {
+    "from": "ovhcloud",
+    "to": "data_centers",
+    "type": "depends_on",
+    "dependency_category": "physical_infrastructure",
+    "reason": "Cloud AI services depend on data centers, power, networking and cooling.",
+    "dependency_risk": 4,
+    "criticality": 5,
+    "replaceability": 3,
+    "time_to_substitute": "long",
+    "color": "orange",
+    "confidence": "medium",
+    "sources": [
+      "eu_ai_gigafactories"
+    ],
+    "fact_status": "inferred",
+    "tags": []
+  },
+  {
+    "from": "ovhcloud",
+    "to": "energy_power_capacity",
+    "type": "depends_on",
+    "dependency_category": "energy",
+    "reason": "AI cloud/data-center growth depends on energy availability and efficiency.",
+    "dependency_risk": 5,
+    "criticality": 5,
+    "replaceability": 2,
+    "time_to_substitute": "long",
+    "color": "red",
+    "confidence": "medium",
+    "sources": [
+      "eu_ai_gigafactories"
+    ],
+    "fact_status": "inferred",
+    "tags": []
+  },
+  {
+    "from": "scaleway",
+    "to": "data_centers",
+    "type": "depends_on",
+    "dependency_category": "physical_infrastructure",
+    "reason": "Cloud AI services depend on data centers, power, networking and cooling.",
+    "dependency_risk": 4,
+    "criticality": 5,
+    "replaceability": 3,
+    "time_to_substitute": "long",
+    "color": "orange",
+    "confidence": "medium",
+    "sources": [
+      "eu_ai_gigafactories"
+    ],
+    "fact_status": "inferred",
+    "tags": []
+  },
+  {
+    "from": "scaleway",
+    "to": "energy_power_capacity",
+    "type": "depends_on",
+    "dependency_category": "energy",
+    "reason": "AI cloud/data-center growth depends on energy availability and efficiency.",
+    "dependency_risk": 5,
+    "criticality": 5,
+    "replaceability": 2,
+    "time_to_substitute": "long",
+    "color": "red",
+    "confidence": "medium",
+    "sources": [
+      "eu_ai_gigafactories"
+    ],
+    "fact_status": "inferred",
+    "tags": []
+  },
+  {
+    "from": "orange_business",
+    "to": "data_centers",
+    "type": "depends_on",
+    "dependency_category": "physical_infrastructure",
+    "reason": "Cloud AI services depend on data centers, power, networking and cooling.",
+    "dependency_risk": 4,
+    "criticality": 5,
+    "replaceability": 3,
+    "time_to_substitute": "long",
+    "color": "orange",
+    "confidence": "medium",
+    "sources": [
+      "eu_ai_gigafactories"
+    ],
+    "fact_status": "inferred",
+    "tags": []
+  },
+  {
+    "from": "orange_business",
+    "to": "energy_power_capacity",
+    "type": "depends_on",
+    "dependency_category": "energy",
+    "reason": "AI cloud/data-center growth depends on energy availability and efficiency.",
+    "dependency_risk": 5,
+    "criticality": 5,
+    "replaceability": 2,
+    "time_to_substitute": "long",
+    "color": "red",
+    "confidence": "medium",
+    "sources": [
+      "eu_ai_gigafactories"
+    ],
+    "fact_status": "inferred",
+    "tags": []
+  },
+  {
+    "from": "ionos",
+    "to": "data_centers",
+    "type": "depends_on",
+    "dependency_category": "physical_infrastructure",
+    "reason": "Cloud AI services depend on data centers, power, networking and cooling.",
+    "dependency_risk": 4,
+    "criticality": 5,
+    "replaceability": 3,
+    "time_to_substitute": "long",
+    "color": "orange",
+    "confidence": "medium",
+    "sources": [
+      "eu_ai_gigafactories"
+    ],
+    "fact_status": "inferred",
+    "tags": []
+  },
+  {
+    "from": "ionos",
+    "to": "energy_power_capacity",
+    "type": "depends_on",
+    "dependency_category": "energy",
+    "reason": "AI cloud/data-center growth depends on energy availability and efficiency.",
+    "dependency_risk": 5,
+    "criticality": 5,
+    "replaceability": 2,
+    "time_to_substitute": "long",
+    "color": "red",
+    "confidence": "medium",
+    "sources": [
+      "eu_ai_gigafactories"
+    ],
+    "fact_status": "inferred",
+    "tags": []
+  },
+  {
+    "from": "aws_european_sovereign_cloud",
+    "to": "data_centers",
+    "type": "depends_on",
+    "dependency_category": "physical_infrastructure",
+    "reason": "Cloud AI services depend on data centers, power, networking and cooling.",
+    "dependency_risk": 4,
+    "criticality": 5,
+    "replaceability": 3,
+    "time_to_substitute": "long",
+    "color": "orange",
+    "confidence": "medium",
+    "sources": [
+      "eu_ai_gigafactories"
+    ],
+    "fact_status": "inferred",
+    "tags": []
+  },
+  {
+    "from": "aws_european_sovereign_cloud",
+    "to": "energy_power_capacity",
+    "type": "depends_on",
+    "dependency_category": "energy",
+    "reason": "AI cloud/data-center growth depends on energy availability and efficiency.",
+    "dependency_risk": 5,
+    "criticality": 5,
+    "replaceability": 2,
+    "time_to_substitute": "long",
+    "color": "red",
+    "confidence": "medium",
+    "sources": [
+      "eu_ai_gigafactories"
+    ],
+    "fact_status": "inferred",
+    "tags": []
+  },
+  {
+    "from": "microsoft_sovereign_cloud",
+    "to": "data_centers",
+    "type": "depends_on",
+    "dependency_category": "physical_infrastructure",
+    "reason": "Cloud AI services depend on data centers, power, networking and cooling.",
+    "dependency_risk": 4,
+    "criticality": 5,
+    "replaceability": 3,
+    "time_to_substitute": "long",
+    "color": "orange",
+    "confidence": "medium",
+    "sources": [
+      "eu_ai_gigafactories"
+    ],
+    "fact_status": "inferred",
+    "tags": []
+  },
+  {
+    "from": "microsoft_sovereign_cloud",
+    "to": "energy_power_capacity",
+    "type": "depends_on",
+    "dependency_category": "energy",
+    "reason": "AI cloud/data-center growth depends on energy availability and efficiency.",
+    "dependency_risk": 5,
+    "criticality": 5,
+    "replaceability": 2,
+    "time_to_substitute": "long",
+    "color": "red",
+    "confidence": "medium",
+    "sources": [
+      "eu_ai_gigafactories"
+    ],
+    "fact_status": "inferred",
+    "tags": []
+  },
+  {
+    "from": "ovhcloud",
+    "to": "gpu_accelerators",
+    "type": "depends_on",
+    "dependency_category": "compute_hardware",
+    "reason": "OVHcloud offers GPU cloud services; underlying GPU supply remains a strategic dependency.",
+    "dependency_risk": 5,
+    "criticality": 5,
+    "replaceability": 2,
+    "time_to_substitute": "long",
+    "color": "red",
+    "confidence": "high",
+    "sources": [
+      "ovh_gpu",
+      "nvidia_data_center"
+    ],
+    "fact_status": "known",
+    "tags": []
+  },
+  {
+    "from": "scaleway",
+    "to": "gpu_accelerators",
+    "type": "depends_on",
+    "dependency_category": "compute_hardware",
+    "reason": "Scaleway offers GPU instances for AI model training/fine-tuning/serving.",
+    "dependency_risk": 5,
+    "criticality": 5,
+    "replaceability": 2,
+    "time_to_substitute": "long",
+    "color": "red",
+    "confidence": "high",
+    "sources": [
+      "scaleway_gpu",
+      "nvidia_data_center"
+    ],
+    "fact_status": "known",
+    "tags": []
+  },
+  {
+    "from": "orange_business",
+    "to": "gpu_accelerators",
+    "type": "depends_on",
+    "dependency_category": "compute_hardware",
+    "reason": "Orange/LightOn trusted GenAI offer is supported by servers and GPUs in French data centers.",
+    "dependency_risk": 4,
+    "criticality": 5,
+    "replaceability": 2,
+    "time_to_substitute": "long",
+    "color": "orange",
+    "confidence": "high",
+    "sources": [
+      "orange_lighton"
+    ],
+    "fact_status": "known",
+    "tags": []
+  },
+  {
+    "from": "ionos",
+    "to": "gpu_accelerators",
+    "type": "depends_on",
+    "dependency_category": "compute_hardware",
+    "reason": "Sovereign AI cloud use cases require accelerator hardware.",
+    "dependency_risk": 4,
+    "criticality": 4,
+    "replaceability": 2,
+    "time_to_substitute": "long",
+    "color": "orange",
+    "confidence": "medium",
+    "sources": [
+      "ionos_cloud",
+      "intel_gaudi"
+    ],
+    "fact_status": "inferred",
+    "tags": []
+  },
+  {
+    "from": "aws_european_sovereign_cloud",
+    "to": "gpu_accelerators",
+    "type": "depends_on",
+    "dependency_category": "compute_hardware",
+    "reason": "Hyperscaler AI infrastructure depends on accelerator hardware.",
+    "dependency_risk": 5,
+    "criticality": 5,
+    "replaceability": 2,
+    "time_to_substitute": "long",
+    "color": "red",
+    "confidence": "medium",
+    "sources": [
+      "aws_sovereign",
+      "nvidia_data_center"
+    ],
+    "fact_status": "inferred",
+    "tags": []
+  },
+  {
+    "from": "microsoft_sovereign_cloud",
+    "to": "gpu_accelerators",
+    "type": "depends_on",
+    "dependency_category": "compute_hardware",
+    "reason": "Hyperscaler AI infrastructure depends on accelerator hardware.",
+    "dependency_risk": 5,
+    "criticality": 5,
+    "replaceability": 2,
+    "time_to_substitute": "long",
+    "color": "red",
+    "confidence": "medium",
+    "sources": [
+      "microsoft_sovereign",
+      "nvidia_data_center"
+    ],
+    "fact_status": "inferred",
+    "tags": []
+  },
+  {
+    "from": "nvidia",
+    "to": "gpu_accelerators",
+    "type": "supplies_to",
+    "dependency_category": "compute_hardware",
+    "reason": "nvidia supplies accelerator/processor technology relevant to AI/HPC.",
+    "dependency_risk": 2,
+    "criticality": 5,
+    "replaceability": 3,
+    "time_to_substitute": "medium",
+    "color": "red",
+    "confidence": "high",
+    "sources": [
+      "nvidia_data_center",
+      "amd_mi300",
+      "intel_gaudi",
+      "sipearl"
+    ],
+    "fact_status": "known",
+    "tags": []
+  },
+  {
+    "from": "amd",
+    "to": "gpu_accelerators",
+    "type": "supplies_to",
+    "dependency_category": "compute_hardware",
+    "reason": "amd supplies accelerator/processor technology relevant to AI/HPC.",
+    "dependency_risk": 2,
+    "criticality": 5,
+    "replaceability": 3,
+    "time_to_substitute": "medium",
+    "color": "red",
+    "confidence": "high",
+    "sources": [
+      "nvidia_data_center",
+      "amd_mi300",
+      "intel_gaudi",
+      "sipearl"
+    ],
+    "fact_status": "known",
+    "tags": []
+  },
+  {
+    "from": "intel_gaudi",
+    "to": "gpu_accelerators",
+    "type": "supplies_to",
+    "dependency_category": "compute_hardware",
+    "reason": "intel_gaudi supplies accelerator/processor technology relevant to AI/HPC.",
+    "dependency_risk": 2,
+    "criticality": 5,
+    "replaceability": 3,
+    "time_to_substitute": "medium",
+    "color": "red",
+    "confidence": "high",
+    "sources": [
+      "nvidia_data_center",
+      "amd_mi300",
+      "intel_gaudi",
+      "sipearl"
+    ],
+    "fact_status": "known",
+    "tags": []
+  },
+  {
+    "from": "sipearl",
+    "to": "ai_hpc_supercomputing",
+    "type": "supplies_to",
+    "dependency_category": "compute_hardware",
+    "reason": "sipearl supplies accelerator/processor technology relevant to AI/HPC.",
+    "dependency_risk": 2,
+    "criticality": 5,
+    "replaceability": 3,
+    "time_to_substitute": "medium",
+    "color": "blue",
+    "confidence": "high",
+    "sources": [
+      "nvidia_data_center",
+      "amd_mi300",
+      "intel_gaudi",
+      "sipearl"
+    ],
+    "fact_status": "known",
+    "tags": []
+  },
+  {
+    "from": "nvidia",
+    "to": "semiconductor_manufacturing",
+    "type": "depends_on",
+    "dependency_category": "chip_manufacturing",
+    "reason": "AI processors depend on advanced semiconductor manufacturing and packaging.",
+    "dependency_risk": 5,
+    "criticality": 5,
+    "replaceability": 1,
+    "time_to_substitute": "long",
+    "color": "red",
+    "confidence": "medium",
+    "sources": [
+      "tsmc",
+      "asml",
+      "eu_chips_act"
+    ],
+    "fact_status": "inferred",
+    "tags": []
+  },
+  {
+    "from": "amd",
+    "to": "semiconductor_manufacturing",
+    "type": "depends_on",
+    "dependency_category": "chip_manufacturing",
+    "reason": "AI processors depend on advanced semiconductor manufacturing and packaging.",
+    "dependency_risk": 5,
+    "criticality": 5,
+    "replaceability": 1,
+    "time_to_substitute": "long",
+    "color": "red",
+    "confidence": "medium",
+    "sources": [
+      "tsmc",
+      "asml",
+      "eu_chips_act"
+    ],
+    "fact_status": "inferred",
+    "tags": []
+  },
+  {
+    "from": "intel_gaudi",
+    "to": "semiconductor_manufacturing",
+    "type": "depends_on",
+    "dependency_category": "chip_manufacturing",
+    "reason": "AI processors depend on advanced semiconductor manufacturing and packaging.",
+    "dependency_risk": 5,
+    "criticality": 5,
+    "replaceability": 1,
+    "time_to_substitute": "long",
+    "color": "red",
+    "confidence": "medium",
+    "sources": [
+      "tsmc",
+      "asml",
+      "eu_chips_act"
+    ],
+    "fact_status": "inferred",
+    "tags": []
+  },
+  {
+    "from": "sipearl",
+    "to": "semiconductor_manufacturing",
+    "type": "depends_on",
+    "dependency_category": "chip_manufacturing",
+    "reason": "AI processors depend on advanced semiconductor manufacturing and packaging.",
+    "dependency_risk": 5,
+    "criticality": 5,
+    "replaceability": 1,
+    "time_to_substitute": "long",
+    "color": "red",
+    "confidence": "medium",
+    "sources": [
+      "tsmc",
+      "asml",
+      "eu_chips_act"
+    ],
+    "fact_status": "inferred",
+    "tags": []
+  },
+  {
+    "from": "tsmc",
+    "to": "semiconductor_manufacturing",
+    "type": "supplies_to",
+    "dependency_category": "foundry",
+    "reason": "TSMC is a dedicated semiconductor foundry and strategic chip-manufacturing dependency.",
+    "dependency_risk": 5,
+    "criticality": 5,
+    "replaceability": 1,
+    "time_to_substitute": "long",
+    "color": "red",
+    "confidence": "high",
+    "sources": [
+      "tsmc"
+    ],
+    "fact_status": "known",
+    "tags": []
+  },
+  {
+    "from": "asml",
+    "to": "semiconductor_manufacturing",
+    "type": "supplies_to",
+    "dependency_category": "lithography",
+    "reason": "ASML lithography technology is fundamental to advanced semiconductor manufacturing.",
+    "dependency_risk": 2,
+    "criticality": 5,
+    "replaceability": 4,
+    "time_to_substitute": "long",
+    "color": "blue",
+    "confidence": "high",
+    "sources": [
+      "asml",
+      "asml_euv"
+    ],
+    "fact_status": "known",
+    "tags": []
+  },
+  {
+    "from": "eu_chips_act_node",
+    "to": "semiconductor_manufacturing",
+    "type": "funded_by",
+    "dependency_category": "policy",
+    "reason": "The European Chips Act is a policy response to strategic semiconductor capacity/resilience.",
+    "dependency_risk": 2,
+    "criticality": 5,
+    "replaceability": 4,
+    "time_to_substitute": "long",
+    "color": "blue",
+    "confidence": "high",
+    "sources": [
+      "eu_chips_act"
+    ],
+    "fact_status": "known",
+    "tags": []
+  },
+  {
+    "from": "sipearl",
+    "to": "ai_factories_network",
+    "type": "supplies_to",
+    "dependency_category": "european_processor",
+    "reason": "SiPearl CPUs are positioned for sovereign European supercomputing, AI and data centers.",
+    "dependency_risk": 2,
+    "criticality": 4,
+    "replaceability": 3,
+    "time_to_substitute": "medium",
+    "color": "green",
+    "confidence": "medium",
+    "sources": [
+      "sipearl",
+      "sipearl_processor"
+    ],
+    "fact_status": "inferred",
+    "tags": []
+  },
+  {
+    "from": "pytorch",
+    "to": "cloud_native_ai_platform",
+    "type": "integrates_with",
+    "dependency_category": "framework",
+    "reason": "PyTorch is a core open-source deep learning framework used in AI workloads.",
+    "dependency_risk": 2,
+    "criticality": 5,
+    "replaceability": 4,
+    "time_to_substitute": "medium",
+    "color": "orange",
+    "confidence": "high",
+    "sources": [
+      "pytorch"
+    ],
+    "fact_status": "known",
+    "tags": []
+  },
+  {
+    "from": "tensorflow",
+    "to": "cloud_native_ai_platform",
+    "type": "integrates_with",
+    "dependency_category": "framework",
+    "reason": "TensorFlow is an end-to-end open source ML platform.",
+    "dependency_risk": 2,
+    "criticality": 4,
+    "replaceability": 4,
+    "time_to_substitute": "medium",
+    "color": "orange",
+    "confidence": "high",
+    "sources": [
+      "tensorflow"
+    ],
+    "fact_status": "known",
+    "tags": []
+  },
+  {
+    "from": "kubernetes",
+    "to": "cloud_native_ai_platform",
+    "type": "integrates_with",
+    "dependency_category": "orchestration",
+    "reason": "Kubernetes is a core open-source orchestration layer for containerized workloads.",
+    "dependency_risk": 2,
+    "criticality": 5,
+    "replaceability": 4,
+    "time_to_substitute": "medium",
+    "color": "orange",
+    "confidence": "high",
+    "sources": [
+      "kubernetes"
+    ],
+    "fact_status": "known",
+    "tags": []
+  },
+  {
+    "from": "vllm",
+    "to": "llm_serving",
+    "type": "supplies_to",
+    "dependency_category": "inference_serving",
+    "reason": "vLLM provides high-throughput, memory-efficient LLM serving.",
+    "dependency_risk": 2,
+    "criticality": 5,
+    "replaceability": 4,
+    "time_to_substitute": "medium",
+    "color": "orange",
+    "confidence": "high",
+    "sources": [
+      "vllm"
+    ],
+    "fact_status": "known",
+    "tags": []
+  },
+  {
+    "from": "llm_serving",
+    "to": "gpu_accelerators",
+    "type": "depends_on",
+    "dependency_category": "compute_hardware",
+    "reason": "LLM serving performance and cost depend on accelerator hardware.",
+    "dependency_risk": 5,
+    "criticality": 5,
+    "replaceability": 2,
+    "time_to_substitute": "long",
+    "color": "red",
+    "confidence": "high",
+    "sources": [
+      "vllm",
+      "nvidia_data_center"
+    ],
+    "fact_status": "inferred",
+    "tags": []
+  },
+  {
+    "from": "cloud_native_ai_platform",
+    "to": "ai_hpc_supercomputing",
+    "type": "depends_on",
+    "dependency_category": "HPC_cloud_bridge",
+    "reason": "Cloud-native usability on AI Factories/HPC is a gap and opportunity area.",
+    "dependency_risk": 3,
+    "criticality": 5,
+    "replaceability": 3,
+    "time_to_substitute": "medium",
+    "color": "orange",
+    "confidence": "medium",
+    "sources": [
+      "cloud_hpc_divide_paper"
+    ],
+    "fact_status": "known",
+    "tags": []
+  }
+]

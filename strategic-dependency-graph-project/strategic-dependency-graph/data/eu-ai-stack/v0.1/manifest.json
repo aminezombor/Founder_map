@@ -1,0 +1,16 @@
+{
+  "project": "Strategic Dependency Graph",
+  "database": "EU AI Stack",
+  "version": "0.1",
+  "created": "2026-06-21",
+  "node_count": 87,
+  "edge_count": 141,
+  "opportunity_count": 12,
+  "source_count": 46,
+  "notes": [
+    "Public-source v0 database for EU AI Stack.",
+    "Edges marked fact_status=inferred are strategic dependency hypotheses, not confirmed supplier contracts.",
+    "This is built for Codex ingestion and future website generation.",
+    "Next stage: enrich node metadata, add company sizes/funding/status, and expand source coverage."
+  ]
+}
