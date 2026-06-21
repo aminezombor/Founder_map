@@ -1,0 +1,17 @@
+{
+  "project": "Strategic Dependency Graph",
+  "database": "Global Aerospace Stack",
+  "version": "0.1",
+  "node_count": 74,
+  "edge_count": 255,
+  "opportunity_count": 12,
+  "source_count": 50,
+  "notes": [
+    "Public-source v0.1 database for the global aerospace stack.",
+    "This is a strategic dependency graph, not a supplier-contract database.",
+    "Edges marked fact_status=inferred are system-level dependency hypotheses.",
+    "Focus areas: OEMs, engines, tier-1 suppliers, MRO, certification, space, air traffic operations, sustainability and software/data opportunities.",
+    "Designed for Codex ingestion and website graph generation."
+  ],
+  "local_package": "global_aerospace_stack_database_v0_1.zip"
+}
