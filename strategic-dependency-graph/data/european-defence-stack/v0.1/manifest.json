@@ -1,0 +1,18 @@
+{
+  "project": "Strategic Dependency Graph",
+  "database": "European Defence Stack",
+  "version": "0.1",
+  "node_count": 82,
+  "edge_count": 234,
+  "opportunity_count": 12,
+  "source_count": 45,
+  "safety_scope": "Public-source strategic dependency mapping only. No classified data, no operational tactics, no weapon construction instructions.",
+  "notes": [
+    "Public-source v0.1 database for the European defence stack.",
+    "This is a strategic dependency graph, not a supplier-contract database.",
+    "Edges marked fact_status=inferred are system-level dependency hypotheses.",
+    "Designed for Codex ingestion and website graph generation.",
+    "France/EU lens is intentionally strong because the user is based in France and is interested in B2B/national opportunities."
+  ],
+  "local_package": "european_defence_stack_database_v0_1.zip"
+}
