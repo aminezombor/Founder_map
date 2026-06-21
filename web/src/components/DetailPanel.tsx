@@ -1,5 +1,6 @@
+import { X } from "lucide-react";
 import type { ReactNode } from "react";
-import type { DatasetConfig, GraphDataset, GraphEdge, GraphNode, Opportunity, Selection, SourceRecord } from "../types/graph";
+import type { GraphDataset, GraphEdge, GraphNode, Opportunity, Selection, SourceRecord } from "../types/graph";
 import { getColorMeaning } from "../utils/colors";
 import {
   getEdgeById,
@@ -8,19 +9,12 @@ import {
   getRelatedOpportunities,
   getSourceRecords
 } from "../utils/graphSelectors";
-import { formatList, truncate } from "../utils/text";
-import { DatasetPanel } from "./DatasetPanel";
-import { OpportunityPanel } from "./OpportunityPanel";
-import { SourcesPanel } from "./SourcesPanel";
-
-type DetailTab = "selected" | "opportunities" | "sources" | "dataset";
+import { formatList } from "../utils/text";
 
 interface DetailPanelProps {
   dataset: GraphDataset;
-  config: DatasetConfig;
   selection: Selection;
-  activeTab: DetailTab;
-  onTabChange: (tab: DetailTab) => void;
+  onClose: () => void;
   onSelectNode: (nodeId: string) => void;
   onSelectEdge: (edgeId: string) => void;
   onSelectOpportunity: (opportunityId: string) => void;
@@ -38,7 +32,7 @@ function DetailRow({ label, value }: { label: string; value: ReactNode }) {
 function SourceRefs({ sources }: { sources: SourceRecord[] }) {
   if (!sources.length) return <p className="muted">No source IDs attached.</p>;
   return (
-    <div className="source-ref-list">
+    <div className="source-ref-list compact">
       {sources.map((source) => (
         <a key={source.id} href={source.url || "#"} target={source.url ? "_blank" : undefined} rel="noreferrer">
           <strong>{source.title || source.id}</strong>
@@ -81,7 +75,7 @@ function NodeSelected({
   );
 
   return (
-    <div className="panel-scroll">
+    <div className="inspector-scroll">
       <header className="selected-header">
         <span className={`swatch swatch-${node.color || "grey"}`} />
         <div>
@@ -92,7 +86,7 @@ function NodeSelected({
 
       <p className="description">{node.description}</p>
 
-      <dl className="detail-grid">
+      <dl className="detail-grid compact-context">
         <DetailRow label="Type" value={node.type} />
         <DetailRow label="Country / region" value={`${node.country || "-"} / ${node.region || "-"}`} />
         <DetailRow label="Sectors" value={formatList(node.sector)} />
@@ -101,9 +95,6 @@ function NodeSelected({
         <DetailRow label="Criticality" value={node.criticality ?? "-"} />
         <DetailRow label="Market importance" value={node.market_importance ?? "-"} />
         <DetailRow label="France / EU fit" value={node.france_or_eu_fit ?? "-"} />
-        <DetailRow label="Confidence" value={node.confidence || "-"} />
-        <DetailRow label="Fact status" value={node.fact_status || "-"} />
-        <DetailRow label="Tags" value={formatList(node.tags)} />
       </dl>
 
       <section>
@@ -160,11 +151,23 @@ function NodeSelected({
   );
 }
 
-function EdgeSelected({ edge, dataset }: { edge: GraphEdge; dataset: GraphDataset }) {
+function EdgeSelected({
+  edge,
+  dataset,
+  opportunities,
+  onSelectNode,
+  onSelectOpportunity
+}: {
+  edge: GraphEdge;
+  dataset: GraphDataset;
+  opportunities: Opportunity[];
+  onSelectNode: (nodeId: string) => void;
+  onSelectOpportunity: (opportunityId: string) => void;
+}) {
   const from = getNodeById(dataset, edge.from);
   const to = getNodeById(dataset, edge.to);
   return (
-    <div className="panel-scroll">
+    <div className="inspector-scroll">
       <header className="selected-header">
         <span className={`swatch swatch-${edge.color || "grey"}`} />
         <div>
@@ -173,7 +176,16 @@ function EdgeSelected({ edge, dataset }: { edge: GraphEdge; dataset: GraphDatase
         </div>
       </header>
       <p className="description">{edge.reason}</p>
-      <dl className="detail-grid">
+
+      <section>
+        <h3>Endpoint nodes</h3>
+        <div className="chip-wrap">
+          {from && <button type="button" className="mini-link" onClick={() => onSelectNode(from.id)}>{from.name}</button>}
+          {to && <button type="button" className="mini-link" onClick={() => onSelectNode(to.id)}>{to.name}</button>}
+        </div>
+      </section>
+
+      <dl className="detail-grid compact-context">
         <DetailRow label="Type" value={edge.type} />
         <DetailRow label="Dependency category" value={edge.dependency_category} />
         <DetailRow label="Dependency risk" value={edge.dependency_risk ?? "-"} />
@@ -182,8 +194,20 @@ function EdgeSelected({ edge, dataset }: { edge: GraphEdge; dataset: GraphDatase
         <DetailRow label="Time to substitute" value={edge.time_to_substitute || "-"} />
         <DetailRow label="Confidence" value={edge.confidence || "-"} />
         <DetailRow label="Fact status" value={edge.fact_status || "-"} />
-        <DetailRow label="Tags" value={formatList(edge.tags)} />
       </dl>
+
+      <section>
+        <h3>Related opportunities</h3>
+        <div className="mini-list">
+          {opportunities.length ? opportunities.map((opportunity) => (
+            <button key={opportunity.id} type="button" className="mini-row button-row" onClick={() => onSelectOpportunity(opportunity.id)}>
+              <strong>{opportunity.title}</strong>
+              <span>{opportunity.score ?? "-"}</span>
+            </button>
+          )) : <p className="muted">No directly related opportunities.</p>}
+        </div>
+      </section>
+
       <section>
         <h3>Sources</h3>
         <SourceRefs sources={getSourceRecords(dataset, edge.sources)} />
@@ -194,7 +218,7 @@ function EdgeSelected({ edge, dataset }: { edge: GraphEdge; dataset: GraphDatase
 
 function OpportunitySelected({ opportunity, dataset, onSelectNode }: { opportunity: Opportunity; dataset: GraphDataset; onSelectNode: (nodeId: string) => void }) {
   return (
-    <div className="panel-scroll">
+    <div className="inspector-scroll">
       <header className="selected-header">
         <span className="swatch swatch-purple" />
         <div>
@@ -203,7 +227,7 @@ function OpportunitySelected({ opportunity, dataset, onSelectNode }: { opportuni
         </div>
       </header>
       <p className="description">{opportunity.reason}</p>
-      <dl className="detail-grid">
+      <dl className="detail-grid compact-context">
         <DetailRow label="Score" value={opportunity.score ?? "-"} />
         <DetailRow label="Criticality" value={opportunity.criticality ?? "-"} />
         <DetailRow label="Dependency risk" value={opportunity.dependency_risk ?? "-"} />
@@ -212,9 +236,6 @@ function OpportunitySelected({ opportunity, dataset, onSelectNode }: { opportuni
         <DetailRow label="Accessibility" value={opportunity.accessibility ?? "-"} />
         <DetailRow label="France fit" value={opportunity.france_fit ?? "-"} />
         <DetailRow label="EU fit" value={opportunity.eu_fit ?? "-"} />
-        <DetailRow label="Confidence" value={opportunity.confidence || "-"} />
-        <DetailRow label="Buyer types" value={formatList(opportunity.buyer_types)} />
-        <DetailRow label="Dependency types" value={formatList(opportunity.dependency_types)} />
       </dl>
       <section>
         <h3>Affected nodes</h3>
@@ -222,13 +243,11 @@ function OpportunitySelected({ opportunity, dataset, onSelectNode }: { opportuni
           {opportunity.affected_nodes.map((nodeId) => {
             const node = dataset.nodeById.get(nodeId);
             return node ? (
-              <button key={nodeId} type="button" className="mini-link" onClick={() => onSelectNode(nodeId)}>
+              <button key={nodeId} type="button" className="mini-link" onClick={() => onSelectNode(node.id)}>
                 {node.name}
               </button>
             ) : (
-              <span key={nodeId} className="unresolved-node">
-                {nodeId}
-              </span>
+              <span key={nodeId} className="unresolved-node">{nodeId}</span>
             );
           })}
         </div>
@@ -241,62 +260,35 @@ function OpportunitySelected({ opportunity, dataset, onSelectNode }: { opportuni
   );
 }
 
-function EmptySelected({ dataset }: { dataset: GraphDataset }) {
-  const topOpportunity = [...dataset.opportunities].sort((a, b) => (b.score ?? 0) - (a.score ?? 0))[0];
-  return (
-    <div className="panel-scroll empty-selected">
-      <h2>Nothing selected</h2>
-      <p>Click a node, edge, or opportunity to inspect the structure behind it.</p>
-      {topOpportunity && (
-        <div className="empty-callout">
-          <strong>Top opportunity</strong>
-          <span>{topOpportunity.title}</span>
-          <small>{truncate(topOpportunity.reason, 120)}</small>
-        </div>
-      )}
-    </div>
-  );
-}
-
 export function DetailPanel({
   dataset,
-  config,
   selection,
-  activeTab,
-  onTabChange,
+  onClose,
   onSelectNode,
   onSelectEdge,
   onSelectOpportunity
 }: DetailPanelProps) {
-  const selectedNode = selection?.kind === "node" ? getNodeById(dataset, selection.id) : undefined;
-  const selectedEdge = selection?.kind === "edge" ? getEdgeById(dataset, selection.id) : undefined;
+  if (!selection) return null;
+
+  const selectedNode = selection.kind === "node" ? getNodeById(dataset, selection.id) : undefined;
+  const selectedEdge = selection.kind === "edge" ? getEdgeById(dataset, selection.id) : undefined;
   const selectedOpportunity =
-    selection?.kind === "opportunity" ? dataset.opportunities.find((opportunity) => opportunity.id === selection.id) : undefined;
+    selection.kind === "opportunity" ? dataset.opportunities.find((opportunity) => opportunity.id === selection.id) : undefined;
   const relatedOpportunities = getRelatedOpportunities(dataset, selection);
 
-  const tabs: Array<{ id: DetailTab; label: string }> = [
-    { id: "selected", label: "Selected" },
-    { id: "opportunities", label: "Opportunities" },
-    { id: "sources", label: "Sources" },
-    { id: "dataset", label: "Dataset" }
-  ];
-
   return (
-    <aside className="detail-panel">
-      <div className="panel-tabs" role="tablist">
-        {tabs.map((tab) => (
-          <button
-            key={tab.id}
-            type="button"
-            className={activeTab === tab.id ? "active" : ""}
-            onClick={() => onTabChange(tab.id)}
-          >
-            {tab.label}
-          </button>
-        ))}
+    <aside className="map-inspector" aria-label="Selection details">
+      <div className="inspector-top">
+        <div>
+          <strong>Selected</strong>
+          <span>{selection.kind}</span>
+        </div>
+        <button type="button" className="icon-button" onClick={onClose} title="Close details">
+          <X size={16} aria-hidden />
+        </button>
       </div>
 
-      {activeTab === "selected" && selectedNode && (
+      {selectedNode && (
         <NodeSelected
           node={selectedNode}
           dataset={dataset}
@@ -306,24 +298,16 @@ export function DetailPanel({
           onSelectOpportunity={onSelectOpportunity}
         />
       )}
-      {activeTab === "selected" && selectedEdge && <EdgeSelected edge={selectedEdge} dataset={dataset} />}
-      {activeTab === "selected" && selectedOpportunity && (
-        <OpportunitySelected opportunity={selectedOpportunity} dataset={dataset} onSelectNode={onSelectNode} />
-      )}
-      {activeTab === "selected" && !selectedNode && !selectedEdge && !selectedOpportunity && <EmptySelected dataset={dataset} />}
-      {activeTab === "opportunities" && (
-        <OpportunityPanel
+      {selectedEdge && (
+        <EdgeSelected
+          edge={selectedEdge}
           dataset={dataset}
-          opportunities={selection ? relatedOpportunities : dataset.opportunities}
-          selectedOpportunityId={selection?.kind === "opportunity" ? selection.id : undefined}
-          onSelectOpportunity={onSelectOpportunity}
+          opportunities={relatedOpportunities}
           onSelectNode={onSelectNode}
+          onSelectOpportunity={onSelectOpportunity}
         />
       )}
-      {activeTab === "sources" && <SourcesPanel sources={dataset.sources} />}
-      {activeTab === "dataset" && <DatasetPanel dataset={dataset} config={config} />}
+      {selectedOpportunity && <OpportunitySelected opportunity={selectedOpportunity} dataset={dataset} onSelectNode={onSelectNode} />}
     </aside>
   );
 }
-
-export type { DetailTab };

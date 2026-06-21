@@ -4,6 +4,9 @@ dist/
 .DS_Store
 Thumbs.db
 *.log
+*.tsbuildinfo
+web/vite.config.js
+web/vite.config.d.ts
 web/public/data/
 Prompt 101.txt
 

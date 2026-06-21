@@ -1,7 +1,7 @@
 import { useEffect, useMemo, useState } from "react";
 import { datasetRegistry, getDatasetConfig } from "./data/datasetRegistry";
 import { loadDatasets } from "./data/loadGraph";
-import { DetailPanel, type DetailTab } from "./components/DetailPanel";
+import { DetailPanel } from "./components/DetailPanel";
 import { GraphCanvas } from "./components/GraphCanvas";
 import { Layout } from "./components/Layout";
 import { Sidebar } from "./components/Sidebar";
@@ -41,7 +41,7 @@ export default function App() {
   const [activeDatasetId, setActiveDatasetId] = useState(datasetRegistry[0].id);
   const [filters, setFilters] = useState<FilterState>(() => cloneDefaultFilters());
   const [selection, setSelection] = useState<Selection>(null);
-  const [activeTab, setActiveTab] = useState<DetailTab>("selected");
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [theme, setTheme] = useState<"light" | "dark">(() => getInitialTheme());
   const [error, setError] = useState<string | null>(null);
 
@@ -122,7 +122,7 @@ export default function App() {
     setActiveDatasetId(datasetId);
     setFilters(cloneDefaultFilters());
     setSelection(null);
-    setActiveTab("selected");
+    setIsMenuOpen(false);
   }
 
   function handleFilterChange(patch: Partial<FilterState>) {
@@ -131,18 +131,16 @@ export default function App() {
 
   function handleSelectNode(nodeId: string) {
     setSelection({ kind: "node", id: nodeId });
-    setActiveTab("selected");
     setFilters((current) => ({ ...current, query: "" }));
+    setIsMenuOpen(false);
   }
 
   function handleSelectEdge(edgeId: string) {
     setSelection({ kind: "edge", id: edgeId });
-    setActiveTab("selected");
   }
 
   function handleSelectOpportunity(opportunityId: string) {
     setSelection({ kind: "opportunity", id: opportunityId });
-    setActiveTab("selected");
   }
 
   if (error) {
@@ -166,7 +164,7 @@ export default function App() {
 
   return (
     <Layout
-      sidebar={
+      controls={
         <Sidebar
           datasets={datasetRegistry}
           activeDatasetId={activeDatasetId}
@@ -176,8 +174,10 @@ export default function App() {
           filters={filters}
           filterOptions={filterOptions}
           searchResults={searchResults}
+          isOpen={isMenuOpen}
           onDatasetChange={handleDatasetChange}
           onThemeToggle={() => setTheme((current) => (current === "light" ? "dark" : "light"))}
+          onToggleOpen={() => setIsMenuOpen((current) => !current)}
           onFilterChange={handleFilterChange}
           onResetFilters={() => setFilters(cloneDefaultFilters())}
           onSelectNode={handleSelectNode}
@@ -187,21 +187,18 @@ export default function App() {
         <GraphCanvas
           graph={visibleGraph}
           theme={theme}
-          selectedNodeId={selection?.kind === "node" ? selection.id : undefined}
-          selectedEdgeId={selection?.kind === "edge" ? selection.id : undefined}
+          selection={selection}
           highlightedNodeIds={highlights.nodeIds}
           highlightedEdgeIds={highlights.edgeIds}
           onSelectNode={handleSelectNode}
           onSelectEdge={handleSelectEdge}
         />
       }
-      detail={
+      inspector={
         <DetailPanel
           dataset={activeDataset}
-          config={activeConfig}
           selection={selection}
-          activeTab={activeTab}
-          onTabChange={setActiveTab}
+          onClose={() => setSelection(null)}
           onSelectNode={handleSelectNode}
           onSelectEdge={handleSelectEdge}
           onSelectOpportunity={handleSelectOpportunity}

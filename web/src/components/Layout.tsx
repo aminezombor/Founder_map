@@ -1,14 +1,14 @@
 import type { ReactNode } from "react";
 
-export function Layout({ sidebar, graph, detail, statBar }: { sidebar: ReactNode; graph: ReactNode; detail: ReactNode; statBar: ReactNode }) {
+export function Layout({ controls, graph, inspector, statBar }: { controls: ReactNode; graph: ReactNode; inspector: ReactNode; statBar: ReactNode }) {
   return (
-    <div className="app-shell">
-      {sidebar}
-      <main className="main-region">
+    <div className="map-workspace">
+      <main className="map-stage">
         {graph}
-        {statBar}
       </main>
-      {detail}
+      {controls}
+      {inspector}
+      {statBar}
     </div>
   );
 }
