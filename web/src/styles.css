@@ -833,6 +833,54 @@ dd {
   padding: 8px;
 }
 
+.opportunity-priority {
+  display: grid;
+  gap: 8px;
+  padding: 10px;
+  border: 1px solid color-mix(in srgb, var(--purple), var(--border) 45%);
+  border-radius: 8px;
+  background: color-mix(in srgb, var(--purple), transparent 92%);
+}
+
+.opportunity-priority h3 {
+  margin: 0;
+}
+
+.inspector-collapse {
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--panel-2);
+  overflow: hidden;
+}
+
+.inspector-collapse summary {
+  min-height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 9px 10px;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 750;
+  list-style: none;
+}
+
+.inspector-collapse summary::-webkit-details-marker {
+  display: none;
+}
+
+.inspector-collapse summary span {
+  color: var(--muted);
+  font-size: 11px;
+}
+
+.inspector-collapse > .chip-wrap,
+.inspector-collapse > .edge-list,
+.inspector-collapse > .detail-grid {
+  padding: 0 10px 10px;
+}
+
 .source-list {
   gap: 10px;
 }

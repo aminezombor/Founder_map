@@ -43,6 +43,42 @@ function SourceRefs({ sources }: { sources: SourceRecord[] }) {
   );
 }
 
+function topOpportunities(dataset: GraphDataset): Opportunity[] {
+  return [...dataset.opportunities].sort((a, b) => (b.score ?? 0) - (a.score ?? 0)).slice(0, 5);
+}
+
+function OpportunityList({
+  dataset,
+  opportunities,
+  onSelectOpportunity,
+  fallback = false
+}: {
+  dataset: GraphDataset;
+  opportunities: Opportunity[];
+  onSelectOpportunity: (opportunityId: string) => void;
+  fallback?: boolean;
+}) {
+  const visible = opportunities.length ? opportunities : topOpportunities(dataset);
+  return (
+    <section className="opportunity-priority">
+      <h3>{opportunities.length ? "Related opportunities" : "Top dataset opportunities"}</h3>
+      {!opportunities.length && fallback && <p className="muted">No direct opportunity match for this selection yet.</p>}
+      <div className="mini-list">
+        {visible.length ? (
+          visible.map((opportunity) => (
+            <button key={opportunity.id} type="button" className="mini-row button-row" onClick={() => onSelectOpportunity(opportunity.id)}>
+              <strong>{opportunity.title}</strong>
+              <span>{opportunity.score ?? "-"}</span>
+            </button>
+          ))
+        ) : (
+          <p className="muted">No opportunities in this dataset.</p>
+        )}
+      </div>
+    </section>
+  );
+}
+
 function EdgeButton({ edge, dataset, onSelectEdge }: { edge: GraphEdge; dataset: GraphDataset; onSelectEdge: (edgeId: string) => void }) {
   const from = dataset.nodeById.get(edge.from)?.name ?? edge.from;
   const to = dataset.nodeById.get(edge.to)?.name ?? edge.to;
@@ -97,8 +133,10 @@ function NodeSelected({
         <DetailRow label="France / EU fit" value={node.france_or_eu_fit ?? "-"} />
       </dl>
 
-      <section>
-        <h3>Connected nodes</h3>
+      <OpportunityList dataset={dataset} opportunities={opportunities} onSelectOpportunity={onSelectOpportunity} fallback />
+
+      <details className="inspector-collapse">
+        <summary>Connected nodes <span>{connectedIds.length}</span></summary>
         <div className="chip-wrap">
           {connectedIds.map((id) => {
             const connected = dataset.nodeById.get(id);
@@ -111,37 +149,21 @@ function NodeSelected({
             );
           })}
         </div>
-      </section>
+      </details>
 
-      <section>
-        <h3>Incoming edges</h3>
+      <details className="inspector-collapse">
+        <summary>Incoming edges <span>{incoming.length}</span></summary>
         <div className="edge-list">
           {incoming.length ? incoming.map((edge) => <EdgeButton key={edge.id} edge={edge} dataset={dataset} onSelectEdge={onSelectEdge} />) : <p className="muted">No incoming edges.</p>}
         </div>
-      </section>
+      </details>
 
-      <section>
-        <h3>Outgoing edges</h3>
+      <details className="inspector-collapse">
+        <summary>Outgoing edges <span>{outgoing.length}</span></summary>
         <div className="edge-list">
           {outgoing.length ? outgoing.map((edge) => <EdgeButton key={edge.id} edge={edge} dataset={dataset} onSelectEdge={onSelectEdge} />) : <p className="muted">No outgoing edges.</p>}
         </div>
-      </section>
-
-      <section>
-        <h3>Related opportunities</h3>
-        <div className="mini-list">
-          {opportunities.length ? (
-            opportunities.map((opportunity) => (
-              <button key={opportunity.id} type="button" className="mini-row button-row" onClick={() => onSelectOpportunity(opportunity.id)}>
-                <strong>{opportunity.title}</strong>
-                <span>{opportunity.score ?? "-"}</span>
-              </button>
-            ))
-          ) : (
-            <p className="muted">No directly related opportunities.</p>
-          )}
-        </div>
-      </section>
+      </details>
 
       <section>
         <h3>Sources</h3>
@@ -177,36 +199,29 @@ function EdgeSelected({
       </header>
       <p className="description">{edge.reason}</p>
 
-      <section>
-        <h3>Endpoint nodes</h3>
+      <OpportunityList dataset={dataset} opportunities={opportunities} onSelectOpportunity={onSelectOpportunity} fallback />
+
+      <details className="inspector-collapse">
+        <summary>Endpoint nodes <span>{[from, to].filter(Boolean).length}</span></summary>
         <div className="chip-wrap">
           {from && <button type="button" className="mini-link" onClick={() => onSelectNode(from.id)}>{from.name}</button>}
           {to && <button type="button" className="mini-link" onClick={() => onSelectNode(to.id)}>{to.name}</button>}
         </div>
-      </section>
+      </details>
 
-      <dl className="detail-grid compact-context">
-        <DetailRow label="Type" value={edge.type} />
-        <DetailRow label="Dependency category" value={edge.dependency_category} />
-        <DetailRow label="Dependency risk" value={edge.dependency_risk ?? "-"} />
-        <DetailRow label="Criticality" value={edge.criticality ?? "-"} />
-        <DetailRow label="Replaceability" value={edge.replaceability ?? "-"} />
-        <DetailRow label="Time to substitute" value={edge.time_to_substitute || "-"} />
-        <DetailRow label="Confidence" value={edge.confidence || "-"} />
-        <DetailRow label="Fact status" value={edge.fact_status || "-"} />
-      </dl>
-
-      <section>
-        <h3>Related opportunities</h3>
-        <div className="mini-list">
-          {opportunities.length ? opportunities.map((opportunity) => (
-            <button key={opportunity.id} type="button" className="mini-row button-row" onClick={() => onSelectOpportunity(opportunity.id)}>
-              <strong>{opportunity.title}</strong>
-              <span>{opportunity.score ?? "-"}</span>
-            </button>
-          )) : <p className="muted">No directly related opportunities.</p>}
-        </div>
-      </section>
+      <details className="inspector-collapse">
+        <summary>Edge details <span>8</span></summary>
+        <dl className="detail-grid compact-context">
+          <DetailRow label="Type" value={edge.type} />
+          <DetailRow label="Dependency category" value={edge.dependency_category} />
+          <DetailRow label="Dependency risk" value={edge.dependency_risk ?? "-"} />
+          <DetailRow label="Criticality" value={edge.criticality ?? "-"} />
+          <DetailRow label="Replaceability" value={edge.replaceability ?? "-"} />
+          <DetailRow label="Time to substitute" value={edge.time_to_substitute || "-"} />
+          <DetailRow label="Confidence" value={edge.confidence || "-"} />
+          <DetailRow label="Fact status" value={edge.fact_status || "-"} />
+        </dl>
+      </details>
 
       <section>
         <h3>Sources</h3>
