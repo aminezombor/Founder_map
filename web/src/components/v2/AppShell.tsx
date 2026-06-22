@@ -6,6 +6,7 @@ interface AppShellProps {
   children: ReactNode;
   theme: "light" | "dark";
   onThemeToggle: () => void;
+  variant?: "default" | "map";
 }
 
 const navItems = [
@@ -16,7 +17,7 @@ const navItems = [
   { to: "/settings", label: "Settings" }
 ];
 
-export function AppShell({ children, theme, onThemeToggle }: AppShellProps) {
+export function AppShell({ children, theme, onThemeToggle, variant = "default" }: AppShellProps) {
   return (
     <div className="v2-shell">
       <header className="v2-topbar">
@@ -34,7 +35,7 @@ export function AppShell({ children, theme, onThemeToggle }: AppShellProps) {
           {theme === "light" ? <Moon size={18} aria-hidden /> : <Sun size={18} aria-hidden />}
         </button>
       </header>
-      <main className="v2-main">{children}</main>
+      <main className={`v2-main ${variant === "map" ? "map-main" : ""}`}>{children}</main>
     </div>
   );
 }

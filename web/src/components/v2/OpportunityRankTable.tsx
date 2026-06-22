@@ -1,49 +1,69 @@
-import type { ScoredOpportunity } from "../../scoring/scoringTypes";
+import type { OpportunityAdvancedFilters, ScoredOpportunity } from "../../scoring/scoringTypes";
 import { phaseLabel } from "../../scoring/scoringExplain";
+import { PhaseLegend } from "./PhaseLegend";
 import { ScoreMeter } from "./ScoreMeter";
 
 interface OpportunityRankTableProps {
   opportunities: ScoredOpportunity[];
+  totalCount: number;
+  filteredCount: number;
+  sortBy: OpportunityAdvancedFilters["sortBy"];
+  query: string;
   selectedOpportunityId?: string;
   onSelect: (opportunityId: string) => void;
 }
 
-export function OpportunityRankTable({ opportunities, selectedOpportunityId, onSelect }: OpportunityRankTableProps) {
+const sortLabels: Record<OpportunityAdvancedFilters["sortBy"], string> = {
+  finalUtility: "Final utility",
+  structural: "Structural",
+  personalFit: "Fit",
+  feasibility: "Feasibility",
+  founderSpeedFit: "Founder speed",
+  strategicLeverage: "Leverage",
+  buyerAccess: "Buyer",
+  exitOptionality: "Exit",
+  proofVelocity: "Proof velocity",
+  wedgeToEmpire: "Wedge-to-empire"
+};
+
+export function OpportunityRankTable({ opportunities, totalCount, filteredCount, sortBy, query, selectedOpportunityId, onSelect }: OpportunityRankTableProps) {
+  const mark = (key: OpportunityAdvancedFilters["sortBy"]) => (sortBy === key ? "desc" : "");
+
   return (
     <section className="v2-panel rank-panel">
       <div className="rank-toolbar">
         <div>
           <h1>Best opportunities for you</h1>
-          <p>Ranked by your weighted preferences across selected domains.</p>
-        </div>
-        <div className="rank-actions">
-          <label>
-            Sort by
-            <select value="finalUtility" onChange={() => undefined}>
-              <option value="finalUtility">Final utility</option>
-            </select>
-          </label>
+          <p>{filteredCount} of {totalCount} opportunities shown{query ? ` for "${query}"` : ""}. Sorted by {sortLabels[sortBy]}.</p>
         </div>
       </div>
+      <PhaseLegend />
 
       <div className="rank-table-wrap">
         <table className="rank-table">
           <thead>
             <tr>
-              <th>#</th>
+              <th>Rank</th>
               <th>Opportunity</th>
               <th>Phase</th>
-              <th>Final utility</th>
-              <th>Structural</th>
-              <th>Personal fit</th>
-              <th>Feasibility</th>
-              <th>Strategic leverage</th>
-              <th>Buyer access</th>
-              <th>Exit optionality</th>
-              <th>Source dataset</th>
+              <th>Final utility {mark("finalUtility")}</th>
+              <th>Structural {mark("structural")}</th>
+              <th>Fit {mark("personalFit")}</th>
+              <th>Feasibility {mark("feasibility")}</th>
+              <th>Leverage {mark("strategicLeverage")}</th>
+              <th>Buyer {mark("buyerAccess")}</th>
+              <th>Exit {mark("exitOptionality")}</th>
+              <th>Dataset</th>
             </tr>
           </thead>
           <tbody>
+            {!opportunities.length && (
+              <tr>
+                <td colSpan={11}>
+                  <div className="empty-table-state">No opportunities match the current filters.</div>
+                </td>
+              </tr>
+            )}
             {opportunities.map((opportunity, index) => {
               const selected = selectedOpportunityId === opportunity.id;
               const breakdown = opportunity.breakdown;

@@ -15,6 +15,8 @@ const sliders: Array<{ key: PreferenceKey; label: string }> = [
   { key: "exitOptionality", label: "Exit optionality" }
 ];
 
+const coefficientMeaning = ["ignored", "light preference", "strong preference", "dominant preference"];
+
 export function PreferenceSliders({ weights, onChange }: PreferenceSlidersProps) {
   function updateWeight(key: PreferenceKey, value: number) {
     onChange({ ...weights, [key]: Math.max(0, Math.min(3, Math.round(value))) });
@@ -35,8 +37,9 @@ export function PreferenceSliders({ weights, onChange }: PreferenceSlidersProps)
         {sliders.map((slider) => (
           <label key={slider.key} className="v2-slider">
             <span>
-              <strong>{slider.label}</strong>
+              <strong>{slider.label} <b>{weights[slider.key]}</b></strong>
               <em>{preferenceExplanations[slider.key]}</em>
+              <small>Coefficient meaning: {weights[slider.key]} = {coefficientMeaning[weights[slider.key]]}</small>
             </span>
             <div>
               <input

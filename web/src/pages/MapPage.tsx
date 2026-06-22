@@ -1,5 +1,5 @@
 import { useEffect, useMemo, useState } from "react";
-import { useSearchParams } from "react-router-dom";
+import { Link, useSearchParams } from "react-router-dom";
 import { datasetRegistry, getDatasetConfig } from "../data/datasetRegistry";
 import { DetailPanel } from "../components/DetailPanel";
 import { GraphCanvas } from "../components/GraphCanvas";
@@ -134,48 +134,57 @@ export function MapPage({ datasets, theme, onThemeToggle }: MapPageProps) {
   }
 
   return (
-    <Layout
-      controls={
-        <Sidebar
-          datasets={datasetRegistry}
-          activeDatasetId={activeDatasetId}
-          safetyBadge={Boolean(activeConfig.safetyBadge)}
-          theme={theme}
-          stats={stats}
-          filters={filters}
-          filterOptions={filterOptions}
-          searchResults={searchResults}
-          isOpen={isMenuOpen}
-          onDatasetChange={handleDatasetChange}
-          onThemeToggle={onThemeToggle}
-          onToggleOpen={() => setIsMenuOpen((current) => !current)}
-          onFilterChange={handleFilterChange}
-          onResetFilters={() => setFilters(cloneDefaultFilters())}
-          onSelectNode={handleSelectNode}
-        />
-      }
-      graph={
-        <GraphCanvas
-          graph={visibleGraph}
-          theme={theme}
-          selection={selection}
-          highlightedNodeIds={highlights.nodeIds}
-          highlightedEdgeIds={highlights.edgeIds}
-          onSelectNode={handleSelectNode}
-          onSelectEdge={(edgeId) => setSelection({ kind: "edge", id: edgeId })}
-        />
-      }
-      inspector={
-        <DetailPanel
-          dataset={activeDataset}
-          selection={selection}
-          onClose={() => setSelection(null)}
-          onSelectNode={handleSelectNode}
-          onSelectEdge={(edgeId) => setSelection({ kind: "edge", id: edgeId })}
-          onSelectOpportunity={(opportunityId) => setSelection({ kind: "opportunity", id: opportunityId })}
-        />
-      }
-      statBar={<StatBar stats={stats} datasetLabel={activeDataset.label} />}
-    />
+    <div className="v2-map-page">
+      <div className="map-route-bar">
+        <div>
+          <span><Link to="/">Dashboard</Link> / Map</span>
+          <strong>Graph evidence explorer</strong>
+        </div>
+        <Link to="/" className="v2-secondary-button">Back to Dashboard</Link>
+      </div>
+      <Layout
+        controls={
+          <Sidebar
+            datasets={datasetRegistry}
+            activeDatasetId={activeDatasetId}
+            safetyBadge={Boolean(activeConfig.safetyBadge)}
+            theme={theme}
+            stats={stats}
+            filters={filters}
+            filterOptions={filterOptions}
+            searchResults={searchResults}
+            isOpen={isMenuOpen}
+            onDatasetChange={handleDatasetChange}
+            onThemeToggle={onThemeToggle}
+            onToggleOpen={() => setIsMenuOpen((current) => !current)}
+            onFilterChange={handleFilterChange}
+            onResetFilters={() => setFilters(cloneDefaultFilters())}
+            onSelectNode={handleSelectNode}
+          />
+        }
+        graph={
+          <GraphCanvas
+            graph={visibleGraph}
+            theme={theme}
+            selection={selection}
+            highlightedNodeIds={highlights.nodeIds}
+            highlightedEdgeIds={highlights.edgeIds}
+            onSelectNode={handleSelectNode}
+            onSelectEdge={(edgeId) => setSelection({ kind: "edge", id: edgeId })}
+          />
+        }
+        inspector={
+          <DetailPanel
+            dataset={activeDataset}
+            selection={selection}
+            onClose={() => setSelection(null)}
+            onSelectNode={handleSelectNode}
+            onSelectEdge={(edgeId) => setSelection({ kind: "edge", id: edgeId })}
+            onSelectOpportunity={(opportunityId) => setSelection({ kind: "opportunity", id: opportunityId })}
+          />
+        }
+        statBar={<StatBar stats={stats} datasetLabel={activeDataset.label} />}
+      />
+    </div>
   );
 }

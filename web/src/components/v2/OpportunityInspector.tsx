@@ -1,26 +1,18 @@
 import { ExternalLink, Map, X } from "lucide-react";
 import { Link } from "react-router-dom";
-import type { ScoredOpportunity } from "../../scoring/scoringTypes";
+import type { PreferenceWeights, ScoredOpportunity } from "../../scoring/scoringTypes";
 import { phaseDescription, phaseLabel } from "../../scoring/scoringExplain";
+import { defaultPreferenceWeights } from "../../scoring/scoringTypes";
 import { ScoreMeter } from "./ScoreMeter";
+import { OpportunityInspectorTabs } from "./OpportunityInspectorTabs";
 
 interface OpportunityInspectorProps {
   opportunity?: ScoredOpportunity;
+  weights?: PreferenceWeights;
   onClose?: () => void;
 }
 
-function chipList(items: string[], empty: string) {
-  if (!items.length) return <p className="muted">{empty}</p>;
-  return (
-    <div className="v2-chip-list">
-      {items.map((item) => (
-        <span key={item}>{item}</span>
-      ))}
-    </div>
-  );
-}
-
-export function OpportunityInspector({ opportunity, onClose }: OpportunityInspectorProps) {
+export function OpportunityInspector({ opportunity, weights = defaultPreferenceWeights, onClose }: OpportunityInspectorProps) {
   if (!opportunity) {
     return (
       <aside className="v2-panel opportunity-inspector">
@@ -54,46 +46,7 @@ export function OpportunityInspector({ opportunity, onClose }: OpportunityInspec
       </div>
       <p className="phase-copy">{phaseDescription(breakdown.phase)}</p>
 
-      <section>
-        <h3>Why it scores</h3>
-        <p>{opportunity.reason || breakdown.scoreReasons[0]}</p>
-        <ul className="tight-list">
-          {breakdown.scoreReasons.map((reason) => (
-            <li key={reason}>{reason}</li>
-          ))}
-        </ul>
-      </section>
-
-      <section>
-        <h3>First wedge</h3>
-        <p>{breakdown.firstWedge}</p>
-      </section>
-
-      <section>
-        <h3>Expansion path</h3>
-        <p>{breakdown.expansionPath}</p>
-      </section>
-
-      <section>
-        <h3>Possible buyers</h3>
-        {chipList(breakdown.possibleBuyers, "No buyer types attached.")}
-      </section>
-
-      <section>
-        <h3>Acquirer categories</h3>
-        {chipList(breakdown.possibleAcquirerCategories, "No acquirer categories inferred.")}
-      </section>
-
-      <section>
-        <h3>Key risks</h3>
-        {breakdown.riskFlags.length ? (
-          <ul className="tight-list">
-            {breakdown.riskFlags.map((risk) => <li key={risk}>{risk}</li>)}
-          </ul>
-        ) : (
-          <p className="muted">No major risk flags from the scoring model.</p>
-        )}
-      </section>
+      <OpportunityInspectorTabs opportunity={opportunity} weights={weights} />
 
       <div className="timeline-grid">
         <span><strong>{breakdown.estimatedTimeToMvpMonths ?? "-"}</strong>MVP months</span>

@@ -1,4 +1,5 @@
 import type { OpportunityPhase, ScoredOpportunity } from "./scoringTypes";
+import { phaseDescription as describePhase, phaseLabel as labelPhase } from "./phaseModel";
 
 export const preferenceExplanations = {
   feasibility: "Buildable with software or data first.",
@@ -9,30 +10,24 @@ export const preferenceExplanations = {
 };
 
 export function phaseLabel(phase: OpportunityPhase): string {
-  if (phase === "now") return "Now";
-  if (phase === "near") return "Near";
-  if (phase === "later") return "Later";
-  return "Big bet";
+  return labelPhase(phase);
 }
 
 export function phaseDescription(phase: OpportunityPhase): string {
-  if (phase === "now") return "Software or data wedge can be demonstrated quickly.";
-  if (phase === "near") return "Needs pilots, partner access, or workflow data before it becomes obvious.";
-  if (phase === "later") return "Needs deeper integration, certification, hardware, or enterprise rollout.";
-  return "Huge strategic surface, but should be broken into a smaller proof wedge first.";
+  return describePhase(phase);
 }
 
 export function validationNextSteps(phase: OpportunityPhase): string[] {
   if (phase === "now") {
-    return ["Build a demo", "Contact 5 buyers", "Validate data access"];
+    return ["Build a demo", "Talk to 5 buyers", "Validate data access", "Test willingness to pay"];
   }
   if (phase === "near") {
-    return ["Find a pilot partner", "Verify workflow pain", "Collect sample data"];
+    return ["Find pilot partner", "Collect sample workflow/data", "Validate integration pain", "Build narrow prototype"];
   }
   if (phase === "later") {
-    return ["Map capital requirements", "Find a strategic partner", "Validate regulation"];
+    return ["Map capital and certification needs", "Find strategic partner", "Identify smaller wedge", "Validate buyer budget"];
   }
-  return ["Break into a smaller wedge first", "Map strategic partner path", "Validate the highest-risk assumption"];
+  return ["Do not start with the full big bet", "Extract the wedge", "Validate strategic pain", "Find capital/partner path", "Turn the empire into a sequence"];
 }
 
 export function scoreFormulaText(opportunity?: ScoredOpportunity): string {

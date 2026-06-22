@@ -8,13 +8,18 @@ import { MethodologyPage } from "./components/v2/MethodologyPage";
 import { OpportunityDeepDive } from "./components/v2/OpportunityDeepDive";
 import { SettingsPage } from "./components/v2/SettingsPage";
 import { MapPage } from "./pages/MapPage";
-import { findScoredOpportunity, scoreOpportunities } from "./scoring/opportunityScoring";
+import { filterAndSortOpportunities, findScoredOpportunity, scoreOpportunities } from "./scoring/opportunityScoring";
 import {
+  defaultAdvancedFilters,
   defaultPreferenceWeights,
   defaultScoringDomainIds,
   domainOptions,
+  evidenceDomainIds,
   isDomainId,
+  scoreableDomainIds,
   type DomainId,
+  type OpportunityAdvancedFilters,
+  type OpportunityPhase,
   type PreferenceWeights
 } from "./scoring/scoringTypes";
 import type { GraphDataset } from "./types/graph";
@@ -22,6 +27,7 @@ import type { GraphDataset } from "./types/graph";
 const THEME_KEY = "founder-map-theme";
 const WEIGHTS_KEY = "founder-map-v2-preferences";
 const DOMAINS_KEY = "founder-map-v2-domains";
+const ADVANCED_FILTERS_KEY = "founder-map-v2-advanced-filters";
 
 function getInitialTheme(): "light" | "dark" {
   const stored = window.localStorage.getItem(THEME_KEY);
@@ -52,7 +58,7 @@ function getInitialDomains(): DomainId[] {
   try {
     const parsed = JSON.parse(window.localStorage.getItem(DOMAINS_KEY) || "null") as unknown;
     if (!Array.isArray(parsed)) return defaultScoringDomainIds;
-    const allowed = new Set(domainOptions.filter((domain) => domain.includedInScoring && !domain.planned).map((domain) => domain.id));
+    const allowed = new Set(scoreableDomainIds);
     const valid = parsed.filter((id): id is DomainId => typeof id === "string" && isDomainId(id) && allowed.has(id));
     return valid.length ? valid : defaultScoringDomainIds;
   } catch {
@@ -60,22 +66,69 @@ function getInitialDomains(): DomainId[] {
   }
 }
 
+function clampScore(value: unknown): number {
+  return typeof value === "number" && Number.isFinite(value) ? Math.max(0, Math.min(100, Math.round(value))) : 0;
+}
+
+function isPhase(value: unknown): value is OpportunityPhase {
+  return value === "now" || value === "near" || value === "later" || value === "big-bet";
+}
+
+function isSortBy(value: unknown): value is OpportunityAdvancedFilters["sortBy"] {
+  return (
+    value === "finalUtility" ||
+    value === "structural" ||
+    value === "personalFit" ||
+    value === "feasibility" ||
+    value === "founderSpeedFit" ||
+    value === "strategicLeverage" ||
+    value === "buyerAccess" ||
+    value === "exitOptionality" ||
+    value === "proofVelocity" ||
+    value === "wedgeToEmpire"
+  );
+}
+
+function getInitialAdvancedFilters(): OpportunityAdvancedFilters {
+  try {
+    const parsed = JSON.parse(window.localStorage.getItem(ADVANCED_FILTERS_KEY) || "null") as Partial<OpportunityAdvancedFilters> | null;
+    if (!parsed) return defaultAdvancedFilters;
+    const phases = Array.isArray(parsed.phases) ? parsed.phases.filter(isPhase) : defaultAdvancedFilters.phases;
+    return {
+      phases: phases.length ? phases : defaultAdvancedFilters.phases,
+      minFinalUtility: clampScore(parsed.minFinalUtility),
+      minFeasibility: clampScore(parsed.minFeasibility),
+      minExitOptionality: clampScore(parsed.minExitOptionality),
+      sortBy: isSortBy(parsed.sortBy) ? parsed.sortBy : defaultAdvancedFilters.sortBy,
+      includeEvidenceDomains: Boolean(parsed.includeEvidenceDomains),
+      strongGraphEvidenceOnly: Boolean(parsed.strongGraphEvidenceOnly),
+      showBigBets: typeof parsed.showBigBets === "boolean" ? parsed.showBigBets : defaultAdvancedFilters.showBigBets,
+      query: typeof parsed.query === "string" ? parsed.query : ""
+    };
+  } catch {
+    return defaultAdvancedFilters;
+  }
+}
+
 function ShellRoute({
   children,
   theme,
-  onThemeToggle
+  onThemeToggle,
+  variant
 }: {
   children: React.ReactNode;
   theme: "light" | "dark";
   onThemeToggle: () => void;
+  variant?: "default" | "map";
 }) {
-  return <AppShell theme={theme} onThemeToggle={onThemeToggle}>{children}</AppShell>;
+  return <AppShell theme={theme} onThemeToggle={onThemeToggle} variant={variant}>{children}</AppShell>;
 }
 
 export default function App() {
   const [datasets, setDatasets] = useState<GraphDataset[]>([]);
   const [weights, setWeights] = useState<PreferenceWeights>(() => getInitialWeights());
   const [selectedDomainIds, setSelectedDomainIds] = useState<DomainId[]>(() => getInitialDomains());
+  const [advancedFilters, setAdvancedFilters] = useState<OpportunityAdvancedFilters>(() => getInitialAdvancedFilters());
   const [selectedOpportunityId, setSelectedOpportunityId] = useState<string | undefined>();
   const [theme, setTheme] = useState<"light" | "dark">(() => getInitialTheme());
   const [error, setError] = useState<string | null>(null);
@@ -105,15 +158,32 @@ export default function App() {
     window.localStorage.setItem(DOMAINS_KEY, JSON.stringify(selectedDomainIds));
   }, [selectedDomainIds]);
 
+  useEffect(() => {
+    window.localStorage.setItem(ADVANCED_FILTERS_KEY, JSON.stringify(advancedFilters));
+  }, [advancedFilters]);
+
+  const effectiveDomainIds = useMemo(() => {
+    const ids = new Set(selectedDomainIds);
+    if (advancedFilters.includeEvidenceDomains) {
+      evidenceDomainIds.forEach((id) => ids.add(id));
+    }
+    return [...ids].filter((id) => scoreableDomainIds.includes(id));
+  }, [advancedFilters.includeEvidenceDomains, selectedDomainIds]);
+
+  const rawScoredOpportunities = useMemo(
+    () => scoreOpportunities(datasets, effectiveDomainIds, weights),
+    [datasets, effectiveDomainIds, weights]
+  );
+
   const scoredOpportunities = useMemo(
-    () => scoreOpportunities(datasets, selectedDomainIds, weights),
-    [datasets, selectedDomainIds, weights]
+    () => filterAndSortOpportunities(rawScoredOpportunities, advancedFilters),
+    [advancedFilters, rawScoredOpportunities]
   );
   const allScoredOpportunities = useMemo(
     () =>
       scoreOpportunities(
         datasets,
-        domainOptions.filter((domain) => domain.includedInScoring && !domain.planned).map((domain) => domain.id),
+        scoreableDomainIds,
         weights
       ),
     [datasets, weights]
@@ -138,7 +208,7 @@ export default function App() {
   }, [scoredOpportunities, selectedOpportunityId]);
 
   function handleDomainChange(domainIds: DomainId[]) {
-    setSelectedDomainIds(domainIds.filter((id) => domainOptions.some((domain) => domain.id === id && domain.includedInScoring && !domain.planned)));
+    setSelectedDomainIds(domainIds.filter((id) => scoreableDomainIds.includes(id)));
   }
 
   if (error) {
@@ -170,17 +240,27 @@ export default function App() {
               <MainDashboard
                 datasets={datasets}
                 scoredOpportunities={scoredOpportunities}
+                totalOpportunityCount={rawScoredOpportunities.length}
                 selectedOpportunity={selectedOpportunity}
                 weights={weights}
                 selectedDomainIds={selectedDomainIds}
+                advancedFilters={advancedFilters}
                 onWeightsChange={setWeights}
                 onDomainsChange={handleDomainChange}
+                onAdvancedFiltersChange={setAdvancedFilters}
                 onSelectOpportunity={setSelectedOpportunityId}
               />
             </ShellRoute>
           }
         />
-        <Route path="/map" element={<MapPage datasets={datasets} theme={theme} onThemeToggle={() => setTheme((current) => (current === "light" ? "dark" : "light"))} />} />
+        <Route
+          path="/map"
+          element={
+            <ShellRoute theme={theme} onThemeToggle={() => setTheme((current) => (current === "light" ? "dark" : "light"))} variant="map">
+              <MapPage datasets={datasets} theme={theme} onThemeToggle={() => setTheme((current) => (current === "light" ? "dark" : "light"))} />
+            </ShellRoute>
+          }
+        />
         <Route
           path="/methodology"
           element={<ShellRoute theme={theme} onThemeToggle={() => setTheme((current) => (current === "light" ? "dark" : "light"))}><MethodologyPage /></ShellRoute>}
@@ -196,9 +276,11 @@ export default function App() {
               <SettingsPage
                 weights={weights}
                 selectedDomainIds={selectedDomainIds}
+                advancedFilters={advancedFilters}
                 countsByDomain={countsByDomain}
                 onWeightsChange={setWeights}
                 onDomainsChange={handleDomainChange}
+                onAdvancedFiltersChange={setAdvancedFilters}
               />
             </ShellRoute>
           }

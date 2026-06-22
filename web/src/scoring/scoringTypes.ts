@@ -25,6 +25,42 @@ export interface PreferenceWeights {
 
 export type OpportunityPhase = "now" | "near" | "later" | "big-bet";
 
+export type EvidenceLevel = "weak" | "moderate" | "strong" | "very-strong";
+
+export interface EvidenceStrength {
+  score: number;
+  level: EvidenceLevel;
+  explanations: string[];
+  affectedNodeCount: number;
+  bottleneckNodeCount: number;
+  highCriticalEdgeCount: number;
+  knownEdgeCount: number;
+  inferredEdgeCount: number;
+  affectedNodeCentrality: number;
+}
+
+export interface OpportunityAdvancedFilters {
+  phases: OpportunityPhase[];
+  minFinalUtility: number;
+  minFeasibility: number;
+  minExitOptionality: number;
+  sortBy:
+    | "finalUtility"
+    | "structural"
+    | "personalFit"
+    | "feasibility"
+    | "founderSpeedFit"
+    | "strategicLeverage"
+    | "buyerAccess"
+    | "exitOptionality"
+    | "proofVelocity"
+    | "wedgeToEmpire";
+  includeEvidenceDomains: boolean;
+  strongGraphEvidenceOnly: boolean;
+  showBigBets: boolean;
+  query: string;
+}
+
 export interface OpportunityScoreBreakdown {
   structuralOpportunityScore: number;
   feasibilityScore: number;
@@ -47,6 +83,15 @@ export interface OpportunityScoreBreakdown {
   estimatedTimeToMvpMonths: number | null;
   estimatedTimeToRevenueMonths: number | null;
   estimatedTimeToExitMonths: number | null;
+  evidenceStrength: EvidenceStrength;
+  evidenceLevel: EvidenceLevel;
+  graphDrivers: string[];
+  scoreDrivers: string[];
+  riskDrivers: string[];
+  archetype: string;
+  knownEdgeCount: number;
+  inferredEdgeCount: number;
+  affectedNodeCentrality: number;
 }
 
 export interface ScoredOpportunity {
@@ -92,6 +137,28 @@ export const defaultScoringDomainIds: DomainId[] = [
   "global-ai-stack",
   "industrial-software-ot-stack"
 ];
+
+export const evidenceDomainIds: DomainId[] = [
+  "european-defence-stack",
+  "global-aerospace-stack"
+];
+
+export const scoreableDomainIds: DomainId[] = [
+  ...defaultScoringDomainIds,
+  ...evidenceDomainIds
+];
+
+export const defaultAdvancedFilters: OpportunityAdvancedFilters = {
+  phases: ["now", "near", "later", "big-bet"],
+  minFinalUtility: 0,
+  minFeasibility: 0,
+  minExitOptionality: 0,
+  sortBy: "finalUtility",
+  includeEvidenceDomains: false,
+  strongGraphEvidenceOnly: false,
+  showBigBets: true,
+  query: ""
+};
 
 export const domainOptions: DomainOption[] = [
   {

@@ -1,4 +1,4 @@
-import { domainOptions, type DomainId } from "../../scoring/scoringTypes";
+import { domainOptions, scoreableDomainIds, type DomainId } from "../../scoring/scoringTypes";
 
 interface DomainSelectorProps {
   selectedDomainIds: DomainId[];
@@ -7,6 +7,8 @@ interface DomainSelectorProps {
 }
 
 export function DomainSelector({ selectedDomainIds, onChange, countsByDomain }: DomainSelectorProps) {
+  const scoreableDomains = domainOptions.filter((domain) => scoreableDomainIds.includes(domain.id));
+
   function toggleDomain(domainId: DomainId) {
     if (selectedDomainIds.includes(domainId)) {
       onChange(selectedDomainIds.filter((id) => id !== domainId));
@@ -24,19 +26,18 @@ export function DomainSelector({ selectedDomainIds, onChange, countsByDomain }: 
         </div>
       </div>
       <div className="domain-list">
-        {domainOptions.map((domain) => (
-          <label key={domain.id} className={`domain-row${domain.planned ? " planned" : ""}`}>
+        {scoreableDomains.map((domain) => (
+          <label key={domain.id} className="domain-row">
             <input
               type="checkbox"
               checked={selectedDomainIds.includes(domain.id)}
-              disabled={domain.planned}
               onChange={() => toggleDomain(domain.id)}
             />
             <span>
               <strong>{domain.label}</strong>
-              <em>{domain.status === "planned" ? "Planned" : domain.status === "evidence" ? "Evidence domain" : "Active"}</em>
+              <em>{domain.status === "evidence" ? "Evidence domain" : "Active scoring domain"}</em>
             </span>
-            <b>{domain.planned ? "Planned" : countsByDomain.get(domain.id) ?? 0}</b>
+            <b>{countsByDomain.get(domain.id) ?? 0}</b>
           </label>
         ))}
       </div>
