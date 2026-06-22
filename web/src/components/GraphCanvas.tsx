@@ -101,6 +101,7 @@ export function GraphCanvas({
 }: GraphCanvasProps) {
   const containerRef = useRef<HTMLDivElement | null>(null);
   const graphRef = useRef<any>(null);
+  const zoomFrameRef = useRef<number | null>(null);
   const [size, setSize] = useState({ width: 800, height: 600 });
   const [hoveredNodeId, setHoveredNodeId] = useState<string | null>(null);
   const [zoomScale, setZoomScale] = useState(1);
@@ -133,6 +134,15 @@ export function GraphCanvas({
       observer.disconnect();
     };
   }, []);
+
+  useEffect(
+    () => () => {
+      if (zoomFrameRef.current !== null) {
+        window.cancelAnimationFrame(zoomFrameRef.current);
+      }
+    },
+    []
+  );
 
   const hasFocus = Boolean(selectedNodeId || selectedEdgeId || highlightedNodeIds.size || highlightedEdgeIds.size);
   const degreeById = useMemo(() => getNodeDegreeMap(graph.edges), [graph.edges]);
@@ -316,6 +326,16 @@ export function GraphCanvas({
     [degreeById, graph.nodes, hasFocus, highlightedNodeIds, hoveredNodeId, selectedNodeId, theme, zoomScale]
   );
 
+  const handleZoom = useCallback((transform: { k: number }) => {
+    if (zoomFrameRef.current !== null) {
+      window.cancelAnimationFrame(zoomFrameRef.current);
+    }
+    zoomFrameRef.current = window.requestAnimationFrame(() => {
+      setZoomScale(transform.k);
+      zoomFrameRef.current = null;
+    });
+  }, []);
+
   const background = theme === "dark" ? "#07101c" : "#f6f8fb";
 
   return (
@@ -378,7 +398,7 @@ export function GraphCanvas({
             onNodeHover={(nodeObject) => setHoveredNodeId((nodeObject as GraphNode | null)?.id ?? null)}
             onNodeClick={(nodeObject) => onSelectNode((nodeObject as GraphNode).id)}
             onLinkClick={(edgeObject) => onSelectEdge((edgeObject as GraphEdge).id)}
-            onZoom={(transform) => setZoomScale(transform.k)}
+            onZoom={handleZoom}
             cooldownTicks={90}
             minZoom={0.25}
             maxZoom={7}
