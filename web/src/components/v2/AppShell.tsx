@@ -10,8 +10,11 @@ interface AppShellProps {
 }
 
 const navItems = [
-  { to: "/", label: "Dashboard", end: true },
+  { to: "/", label: "Hunter", end: true },
+  { to: "/dashboard", label: "V2 Dashboard" },
   { to: "/map", label: "Map" },
+  { to: "/world-state", label: "World State" },
+  { to: "/council", label: "Council" },
   { to: "/methodology", label: "Methodology" },
   { to: "/data", label: "Data" },
   { to: "/settings", label: "Settings" }
@@ -21,7 +24,7 @@ export function AppShell({ children, theme, onThemeToggle, variant = "default" }
   return (
     <div className="v2-shell">
       <header className="v2-topbar">
-        <NavLink to="/" className="v2-brand" aria-label="Founder Map dashboard">
+        <NavLink to="/" className="v2-brand" aria-label="Founder Map hunter">
           Founder Map
         </NavLink>
         <nav className="v2-nav" aria-label="Primary navigation">

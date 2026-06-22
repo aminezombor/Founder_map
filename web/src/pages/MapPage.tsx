@@ -137,10 +137,10 @@ export function MapPage({ datasets, theme, onThemeToggle }: MapPageProps) {
     <div className="v2-map-page">
       <div className="map-route-bar">
         <div>
-          <span><Link to="/">Dashboard</Link> / Map</span>
+          <span><Link to="/">Hunter</Link> / Map</span>
           <strong>Graph evidence explorer</strong>
         </div>
-        <Link to="/" className="v2-secondary-button">Back to Dashboard</Link>
+        <Link to="/" className="v2-secondary-button">Back to Hunter</Link>
       </div>
       <Layout
         controls={
